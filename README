@@ -1,0 +1,48 @@
+07/10/2003
+
+Disk performance XFce4 panel plugin (DiskPerf)
+==============================================
+
+
+1 -	Description
+	-----------
+The DiskPerf plugin displays disk/partition performance based on the rsect/wsect data provided by recent Linux kernels (at least 2.4.20 - I think - compiled with CONFIG_BLK_STATS turned on, or possibly older kernel patched with "Disk extended statistics" in /proc/partitions).
+
+To know if your system provides such statistics:
+        - less /proc/partitions
+        - check that there are rsect/wsect data
+
+The code of this plugin has been written starting from the Xfce4 sample-plugin example (www.xfce.org), then looking at both systemload (Riccardo Persichetti - ricpersi@libero.it) and netload (Bernhard Walle - bernhard.walle@gmx.de) XFce4 goodies.
+
+DiskPerf has only been tested on Mandrake 9.1 (kernel 2.4.21)
+
+
+2 -	Installation
+	------------
+Do the usual stuff:
+	- gunzip
+        - tar xf
+        - configure --prefix=<XFce4InstallationDir>	(e.g. /usr)
+        - make
+        - make install  (as root)
+	
+You should then end up with:
+        libdiskperf.a   libdiskperf.la  libdiskperf.so
+installed in <XFce4InstallationDir>/lib/xfce4/panel-plugins/
+
+
+3 -	Port
+	----
+Currently, DiskPerf runs only on recent Linux kernels (my single home computer is equipped with Mandrake Linux 9.1).
+If one would like to port this plugin onto another OS, please feel free to send me your patch.
+Furthermore, if you wish to take over the development of DiskPerf, just let me know. I would probably be able to provide you with useful information on how to get disk statistics on some commercial Unices (e.g. SunOS/Solaris).
+
+
+4 -	Bugs
+	----
+If you find a bug (on Linux), please send me the result of "uname -a" as well as 2 snapshots of your /proc/partitions taken at 10-second interval.
+
+
+Enjoy!
+Roger Seguin
+roger_seguin@msn.com

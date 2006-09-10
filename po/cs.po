@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-26 22:05+0200\n"
+"POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2006-08-26 22:19+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -104,8 +104,7 @@ msgstr "Spojit sledování přečtených a zapsaných dat?"
 msgid "Bar color "
 msgstr "Barva panelu"
 
-#: ../panel-plugin/config_gui.c:284
-#: ../panel-plugin/config_gui.c:349
+#: ../panel-plugin/config_gui.c:284 ../panel-plugin/config_gui.c:349
 #: ../panel-plugin/config_gui.c:357
 msgid "Press to change color"
 msgstr "Pro změnu barvy klikněte sem"
@@ -191,14 +190,16 @@ msgstr ""
 #, c-format
 msgid ""
 "%s %s - Disk Performance Monitor\n"
-"Display instantaneous disk I/O transfer rates and busy times on Linux and NetBSD systems\n"
+"Display instantaneous disk I/O transfer rates and busy times on Linux and "
+"NetBSD systems\n"
 "\n"
 "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 msgstr ""
 "%s %s - Sledování výkonu disku\n"
-"Okamžitě zobrazuje V/V přenosové rychlosti a aktivitu na systémech Linux a NetBSD\n"
+"Okamžitě zobrazuje V/V přenosové rychlosti a aktivitu na systémech Linux a "
+"NetBSD\n"
 "\n"
 "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 "Sbírka statistik pro NetBSD: (c) 2003 Benedikt Meurer\n"
@@ -275,12 +276,10 @@ msgstr "Konfigurace"
 #. Initial revision
 #.
 #.
-#: ../panel-plugin/main.c:938
-#: ../panel-plugin/diskperf.desktop.in.in.h:1
+#: ../panel-plugin/main.c:938 ../panel-plugin/diskperf.desktop.in.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitorování výkonu disku"
 
 #: ../panel-plugin/diskperf.desktop.in.in.h:2
 msgid "Show disk performance"
 msgstr "Zobrazuje výkon disku"
-

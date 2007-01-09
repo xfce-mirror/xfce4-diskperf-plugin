@@ -141,6 +141,8 @@ typedef struct diskperf_t {
 
 	/**************************************************************/
 
+static int timerNeedsUpdate = 0;
+
 static int DisplayPerf (struct diskperf_t *p_poPlugin)
  /* Get the last disk perfomance data, compute the statistics and update
     the panel-docked monitor bars */
@@ -272,6 +274,12 @@ static gboolean SetTimer (void *p_pvPlugin)
     struct param_t *poConf = &(poPlugin->oConf.oParam);
 
     DisplayPerf (poPlugin);
+    
+    if (timerNeedsUpdate) {
+        g_source_remove (poPlugin->iTimerId);
+        poPlugin->iTimerId = 0;
+        timerNeedsUpdate = 0;
+    }
 
     if (!poPlugin->iTimerId)
         poPlugin->iTimerId = g_timeout_add (poConf->iPeriod_ms,
@@ -773,6 +781,7 @@ static void SetPeriod (Widget_t p_wSc, void *p_pvPlugin)
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     float           r;
 
+    timerNeedsUpdate = 1;
     TRACE ("SetPeriod()\n");
     r = gtk_spin_button_get_value (GTK_SPIN_BUTTON (p_wSc));
     poConf->iPeriod_ms = (r * 1000) + 0.5;	/* rounded */
@@ -1096,8 +1105,6 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
 {
     diskperf_t *diskperf = diskperf_create_control (plugin);
 
-    diskperf_read_config (plugin, diskperf);
-
     g_signal_connect (plugin, "free-data", G_CALLBACK (diskperf_free), 
                       diskperf);
 
@@ -1120,6 +1127,9 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
     gtk_container_add (GTK_CONTAINER (plugin), diskperf->oMonitor.wEventBox);
 
     CreateMonitorBars (diskperf, xfce_panel_plugin_get_orientation (plugin));
+    
+    diskperf_read_config (plugin, diskperf);
+    DevPerfInit();
     
     SetTimer (diskperf);
 }

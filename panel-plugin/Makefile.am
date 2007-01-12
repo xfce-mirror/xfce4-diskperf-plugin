@@ -5,7 +5,7 @@ xfce4_diskperf_plugin_CFLAGS =					\
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"			\
 	@LIBXFCE4PANEL_CFLAGS@
 
-xfce4_diskperf_plugin_LDFLAGS =					\
+xfce4_diskperf_plugin_LDADD=					\
 	@LIBXFCE4PANEL_LIBS@
 
 xfce4_diskperf_plugin_SOURCES =		\

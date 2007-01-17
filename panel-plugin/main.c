@@ -1,26 +1,20 @@
-/*
- * Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>
+/* $Id$
+ * 
+ * Copyright (c) 2003-2004 Roger Seguin <roger_seguin@msn.com>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Library General Public License for more details.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
 #include "config_gui.h"
@@ -422,10 +416,10 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     strcpy (poConf->acDevice, "wd0");
     strcpy (poConf->acTitle, "wd0");
 #else
-    strcpy (poConf->acDevice, "/dev/hda");
+    strcpy (poConf->acDevice, "/dev/sda");
     status = stat (poConf->acDevice, &oStat);
     poConf->st_rdev = (status == -1 ? 0 : oStat.st_rdev);
-    strcpy (poConf->acTitle, "hda");
+    strcpy (poConf->acTitle, "sda");
 #endif
 
     poConf->fTitleDisplayed = 1;
@@ -918,7 +912,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
 	/* Plugin API */
 	/* Create/pop up the configuration/options GUI */
 {
-    GtkWidget *dlg, *header, *vbox;
+    GtkWidget *dlg, *vbox;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct gui_t   *poGUI = &(poPlugin->oConf.oGUI);
     char            acBuffer[16];
@@ -932,24 +926,17 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
 
     xfce_panel_plugin_block_menu (plugin);
     
-    dlg = gtk_dialog_new_with_buttons (_("Configuration"), 
-                GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
-                GTK_DIALOG_DESTROY_WITH_PARENT |
-                GTK_DIALOG_NO_SEPARATOR,
-                GTK_STOCK_CLOSE, GTK_RESPONSE_OK,
-                NULL);
+    dlg = xfce_titled_dialog_new_with_buttons (_("Disk Performance Monitor"),
+                                                GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
+                                                GTK_DIALOG_DESTROY_WITH_PARENT | GTK_DIALOG_NO_SEPARATOR,
+                                                GTK_STOCK_CLOSE, GTK_RESPONSE_OK,
+                                                NULL);
     
-    g_signal_connect (dlg, "response", G_CALLBACK (diskperf_dialog_response),
-                      poPlugin);
+    g_signal_connect (G_OBJECT (dlg), "response",
+                      G_CALLBACK (diskperf_dialog_response), poPlugin);
 
-    gtk_container_set_border_width (GTK_CONTAINER (dlg), 2);
-    
-    header = xfce_create_header (NULL, _("Disk Performance Monitor"));
-    gtk_widget_set_size_request (GTK_BIN (header)->child, -1, 32);
-    gtk_container_set_border_width (GTK_CONTAINER (header), BORDER - 2);
-    gtk_widget_show (header);
-    gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dlg)->vbox), header,
-                        FALSE, TRUE, 0);
+    gtk_window_set_position (GTK_WINDOW (dlg), GTK_WIN_POS_CENTER);
+    gtk_window_set_icon_name (GTK_WINDOW (dlg), "xfce4-settings");
     
     vbox = gtk_vbox_new(FALSE, BORDER);
     gtk_container_set_border_width (GTK_CONTAINER (vbox), BORDER - 2);
@@ -959,7 +946,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     
     poPlugin->oConf.wTopLevel = dlg;
 
-    (void) CreateConfigGUI (vbox, poGUI);
+    CreateConfigGUI (vbox, poGUI);
 
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wTB_Title),
 				  poConf->fTitleDisplayed);
@@ -1042,10 +1029,6 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
 	g_signal_connect (GTK_WIDGET (*(apwColorPB[i])), "clicked",
 			  G_CALLBACK (ChooseColor), poPlugin);
     }
-
-    g_signal_connect (GTK_WIDGET (poGUI->wPB_About), "clicked",
-		      G_CALLBACK (About), 0);
-		      
 		      
     gtk_widget_show (dlg);
 }				/* diskperf_create_options() */
@@ -1064,11 +1047,13 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
     if (xfce_panel_plugin_get_orientation (plugin) == 
             GTK_ORIENTATION_HORIZONTAL) {
 	size1 = BORDER;
-        size2 = p_size - 4;
+        size2 = -1;
+        gtk_widget_set_size_request (GTK_WIDGET (plugin), -1, p_size);
     }
     else {
-	size1 = p_size - 4;
+	size1 = -1;
         size2 = BORDER;
+        gtk_widget_set_size_request (GTK_WIDGET (plugin), p_size, -1);
     }
     for (i = 0; i < 2; i++) {
 	pwBar = poPlugin->oMonitor.awProgressBar + i;
@@ -1135,72 +1120,3 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
 }
 
 XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL (diskperf_construct);
-
-
-	/**************************************************************/
-/*
-$Log: main.c,v $
-Revision 1.7  2004/08/25 10:08:40  rogerms
-DiskPerf 1.5
-
-Revision 1.14  2004/08/25 08:51:02  RogerSeguin
-MT support and About... dialog box added
-
-Revision 1.6  2003/11/11 12:40:34  rogerms
-Release 1.4
-
-Revision 1.13  2003/11/11 12:12:42  RogerSeguin
-Force to single "total busy time" monitor when platform doesn't provide separate read and write data (e.g. NetBSD)
-
-Revision 1.5  2003/11/04 10:26:13  rogerms
-DiskPerf 1.3
-
-Revision 1.12  2003/11/04 10:16:36  RogerSeguin
-Got rid of Microsoft ^M
-
-Revision 1.11  2003/11/04 09:43:36  RogerSeguin
-Added busy time monitoring for Linux
-
-Revision 1.4  2003/11/02 06:57:50  rogerms
-Release 1.2
-
-Revision 1.10  2003/11/02 06:18:33  RogerSeguin
-Added busy time in tooltips for Linux 2.4 and 2.6
-
-Revision 1.9  2003/10/24 11:16:20  RogerSeguin
-Different scalable fonts with Mandrake 9.2 ==> diffent tooltips string spacing
-
-Revision 1.3  2003/10/18 23:02:58  rogerms
-DiskPerf release 1.1
-
-Revision 1.8  2003/10/18 06:56:50  RogerSeguin
-Integration of Benedikt Meurer's work on NetBSD port
-
-Revision 1.7  2003/10/16 13:07:42  RogerSeguin
-Kernel 2.6 support
-
-Revision 1.2  2003/10/16 18:48:39  benny
-Added support for NetBSD.
-
-Revision 1.1.1.1  2003/10/07 03:39:25  rogerms
-Initial release - v1.0
-
-Revision 1.6  2003/10/02 04:16:07  RogerSeguin
-Compute using rbytes/wbytes instead of rsect/wsect
-
-Revision 1.5  2003/09/25 12:24:11  RogerSeguin
-Implemented some error processing
-
-Revision 1.4  2003/09/25 09:32:13  RogerSeguin
-Added color configuration
-
-Revision 1.3  2003/09/24 10:56:36  RogerSeguin
-Now swapping the monitor bars is possible
-
-Revision 1.2  2003/09/23 15:17:01  RogerSeguin
-Now supports panel orientation
-
-Revision 1.1  2003/09/22 02:25:35  RogerSeguin
-Initial revision
-
-*/

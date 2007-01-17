@@ -1,15 +1,15 @@
-@SET_MAKE@
+# $Id$
 
-SUBDIRS = panel-plugin po
+SUBDIRS =								\
+	panel-plugin 							\
+	po
 
 distclean-local:
 	rm -rf *.cache *~
 
-dist-bz2: dist
-	zcat $(PACKAGE)-$(VERSION).tar.gz | bzip2 --best -c > $(PACKAGE)-$(VERSION).tar.bz2
-
-distcheck-bz2: distcheck
-	zcat $(PACKAGE)-$(VERSION).tar.gz | bzip2 --best -c > $(PACKAGE)-$(VERSION).tar.bz2
+rpm: dist
+	rpmbuild -ta $(PACKAGE)-$(VERSION).tar.gz
+	@rm -f $(PACKAGE)-$(VERSION).tar.gz
 
 EXTRA_DIST = 								\
 	README								\
@@ -21,4 +21,6 @@ DISTCLEANFILES =							\
 	intltool-extract						\
 	intltool-merge							\
 	intltool-update
+
+# vi:set ts=8 sw=8 noet ai nocindent syntax=automake:
 

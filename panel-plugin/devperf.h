@@ -1,26 +1,20 @@
-/*
- * Copyright (c) 2003 RogerSeguin <roger_seguin@msn.com>
+/* $Id$
+ * 
+ * Copyright (c) 2003-2004 Roger Seguin <roger_seguin@msn.com>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Library General Public License for more details.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 #ifndef _devperf_h
 #define _devperf_h
@@ -71,43 +65,5 @@ extern          "C" {
 #ifdef __cplusplus
 }				/* extern "C" */
 #endif
-/*
-$Log: devperf.h,v $
-Revision 1.5  2003/11/04 10:26:13  rogerms
-DiskPerf 1.3
 
-Revision 1.7  2003/11/04 09:42:32  RogerSeguin
-Now retrieve both read and write busy times for Linux
-
-Revision 1.4  2003/11/02 06:57:50  rogerms
-Release 1.2
-
-Revision 1.6  2003/11/02 06:17:03  RogerSeguin
-Added busy time (and queue length)
-
-Revision 1.3  2003/10/18 23:02:58  rogerms
-DiskPerf release 1.1
-
-Revision 1.5  2003/10/18 06:56:32  RogerSeguin
-Integration of Benedikt Meurer's work on NetBSD port
-
-Revision 1.2  2003/10/16 18:48:39  benny
-Added support for NetBSD.
-
-Revision 1.4  2003/10/16 13:09:14  RogerSeguin
-Kernel 2.6 support
-
-Revision 1.1.1.1  2003/10/07 03:39:23  rogerms
-Initial release - v1.0
-
-Revision 1.3  2003/10/02 04:14:41  RogerSeguin
-Compute using rbytes/wbytes instead of rsect/wsect
-
-Revision 1.2  2003/09/25 12:24:46  RogerSeguin
-Implemented some error processing
-
-Revision 1.1  2003/09/22 02:25:35  RogerSeguin
-Initial revision
-
-*/
 #endif				/* _devperf_h */

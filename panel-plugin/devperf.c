@@ -1,27 +1,21 @@
-/*
+/* $Id$
+ * 
  * Copyright (c) 2003 RogerSeguin <roger_seguin@msn.com>
  * Copyright (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Library General Public License for more details.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
 
@@ -317,62 +311,3 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	/**************************************************************/
 #error "Your plattform is not yet supported"
 #endif
-
-
-	/**************************************************************/
-
-/*
-$Log: devperf.c,v $
-Revision 1.8  2003/11/30 10:58:54  rogerms
-Release DiskPerf 1.4.1 - Just a bug fix for Linux-2.6 systems
-Thanks to Ivan Todoroski who found a bug introduced with release 1.3
-
-Revision 1.7  2003/11/17 09:24:14  benny
-NetBSD < 1.6K does not have separate read/write statistics. Thanks to martti.
-
-Revision 1.6  2003/11/10 23:00:41  benny
-Added "busy time" support for NetBSD.
-
-Revision 1.5  2003/11/04 10:26:13  rogerms
-DiskPerf 1.3
-
-Revision 1.9  2003/11/04 09:43:09  RogerSeguin
-Now retrieve both read and write busy times for Linux
-
-Revision 1.4  2003/11/02 06:57:50  rogerms
-Release 1.2
-
-Revision 1.8  2003/11/02 06:17:30  RogerSeguin
-Safer processing for Linux 2.6 - Added busy time (and queue length) for Linux 2.4 and 2.6
-
-Revision 1.3  2003/10/18 23:02:58  rogerms
-DiskPerf release 1.1
-
-Revision 1.7  2003/10/18 06:56:41  RogerSeguin
-Integration of Benedikt Meurer's work on NetBSD port
-
-Revision 1.6  2003/10/17 20:15:05  RogerSeguin
-Minor change related to Linux kernel 2.6
-
-Revision 1.5  2003/10/16 13:08:18  RogerSeguin
-Kernel 2.6 support
-
-Revision 1.2  2003/10/16 18:48:39  benny
-Added support for NetBSD.
-
-Revision 1.1.1.1  2003/10/07 03:39:22  rogerms
-Initial release - v1.0
-
-Revision 1.4  2003/10/04 06:05:08  RogerSeguin
-Fixed a possibility of 32-bit integer overflow introcduced by previous release
-
-Revision 1.3  2003/10/02 04:15:06  RogerSeguin
-Compute using rbytes/wbytes instead of rsect/wsect
-
-Revision 1.2  2003/09/25 12:25:09  RogerSeguin
-Implemented some error processing
-
-Revision 1.1  2003/09/22 02:25:34  RogerSeguin
-Initial revision
-
-*/

@@ -1,26 +1,20 @@
-/*
- * Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>
+/* $Id$
+ * 
+ * Copyright (c) 2003-2004 Roger Seguin <roger_seguin@msn.com>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Library General Public License for more details.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 #ifndef _config_gui_h
 #define _config_gui_h
@@ -37,7 +31,6 @@
 
 typedef struct gui_t {
     /* Configuration GUI widgets */
-    GtkWidget      *wPB_About;
     GtkWidget      *wTF_Device;
     GtkWidget      *wTB_Title;
     GtkWidget      *wTF_Title;
@@ -69,31 +62,5 @@ extern          "C" {
 #ifdef __cplusplus
 }				/* extern "C" */
 #endif
-/*
-$Log: config_gui.h,v $
-Revision 1.3  2004/08/25 10:08:40  rogerms
-DiskPerf 1.5
 
-Revision 1.5  2004/08/25 08:50:08  RogerSeguin
-Added About... dialog box
-
-Revision 1.2  2003/11/04 10:26:13  rogerms
-DiskPerf 1.3
-
-Revision 1.4  2003/11/04 09:42:07  RogerSeguin
-Added busy time statistics
-
-Revision 1.1.1.1  2003/10/07 03:39:22  rogerms
-Initial release - v1.0
-
-Revision 1.3  2003/09/25 09:32:35  RogerSeguin
-Added color configuration
-
-Revision 1.2  2003/09/24 10:56:14  RogerSeguin
-Now swapping the monitor bars is possible
-
-Revision 1.1  2003/09/22 02:25:32  RogerSeguin
-Initial revision
-
-*/
 #endif				/* _config_gui_h */

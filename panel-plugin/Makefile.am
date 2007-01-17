@@ -1,42 +1,54 @@
-plugindir = $(libexecdir)/xfce4/panel-plugins
-plugin_PROGRAMS = xfce4-diskperf-plugin
+# $Id$
 
-xfce4_diskperf_plugin_CFLAGS =					\
-	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"			\
-	@LIBXFCE4PANEL_CFLAGS@
+INCLUDES =							\
+	-I$(top_srcdir)						\
+	-DG_LOG_DOMAIN=\"xfce4-diskperf-plugin\"		\
+	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"
 
-xfce4_diskperf_plugin_LDADD=					\
-	@LIBXFCE4PANEL_LIBS@
+#
+# Diskpef Plugin
+#
+plugindir =							\
+	$(libexecdir)/xfce4/panel-plugins
 
-xfce4_diskperf_plugin_SOURCES =		\
-	main.c				\
-	config_gui.c			\
-	config_gui.h			\
-	devperf.c			\
+plugin_PROGRAMS =						\
+	xfce4-diskperf-plugin
+
+xfce4_diskperf_plugin_SOURCES =					\
+	main.c							\
+	config_gui.c						\
+	config_gui.h						\
+	devperf.c						\
 	devperf.h
 
-# .desktop file
+xfce4_diskperf_plugin_CFLAGS =					\
+	$(LIBXFCE4PANEL_CFLAGS)
+
+xfce4_diskperf_plugin_LDADD=					\
+	$(LIBXFCE4PANEL_LIBS)
+
 #
-# Some automake trickery here. Because we cannot use $(libexecdir) in the
-# automake stage, we'll use sed to get the full path into the .desktop file.
-# We also need to let intltool merge the translated fields, so we add an
-# additional level of indirection: a <name>.desktop.in.in file.
-# 
-desktop_in_in_files = diskperf.desktop.in.in
-desktop_in_files = $(desktop_in_in_files:.desktop.in.in=.desktop.in)
-	
+# Desktop file
+#
 desktopdir = $(datadir)/xfce4/panel-plugins
-desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+desktop_in_in_files = diskperf.desktop.in.in
+
+desktop_in_files =						\
+	$(desktop_in_in_files:.desktop.in.in=.desktop.in)
+
+%.desktop.in: %.desktop.in.in
+	sed -e "s,\@libexecdir\@,$(libexecdir),g" < $< > $@
+
+desktop_DATA =							\
+	$(desktop_in_files:.desktop.in=.desktop)
+
 @INTLTOOL_DESKTOP_RULE@
 
-EXTRA_DIST = 								\
+EXTRA_DIST = 							\
 	$(desktop_in_in_files)
 
-DISTCLEANFILES =							\
-	$(desktop_DATA) $(desktop_in_files)
-	
-# get full path into .desktop file
-%.desktop.in: %.desktop.in.in
-	sed -e "s^@PLUGIN_PATH@^$(libexecdir)/xfce4/panel-plugins^" \
-		$< > $@
+DISTCLEANFILES =						\
+	$(desktop_DATA)						\
+	$(desktop_in_files)
 
+# vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

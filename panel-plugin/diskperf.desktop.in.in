@@ -3,6 +3,6 @@ Type=X-XFCE-PanelPlugin
 Encoding=UTF-8
 _Name=Disk Performance Monitor
 _Comment=Show disk performance
-Icon=xfce-mouse
-X-XFCE-Exec=@PLUGIN_PATH@/xfce4-diskperf-plugin
+Icon=gtk-harddisk
+X-XFCE-Exec=@libexecdir@/xfce4/panel-plugins/xfce4-diskperf-plugin
 

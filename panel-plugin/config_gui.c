@@ -1,4 +1,5 @@
-/*
+/* $Id$
+ * 
  * Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>
  *
  * Redistribution and use in source and binary forms, with or without
@@ -57,12 +58,6 @@
 
 int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 {
-    GtkWidget      *wPB_About;
-    GtkWidget      *alignment2;
-    GtkWidget      *hbox3;
-    GtkWidget      *image1;
-    GtkWidget      *label10;
-    GtkWidget      *hseparator9;
     GtkWidget      *table1;
     GtkWidget      *label1;
     GtkWidget      *wTF_Device;
@@ -101,37 +96,9 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     tooltips = gtk_tooltips_new ();
 
-    wPB_About = gtk_button_new ();
-    gtk_widget_show (wPB_About);
-    gtk_box_pack_start (GTK_BOX (vbox1), wPB_About, FALSE, FALSE, 0);
-    GTK_WIDGET_UNSET_FLAGS (wPB_About, GTK_CAN_FOCUS);
-    gtk_tooltips_set_tip (tooltips, wPB_About, _("About..."), NULL);
-    gtk_button_set_relief (GTK_BUTTON (wPB_About), GTK_RELIEF_NONE);
-
-    alignment2 = gtk_alignment_new (0.5, 0.5, 0, 0);
-    gtk_widget_show (alignment2);
-    gtk_container_add (GTK_CONTAINER (wPB_About), alignment2);
-
-    hbox3 = gtk_hbox_new (FALSE, 2);
-    gtk_widget_show (hbox3);
-    gtk_container_add (GTK_CONTAINER (alignment2), hbox3);
-
-    image1 = gtk_image_new_from_stock ("gtk-cdrom", GTK_ICON_SIZE_BUTTON);
-    gtk_widget_show (image1);
-    gtk_box_pack_start (GTK_BOX (hbox3), image1, FALSE, FALSE, 0);
-
-    label10 = gtk_label_new_with_mnemonic (_("Disk Performance"));
-    gtk_widget_show (label10);
-    gtk_box_pack_start (GTK_BOX (hbox3), label10, FALSE, FALSE, 0);
-    gtk_label_set_justify (GTK_LABEL (label10), GTK_JUSTIFY_LEFT);
-
-    hseparator9 = gtk_hseparator_new ();
-    gtk_widget_show (hseparator9);
-    gtk_box_pack_start (GTK_BOX (vbox1), hseparator9, TRUE, TRUE, 0);
-
     table1 = gtk_table_new (3, 2, FALSE);
     gtk_widget_show (table1);
-    gtk_box_pack_start (GTK_BOX (vbox1), table1, FALSE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (vbox1), table1, FALSE, FALSE, 0);
 
     label1 = gtk_label_new (_("Device"));
     gtk_widget_show (label1);
@@ -252,7 +219,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     hseparator8 = gtk_hseparator_new ();
     gtk_widget_show (hseparator8);
-    gtk_box_pack_start (GTK_BOX (vbox1), hseparator8, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (vbox1), hseparator8, FALSE, FALSE, 0);
 
     wTB_RWcombined =
 	gtk_check_button_new_with_mnemonic (_("Combine Read/Write data"));
@@ -265,7 +232,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     wTa_SingleBar = gtk_table_new (1, 2, FALSE);
     gtk_widget_show (wTa_SingleBar);
-    gtk_box_pack_start (GTK_BOX (vbox1), wTa_SingleBar, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (vbox1), wTa_SingleBar, FALSE, FALSE, 0);
 
     label7 = gtk_label_new (_("Bar color "));
     gtk_widget_show (label7);
@@ -277,15 +244,16 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     wPB_RWcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_RWcolor);
+    gtk_widget_set_size_request (wPB_RWcolor, -1, 25);
     gtk_table_attach (GTK_TABLE (wTa_SingleBar), wPB_RWcolor, 1, 2, 0, 1,
-		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
-		      (GtkAttachOptions) (GTK_EXPAND), 0, 0);
+		      (GtkAttachOptions) (GTK_FILL | GTK_EXPAND),
+		      (GtkAttachOptions) (GTK_FILL), 0, 0);
     gtk_tooltips_set_tip (tooltips, wPB_RWcolor,
 			  _("Press to change color"), NULL);
 
     wTa_DualBars = gtk_table_new (3, 2, FALSE);
     gtk_widget_show (wTa_DualBars);
-    gtk_box_pack_start (GTK_BOX (vbox1), wTa_DualBars, TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (vbox1), wTa_DualBars, FALSE, FALSE, 0);
 
     label5 = gtk_label_new (_("Read bar color "));
     gtk_widget_show (label5);
@@ -343,22 +311,23 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     wPB_Rcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_Rcolor);
+    gtk_widget_set_size_request (wPB_Rcolor, -1, 25);
     gtk_table_attach (GTK_TABLE (wTa_DualBars), wPB_Rcolor, 1, 2, 1, 2,
-		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
-		      (GtkAttachOptions) (GTK_EXPAND), 0, 0);
+		      (GtkAttachOptions) (GTK_FILL),
+		      (GtkAttachOptions) (GTK_FILL), 0, 0);
     gtk_tooltips_set_tip (tooltips, wPB_Rcolor, _("Press to change color"),
 			  NULL);
 
     wPB_Wcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_Wcolor);
+    gtk_widget_set_size_request (wPB_Wcolor, -1, 25);
     gtk_table_attach (GTK_TABLE (wTa_DualBars), wPB_Wcolor, 1, 2, 2, 3,
-		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
-		      (GtkAttachOptions) (GTK_EXPAND), 0, 0);
+		      (GtkAttachOptions) (GTK_FILL),
+		      (GtkAttachOptions) (GTK_FILL), 0, 0);
     gtk_tooltips_set_tip (tooltips, wPB_Wcolor, _("Press to change color"),
 			  NULL);
 
     if (p_poGUI) {
-	COPYVAL (p_poGUI, wPB_About);
 	COPYVAL (p_poGUI, wTF_Device);
 	COPYVAL (p_poGUI, wSc_Period);
 	COPYVAL (p_poGUI, wTB_Title);
@@ -378,35 +347,3 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     }
     return (0);
 }				/* CreateConfigGUI() */
-
-
-/*
-$Log: config_gui.c,v $
-Revision 1.3  2004/08/25 10:08:40  rogerms
-DiskPerf 1.5
-
-Revision 1.6  2004/08/25 08:50:18  RogerSeguin
-Added About... dialog box
-
-Revision 1.2  2003/11/04 10:26:13  rogerms
-DiskPerf 1.3
-
-Revision 1.5  2003/11/04 09:42:15  RogerSeguin
-Added busy time statistics
-
-Revision 1.1.1.1  2003/10/07 03:39:21  rogerms
-Initial release - v1.0
-
-Revision 1.4  2003/09/25 09:32:52  RogerSeguin
-Added color configuration
-
-Revision 1.3  2003/09/24 10:56:24  RogerSeguin
-Now swapping the monitor bars is possible
-
-Revision 1.2  2003/09/23 11:21:11  RogerSeguin
-Slight change
-
-Revision 1.1  2003/09/22 02:25:31  RogerSeguin
-Initial revision
-
-*/

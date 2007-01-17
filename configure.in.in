@@ -9,7 +9,7 @@ m4_define([diskperf_version_major], [0])
 m4_define([diskperf_version_minor], [2])
 m4_define([diskperf_version_micro], [1])
 m4_define([diskperf_version_build], [r@REVISION@])
-m4_define([diskperf_version_tag], [])
+m4_define([diskperf_version_tag], [svn])
 m4_define([diskperf_version], [diskperf_version_major().diskperf_version_minor().diskperf_version_micro()ifelse(diskperf_version_tag(), [svn], [diskperf_version_tag()-diskperf_version_build()], [diskperf_version_tag()])])
 
 dnl ***************************

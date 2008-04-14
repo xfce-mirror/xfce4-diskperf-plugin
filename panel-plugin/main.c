@@ -34,6 +34,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <memory.h>
+#include <math.h>
 #include <string.h>
 #include <inttypes.h>
 #include <string.h>
@@ -157,6 +158,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     if (!s_poToolTips)
 	s_poToolTips = gtk_tooltips_new ();
 
+    rbytes = wbytes = iRBusy_ns = iWBusy_ns = -1;
     memset (&oPerf, 0, sizeof (oPerf));
     oPerf.qlen = -1;
 #if defined (__NetBSD__) || defined(__OpenBSD__)
@@ -202,23 +204,23 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     snprintf (acToolTips, sizeof(acToolTips), "%s\n"
 	     "----------------\n"
 	     "I/O    (MB/s)\n"
-	     "  Read :%3u\n"
-	     "  Write :%3u\n"
-	     "  Total :%3u\n"
+	     "  Read :%3.2f\n"
+	     "  Write :%3.2f\n"
+	     "  Total :%3.2f\n"
 	     "Busy time (%c)\n"
 	     "  Read : %3d\n"
 	     "  Write : %3d\n"
 	     "  Total : %3d",
 	     poConf->acTitle,
-	     (unsigned int) (arPerf[R_DATA] + 0.5),
-	     (unsigned int) (arPerf[W_DATA] + 0.5),
-	     (unsigned int) (arPerf[RW_DATA] + 0.5),
+	     arPerf[R_DATA],
+	     arPerf[W_DATA],
+	     arPerf[RW_DATA],
 	     '%',
 	     SEPARATE_BUSY_TIMES && (oPerf.qlen >= 0) ?
-	     (int) (arBusy[R_DATA] + 0.5) : -1,
+	     (int) round(arBusy[R_DATA]) : -1,
 	     SEPARATE_BUSY_TIMES && (oPerf.qlen >= 0) ?
-	     (int) (arBusy[W_DATA] + 0.5) : -1,
-	     (oPerf.qlen >= 0) ? (int) (arBusy[RW_DATA] + 0.5) : -1);
+	     (int) round(arBusy[W_DATA]) : -1,
+	     (oPerf.qlen >= 0) ? (int) round(arBusy[RW_DATA]) : -1);
     gtk_tooltips_set_tip (s_poToolTips, GTK_WIDGET (poMonitor->wEventBox),
 			  acToolTips, 0);
 
@@ -483,7 +485,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
     Widget_t       *pw2ndBar = poPlugin->oMonitor.awProgressBar + 1;
-#if !defined(__NetBSD__)
+#if !defined(__NetBSD__) && !defined(__OpenBSD__)
     struct stat     oStat;
     int             status;
 #endif
@@ -755,15 +757,14 @@ static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     const char     *pcXferRate = gtk_entry_get_text (GTK_ENTRY (p_wTF));
-    float           r;
-
-    poConf->iMaxXferMBperSec = atoi (pcXferRate);
 
     /* Make it a multiple of 5 MB/s */
-    r = (double) poConf->iMaxXferMBperSec / 5;
-    poConf->iMaxXferMBperSec = 5 * (int) (r + 0.5);
+    poConf->iMaxXferMBperSec = 5 * round((double) atoi(pcXferRate) / 5);
     if (poConf->iMaxXferMBperSec > 995)
 	poConf->iMaxXferMBperSec = 995;
+    else if (poConf->iMaxXferMBperSec < 5)
+	poConf->iMaxXferMBperSec = 5;
+    DBG("XferRate rounded to %dMb/s\n", poConf->iMaxXferMBperSec);
 }				/* SetXferRate() */
 
 	/**************************************************************/
@@ -778,12 +779,8 @@ static void SetPeriod (Widget_t p_wSc, void *p_pvPlugin)
     timerNeedsUpdate = 1;
     TRACE ("SetPeriod()\n");
     r = gtk_spin_button_get_value (GTK_SPIN_BUTTON (p_wSc));
-    poConf->iPeriod_ms = (r * 1000) + 0.5;	/* rounded */
-
-    /* Make it a multiple of 50 ms */
-    r = (double) poConf->iPeriod_ms / 50;
-    poConf->iPeriod_ms = 50 * (int) (r + 0.5);
-
+    poConf->iPeriod_ms = round(r * 1000);
+    DBG("Update period rounded to %dms\n", poConf->iPeriod_ms);
 }				/* SetPeriod() */
 
 	/**************************************************************/

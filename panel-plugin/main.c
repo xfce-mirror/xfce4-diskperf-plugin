@@ -415,13 +415,13 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     poPlugin->plugin = plugin;
     
 #if defined(__NetBSD__) || defined(__OpenBSD__)
-    strcpy (poConf->acDevice, "wd0");
-    strcpy (poConf->acTitle, "wd0");
+    strncpy (poConf->acDevice, "wd0", 64);
+    strncpy (poConf->acTitle, "wd0", 16);
 #else
-    strcpy (poConf->acDevice, "/dev/sda");
+    strncpy (poConf->acDevice, "/dev/sda", 64);
     status = stat (poConf->acDevice, &oStat);
     poConf->st_rdev = (status == -1 ? 0 : oStat.st_rdev);
-    strcpy (poConf->acTitle, "sda");
+    strncpy (poConf->acTitle, "sda", 16);
 #endif
 
     poConf->fTitleDisplayed = 1;
@@ -599,17 +599,17 @@ static void diskperf_write_config (XfcePanelPlugin *plugin,
                              poConf->eMonitorBarOrder);
 
     poColor = poConf->aoColor + R_DATA;
-    sprintf (acBuffer, acColorFormat,
+    snprintf (acBuffer, 16, acColorFormat,
 	     poColor->red >> 8, poColor->green >> 8, poColor->blue >> 8);
     xfce_rc_write_entry (rc, CONF_READ_COLOR, acBuffer);
 
     poColor = poConf->aoColor + W_DATA;
-    sprintf (acBuffer, acColorFormat,
+    snprintf (acBuffer, 16, acColorFormat,
 	     poColor->red >> 8, poColor->green >> 8, poColor->blue >> 8);
     xfce_rc_write_entry (rc, CONF_WRITE_COLOR, acBuffer);
 
     poColor = poConf->aoColor + RW_DATA;
-    sprintf (acBuffer, acColorFormat,
+    snprintf (acBuffer, 16, acColorFormat,
 	     poColor->red >> 8, poColor->green >> 8, poColor->blue >> 8);
     xfce_rc_write_entry (rc, CONF_READ_WRITE_COLOR, acBuffer);
 
@@ -993,7 +993,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     g_signal_connect (GTK_WIDGET (poGUI->wTF_Title), "activate",
 		      G_CALLBACK (SetLabel), poPlugin);
 
-    sprintf (acBuffer, "%d", poConf->iMaxXferMBperSec);
+    snprintf (acBuffer, 16, "%d", poConf->iMaxXferMBperSec);
     gtk_entry_set_text (GTK_ENTRY (poGUI->wTF_MaxXfer), acBuffer);
     g_signal_connect (GTK_WIDGET (poGUI->wTF_MaxXfer), "activate",
 		      G_CALLBACK (SetXferRate), poPlugin);

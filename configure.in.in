@@ -6,10 +6,10 @@ dnl 2003, 2004 Roger Seguin <roger_seguin@msn.com>
 dnl
 
 m4_define([diskperf_version_major], [2])
-m4_define([diskperf_version_minor], [1])
+m4_define([diskperf_version_minor], [2])
 m4_define([diskperf_version_micro], [0])
 m4_define([diskperf_version_build], [r@REVISION@])
-m4_define([diskperf_version_tag], [svn])
+m4_define([diskperf_version_tag], []) # leave empty for releases
 m4_define([diskperf_version], [diskperf_version_major().diskperf_version_minor().diskperf_version_micro()ifelse(diskperf_version_tag(), [svn], [diskperf_version_tag()-diskperf_version_build()], [diskperf_version_tag()])])
 
 dnl ***************************

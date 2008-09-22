@@ -1,283 +1,244 @@
-# translation of xfce4-diskperf-plugin to Danish
-# Copyright (C) 2007 THE xfce4-diskperf-plugin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfce4-diskperf-plugin package.
+# translation of xfce4-radio-plugin to Danish
+# Copyright (C) 2007 THE xfce4-radio-plugin'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the xfce4-radio-plugin package.
 # Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2007.
+# Per Kongstad <p_kongstad@op.pl>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin\n"
-"POT-Creation-Date: 2006-09-10 21:29+0200\n"
-"PO-Revision-Date: 2008-05-17 15:16+0100\n"
-"Last-Translator: Jens Hyllegaard <jens.hyllegaard@gmail.com>\n"
+"Project-Id-Version: xfce4-cellmodem-plugin 0.0.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-22 19:01+0100\n"
+"PO-Revision-Date: 2008-09-19 15:36+0100\n"
+"Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#: ../panel-plugin/config_gui.c:108
-msgid "About..."
-msgstr "Om..."
+#: ../panel-plugin/cellmodem.c:482
+msgid "Initializing plugin now"
+msgstr "Initialiserer udvidelsesmodul nu"
 
-#: ../panel-plugin/config_gui.c:123
-msgid "Disk Performance"
-msgstr "Diskydelse"
-
-#: ../panel-plugin/config_gui.c:136
-msgid "Device"
-msgstr "Enhed"
-
-#: ../panel-plugin/config_gui.c:150
-msgid "Input the device name, then press <Enter>"
-msgstr "Indtast enhedsnavnet og tryk på <Enter>"
-
-#: ../panel-plugin/config_gui.c:153
-msgid "/dev/hda1"
-msgstr "/dev/hda1"
-
-#: ../panel-plugin/config_gui.c:171
-msgid "Data collection period"
-msgstr "Dataopsamlings-periode"
-
-#: ../panel-plugin/config_gui.c:174
-msgid "Update interval (s) "
-msgstr "Opdateringsinterval(ler)"
-
-#: ../panel-plugin/config_gui.c:182
-msgid "Label"
-msgstr "Mærkat"
-
-#: ../panel-plugin/config_gui.c:187
-msgid "Tick to display label"
-msgstr "Markér for at vise mærkat"
-
-#: ../panel-plugin/config_gui.c:196
-msgid "Input the label, then press <Enter>"
-msgstr "Indtast mærkaten og tryk på <Enter>"
-
-#: ../panel-plugin/config_gui.c:198
-msgid "hda1"
-msgstr "hda1"
-
-#: ../panel-plugin/config_gui.c:208
-msgid "Monitor    "
-msgstr "Overvåg"
-
-#: ../panel-plugin/config_gui.c:213
-msgid "I/O transfer"
-msgstr "I/O overførsel"
-
-#: ../panel-plugin/config_gui.c:216
-msgid "MB transferred / second"
-msgstr "MB overført / sekund"
-
-#: ../panel-plugin/config_gui.c:222
-msgid "Busy time"
-msgstr "Optaget tid"
-
-#: ../panel-plugin/config_gui.c:226
-msgid "Percentage of time the device is busy"
-msgstr "Procentdel af tiden hvor enheden er optaget"
-
-#: ../panel-plugin/config_gui.c:237
-msgid "Max. I/O rate (MB/s) "
-msgstr "Maks. I/O-hastighed (MB/s)"
-
-#: ../panel-plugin/config_gui.c:248
-msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Indtast maksimal I/O-overførselsrate for enheden og tryk på <Enter>"
-
-#: ../panel-plugin/config_gui.c:251
-msgid "35"
-msgstr "35"
-
-#: ../panel-plugin/config_gui.c:258
-msgid "Combine Read/Write data"
-msgstr "Kombinér læs/skriv-data"
-
-#: ../panel-plugin/config_gui.c:263
-msgid "Combine Read/Write data into one single monitor?"
-msgstr "Kombinér læs/skriv-data i en enkelt overvågning?"
-
-#: ../panel-plugin/config_gui.c:270
-msgid "Bar color "
-msgstr "Bjælkefarve"
-
-#: ../panel-plugin/config_gui.c:284
-#: ../panel-plugin/config_gui.c:349
-#: ../panel-plugin/config_gui.c:357
-msgid "Press to change color"
-msgstr "Tryk for at ændre farve"
-
-#: ../panel-plugin/config_gui.c:290
-msgid "Read bar color "
-msgstr "Læs bjælkefarve"
-
-#: ../panel-plugin/config_gui.c:298
-msgid "Write bar color "
-msgstr "Skriv bjælkefarve"
-
-#: ../panel-plugin/config_gui.c:306
-msgid "Bar order"
-msgstr "Bjælkerækkefølge"
-
-#: ../panel-plugin/config_gui.c:321
-msgid "Read-Write"
-msgstr "Læs-skriv"
-
-#: ../panel-plugin/config_gui.c:326
-msgid "\"Read\" monitor first"
-msgstr "\"Læs\"-overvågning først"
-
-#: ../panel-plugin/config_gui.c:333
-msgid "Write-Read"
-msgstr "Skriv-læs"
-
-#: ../panel-plugin/config_gui.c:338
-msgid "\"Write\" monitor first"
-msgstr "\"Skriv\"-overvågning først"
-
-#: ../panel-plugin/main.c:809
-msgid "Select color"
-msgstr "Vælg farve"
-
-#: ../panel-plugin/main.c:858
+#: ../panel-plugin/cellmodem.c:505
 #, c-format
 msgid ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"This monitor will not work!\n"
-"Please remove it."
+"Error detected:\n"
+"%s"
 msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Denne overvågning vil ikke virke!\n"
-"Fjern den venligst."
+"Fejl fundet:\n"
+"%s"
 
-#: ../panel-plugin/main.c:868
+#: ../panel-plugin/cellmodem.c:511
+msgid "Not registered"
+msgstr "Ikke registreret"
+
+#: ../panel-plugin/cellmodem.c:514
+msgid "Modem needs PIN"
+msgstr "Modem kræver PIN"
+
+#: ../panel-plugin/cellmodem.c:517
+msgid "Registering"
+msgstr "Registrerer"
+
+#: ../panel-plugin/cellmodem.c:520
 #, c-format
 msgid ""
-"%s: No disk extended statistics found!\n"
-"Either old kernel (< 2.4.20) or not\n"
-"compiled with CONFIG_BLK_STATS turned on.\n"
-"\n"
-"This monitor will not work!\n"
-"Please remove it."
+"Registered [GPRS] to %s\n"
+"Quality: %d (%d%%)"
 msgstr ""
-"%s: Ingen udvidede diskstatistikker fundet!\n"
-"Enten en gammel kerne (< 2.4.20) eller ej\n"
-"kompileret med CONFIG_BLK_STATS aktiveret.\n"
-"\n"
-"Denne overvågning vil ikke virke!\n"
-"Fjern den venligst."
+"Registreret [GPRS] til %s\n"
+"Kvalitet: %d (%d%%)"
 
-#: ../panel-plugin/main.c:875
+#: ../panel-plugin/cellmodem.c:523
 #, c-format
 msgid ""
-"%s: Unknown error\n"
-"\n"
-"This monitor will not work!\n"
-"Please remove it."
+"Registered [UMTS] to %s\n"
+"Quality: %d (%d%%)"
 msgstr ""
-"%s: Ukendt fejl\n"
-"\n"
-"Denne overvågning vil ikke virke!\n"
-"Fjern den venligst."
+"Registreret [UMTS] til %s\n"
+"Kvalitet: %d (%d%%)"
 
-#: ../panel-plugin/main.c:887
+#: ../panel-plugin/cellmodem.c:526
 #, c-format
 msgid ""
-"%s %s - Disk Performance Monitor\n"
-"Display instantaneous disk I/O transfer rates and busy times on Linux and NetBSD systems\n"
-"\n"
-"(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-"NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-"\t<benedikt.meurer@unix-ag.uni-siegen.de>"
+"Registered [HSDPA] to %s\n"
+"Quality: %d (%d%%)"
 msgstr ""
-"%s %s - Diskydelses overvågning\n"
-"Viser aktuelle disk I/O-overførselshastigheder og optaget-tider på Linux- og NetBSD-systemer\n"
-"\n"
-"(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-"NetBSD statistikopsamling: (c) 2003 Benedikt Meurer\n"
-"\t<benedikt.meurer@unix-ag.uni-siegen.de>"
+"Registreret [HSDPA] til %s\n"
+"Kvalitet: %d (%d%%)"
 
-#: ../panel-plugin/main.c:926
-msgid "Configuration"
-msgstr "Konfiguration"
+#: ../panel-plugin/cellmodem.c:529
+#, c-format
+msgid ""
+"Registered to %s\n"
+"Quality: %d (%d%%)"
+msgstr ""
+"Registreret til %s\n"
+"Kvalitet: %d (%d%%)"
 
-#. ************************************************************
-#.
-#. $Log: main.c,v $
-#. Revision 1.7  2004/08/25 10:08:40  rogerms
-#. DiskPerf 1.5
-#.
-#. Revision 1.14  2004/08/25 08:51:02  RogerSeguin
-#. MT support and About... dialog box added
-#.
-#. Revision 1.6  2003/11/11 12:40:34  rogerms
-#. Release 1.4
-#.
-#. Revision 1.13  2003/11/11 12:12:42  RogerSeguin
-#. Force to single "total busy time" monitor when platform doesn't provide separate read and write data (e.g. NetBSD)
-#.
-#. Revision 1.5  2003/11/04 10:26:13  rogerms
-#. DiskPerf 1.3
-#.
-#. Revision 1.12  2003/11/04 10:16:36  RogerSeguin
-#. Got rid of Microsoft ^M
-#.
-#. Revision 1.11  2003/11/04 09:43:36  RogerSeguin
-#. Added busy time monitoring for Linux
-#.
-#. Revision 1.4  2003/11/02 06:57:50  rogerms
-#. Release 1.2
-#.
-#. Revision 1.10  2003/11/02 06:18:33  RogerSeguin
-#. Added busy time in tooltips for Linux 2.4 and 2.6
-#.
-#. Revision 1.9  2003/10/24 11:16:20  RogerSeguin
-#. Different scalable fonts with Mandrake 9.2 ==> diffent tooltips string spacing
-#.
-#. Revision 1.3  2003/10/18 23:02:58  rogerms
-#. DiskPerf release 1.1
-#.
-#. Revision 1.8  2003/10/18 06:56:50  RogerSeguin
-#. Integration of Benedikt Meurer's work on NetBSD port
-#.
-#. Revision 1.7  2003/10/16 13:07:42  RogerSeguin
-#. Kernel 2.6 support
-#.
-#. Revision 1.2  2003/10/16 18:48:39  benny
-#. Added support for NetBSD.
-#.
-#. Revision 1.1.1.1  2003/10/07 03:39:25  rogerms
-#. Initial release - v1.0
-#.
-#. Revision 1.6  2003/10/02 04:16:07  RogerSeguin
-#. Compute using rbytes/wbytes instead of rsect/wsect
-#.
-#. Revision 1.5  2003/09/25 12:24:11  RogerSeguin
-#. Implemented some error processing
-#.
-#. Revision 1.4  2003/09/25 09:32:13  RogerSeguin
-#. Added color configuration
-#.
-#. Revision 1.3  2003/09/24 10:56:36  RogerSeguin
-#. Now swapping the monitor bars is possible
-#.
-#. Revision 1.2  2003/09/23 15:17:01  RogerSeguin
-#. Now supports panel orientation
-#.
-#. Revision 1.1  2003/09/22 02:25:35  RogerSeguin
-#. Initial revision
-#.
-#.
-#: ../panel-plugin/main.c:938
-#: ../panel-plugin/diskperf.desktop.in.in.h:1
-msgid "Disk Performance Monitor"
-msgstr "Diskydelsesovervågning"
+#. Error
+#: ../panel-plugin/cellmodem.c:687
+msgid "Error in modem reply to CREG"
+msgstr "Fejl i modemsvar til CREG"
 
-#: ../panel-plugin/diskperf.desktop.in.in.h:2
-msgid "Show disk performance"
-msgstr "Vis diskydelse"
+#: ../panel-plugin/cellmodem.c:696
+msgid "Invalid reply to +CREG"
+msgstr "Ugyldigt svar på +CREG"
+
+#: ../panel-plugin/cellmodem.c:721
+msgid "Invalid CREG reply from modem"
+msgstr "Ugyldigt CREG-svar fra modem"
+
+#: ../panel-plugin/cellmodem.c:760
+msgid "Error in modem reply to COPS"
+msgstr "Fejl i modemsvar til COPS"
+
+#: ../panel-plugin/cellmodem.c:816
+msgid "Invalid COPS reply from modem"
+msgstr "Ugyldigt COPS-svar fra modem"
+
+#: ../panel-plugin/cellmodem.c:844
+msgid "Error in modem reply to CPIN"
+msgstr "Fejl i modemsvar til CPIN"
+
+#: ../panel-plugin/cellmodem.c:870
+msgid "Invalid CPIN reply from modem"
+msgstr "Ugyldigt CPIN-svar fra modem"
+
+#: ../panel-plugin/cellmodem.c:875
+msgid "Unsupportted CPIN reply from modem"
+msgstr "Ej understøttet CPIN-svar fra modem"
+
+#: ../panel-plugin/cellmodem.c:919
+#: ../panel-plugin/cellmodem.c:973
+msgid "Invalid OHCIP reply from modem"
+msgstr "Ugyldigt OHCIP-svar fra modem"
+
+#: ../panel-plugin/cellmodem.c:923
+#: ../panel-plugin/cellmodem.c:977
+msgid "Unsupportted OHCIP reply from modem"
+msgstr "Ej understøttet OHCIP-svar fra modem"
+
+#. Error
+#: ../panel-plugin/cellmodem.c:1019
+msgid "Cannot send PIN to modem"
+msgstr "Kan ikke sende PIN til modemet"
+
+#: ../panel-plugin/cellmodem.c:1055
+msgid "Error in modem reply to CSQ"
+msgstr "Fejl i modemsvar til CSQ"
+
+#: ../panel-plugin/cellmodem.c:1075
+msgid "Invalid CSQ reply from modem"
+msgstr "Ugyldigt CSQ-svar fra modem"
+
+#: ../panel-plugin/cellmodem.c:1276
+#: ../panel-plugin/cellmodem.c:1603
+msgid "Cannot open modem"
+msgstr "Kan ikke åbne modemmet"
+
+#: ../panel-plugin/cellmodem.c:1429
+msgid "Error reading from modem"
+msgstr "Fejl ved læsning fra modemmet"
+
+#: ../panel-plugin/cellmodem.c:1507
+msgid "Error writing to modem"
+msgstr "Fejl ved skrivning til modemmet"
+
+#: ../panel-plugin/cellmodem.c:1523
+msgid "Modem did not reply to command"
+msgstr "Modemmet svarede ikke på kommandoen"
+
+#: ../panel-plugin/cellmodem.c:1541
+msgid "No driver defined"
+msgstr "Intet drivprogram defineret"
+
+#: ../panel-plugin/cellmodem.c:1546
+msgid "No modem instance"
+msgstr "Ingen modem-instans"
+
+#: ../panel-plugin/cellmodem.c:1720
+msgid "Modem initializing"
+msgstr "Modem initialiseres"
+
+#: ../panel-plugin/cellmodem.c:1755
+msgid "Invalid driver specified"
+msgstr "Ugyldigt valg af drivprogram"
+
+#. Error.
+#: ../panel-plugin/pin_helper.c:31
+msgid "Invalid PIN entered. PIN has 4 digits"
+msgstr "Ugyldig PIN indtastet. En PIN har 4 tal"
+
+#: ../panel-plugin/pin_helper.c:65
+msgid "Enter PIN"
+msgstr "Indtast PIN"
+
+#: ../panel-plugin/pin_helper.c:77
+msgid "Please enter PIN:"
+msgstr "Indtast venligst PIN:"
+
+#: ../panel-plugin/preferences.c:285
+msgid "Close"
+msgstr "Luk"
+
+#: ../panel-plugin/preferences.c:290
+msgid "No known device found."
+msgstr "Ingen kendt enhed fundet."
+
+#: ../panel-plugin/preferences.c:292
+msgid "The following devices were found:"
+msgstr "Følgende enheder blev fundet:"
+
+#: ../panel-plugin/preferences.c:299
+msgid "Use this device"
+msgstr "Brug denne enhed"
+
+#: ../panel-plugin/preferences.c:343
+msgid "Configure Cell Modem Monitor"
+msgstr "Konfigurér mobilmodem-overvågning"
+
+#. The header - this was most copied from other sources
+#: ../panel-plugin/preferences.c:356
+msgid "Cellular Modem Monitor"
+msgstr "Mobilmodem-overvågning"
+
+#: ../panel-plugin/preferences.c:387
+msgid "Modem driver:"
+msgstr "Modem-drivprogram:"
+
+#: ../panel-plugin/preferences.c:409
+msgid "Modem speed:"
+msgstr "Modemhastighed:"
+
+#: ../panel-plugin/preferences.c:422
+msgid "Modem device:"
+msgstr "Modem-enhed:"
+
+#: ../panel-plugin/preferences.c:434
+msgid "Autodetect modem..."
+msgstr "Find modem automatisk..."
+
+#: ../panel-plugin/preferences.c:444
+msgid "Maximum quality:"
+msgstr "Maksimum kvalitet:"
+
+#: ../panel-plugin/preferences.c:455
+msgid "Low quality percentage:"
+msgstr "Lav kvalitets procentdel:"
+
+#: ../panel-plugin/preferences.c:465
+msgid "Critical quality percentage:"
+msgstr "Kritisk kvalitets procentdel:"
+
+#: ../panel-plugin/preferences.c:479
+msgid "Check for SMS every"
+msgstr "Tjek for SMS hver"
+
+#: ../panel-plugin/preferences.c:481
+msgid "minutes"
+msgstr "minutter"
 

@@ -8,12 +8,15 @@ msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-10 21:29+0200\n"
-"PO-Revision-Date: 2006-10-26 13:30+0100\n"
-"Last-Translator: Piarres Beobide <pi@beobide.net>, 2006.\n"
+"PO-Revision-Date: 2008-11-09 15:41+0200\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.2.0\n"
 
 #: ../panel-plugin/config_gui.c:108
 msgid "About..."
@@ -41,7 +44,7 @@ msgstr "Datu jasotze tartea"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Update interval (s) "
-msgstr "Eguneraketa tartea (s)"
+msgstr "Eguneraketa tartea (k) "
 
 #: ../panel-plugin/config_gui.c:182
 msgid "Label"
@@ -81,7 +84,7 @@ msgstr "Gailua lanpeturik dagoen denbora ehunekoa"
 
 #: ../panel-plugin/config_gui.c:237
 msgid "Max. I/O rate (MB/s) "
-msgstr "Geh. S/I erlazioa (MB/s)"
+msgstr "Geh. S/I erlazioa (MB/s) "
 
 #: ../panel-plugin/config_gui.c:248
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -101,7 +104,7 @@ msgstr "Irakurketa/Idazketa datuak monitore bakarrean batu?"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
-msgstr "Barra kolorea"
+msgstr "Barra kolorea "
 
 #: ../panel-plugin/config_gui.c:284 ../panel-plugin/config_gui.c:349
 #: ../panel-plugin/config_gui.c:357
@@ -110,11 +113,11 @@ msgstr "Sakatu kolorea aldatzeko"
 
 #: ../panel-plugin/config_gui.c:290
 msgid "Read bar color "
-msgstr "Irakurketa barra kolorea"
+msgstr "Irakurketa barra kolorea "
 
 #: ../panel-plugin/config_gui.c:298
 msgid "Write bar color "
-msgstr "Idazketa barra kolorea"
+msgstr "Idazketa barra kolorea "
 
 #: ../panel-plugin/config_gui.c:306
 msgid "Bar order"

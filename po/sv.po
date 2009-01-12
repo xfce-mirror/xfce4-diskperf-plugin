@@ -1,0 +1,185 @@
+# Swedish translation for xfce4-diskperf-plugin.
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the xfce4-diskperf-plugin package.
+# Daniel Nylander <po@danielnylander.se>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-diskperf-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-12-14 16:00+0100\n"
+"PO-Revision-Date: 2008-12-21 19:23+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../panel-plugin/config_gui.c:103
+msgid "Device"
+msgstr "Enhet"
+
+#: ../panel-plugin/config_gui.c:117
+msgid "Input the device name, then press <Enter>"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:120
+msgid "/dev/hda1"
+msgstr "/dev/hda1"
+
+#: ../panel-plugin/config_gui.c:138
+msgid "Data collection period"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:141
+msgid "Update interval (s) "
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:149
+msgid "Label"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:154
+msgid "Tick to display label"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:163
+msgid "Input the label, then press <Enter>"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:165
+msgid "hda1"
+msgstr "hda1"
+
+#: ../panel-plugin/config_gui.c:175
+msgid "Monitor    "
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:180
+msgid "I/O transfer"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:183
+msgid "MB transferred / second"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:189
+msgid "Busy time"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:193
+msgid "Percentage of time the device is busy"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:204
+msgid "Max. I/O rate (MB/s) "
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:215
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:218
+msgid "35"
+msgstr "35"
+
+#: ../panel-plugin/config_gui.c:225
+msgid "Combine Read/Write data"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:230
+msgid "Combine Read/Write data into one single monitor?"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:237
+msgid "Bar color "
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:252
+#: ../panel-plugin/config_gui.c:318
+#: ../panel-plugin/config_gui.c:327
+msgid "Press to change color"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:258
+msgid "Read bar color "
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:266
+msgid "Write bar color "
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:274
+msgid "Bar order"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:289
+msgid "Read-Write"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:294
+msgid "\"Read\" monitor first"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:301
+msgid "Write-Read"
+msgstr ""
+
+#: ../panel-plugin/config_gui.c:306
+msgid "\"Write\" monitor first"
+msgstr ""
+
+#: ../panel-plugin/main.c:809
+msgid "Select color"
+msgstr "Välj färg"
+
+#: ../panel-plugin/main.c:858
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr ""
+
+#: ../panel-plugin/main.c:868
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr ""
+
+#: ../panel-plugin/main.c:875
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr ""
+
+#: ../panel-plugin/main.c:887
+#, c-format
+msgid ""
+"%s %s - Disk Performance Monitor\n"
+"Display instantaneous disk I/O transfer rates and busy times on Linux and NetBSD systems\n"
+"\n"
+"(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
+"NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
+"\t<benedikt.meurer@unix-ag.uni-siegen.de>"
+msgstr ""
+
+#: ../panel-plugin/main.c:926
+#: ../panel-plugin/diskperf.desktop.in.in.h:1
+msgid "Disk Performance Monitor"
+msgstr ""
+
+#: ../panel-plugin/diskperf.desktop.in.in.h:2
+msgid "Show disk performance"
+msgstr "Visa diskprestanda"
+

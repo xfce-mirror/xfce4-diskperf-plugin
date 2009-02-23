@@ -82,7 +82,9 @@ static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 	    while ((c = fgetc (pF)) && (c != '\n'));	/* Goto next line */
 	    continue;
 	}
-	fscanf (pF, "%*s");	/* Skip device name */
+	n = fscanf (pF, "%*s");	/* Skip device name */
+	if (n != 1)
+	    goto Error;
 	/* Read rest of line into acStats */
 	if (!(fgets (acStats, sizeof (acStats), pF)))
 	    goto Error;

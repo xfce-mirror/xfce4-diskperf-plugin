@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce4_diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-10 21:29+0200\n"
-"PO-Revision-Date: 2009-03-02 09:16+0100\n"
+"PO-Revision-Date: 2009-03-04 09:17+0100\n"
 "Last-Translator: Valerio Cipriani <raid@darkforge.eu>\n"
 "Language-Team: Darkforge Team <www.darkforge.it>\n"
 "MIME-Version: 1.0\n"
@@ -95,11 +95,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr "Combina Lettura/Scrittura dati"
+msgstr "Combina dati in Lettura/Scrittura"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Combinare i dati di lettura/scrittura in un singolo osservatore?"
+msgstr "Combinare i dati di Lettura/Scrittura in un singolo controllore?"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "

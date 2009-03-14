@@ -1,8 +1,8 @@
 # Galician translation of xfce4-diskperf-plugin
-# Copyright (C) 2008 Leandro Regueiro
+# Copyright (C) 2008-2009 Leandro Regueiro
 # This file is distributed under the same license as the xfce package.
 #
-# Leandro Regueiro <leandro.regueiro@gmail.com>, 2008.
+# Leandro Regueiro <leandro.regueiro@gmail.com>, 2008, 2009.
 #
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en <http://trasno.net>
@@ -10,9 +10,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: xfce-i18n@xfce.org\n"
 "POT-Creation-Date: 2006-09-10 21:29+0200\n"
-"PO-Revision-Date: 2008-06-24 19:39+0100\n"
+"PO-Revision-Date: 2009-03-07 12:41+0100\n"
 "Last-Translator: Leandro Regueiro <leandro DOT regueiro AT gmail DOT com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr "Acerca de..."
 
 #: ../panel-plugin/config_gui.c:123
 msgid "Disk Performance"
-msgstr "Rendemento de Disco"
+msgstr "Rendemento de disco"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Device"
@@ -34,7 +34,7 @@ msgstr "Dispositivo"
 
 #: ../panel-plugin/config_gui.c:150
 msgid "Input the device name, then press <Enter>"
-msgstr ""
+msgstr "Introduza o nome do dispositivo, e despois prema <Intro>"
 
 #: ../panel-plugin/config_gui.c:153
 msgid "/dev/hda1"
@@ -42,23 +42,24 @@ msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:171
 msgid "Data collection period"
-msgstr ""
+msgstr "Periodo de recolección de datos"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Update interval (s) "
-msgstr ""
+msgstr "Intervalo(s) de actualización"
 
 #: ../panel-plugin/config_gui.c:182
 msgid "Label"
 msgstr "Etiqueta"
 
 #: ../panel-plugin/config_gui.c:187
+#, fuzzy
 msgid "Tick to display label"
-msgstr ""
+msgstr "Conectar con outra pantalla"
 
 #: ../panel-plugin/config_gui.c:196
 msgid "Input the label, then press <Enter>"
-msgstr ""
+msgstr "Introduza a etiqueta, e despois prema <Intro>"
 
 #: ../panel-plugin/config_gui.c:198
 msgid "hda1"
@@ -66,31 +67,31 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:208
 msgid "Monitor    "
-msgstr ""
+msgstr "Monitor    "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "I/O transfer"
-msgstr ""
+msgstr "Transferencia de E/S"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "MB transferred / second"
-msgstr ""
+msgstr "MB transferidos/segundo"
 
 #: ../panel-plugin/config_gui.c:222
 msgid "Busy time"
-msgstr ""
+msgstr "Tempo de ocupación"
 
 #: ../panel-plugin/config_gui.c:226
 msgid "Percentage of time the device is busy"
-msgstr ""
+msgstr "Porcentaxe de tempo que o dispositivo está ocupado"
 
 #: ../panel-plugin/config_gui.c:237
 msgid "Max. I/O rate (MB/s) "
-msgstr ""
+msgstr "Taxa máx. de E/S (MB/s)"
 
 #: ../panel-plugin/config_gui.c:248
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr ""
+msgstr "Introduza a taxa de transferencia de E/S máxima do dispositivo, e despois prema <Intro>"
 
 #: ../panel-plugin/config_gui.c:251
 msgid "35"
@@ -98,49 +99,49 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr ""
+msgstr "Combinar os datos de Lectura/Escritura"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr ""
+msgstr "Desexa combinar os datos de Lectura/Escritura nun só monitor?"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
-msgstr ""
+msgstr "Cor das barras"
 
 #: ../panel-plugin/config_gui.c:284
 #: ../panel-plugin/config_gui.c:349
 #: ../panel-plugin/config_gui.c:357
 msgid "Press to change color"
-msgstr ""
+msgstr "Prema para cambiar a cor"
 
 #: ../panel-plugin/config_gui.c:290
 msgid "Read bar color "
-msgstr ""
+msgstr "Cor da barra de lectura"
 
 #: ../panel-plugin/config_gui.c:298
 msgid "Write bar color "
-msgstr ""
+msgstr "Cor da barra de escritura"
 
 #: ../panel-plugin/config_gui.c:306
 msgid "Bar order"
-msgstr ""
+msgstr "Orde das barras"
 
 #: ../panel-plugin/config_gui.c:321
 msgid "Read-Write"
-msgstr ""
+msgstr "Lectura-Escritura"
 
 #: ../panel-plugin/config_gui.c:326
 msgid "\"Read\" monitor first"
-msgstr ""
+msgstr "Primeiro o monitor de \"Lectura\""
 
 #: ../panel-plugin/config_gui.c:333
 msgid "Write-Read"
-msgstr ""
+msgstr "Escritura-Lectura"
 
 #: ../panel-plugin/config_gui.c:338
 msgid "\"Write\" monitor first"
-msgstr ""
+msgstr "Primeiro o monitor de \"Escritura\""
 
 #: ../panel-plugin/main.c:809
 msgid "Select color"
@@ -155,6 +156,11 @@ msgid ""
 "This monitor will not work!\n"
 "Please remove it."
 msgstr ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"Este monitor non vai funcionar!\n"
+"Elimíneo."
 
 #: ../panel-plugin/main.c:868
 #, c-format
@@ -175,6 +181,10 @@ msgid ""
 "This monitor will not work!\n"
 "Please remove it."
 msgstr ""
+"%s: Erro descoñecido\n"
+"\n"
+"Este monitor non vai funcionar!\n"
+"Elimíneo."
 
 #: ../panel-plugin/main.c:887
 #, c-format
@@ -261,7 +271,7 @@ msgstr "Configuración"
 #: ../panel-plugin/main.c:938
 #: ../panel-plugin/diskperf.desktop.in.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Monitor de Rendemento de Disco"
+msgstr "Monitor de rendemento de disco"
 
 #: ../panel-plugin/diskperf.desktop.in.in.h:2
 msgid "Show disk performance"

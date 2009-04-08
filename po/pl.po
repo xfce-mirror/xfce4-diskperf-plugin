@@ -1,14 +1,15 @@
 # Polish translations for xfce4-diskperf-plugin package.
 # Piotr Maliński <admin@rk.edu.pl>, 2006.
+# Piotr Sokół <piotr.sokol@10g.pl> 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
+"Project-Id-Version: xfce4-diskperf-plugin 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-10 21:29+0200\n"
-"PO-Revision-Date: 2006-04-08 12:19+0900\n"
-"Last-Translator: Piotr Maliński <admin@rk.edu.pl>\n"
-"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2009-04-08 12:35+0100\n"
+"Last-Translator: Piotr Sokół <piotr.sokol@10g.pl>\n"
+"Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,11 +24,11 @@ msgstr "Parametry Dysku"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Device"
-msgstr "Urządzenie"
+msgstr "Urządzenie:"
 
 #: ../panel-plugin/config_gui.c:150
 msgid "Input the device name, then press <Enter>"
-msgstr "Podaj nazwę urządzenia i wciśnij <Enter>"
+msgstr "Określa nazwę urządzenia"
 
 #: ../panel-plugin/config_gui.c:153
 msgid "/dev/hda1"
@@ -35,23 +36,23 @@ msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:171
 msgid "Data collection period"
-msgstr "Okres zbierania danych"
+msgstr "Określa wartość odstępu pobierania danych wyrażoną w sekundach"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Update interval (s) "
-msgstr "Interwał aktualizacji (s)"
+msgstr "Okres aktualizacji (s): "
 
 #: ../panel-plugin/config_gui.c:182
 msgid "Label"
-msgstr "Etykieta"
+msgstr "Etykieta:"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Tick to display label"
-msgstr "Zaznacz by wyświetlać etykietę"
+msgstr "Wyświetla etykietę urządzenia"
 
 #: ../panel-plugin/config_gui.c:196
 msgid "Input the label, then press <Enter>"
-msgstr "Podaj etykietę i wciśnij <Enter>"
+msgstr "Określa etykietę urządzenia"
 
 #: ../panel-plugin/config_gui.c:198
 msgid "hda1"
@@ -59,15 +60,15 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:208
 msgid "Monitor    "
-msgstr "Monitor    "
+msgstr "Monitorowanie "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "I/O transfer"
-msgstr "Trasfer We/Wy"
+msgstr "Transfer we/wy"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "MB transferred / second"
-msgstr "MB  przesyłane / sekunda"
+msgstr "Monitoruje transfer operacji we/wy określony w MB/s"
 
 #: ../panel-plugin/config_gui.c:222
 msgid "Busy time"
@@ -75,15 +76,15 @@ msgstr "Czas wykonywania operacji"
 
 #: ../panel-plugin/config_gui.c:226
 msgid "Percentage of time the device is busy"
-msgstr "Procentowo czas wykonywania operacji"
+msgstr "Monitoruje czas wykonywania operacji określony procentowo"
 
 #: ../panel-plugin/config_gui.c:237
 msgid "Max. I/O rate (MB/s) "
-msgstr "Max szybkość operacji We/Wy (MB/s) "
+msgstr "Maksymalna wartość (MB/s): "
 
 #: ../panel-plugin/config_gui.c:248
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Podaj maksymalny transfer We/Wy i wciśnij <Enter>"
+msgstr "Określa wartość górnej granicy wskaźnika transferu, zdeterminowaną maksymalnymi osiągami urządzenia"
 
 #: ../panel-plugin/config_gui.c:251
 msgid "35"
@@ -91,52 +92,53 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr "Połącz Odczyt/Zapis"
+msgstr "Połączenie wskaźników odczytu i zapisu"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Połączyć dane Odczytu/Zapisu w jeden monitor ?"
+msgstr "Używa jedego wskaźnika do wyświetlania osiągów odczytu i zapisu"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
-msgstr "Kolor słupka"
+msgstr "Kolor wskaźnika: "
 
-#: ../panel-plugin/config_gui.c:284 ../panel-plugin/config_gui.c:349
+#: ../panel-plugin/config_gui.c:284
+#: ../panel-plugin/config_gui.c:349
 #: ../panel-plugin/config_gui.c:357
 msgid "Press to change color"
-msgstr "Wciśnij by zmienić kolor"
+msgstr "Wybiera kolor wskaźnika"
 
 #: ../panel-plugin/config_gui.c:290
 msgid "Read bar color "
-msgstr "Kolor słupka odczytu"
+msgstr "Kolor wskaźnika odczytu: "
 
 #: ../panel-plugin/config_gui.c:298
 msgid "Write bar color "
-msgstr "Kolor słupka zapisu"
+msgstr "Kolor wskaźnika zapisu: "
 
 #: ../panel-plugin/config_gui.c:306
 msgid "Bar order"
-msgstr "Kolejność słupków"
+msgstr "Kolejność:"
 
 #: ../panel-plugin/config_gui.c:321
 msgid "Read-Write"
-msgstr "Odczyt-Zapis"
+msgstr "Odczyt, zapis"
 
 #: ../panel-plugin/config_gui.c:326
 msgid "\"Read\" monitor first"
-msgstr "Słupek odczytu jako pierwszy"
+msgstr "Wyświetla wskaźnik odczytu jako pierwszy"
 
 #: ../panel-plugin/config_gui.c:333
 msgid "Write-Read"
-msgstr "Zapis-Odczyt"
+msgstr "Zapis, odczyt"
 
 #: ../panel-plugin/config_gui.c:338
 msgid "\"Write\" monitor first"
-msgstr "Słupek zapisu jako pierwszy"
+msgstr "Wyświetla wskaźnik zapisu jako pierwszy"
 
 #: ../panel-plugin/main.c:809
 msgid "Select color"
-msgstr "Wybierz kolor"
+msgstr "Wybór koloru"
 
 #: ../panel-plugin/main.c:858
 #, c-format
@@ -150,8 +152,7 @@ msgstr ""
 "%s\n"
 "%s: %s (%d)\n"
 "\n"
-"Ten monitor nie będzie działał!\n"
-"Usuń go."
+"Monitorowanie nie będzie możliwe."
 
 #: ../panel-plugin/main.c:868
 #, c-format
@@ -163,12 +164,11 @@ msgid ""
 "This monitor will not work!\n"
 "Please remove it."
 msgstr ""
-"%s: Brak rozszerzonych statystyk dysku!\n"
-"Albo stary kernel (< 2.4.20) lub \n"
-"skompilowany bez CONFIG_BLK_STATS.\n"
+"%s: Nie znaleziono rozszerzonych statystyk urządzeń!\n"
+"Przyczyną może być przestarzałe jądro systemowe (< 2.4.20)\n"
+"lub jądro skompilowane bez obsługi CONFIG_BLK_STATS.\n"
 "\n"
-"Ten monitor nie będzie działał!\n"
-"Usuń go."
+"Monitorowanie nie będzie możliwe."
 
 #: ../panel-plugin/main.c:875
 #, c-format
@@ -178,28 +178,25 @@ msgid ""
 "This monitor will not work!\n"
 "Please remove it."
 msgstr ""
-"%s:  Nieznany Błąd\n"
+"%s:  Nieznany błąd\n"
 "\n"
-"Ten monitor nie będzie działał!\n"
-"Usuń go."
+"Monitorowanie nie będzie możliwe."
 
 #: ../panel-plugin/main.c:887
 #, c-format
 msgid ""
 "%s %s - Disk Performance Monitor\n"
-"Display instantaneous disk I/O transfer rates and busy times on Linux and "
-"NetBSD systems\n"
+"Display instantaneous disk I/O transfer rates and busy times on Linux and NetBSD systems\n"
 "\n"
 "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 msgstr ""
-"%s %s - Monitor Osiągów Dysku\n"
-"Wyświetla transfer operacji Wejścia/Wyjścia\n"
+"%s %s - Monitor osiągów urządzeń\n"
+"Dostarcza informacje na temat osiągów odczytu i zapisu urządzeń\n"
 "\n"
-"(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-"NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-"\t<benedikt.meurer@unix-ag.uni-siegen.de>"
+"Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
+"NetBSD statistics collection: (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>"
 
 #: ../panel-plugin/main.c:926
 msgid "Configuration"
@@ -272,10 +269,12 @@ msgstr "Konfiguracja"
 #. Initial revision
 #.
 #.
-#: ../panel-plugin/main.c:938 ../panel-plugin/diskperf.desktop.in.in.h:1
+#: ../panel-plugin/main.c:938
+#: ../panel-plugin/diskperf.desktop.in.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Monitor Osiągów Dysku"
+msgstr "Monitor osiągów urządzeń"
 
 #: ../panel-plugin/diskperf.desktop.in.in.h:2
 msgid "Show disk performance"
-msgstr "Pokazuj osiągi dysku"
+msgstr "Dostarcza informacje na temat osiągów odczytu i zapisu urządzeń"
+

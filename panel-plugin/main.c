@@ -654,8 +654,6 @@ static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
 
     poConf->fTitleDisplayed =
 	gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
-    gtk_widget_set_sensitive (GTK_WIDGET (poGUI->wTF_Title),
-			      poConf->fTitleDisplayed);
     if (poConf->fTitleDisplayed)
 	gtk_widget_show (GTK_WIDGET (poMonitor->wTitle));
     else
@@ -947,8 +945,6 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
 
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wTB_Title),
 				  poConf->fTitleDisplayed);
-    gtk_widget_set_sensitive (GTK_WIDGET (poGUI->wTF_Title),
-			      poConf->fTitleDisplayed);
     g_signal_connect (GTK_WIDGET (poGUI->wTB_Title), "toggled",
 		      G_CALLBACK (ToggleTitle), poPlugin);
 

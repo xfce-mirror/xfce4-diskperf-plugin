@@ -22,7 +22,7 @@ msgstr "ھەققىدە…"
 
 #: ../panel-plugin/config_gui.c:123
 msgid "Disk Performance"
-msgstr ""
+msgstr "دىسكا ئىقتىدارى"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Device"
@@ -30,19 +30,19 @@ msgstr "ئۈسكۈنە"
 
 #: ../panel-plugin/config_gui.c:150
 msgid "Input the device name, then press <Enter>"
-msgstr ""
+msgstr "ئۈسكۈنە ئاتىنى كىرگۈزۈپ <Enter> نى كىرگۈزۈڭ"
 
 #: ../panel-plugin/config_gui.c:153
 msgid "/dev/hda1"
-msgstr ""
+msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:171
 msgid "Data collection period"
-msgstr ""
+msgstr "سانلىق ئاساسلارنى يىغىدىغان ۋاقىتنى كىرگۈزۈڭ(ئىنتېرۋال)"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Update interval (s) "
-msgstr ""
+msgstr "يېڭىلاش ۋاقتى(ئىنتېرۋال)(سېكۇنت) "
 
 #: ../panel-plugin/config_gui.c:182
 msgid "Label"
@@ -50,15 +50,15 @@ msgstr "ئەن"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Tick to display label"
-msgstr ""
+msgstr "ئەننى كۆرسىتىش ئۈچۈن بەلگە قويۇڭ."
 
 #: ../panel-plugin/config_gui.c:196
 msgid "Input the label, then press <Enter>"
-msgstr ""
+msgstr "ئەننى كىرگۈزۈپ <Enter> نى بېسىڭ"
 
 #: ../panel-plugin/config_gui.c:198
 msgid "hda1"
-msgstr ""
+msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:208
 msgid "Monitor    "
@@ -66,27 +66,27 @@ msgstr "Monitor    "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "I/O transfer"
-msgstr ""
+msgstr "I/O ئۇزىتىش"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "MB transferred / second"
-msgstr ""
+msgstr "ھەر سېكۇنتتا ئۇزاتقان ئۇچۇر مىقدارنى كۆزىتىدۇ"
 
 #: ../panel-plugin/config_gui.c:222
 msgid "Busy time"
-msgstr ""
+msgstr "ئىشلەش ۋاقتى"
 
 #: ../panel-plugin/config_gui.c:226
 msgid "Percentage of time the device is busy"
-msgstr ""
+msgstr "ئۈسكۈنىنى ئىشلەتكەن ۋاقتىنى پىرسەنتتە ئىپادىلەپ كۆزىتىدۇ"
 
 #: ../panel-plugin/config_gui.c:237
 msgid "Max. I/O rate (MB/s) "
-msgstr ""
+msgstr "ئەڭ چوڭ I/O تېزلىكى (MB/s) "
 
 #: ../panel-plugin/config_gui.c:248
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr ""
+msgstr "ئۈسكىنىڭ ئەڭ چوڭ I/O ئۇزىتىش تېزلىكىنى كىرگۈزۈڭ"
 
 #: ../panel-plugin/config_gui.c:251
 msgid "35"
@@ -94,53 +94,53 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr ""
+msgstr "ئوقۇغان/يازغان سانلىق ئاساسلارنى بىرلىكتە كۆرسىتىدۇ"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr ""
+msgstr "ئوقۇغان/يازغان سانلىق ئاساسلارنى بىر كۆزەتكۈدە بىرلىكتە كۆرسەتسۇنمۇ؟"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
-msgstr ""
+msgstr "بالداق رېڭى "
 
 #: ../panel-plugin/config_gui.c:284
 #: ../panel-plugin/config_gui.c:349
 #: ../panel-plugin/config_gui.c:357
 msgid "Press to change color"
-msgstr ""
+msgstr "رەڭنى ئۆزگەرتىش ئۈچۈن چېكىڭ"
 
 #: ../panel-plugin/config_gui.c:290
 msgid "Read bar color "
-msgstr ""
+msgstr "ئوقۇش بالدىقىنىڭ رېڭى "
 
 #: ../panel-plugin/config_gui.c:298
 msgid "Write bar color "
-msgstr ""
+msgstr "يېزىش بالدىقىنىڭ رېڭى "
 
 #: ../panel-plugin/config_gui.c:306
 msgid "Bar order"
-msgstr ""
+msgstr "بالداقنىڭ تەرتىپى"
 
 #: ../panel-plugin/config_gui.c:321
 msgid "Read-Write"
-msgstr ""
+msgstr "ئوقۇش-يېزىش"
 
 #: ../panel-plugin/config_gui.c:326
 msgid "\"Read\" monitor first"
-msgstr ""
+msgstr "\"ئوقۇش\" نى ئاۋۋال كۆرسەت"
 
 #: ../panel-plugin/config_gui.c:333
 msgid "Write-Read"
-msgstr ""
+msgstr "يېزىش-ئوقۇش"
 
 #: ../panel-plugin/config_gui.c:338
 msgid "\"Write\" monitor first"
-msgstr ""
+msgstr "\"يېزىش\" نى ئاۋۋال كۆرسەت"
 
 #: ../panel-plugin/main.c:809
 msgid "Select color"
-msgstr ""
+msgstr "رەڭ تاللا"
 
 #: ../panel-plugin/main.c:858
 #, c-format
@@ -150,7 +150,11 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s\n"
+"%s: %s (%d)\n"
+"\n"
+"بۇ كۆزەتكۈ نورمال ئىشلىمەيدۇ!\n"
+"ئۆچۈرۈۋېتىڭ."
 
 #: ../panel-plugin/main.c:868
 #, c-format
@@ -161,7 +165,13 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s: دىسكا ئۇچۇرلىرى تېپىلمىدى!\n"
+"kernel كونا (2.4.20 نىڭدىن بۇرۇنقى) ياكى \n"
+"CONFIG_BLK_STATS تاللانمىسىنى ئىشلىتىپ \n"
+" compile قىلىنماپتۇ\n"
+"\n"
+"بۇ كۆزەتكۈ نورمال ئىشلىمەيدۇ!\n"
+"ئۆچۈرۈۋېتىڭ."
 
 #: ../panel-plugin/main.c:875
 #, c-format
@@ -170,7 +180,10 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s: نامەلۇم خاتالىق\n"
+"\n"
+"بۇ كۆزەتكۈ نورمال ئىشلىمەيدۇ!\n"
+"ئۆچۈرۈۋېتىڭ."
 
 #: ../panel-plugin/main.c:887
 #, c-format
@@ -181,7 +194,12 @@ msgid ""
 "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-msgstr ""
+msgstr "%s %s - دىسكا ئىقتىدارىنى كۆزەتكۈ\n"
+"Linux ياكى NetBSD سىستېمىسىدىكى دىسكىنىڭ I/O ئۇزىتىش سۈرىتىنى ۋە ئىشلىتىش نىسبىتىنى كۆرسىتىپ بېرىدۇ\n"
+"\n"
+"(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
+"NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
+"\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 
 #: ../panel-plugin/main.c:926
 msgid "Configuration"
@@ -257,9 +275,9 @@ msgstr "تەڭشەك"
 #: ../panel-plugin/main.c:938
 #: ../panel-plugin/diskperf.desktop.in.in.h:1
 msgid "Disk Performance Monitor"
-msgstr ""
+msgstr "دىسكا ئىقتىدارىنى كۆزەتكۈ"
 
 #: ../panel-plugin/diskperf.desktop.in.in.h:2
 msgid "Show disk performance"
-msgstr ""
+msgstr "دىسكا ئىقتىدارىنى كۆرسىتىپ بېرىدۇ"
 

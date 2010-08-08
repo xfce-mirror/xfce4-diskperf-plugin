@@ -22,10 +22,12 @@ xfce4_diskperf_plugin_SOURCES =					\
 	devperf.h
 
 xfce4_diskperf_plugin_CFLAGS =					\
-	$(LIBXFCE4PANEL_CFLAGS)
+	$(LIBXFCE4PANEL_CFLAGS)					\
+	$(LIBXFCEGUI4_CFLAGS)
 
 xfce4_diskperf_plugin_LDADD=					\
-	$(LIBXFCE4PANEL_LIBS)
+	$(LIBXFCE4PANEL_LIBS)					\
+	$(LIBXFCEGUI4_LIBS)
 
 #
 # Desktop file

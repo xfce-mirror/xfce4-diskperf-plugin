@@ -1,6 +1,4 @@
-/* $Id$
- * 
- * Copyright (c) 2003 RogerSeguin <roger_seguin@msn.com>
+/* Copyright (c) 2003 RogerSeguin <roger_seguin@msn.com>
  * Copyright (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
  *
  * This program is free software; you can redistribute it and/or modify

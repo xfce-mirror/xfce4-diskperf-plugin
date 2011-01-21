@@ -1,3 +1,13 @@
+2.3.0 (2011/1/21):
+------------------
+ * Support for Xfce 4.8 panel
+ * Translated into 30 languages
+ * Allow editing the label, even when it is not displayed in the panel, fixin
+   bug #6176
+ * Compile fixes
+
+(...)
+
 20051008:
 ---------
 	* Version 1.6.0

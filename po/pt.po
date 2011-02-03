@@ -41,7 +41,7 @@ msgstr "Período de recolha de dados"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Update interval (s) "
-msgstr "Intervalo(s) de actualização:"
+msgstr "Intervalo(s) de actualização"
 
 #: ../panel-plugin/config_gui.c:182
 msgid "Label"
@@ -130,7 +130,7 @@ msgstr "Monitor de \"leitura\" primeiro"
 
 #: ../panel-plugin/config_gui.c:333
 msgid "Write-Read"
-msgstr "Leitura-Escrita"
+msgstr "Escrita-Leitura"
 
 #: ../panel-plugin/config_gui.c:338
 msgid "\"Write\" monitor first"

@@ -293,14 +293,15 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     Widget_t       *pwBar;
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
-    poStyle = gtk_widget_get_modifier_style (GTK_WIDGET (*pwBar));
-    if (!poStyle)
-	poStyle = gtk_rc_style_new ();
-    else {
-	poStyle->color_flags[GTK_STATE_PRELIGHT] |= GTK_RC_BG;
-	poStyle->bg[GTK_STATE_PRELIGHT] = poConf->aoColor[p_iBar];
-    }
-    gtk_widget_modify_style (GTK_WIDGET (*pwBar), poStyle);
+	gtk_widget_modify_bg(GTK_WIDGET(*pwBar),
+						 GTK_STATE_PRELIGHT,
+						 &poConf->aoColor[p_iBar]);
+	gtk_widget_modify_bg(GTK_WIDGET(*pwBar),
+						 GTK_STATE_SELECTED,
+						 &poConf->aoColor[p_iBar]);
+	gtk_widget_modify_base(GTK_WIDGET(*pwBar),
+						 GTK_STATE_SELECTED,
+						 &poConf->aoColor[p_iBar]);
     return (0);
 }				/* SetSingleBarColor() */
 

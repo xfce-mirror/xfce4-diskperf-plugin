@@ -1,4 +1,4 @@
-# Dutch translation of the xfce4-diskperf-plugin package.
+# Dutch translation for the xfce4-diskperf-plugin package.
 # Copyright (C) The Xfce development team.
 # This file is distributed under the same license as the 
 # xfce4-diskperf-plugin package.
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-27 04:04+0000\n"
-"PO-Revision-Date: 2011-05-25 11:34+0200\n"
+"PO-Revision-Date: 2011-06-17 11:34+0200\n"
 "Last-Translator: Pjotr\n"
 "Language-Team: Dutch (Flemish)\n"
 "MIME-Version: 1.0\n"
@@ -96,11 +96,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr "Combineer Lees/Schrijf-gegevens"
+msgstr "Combineer Lees/Schrijfgegevens"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Lees/Schrijf-gegevens combineren in een enkele monitor?"
+msgstr "Lees/Schrijfgegevens combineren in een enkele monitor?"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
@@ -109,7 +109,7 @@ msgstr "Balkkleur "
 #: ../panel-plugin/config_gui.c:284 ../panel-plugin/config_gui.c:349
 #: ../panel-plugin/config_gui.c:357
 msgid "Press to change color"
-msgstr "Druk om kleur te veranderen"
+msgstr "Druk in om kleur te veranderen"
 
 #: ../panel-plugin/config_gui.c:290
 msgid "Read bar color "
@@ -200,7 +200,7 @@ msgid ""
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 msgstr ""
 "%s %s - Schijfprestatiemonitor\n"
-"Toon onmiddellijke I/O-overdrachtsnelheden en activiteitsperioden van de  "
+"Toon onmiddellijke I/O-overdrachtsnelheden en activiteitperioden van de  "
 "schijf in Linux en NetBSD\n"
 "\n"
 "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"

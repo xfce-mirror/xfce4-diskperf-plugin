@@ -1,4 +1,4 @@
-# Dutch translation for the xfce4-diskperf-plugin package.
+# Dutch translation of the xfce4-diskperf-plugin package.
 # Copyright (C) The Xfce development team.
 # This file is distributed under the same license as the 
 # xfce4-diskperf-plugin package.
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-27 04:04+0000\n"
-"PO-Revision-Date: 2011-06-17 11:34+0200\n"
+"PO-Revision-Date: 2011-09-09 11:34+0200\n"
 "Last-Translator: Pjotr\n"
 "Language-Team: Dutch (Flemish)\n"
 "MIME-Version: 1.0\n"
@@ -96,11 +96,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr "Combineer Lees/Schrijfgegevens"
+msgstr "Combineer lees/schrijfgegevens"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Lees/Schrijfgegevens combineren in een enkele monitor?"
+msgstr "Lees/schrijfgegevens combineren in een enkele monitor?"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
@@ -125,7 +125,7 @@ msgstr "Balkvolgorde"
 
 #: ../panel-plugin/config_gui.c:321
 msgid "Read-Write"
-msgstr "Lezen-Schrijven"
+msgstr "Lezen-schrijven"
 
 #: ../panel-plugin/config_gui.c:326
 msgid "\"Read\" monitor first"

@@ -25,7 +25,7 @@
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
-#include <libxfcegui4/libxfcegui4.h>
+#include <libxfce4ui/libxfce4ui.h>
 #include <libxfce4panel/xfce-panel-plugin.h>
 
 #include <stdlib.h>
@@ -631,7 +631,8 @@ static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
 
     status = stat (pcDevice, &oStat);
     if (status == -1) {
-	xfce_err ("%s\n"
+	xfce_dialog_show_error (NULL, NULL,
+                  "%s\n"
 		  "%s: %s (%d)",
 		  PLUGIN_NAME, pcDevice, strerror (errno), errno);
 	return;
@@ -853,7 +854,8 @@ static int CheckStatsAvailability ()
 	return (0);
     if (status < 0) {
 	status *= -1;
-	xfce_err (_("%s\n"
+	xfce_dialog_show_error (NULL, NULL, 
+                  _("%s\n"
 		  "%s: %s (%d)\n\n"
 		  "This monitor will not work!\n"
 		  "Please remove it."),
@@ -863,14 +865,16 @@ static int CheckStatsAvailability ()
     }
     switch (status) {
 	case NO_EXTENDED_STATS:
-	    xfce_err (_("%s: No disk extended statistics found!\n"
+	    xfce_dialog_show_error (NULL, NULL, 
+                      _("%s: No disk extended statistics found!\n"
 		      "Either old kernel (< 2.4.20) or not\n"
 		      "compiled with CONFIG_BLK_STATS turned on.\n\n"
 		      "This monitor will not work!\n"
 		      "Please remove it."), PLUGIN_NAME);
 	    break;
 	default:
-	    xfce_err (_("%s: Unknown error\n\n"
+	    xfce_dialog_show_error (NULL, NULL, 
+                      _("%s: Unknown error\n\n"
 		      "This monitor will not work!\n"
 		      "Please remove it."), PLUGIN_NAME);
     }
@@ -882,7 +886,8 @@ static int CheckStatsAvailability ()
 static void About (Widget_t w, void *unused)
 	/* Called back when the About button in clicked */
 {
-    xfce_info (_("%s %s - Disk Performance Monitor\n"
+    xfce_dialog_show_info (NULL, NULL, 
+               _("%s %s - Disk Performance Monitor\n"
 	       "Display instantaneous disk I/O transfer rates and busy times "
 	       "on Linux and NetBSD systems\n\n"
 	       "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"

@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
-#include <libxfcegui4/dialogs.h>
+#include <libxfce4ui/libxfce4ui.h>
 
 
 typedef struct gui_t {

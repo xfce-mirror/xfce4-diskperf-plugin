@@ -48,7 +48,7 @@ msgstr "标签"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Tick to display label"
-msgstr "标记显示标签"
+msgstr "标记以显示标签"
 
 #: ../panel-plugin/config_gui.c:196
 msgid "Input the label, then press <Enter>"
@@ -92,15 +92,15 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr "合并读/写数据"
+msgstr "合并读取/写入数据"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "将读/写数据合并到单个监视条中？"
+msgstr "将读取/写入数据合并到单个监视条中？"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
-msgstr "线条的颜色 "
+msgstr "线条颜色 "
 
 #: ../panel-plugin/config_gui.c:284
 #: ../panel-plugin/config_gui.c:349

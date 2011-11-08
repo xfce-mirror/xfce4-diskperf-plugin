@@ -1,11 +1,15 @@
+# This file is distributed under the same license as 
+# the xfce4-diskperf-plugin.
+# Vern Sun <s5unty@gmail.com>, 2008.
+# Chipong Luo <chipong_l@yahoo.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
+"Project-Id-Version: xfce4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2008-03-14 14:43+0800\n"
-"Last-Translator: Vern Sun <s5unty@gmail.com>\n"
-"Language-Team: Chinese <xfce-i18n@xfce.org>\n"
+"Last-Translator: Chipong Luo <chipong_l@yahoo.com>\n"
+"Language-Team: Chinese (simplified) <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,7 +20,7 @@ msgstr "关于..."
 
 #: ../panel-plugin/config_gui.c:123
 msgid "Disk Performance"
-msgstr "磁盘的性能"
+msgstr "磁盘性能"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Device"
@@ -32,11 +36,11 @@ msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:171
 msgid "Data collection period"
-msgstr "收集数据的周期"
+msgstr "数据收集周期"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Update interval (s) "
-msgstr "更新间隔 (s)"
+msgstr "更新间隔(s)"
 
 #: ../panel-plugin/config_gui.c:182
 msgid "Label"
@@ -44,11 +48,11 @@ msgstr "标签"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Tick to display label"
-msgstr "多久更新一次标签"
+msgstr "标记显示标签"
 
 #: ../panel-plugin/config_gui.c:196
 msgid "Input the label, then press <Enter>"
-msgstr "输入标签名，然后按回车"
+msgstr "输入标签，然后按回车"
 
 #: ../panel-plugin/config_gui.c:198
 msgid "hda1"
@@ -56,7 +60,7 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:208
 msgid "Monitor    "
-msgstr "监视    "
+msgstr "监视器    "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "I/O transfer"
@@ -64,7 +68,7 @@ msgstr "吞吐量"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "MB transferred / second"
-msgstr "吞吐量 (兆每秒)"
+msgstr "MB 已传送/秒"
 
 #: ../panel-plugin/config_gui.c:222
 msgid "Busy time"
@@ -72,15 +76,15 @@ msgstr "负载时间"
 
 #: ../panel-plugin/config_gui.c:226
 msgid "Percentage of time the device is busy"
-msgstr "平均负载时间"
+msgstr "设备负载时间百分比"
 
 #: ../panel-plugin/config_gui.c:237
 msgid "Max. I/O rate (MB/s) "
-msgstr "吞吐频率的最大值 (MB/s) "
+msgstr "最大吞吐率(MB/s) "
 
 #: ../panel-plugin/config_gui.c:248
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "输入磁盘吞吐频率的最大值，然后按回车"
+msgstr "输入设备的最大吞吐率，然后按回车"
 
 #: ../panel-plugin/config_gui.c:251
 msgid "35"
@@ -88,11 +92,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:258
 msgid "Combine Read/Write data"
-msgstr "合并吞吐两个方向的数据"
+msgstr "合并读/写数据"
 
 #: ../panel-plugin/config_gui.c:263
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "将读/写磁盘合并到一起监视？"
+msgstr "将读/写数据合并到单个监视条中？"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Bar color "
@@ -102,35 +106,35 @@ msgstr "线条的颜色 "
 #: ../panel-plugin/config_gui.c:349
 #: ../panel-plugin/config_gui.c:357
 msgid "Press to change color"
-msgstr "点我更改颜色"
+msgstr "点击更改颜色"
 
 #: ../panel-plugin/config_gui.c:290
 msgid "Read bar color "
-msgstr "表示读取的颜色 "
+msgstr "读取条颜色 "
 
 #: ../panel-plugin/config_gui.c:298
 msgid "Write bar color "
-msgstr "表示写入的颜色 "
+msgstr "写入条颜色 "
 
 #: ../panel-plugin/config_gui.c:306
 msgid "Bar order"
-msgstr "线条前后次序"
+msgstr "线条次序"
 
 #: ../panel-plugin/config_gui.c:321
 msgid "Read-Write"
-msgstr "前读-后写"
+msgstr "读取-写入"
 
 #: ../panel-plugin/config_gui.c:326
 msgid "\"Read\" monitor first"
-msgstr "\"读取\" 放在前面"
+msgstr "“读取” 监视条在前"
 
 #: ../panel-plugin/config_gui.c:333
 msgid "Write-Read"
-msgstr "前写-后读"
+msgstr "写入-读取"
 
 #: ../panel-plugin/config_gui.c:338
 msgid "\"Write\" monitor first"
-msgstr "\"写入\" 放在前面"
+msgstr "“写入” 监视条在前"
 
 #: ../panel-plugin/main.c:809
 msgid "Select color"
@@ -146,10 +150,10 @@ msgid ""
 "Please remove it."
 msgstr ""
 "%s\n"
-"%s: %s (%d)\n"
+"%s：%s(%d)\n"
 "\n"
-"此监视器将无法正常工作!\n"
-"请删除。"
+"此监视器将停止工作！\n"
+"请移除它。"
 
 #: ../panel-plugin/main.c:868
 #, c-format
@@ -161,12 +165,12 @@ msgid ""
 "This monitor will not work!\n"
 "Please remove it."
 msgstr ""
-"%s: 未发现磁盘扩展统计功能!\n"
-"因为内核版本太低 (< 2.4.20) 或者是\n"
-"内核编译时未添加 CONFIG_BLK_STATS 的支持。\n"
+"%s：未找到磁盘扩展统计！\n"
+"要么内核太老(< 2.4.20)要么编译时\n"
+"未打开 CONFIG_BLK_STATS。\n"
 "\n"
-"此监视器将无法正常工作!\n"
-"请删除。"
+"此监视器将停止工作！\n"
+"请移除它。"
 
 #: ../panel-plugin/main.c:875
 #, c-format
@@ -176,10 +180,10 @@ msgid ""
 "This monitor will not work!\n"
 "Please remove it."
 msgstr ""
-"%s: 未知的错误\n"
+"%s：未知错误\n"
 "\n"
-"此监视器将无法正常工作!\n"
-"请删除。"
+"此监视器将停止工作！\n"
+"请移除它。"
 
 #: ../panel-plugin/main.c:887
 #, c-format
@@ -192,11 +196,11 @@ msgid ""
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 msgstr ""
 "%s %s - 磁盘性能监视器\n"
-"可以在 Linux 和 NetBSD 系统上显示磁盘当前吞吐量和负载时间\n"
+"可以在 Linux 和 NetBSD 系统上显示磁盘瞬时吞吐量和负载时间\n"
 "\n"
 "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 "\n"
-"NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
+"NetBSD 统计作品集 (c) 2003 Benedikt Meurer\n"
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 
 #: ../panel-plugin/main.c:926

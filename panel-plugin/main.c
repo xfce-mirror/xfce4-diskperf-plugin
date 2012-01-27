@@ -1061,9 +1061,42 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
     return TRUE;
 }				/* diskperf_set_size() */
 
+#if defined (LIBXFCE4PANEL_CHECK_VERSION) && LIBXFCE4PANEL_CHECK_VERSION (4,9,0)
 	/**************************************************************/
 
-static void diskperf_set_orientation (XfcePanelPlugin *plugin, 
+static void diskperf_set_mode (XfcePanelPlugin *plugin,
+                               XfcePanelPluginMode p_iMode,
+                               diskperf_t *poPlugin)
+	/* Plugin API */
+	/* Invoked when the panel changes mode */
+{
+    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    GtkOrientation    p_iOrientation;
+
+    TRACE ("diskperf_set_mode()\n");
+
+    p_iOrientation =
+      (p_iMode == XFCE_PANEL_PLUGIN_MODE_HORIZONTAL) ?
+      GTK_ORIENTATION_HORIZONTAL : GTK_ORIENTATION_VERTICAL;
+
+
+    if (poPlugin->iTimerId) {
+	g_source_remove (poPlugin->iTimerId);
+	poPlugin->iTimerId = 0;
+    }
+    gtk_container_remove (GTK_CONTAINER (poMonitor->wEventBox),
+			  GTK_WIDGET (poMonitor->wBox));
+    CreateMonitorBars (poPlugin, p_iOrientation);
+    SetTimer (poPlugin);
+    gtk_label_set_angle (GTK_LABEL (poMonitor->wTitle),
+                         (p_iMode != XFCE_PANEL_PLUGIN_MODE_VERTICAL) ?
+                         0 : 270);
+    diskperf_set_size (plugin, xfce_panel_plugin_get_size (plugin), poPlugin);
+}				/* diskperf_set_orientation() */
+#else
+	/**************************************************************/
+
+static void diskperf_set_orientation (XfcePanelPlugin *plugin,
                                       GtkOrientation p_iOrientation,
                                       diskperf_t *poPlugin)
 	/* Plugin API */
@@ -1080,8 +1113,9 @@ static void diskperf_set_orientation (XfcePanelPlugin *plugin,
 			  GTK_WIDGET (poMonitor->wBox));
     CreateMonitorBars (poPlugin, p_iOrientation);
     SetTimer (poPlugin);
+    diskperf_set_size (plugin, xfce_panel_plugin_get_size (plugin), poPlugin);
 }				/* diskperf_set_orientation() */
-
+#endif
 	/**************************************************************/
 
 static void diskperf_construct (XfcePanelPlugin *plugin)
@@ -1097,8 +1131,13 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
     g_signal_connect (plugin, "size-changed", G_CALLBACK (diskperf_set_size), 
                       diskperf);
 
-    g_signal_connect (plugin, "orientation-changed", 
+#if defined (LIBXFCE4PANEL_CHECK_VERSION) && LIBXFCE4PANEL_CHECK_VERSION (4,9,0)
+    g_signal_connect (plugin, "mode-changed",
+                      G_CALLBACK (diskperf_set_mode), diskperf);
+#else
+    g_signal_connect (plugin, "orientation-changed",
                       G_CALLBACK (diskperf_set_orientation), diskperf);
+#endif
 
     xfce_panel_plugin_menu_show_about (plugin);
     g_signal_connect (plugin, "about", G_CALLBACK (About), NULL);

@@ -3,7 +3,7 @@
 # This file is distributed under the same license as
 # the xfce4-diskperf-plugin package.
 # Vern Sun <s5unty@gmail.com>, 2008.
-# Chipong Luo <chipong_l@yahoo.com>, 2011.
+# Chipong Luo <chipong.luo@yahoo.com>, 2011, 2012.
 #
 msgid ""
 msgstr ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-10 21:29+0200\n"
 "PO-Revision-Date: 2008-03-14 14:43+0800\n"
-"Last-Translator: Chipong Luo <chipong_l@yahoo.com>\n"
+"Last-Translator: Chipong Luo <chipong.luo@yahoo.com>\n"
 "Language-Team: Chinese (Simplified) <xfce-i18n@xfce.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "设备"
 
 #: ../panel-plugin/config_gui.c:150
 msgid "Input the device name, then press <Enter>"
-msgstr "输入设备名称，然后按回车"
+msgstr "输入设备名称，然后按 <Enter>"
 
 #: ../panel-plugin/config_gui.c:153
 msgid "/dev/hda1"
@@ -52,11 +52,11 @@ msgstr "标签"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Tick to display label"
-msgstr "标记以显示标签"
+msgstr "勾选以显示标签"
 
 #: ../panel-plugin/config_gui.c:196
 msgid "Input the label, then press <Enter>"
-msgstr "输入标签，然后按回车"
+msgstr "输入标签，然后按 <Enter>"
 
 #: ../panel-plugin/config_gui.c:198
 msgid "hda1"
@@ -72,7 +72,7 @@ msgstr "吞吐量"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "MB transferred / second"
-msgstr "MB 已传送/秒"
+msgstr "M 已传送/秒"
 
 #: ../panel-plugin/config_gui.c:222
 msgid "Busy time"
@@ -84,11 +84,11 @@ msgstr "设备负载时间百分比"
 
 #: ../panel-plugin/config_gui.c:237
 msgid "Max. I/O rate (MB/s) "
-msgstr "最大吞吐率(MB/s) "
+msgstr "最大吞吐率(M/s) "
 
 #: ../panel-plugin/config_gui.c:248
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "输入设备的最大吞吐率，然后按回车"
+msgstr "输入设备的最大吞吐率，然后按 <Enter>"
 
 #: ../panel-plugin/config_gui.c:251
 msgid "35"
@@ -199,12 +199,12 @@ msgid ""
 "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 msgstr ""
-"%s %s - 磁盘性能监视器\n"
-"可以在 Linux 和 NetBSD 系统上显示磁盘瞬时吞吐量和负载时间\n"
+"%s %s-磁盘性能监视器\n"
+"在 Linux 和 NetBSD 系统上显示磁盘瞬时\n"
+"吞吐量和负载时间\n"
 "\n"
-"(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-"\n"
-"NetBSD 统计作品集 (c) 2003 Benedikt Meurer\n"
+"版权 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
+"NetBSD 统计作品集：版权 2003 Benedikt Meurer\n"
 "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
 
 #: ../panel-plugin/main.c:926
@@ -286,4 +286,3 @@ msgstr "磁盘性能监视器"
 #: ../panel-plugin/diskperf.desktop.in.in.h:2
 msgid "Show disk performance"
 msgstr "显示磁盘性能"
-

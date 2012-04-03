@@ -898,15 +898,17 @@ static int CheckStatsAvailability ()
 static void About (Widget_t w, void *unused)
 	/* Called back when the About button in clicked */
 {
-    xfce_dialog_show_info (NULL, NULL, 
-               _("%s %s - Disk Performance Monitor\n"
-	       "Display instantaneous disk I/O transfer rates and busy times \n\n"
-	       "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-	       "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-	       "\t<benedikt.meurer@unix-ag.uni-siegen.de>\n"
-	       "Solaris statistics collection: (c) 2011 Peter Tribble\n"
-	       "\t<peter.tribble@gmail.com>"),
-	       PACKAGE, VERSION);
+   const gchar *auth[] = { "Roger Seguin <roger_seguin@msn.com>",
+	"NetBSD statistics collection: (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>",
+	"Solaris statistics collection: (c) 2011 Peter Tribble <peter.tribble@gmail.com>", NULL };
+   gtk_show_about_dialog(NULL,
+      "license", xfce_get_license_text (XFCE_LICENSE_TEXT_BSD),
+      "version", PACKAGE_VERSION,
+      "program-name", PACKAGE_NAME,
+      "comments", _("Diskperf monitor displays instantaneous disk I/O transfer rates and busy times"),
+      "website", "http://goodies.xfce.org/projects/panel-plugins/xfce4-diskperf-plugin",
+      "copyright", _("Copyright (c) 2003, 2004 Roger Seguin"),
+      "authors", auth, NULL);
 }				/* About() */
 
 	/**************************************************************/

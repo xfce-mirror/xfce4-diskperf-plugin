@@ -39,6 +39,11 @@
 #include <errno.h>
 #include <sys/stat.h>
 
+#ifdef LIBXFCE4PANEL_CHECK_VERSION
+#if LIBXFCE4PANEL_CHECK_VERSION (4,9,0)
+#define HAS_PANEL_49
+#endif
+#endif
 
 #define PLUGIN_NAME	"DiskPerf"
 #define BORDER          8
@@ -1061,7 +1066,7 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
     return TRUE;
 }				/* diskperf_set_size() */
 
-#if defined (LIBXFCE4PANEL_CHECK_VERSION) && LIBXFCE4PANEL_CHECK_VERSION (4,9,0)
+#ifdef HAS_PANEL_49
 	/**************************************************************/
 
 static void diskperf_set_mode (XfcePanelPlugin *plugin,
@@ -1132,7 +1137,7 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
     g_signal_connect (plugin, "size-changed", G_CALLBACK (diskperf_set_size), 
                       diskperf);
 
-#if defined (LIBXFCE4PANEL_CHECK_VERSION) && LIBXFCE4PANEL_CHECK_VERSION (4,9,0)
+#ifdef HAS_PANEL_49
     g_signal_connect (plugin, "mode-changed",
                       G_CALLBACK (diskperf_set_mode), diskperf);
 #else

@@ -300,7 +300,6 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
-    GtkRcStyle     *poStyle;
     Widget_t       *pwBar;
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
@@ -664,7 +663,6 @@ static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
-    struct gui_t   *poGUI = &(poPlugin->oConf.oGUI);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
 
     poConf->fTitleDisplayed =

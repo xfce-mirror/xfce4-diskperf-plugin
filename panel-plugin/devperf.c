@@ -1,5 +1,6 @@
 /* Copyright (c) 2003 RogerSeguin <roger_seguin@msn.com>
  * Copyright (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>
+ * Copyright (c) 2011 Peter Tribble <peter.tribble@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -380,9 +381,74 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	return (0);
 }
 
+#elif defined (__sun__)
+/*
+ * Solaris (and OpenSolaris derivatives) support via kstat
+ * Peter Tribble <peter.tribble@gmail.com>
+ */
+#include <kstat.h>
+static kstat_ctl_t *kc;
+
+int DevPerfInit ()
+{
+	kc = kstat_open ();
+        return (0);
+}
+
+int DevCheckStatAvailability(char const **strptr)
+{
+        return (0);
+}
+
+int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
+{
+	kstat_t *ksp;
+	kstat_io_t *kiot;
+	char *devname = (char *)p_pvDevice;
+
+	if(!kc)
+		DevPerfInit();
+
+	/*
+	 * Use the device name. This is something like "sd3", after the
+	 * module and instance. The user is expected to work out the
+	 * possible device names. The command "iostat -x" is one way to
+	 * enumerate them. It would be really neat to have a way to present
+	 * this list to the user and get them to pick the one they want.
+	 */
+	if(!(ksp = kstat_lookup (kc, NULL, -1, devname))) {
+		return (-1);
+	}
+	if (kstat_read(kc, ksp, 0) == -1) {
+		return (-1);
+	}
+	/*
+	 * Just in case we accidentally matched something that wasn't
+	 * an I/O device.
+	 */
+	if (ksp->ks_type != KSTAT_TYPE_IO) {
+		return (-1);
+	}
+	kiot = KSTAT_IO_PTR(ksp);
+	perf->timestamp_ns = (uint64_t)ksp->ks_snaptime;
+	perf->rbytes = (uint64_t)kiot->nread;
+	perf->wbytes = (uint64_t)kiot->nwritten;
+	/*
+	 * Solaris keeps separate wait and run queues, but they aren't
+	 * separated by read and write. So allocate half to each.
+	 */
+	perf->wbusy_ns = (uint64_t) (kiot->wtime + kiot->rtime) / 2ull;
+	perf->rbusy_ns = perf->wbusy_ns;
+	/*
+	 * qlen isn't used, so set it to zero rather than calculate it.
+	 */
+	perf->qlen = 0;
+	return (0);
+}
+
 #else
 	/**************************************************************/
 	/********************	Unsupported platform	***************/
 	/**************************************************************/
-#error "Your plattform is not yet supported"
+#error "Your platform is not yet supported"
 #endif

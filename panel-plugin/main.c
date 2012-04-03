@@ -53,6 +53,8 @@
     data, but only a single value combining both */
 #if  defined(__NetBSD__)
 #define	SEPARATE_BUSY_TIMES	0
+#elif  defined(__sun__)
+#define	SEPARATE_BUSY_TIMES	0
 #elif defined(__linux__)
 #define	SEPARATE_BUSY_TIMES	1
 #else
@@ -84,7 +86,7 @@ typedef enum monitor_bar_order_t {
 typedef struct param_t {
     /* Configurable parameters */
     char            acDevice[64];
-#if  !defined(__NetBSD__) && !defined(__OpenBSD__)
+#if  !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     dev_t           st_rdev;
 #endif
     int             fTitleDisplayed;
@@ -164,7 +166,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     rbytes = wbytes = iRBusy_ns = iWBusy_ns = -1;
     memset (&oPerf, 0, sizeof (oPerf));
     oPerf.qlen = -1;
-#if defined (__NetBSD__) || defined(__OpenBSD__)
+#if defined (__NetBSD__) || defined(__OpenBSD__) || defined(__sun__)
     status = DevGetPerfData (poConf->acDevice, &oPerf);
 #else
     status = DevGetPerfData (&(poConf->st_rdev), &oPerf);
@@ -211,18 +213,22 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 	     "  Write :%3.2f\n"
 	     "  Total :%3.2f\n"
 	     "Busy time (%c)\n"
+#if SEPARATE_BUSY_TIMES
 	     "  Read : %3d\n"
 	     "  Write : %3d\n"
+#endif
 	     "  Total : %3d",
 	     poConf->acTitle,
 	     arPerf[R_DATA],
 	     arPerf[W_DATA],
 	     arPerf[RW_DATA],
 	     '%',
-	     SEPARATE_BUSY_TIMES && (oPerf.qlen >= 0) ?
+#if SEPARATE_BUSY_TIMES
+	     (oPerf.qlen >= 0) ?
 	     (int) round(arBusy[R_DATA]) : -1,
-	     SEPARATE_BUSY_TIMES && (oPerf.qlen >= 0) ?
+	     (oPerf.qlen >= 0) ?
 	     (int) round(arBusy[W_DATA]) : -1,
+#endif
 	     (oPerf.qlen >= 0) ? (int) round(arBusy[RW_DATA]) : -1);
     gtk_tooltips_set_tip (s_poToolTips, GTK_WIDGET (poMonitor->wEventBox),
 			  acToolTips, 0);
@@ -406,7 +412,7 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     struct diskperf_t *poPlugin;
     struct param_t *poConf;
     struct monitor_t *poMonitor;
-#if !defined(__NetBSD__) && !defined(__OpenBSD__)
+#if !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat     oStat;
     int             status;
 #endif
@@ -421,6 +427,9 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
 #if defined(__NetBSD__) || defined(__OpenBSD__)
     strncpy (poConf->acDevice, "wd0", 64);
     strncpy (poConf->acTitle, "wd0", 16);
+#elif defined(__sun__)
+    strncpy (poConf->acDevice, "sd0", 64);
+    strncpy (poConf->acTitle, "sd0", 16);
 #else
     strncpy (poConf->acDevice, "/dev/sda", 64);
     status = stat (poConf->acDevice, &oStat);
@@ -489,7 +498,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
     Widget_t       *pw2ndBar = poPlugin->oMonitor.awProgressBar + 1;
-#if !defined(__NetBSD__) && !defined(__OpenBSD__)
+#if !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat     oStat;
     int             status;
 #endif
@@ -506,7 +515,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     if ((value = xfce_rc_read_entry (rc, (CONF_DEVICE), NULL))) {
         memset (poConf->acDevice, 0, sizeof (poConf->acDevice));
         strncpy (poConf->acDevice, value, sizeof (poConf->acDevice) - 1);
-#if !defined(__NetBSD__) && !defined(__OpenBSD__)
+#if !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
         status = stat (poConf->acDevice, &oStat);
         poConf->st_rdev = (status == -1 ? 0 : oStat.st_rdev);
 #endif
@@ -630,7 +639,7 @@ static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     const char     *pcDevice = gtk_entry_get_text (GTK_ENTRY (p_wTF));
-#if !defined(__NetBSD__) && !defined(__OpenBSD__)
+#if !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat     oStat;
     int             status;
 
@@ -893,11 +902,12 @@ static void About (Widget_t w, void *unused)
 {
     xfce_dialog_show_info (NULL, NULL, 
                _("%s %s - Disk Performance Monitor\n"
-	       "Display instantaneous disk I/O transfer rates and busy times "
-	       "on Linux and NetBSD systems\n\n"
+	       "Display instantaneous disk I/O transfer rates and busy times \n\n"
 	       "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 	       "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-	       "\t<benedikt.meurer@unix-ag.uni-siegen.de>"),
+	       "\t<benedikt.meurer@unix-ag.uni-siegen.de>\n"
+! 	       "Solaris statistics collection: (c) 2011 Peter Tribble\n"
+! 	       "\t<peter.tribble@gmail.com>"),
 	       PACKAGE, VERSION);
 }				/* About() */
 

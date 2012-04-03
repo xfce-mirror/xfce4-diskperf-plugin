@@ -906,8 +906,8 @@ static void About (Widget_t w, void *unused)
 	       "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 	       "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
 	       "\t<benedikt.meurer@unix-ag.uni-siegen.de>\n"
-! 	       "Solaris statistics collection: (c) 2011 Peter Tribble\n"
-! 	       "\t<peter.tribble@gmail.com>"),
+	       "Solaris statistics collection: (c) 2011 Peter Tribble\n"
+	       "\t<peter.tribble@gmail.com>"),
 	       PACKAGE, VERSION);
 }				/* About() */
 

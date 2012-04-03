@@ -1,3 +1,12 @@
+2.4.0 (2012/4/3):
+-----------------
+ * Port to libxfce4ui (bug #8099)
+ * Port to panel 4.9 (bug #8401)
+ * Fix translations (bug #6343)
+ * Explicitely link with libm (bugs #7982,#8514)
+ * Add Solaris support (bug #7167)
+ * Fix a Gtk warning, removed non-used vars..
+
 2.3.0 (2011/1/21):
 ------------------
  * Support for Xfce 4.8 panel

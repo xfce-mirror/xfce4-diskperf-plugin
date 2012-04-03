@@ -1121,6 +1121,7 @@ static void diskperf_set_orientation (XfcePanelPlugin *plugin,
 static void diskperf_construct (XfcePanelPlugin *plugin)
 {
     diskperf_t *diskperf = diskperf_create_control (plugin);
+    xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
     g_signal_connect (plugin, "free-data", G_CALLBACK (diskperf_free), 
                       diskperf);

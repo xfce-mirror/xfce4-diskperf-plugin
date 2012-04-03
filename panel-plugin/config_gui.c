@@ -127,7 +127,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (alignment1);
     gtk_container_add (GTK_CONTAINER (eventbox1), alignment1);
 
-    wSc_Period_adj = gtk_adjustment_new (0.5, 0.25, 4, 0.05, 1, 10);
+    wSc_Period_adj = gtk_adjustment_new (0.5, 0.25, 4, 0.05, 1, 0);
     wSc_Period =
 	gtk_spin_button_new (GTK_ADJUSTMENT (wSc_Period_adj), 1, 3);
     gtk_widget_show (wSc_Period);

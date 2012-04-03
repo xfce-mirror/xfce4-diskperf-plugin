@@ -24,6 +24,7 @@ xfce4_diskperf_plugin_CFLAGS =					\
 	$(LIBXFCE4UI_CFLAGS)
 
 xfce4_diskperf_plugin_LDADD=					\
+	$(LIBM)							\
 	$(LIBXFCE4PANEL_LIBS)					\
 	$(LIBXFCE4UI_LIBS)
 

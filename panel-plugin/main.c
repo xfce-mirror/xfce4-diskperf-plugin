@@ -912,6 +912,8 @@ static void About (Widget_t w, void *unused)
       "website", "http://goodies.xfce.org/projects/panel-plugins/xfce4-diskperf-plugin",
       "copyright", _("Copyright (c) 2003, 2004 Roger Seguin"),
       "authors", auth, NULL);
+   if(icon)
+      g_object_unref(G_OBJECT(icon));
 }				/* About() */
 
 	/**************************************************************/

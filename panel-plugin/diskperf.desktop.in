@@ -4,5 +4,5 @@ Encoding=UTF-8
 _Name=Disk Performance Monitor
 _Comment=Show disk performance
 Icon=gtk-harddisk
-X-XFCE-Exec=@libexecdir@/xfce4/panel-plugins/xfce4-diskperf-plugin
+X-XFCE-Exec=diskperf
 

@@ -1172,4 +1172,4 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
     SetTimer (diskperf);
 }
 
-XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL (diskperf_construct);
+XFCE_PANEL_PLUGIN_REGISTER (diskperf_construct);

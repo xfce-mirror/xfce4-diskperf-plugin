@@ -3,7 +3,6 @@ Type=X-XFCE-PanelPlugin
 Encoding=UTF-8
 _Name=Disk Performance Monitor
 _Comment=Show disk performance
-Icon=gtk-harddisk
+Icon=drive-harddisk
 X-XFCE-Internal=FALSE
-X-XFCE-module=diskperf
-
+X-XFCE-Module=diskperf

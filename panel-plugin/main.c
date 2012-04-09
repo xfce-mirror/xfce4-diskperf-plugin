@@ -898,10 +898,13 @@ static int CheckStatsAvailability ()
 static void About (Widget_t w, void *unused)
 	/* Called back when the About button in clicked */
 {
+   GdkPixbuf *icon;
    const gchar *auth[] = { "Roger Seguin <roger_seguin@msn.com>",
 	"NetBSD statistics collection: (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>",
 	"Solaris statistics collection: (c) 2011 Peter Tribble <peter.tribble@gmail.com>", NULL };
+   icon = xfce_panel_pixbuf_from_source("drive-harddisk", NULL, 32);
    gtk_show_about_dialog(NULL,
+      "logo", icon,
       "license", xfce_get_license_text (XFCE_LICENSE_TEXT_BSD),
       "version", PACKAGE_VERSION,
       "program-name", PACKAGE_NAME,
@@ -951,7 +954,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
                       G_CALLBACK (diskperf_dialog_response), poPlugin);
 
     gtk_window_set_position (GTK_WINDOW (dlg), GTK_WIN_POS_CENTER);
-    gtk_window_set_icon_name (GTK_WINDOW (dlg), "xfce4-settings");
+    gtk_window_set_icon_name (GTK_WINDOW (dlg), "drive-harddisk");
     
     vbox = gtk_vbox_new(FALSE, BORDER);
     gtk_container_set_border_width (GTK_CONTAINER (vbox), BORDER - 2);

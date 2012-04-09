@@ -4,7 +4,7 @@ dnl 2003, 2004 Roger Seguin <roger_seguin@msn.com>
 dnl
 
 m4_define([diskperf_version_major], [2])
-m4_define([diskperf_version_minor], [4])
+m4_define([diskperf_version_minor], [5])
 m4_define([diskperf_version_micro], [0])
 m4_define([diskperf_version_build], [@REVISION@])
 m4_define([diskperf_version_tag], []) # leave empty for releases

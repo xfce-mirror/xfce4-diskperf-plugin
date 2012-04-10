@@ -185,11 +185,11 @@ msgstr ""
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Diskperf 监视器显示磁盘的瞬时吞吐率和负载时间"
 
 #: ../panel-plugin/main.c:910
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "版权 (c) 2003、2004，Roger Seguin"
 
 #: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
@@ -216,7 +216,7 @@ msgstr "显示磁盘性能"
 #~ msgstr ""
 #~ "%s %s-磁盘性能监视器\n"
 #~ "在 Linux 和 NetBSD 系统上显示磁盘瞬时\n"
-#~ "吞吐量和负载时间\n"
+#~ "吞吐率和负载时间\n"
 #~ "\n"
 #~ "版权 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
 #~ "NetBSD 统计作品集：版权 2003 Benedikt Meurer\n"

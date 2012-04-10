@@ -1,9 +1,9 @@
 # Dutch translation of the xfce4-diskperf-plugin package.
 # Copyright (C) The Xfce development team.
-# This file is distributed under the same license as the 
+# This file is distributed under the same license as the
 # xfce4-diskperf-plugin package.
 # Pjotr, 2011.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin\n"
@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2011-09-09 11:34+0200\n"
 "Last-Translator: Pjotr\n"
 "Language-Team: Dutch (Flemish)\n"
-"Language: nl (Dutch)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl (Dutch)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
@@ -36,7 +36,7 @@ msgstr "Periode voor gegevensverzameling"
 
 #: ../panel-plugin/config_gui.c:139
 msgid "Update interval (s) "
-msgstr "Interval voor bijwerken (s) "
+msgstr "Tussenpoos voor bijwerken (s) "
 
 #: ../panel-plugin/config_gui.c:147
 msgid "Label"
@@ -56,7 +56,7 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:173
 msgid "Monitor    "
-msgstr "Monitor    "
+msgstr "Bewaking    "
 
 #: ../panel-plugin/config_gui.c:178
 msgid "I/O transfer"
@@ -94,7 +94,7 @@ msgstr "Combineer lees/schrijfgegevens"
 
 #: ../panel-plugin/config_gui.c:228
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Lees/schrijfgegevens combineren in een enkele monitor?"
+msgstr "Lees/schrijfgegevens combineren in een enkele bewakingsdienst?"
 
 #: ../panel-plugin/config_gui.c:235
 msgid "Bar color "
@@ -123,7 +123,7 @@ msgstr "Lezen-schrijven"
 
 #: ../panel-plugin/config_gui.c:292
 msgid "\"Read\" monitor first"
-msgstr "\"Lees\" monitor eerst"
+msgstr "'Lees'-bewakingsdienst eerst"
 
 #: ../panel-plugin/config_gui.c:299
 msgid "Write-Read"
@@ -131,7 +131,7 @@ msgstr "Schrijven-Lezen"
 
 #: ../panel-plugin/config_gui.c:304
 msgid "\"Write\" monitor first"
-msgstr "\"Schrijf\" monitor eerst"
+msgstr "'Schrijf'-bewakingsdienst eerst"
 
 #: ../panel-plugin/main.c:820
 msgid "Select color"
@@ -186,15 +186,15 @@ msgstr ""
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Schijfprestatiebewaker toont ogenblikkelijke I/O-overdrachtsnelheden en bezige tijden van de schijf"
 
 #: ../panel-plugin/main.c:910
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Auteursrecht (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Schijfprestatiemonitor"
+msgstr "Schijfprestatiebewaker"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"

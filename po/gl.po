@@ -1,12 +1,12 @@
 # Galician translation of xfce4-diskperf-plugin
 # Copyright (C) 2008-2009 Leandro Regueiro
 # This file is distributed under the same license as the xfce package.
-#
+# 
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2008, 2009.
-#
+# 
 # Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
 # colaborar connosco, podes atopar máis información en <http://trasno.net>
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,10 +15,10 @@ msgstr ""
 "PO-Revision-Date: 2009-08-19 13:09+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
-"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../panel-plugin/config_gui.c:101
@@ -191,11 +191,11 @@ msgstr ""
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Diskperf monitor mostra as taxas de transferencia de E/S instantáneas e os tempos de ocupación dos discos"
 
 #: ../panel-plugin/main.c:910
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

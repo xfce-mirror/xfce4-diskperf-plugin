@@ -187,7 +187,6 @@ msgid ""
 msgstr "Diskperf monitoreak uneko diskoaren S/I transferentzia eta lan aldiak bistaratzen ditu."
 
 #: ../panel-plugin/main.c:910
-#, fuzzy
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 

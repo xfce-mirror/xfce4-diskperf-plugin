@@ -187,7 +187,6 @@ msgid ""
 msgstr "Le contrôleur Diskperf affiche les taux instantanés de transferts I/O du disque et les temps d'occupation "
 
 #: ../panel-plugin/main.c:910
-#, fuzzy
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 

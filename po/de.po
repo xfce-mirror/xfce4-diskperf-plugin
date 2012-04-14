@@ -183,10 +183,11 @@ msgstr ""
 "Bitte entfernen Sie diese."
 
 #: ../panel-plugin/main.c:908
+#, fuzzy
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "»Festplattenleistung« zeigt momentane Festplatten-E/A-Übertragungsraten und -stoßzeiten"
 
 #: ../panel-plugin/main.c:910
 msgid "Copyright (c) 2003, 2004 Roger Seguin"

@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
-msgstr "Volume"
+msgstr "Dispositivo"
 
 #: ../panel-plugin/config_gui.c:115
 msgid "Input the device name, then press <Enter>"
-msgstr "Immettere il nome del volume e premere <Invio>"
+msgstr "Immettere il nome del volume e premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:118
 msgid "/dev/hda1"
@@ -48,7 +48,7 @@ msgstr "Seleziona per mostrare l'etichetta"
 
 #: ../panel-plugin/config_gui.c:161
 msgid "Input the label, then press <Enter>"
-msgstr "Immetti l'etichetta, e premi <Invio>"
+msgstr "Immettere l'etichetta, e premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:163
 msgid "hda1"
@@ -56,7 +56,7 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:173
 msgid "Monitor    "
-msgstr "Osservatore"
+msgstr "Monitora"
 
 #: ../panel-plugin/config_gui.c:178
 msgid "I/O transfer"
@@ -72,7 +72,7 @@ msgstr "Periodo di lavoro"
 
 #: ../panel-plugin/config_gui.c:191
 msgid "Percentage of time the device is busy"
-msgstr "Percentuale di tempo in cui il volume è occupato"
+msgstr "Percentuale di tempo in cui il dispositivo è occupato"
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Max. I/O rate (MB/s) "
@@ -89,11 +89,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:223
 msgid "Combine Read/Write data"
-msgstr "Combina dati in Lettura/Scrittura"
+msgstr "Combina i dati in lettura/scrittura"
 
 #: ../panel-plugin/config_gui.c:228
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Combinare i dati di Lettura/Scrittura in un singolo controllore?"
+msgstr "Combinare i dati di lettura/scrittura in un singolo controllore?"
 
 #: ../panel-plugin/config_gui.c:235
 msgid "Bar color "
@@ -102,7 +102,7 @@ msgstr "Colore barra "
 #: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
 #: ../panel-plugin/config_gui.c:325
 msgid "Press to change color"
-msgstr "Premi per cambiare colore"
+msgstr "Premere per cambiare colore"
 
 #: ../panel-plugin/config_gui.c:256
 msgid "Read bar color "
@@ -118,7 +118,7 @@ msgstr "Ordine barra"
 
 #: ../panel-plugin/config_gui.c:287
 msgid "Read-Write"
-msgstr "Lettura-Scrittura"
+msgstr "Lettura-scrittura"
 
 #: ../panel-plugin/config_gui.c:292
 msgid "\"Read\" monitor first"
@@ -126,7 +126,7 @@ msgstr "Prima osserva la \"Lettura\""
 
 #: ../panel-plugin/config_gui.c:299
 msgid "Write-Read"
-msgstr "Scrittura-Lettura"
+msgstr "Scrittura-lettura"
 
 #: ../panel-plugin/config_gui.c:304
 msgid "\"Write\" monitor first"
@@ -182,7 +182,6 @@ msgstr ""
 "Prego rimuoverlo."
 
 #: ../panel-plugin/main.c:908
-#, fuzzy
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
@@ -194,11 +193,11 @@ msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Osservatore delle Prestazioni del Disco"
+msgstr "Osservatore delle prestazioni del disco"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
-msgstr "Mostra prestazioni disco"
+msgstr "Mostra le prestazioni di un disco"
 
 #~ msgid "About..."
 #~ msgstr "Info..."

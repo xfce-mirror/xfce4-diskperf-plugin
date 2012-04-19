@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: xfce 4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:24+0200\n"
-"PO-Revision-Date: 2009-02-10 17:47+0100\n"
-"Last-Translator: Abel Martín <abel.martin.ruiz@gmail.com>\n"
+"PO-Revision-Date: 2012-04-18 22:41-0600\n"
+"Last-Translator: Sergio <oigres200@gmail.com>\n"
 "Language-Team: Spanish\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,8 @@ msgstr "¿Combinar datos de lectura/escritura en un solo monitor?"
 msgid "Bar color "
 msgstr "Color de barra"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
+#: ../panel-plugin/config_gui.c:250
+#: ../panel-plugin/config_gui.c:316
 #: ../panel-plugin/config_gui.c:325
 msgid "Press to change color"
 msgstr "Pulse para cambiar de color"
@@ -181,16 +182,15 @@ msgstr ""
 "Por favor, elimínelo."
 
 #: ../panel-plugin/main.c:908
-msgid ""
-"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
-"times"
-msgstr ""
+msgid "Diskperf monitor displays instantaneous disk I/O transfer rates and busy times"
+msgstr "Diskperf muestra de forma instantánea tasas de transferencia de E/S y tiempos ocupados de disco"
 
 #: ../panel-plugin/main.c:910
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:944
+#: ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor de rendimiento de disco"
 

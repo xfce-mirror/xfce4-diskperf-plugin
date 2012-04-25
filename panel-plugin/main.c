@@ -153,6 +153,9 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     struct param_t *poConf = &(p_poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
     struct perfbar_t *poPerf = poMonitor->aoPerfBar;
+#if !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
+    struct stat     oStat;
+#endif
     uint64_t        iInterval_ns, rbytes, wbytes, iRBusy_ns, iWBusy_ns;
     const double    K = 1.0 * 1000 * 1000 * 1000 / 1024 / 1024;
     /* bytes/ns --> MB/s */
@@ -169,6 +172,8 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 #if defined (__NetBSD__) || defined(__OpenBSD__) || defined(__sun__)
     status = DevGetPerfData (poConf->acDevice, &oPerf);
 #else
+    if (poConf->st_rdev == 0)
+    poConf->st_rdev = (stat (poConf->acDevice, &oStat) == -1 ? 0 : oStat.st_rdev);
     status = DevGetPerfData (&(poConf->st_rdev), &oPerf);
 #endif
     if (status == -1) {

@@ -171,8 +171,13 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 #else
     status = DevGetPerfData (&(poConf->st_rdev), &oPerf);
 #endif
-    if (status == -1)
+    if (status == -1) {
+    snprintf (acToolTips, sizeof(acToolTips), "%s: Device statistics unavailable.",
+              poConf->acTitle);
+    gtk_tooltips_set_tip (s_poToolTips, GTK_WIDGET (poMonitor->wEventBox),
+			  acToolTips, 0);
 	return (-1);
+    }
     if (poMonitor->oPrevPerf.timestamp_ns) {
 	iInterval_ns =
 	    oPerf.timestamp_ns - poMonitor->oPrevPerf.timestamp_ns;

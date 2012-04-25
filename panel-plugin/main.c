@@ -648,13 +648,6 @@ static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
     int             status;
 
     status = stat (pcDevice, &oStat);
-    if (status == -1) {
-	xfce_dialog_show_error (NULL, NULL,
-                  "%s\n"
-		  "%s: %s (%d)",
-		  PLUGIN_NAME, pcDevice, strerror (errno), errno);
-	return;
-    }
     poConf->st_rdev = oStat.st_rdev;
 #endif
     memset (poConf->acDevice, 0, sizeof (poConf->acDevice));

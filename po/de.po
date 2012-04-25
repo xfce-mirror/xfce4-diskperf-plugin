@@ -3,7 +3,7 @@
 # Copyright (C) 2007 THE xfce4-diskperf-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
 # Fabian Nowak <timystery@arcor.de>, 2007.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin 2.1.0svn-r3591\n"
@@ -12,19 +12,19 @@ msgstr ""
 "PO-Revision-Date: 2007-12-06 23:11+0100\n"
 "Last-Translator: Fabian Nowak <timystery@arcor.de>\n"
 "Language-Team: German\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
-msgstr "Gerät:"
+msgstr "Gerät"
 
 #: ../panel-plugin/config_gui.c:115
 msgid "Input the device name, then press <Enter>"
-msgstr "Geben Sie den Gerätenamen ein, und drücken Sie <Enter>"
+msgstr "Geben Sie den Gerätenamen ein und drücken Sie <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
 msgid "/dev/hda1"
@@ -36,11 +36,11 @@ msgstr "Intervall, in dem die Daten aufgefrischt werden"
 
 #: ../panel-plugin/config_gui.c:139
 msgid "Update interval (s) "
-msgstr "Auffrischungsintervall (s)."
+msgstr "Auffrischungsintervall (s)"
 
 #: ../panel-plugin/config_gui.c:147
 msgid "Label"
-msgstr "Beschriftung:"
+msgstr "Beschriftung"
 
 #: ../panel-plugin/config_gui.c:152
 msgid "Tick to display label"
@@ -48,7 +48,7 @@ msgstr "Anwählen, um die Beschriftung zu zeigen"
 
 #: ../panel-plugin/config_gui.c:161
 msgid "Input the label, then press <Enter>"
-msgstr "Geben Sie den Text für die Beschriftung ein, und drücken Sie <Enter>"
+msgstr "Geben Sie den Text für die Beschriftung ein und drücken Sie <Enter>"
 
 #: ../panel-plugin/config_gui.c:163
 msgid "hda1"
@@ -98,7 +98,7 @@ msgstr "Kombiniere Daten für Lesen/Schreiben in eine einzige Anzeige?"
 
 #: ../panel-plugin/config_gui.c:235
 msgid "Bar color "
-msgstr "Balkenfarbe:"
+msgstr "Balkenfarbe"
 
 #: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
 #: ../panel-plugin/config_gui.c:325
@@ -107,15 +107,15 @@ msgstr "Drücken Sie hier, um die Farbe zu ändern"
 
 #: ../panel-plugin/config_gui.c:256
 msgid "Read bar color "
-msgstr "Farbe für Lesebalken:"
+msgstr "Farbe für Lesebalken"
 
 #: ../panel-plugin/config_gui.c:264
 msgid "Write bar color "
-msgstr "Farbe für Schreibbalken:"
+msgstr "Farbe für Schreibbalken"
 
 #: ../panel-plugin/config_gui.c:272
 msgid "Bar order"
-msgstr "Reihenfolge der Balken:"
+msgstr "Reihenfolge der Balken"
 
 #: ../panel-plugin/config_gui.c:287
 msgid "Read-Write"
@@ -183,14 +183,15 @@ msgstr ""
 "Bitte entfernen Sie diese."
 
 #: ../panel-plugin/main.c:908
+#, fuzzy
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "»Festplattenleistung« zeigt momentane Festplatten-E/A-Übertragungsraten und -stoßzeiten"
 
 #: ../panel-plugin/main.c:910
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

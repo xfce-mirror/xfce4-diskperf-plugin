@@ -1,3 +1,7 @@
+2.5.2 (2012/4/29):
+-----------------
+ * Gracefully allow to monitor non-present devices (bug #6749)
+
 2.5.1 (2012/4/13):
 -----------------
  * Translation updates (uk,eu,pt_BR,it,da,nl,pt,gl,ko,zh_CN,sk)

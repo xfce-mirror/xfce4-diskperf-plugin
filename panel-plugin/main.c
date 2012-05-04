@@ -218,7 +218,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 
     snprintf (acToolTips, sizeof(acToolTips), "%s\n"
 	     "----------------\n"
-	     "I/O    (MB/s)\n"
+	     "I/O    (MiB/s)\n"
 	     "  Read :%3.2f\n"
 	     "  Write :%3.2f\n"
 	     "  Total :%3.2f\n"

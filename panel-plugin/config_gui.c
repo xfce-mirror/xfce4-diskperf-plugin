@@ -115,7 +115,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 			  _("Input the device name, then press <Enter>"),
 			  NULL);
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Device), 64);
-    gtk_entry_set_text (GTK_ENTRY (wTF_Device), _("/dev/hda1"));
+    gtk_entry_set_text (GTK_ENTRY (wTF_Device), _("/dev/sda1"));
 
     eventbox1 = gtk_event_box_new ();
     gtk_widget_show (eventbox1);
@@ -178,7 +178,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     wRB_IO = gtk_radio_button_new_with_mnemonic (NULL, _("I/O transfer"));
     gtk_widget_show (wRB_IO);
     gtk_box_pack_start (GTK_BOX (hbox2), wRB_IO, FALSE, FALSE, 0);
-    gtk_tooltips_set_tip (tooltips, wRB_IO, _("MB transferred / second"),
+    gtk_tooltips_set_tip (tooltips, wRB_IO, _("MiB transferred / second"),
 			  NULL);
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_IO), wRB_IO_group);
     wRB_IO_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_IO));
@@ -199,7 +199,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (wHBox_MaxIO);
     gtk_box_pack_start (GTK_BOX (vbox1), wHBox_MaxIO, TRUE, TRUE, 0);
 
-    label3 = gtk_label_new (_("Max. I/O rate (MB/s) "));
+    label3 = gtk_label_new (_("Max. I/O rate (MiB/s) "));
     gtk_widget_show (label3);
     gtk_box_pack_start (GTK_BOX (wHBox_MaxIO), label3, FALSE, FALSE, 0);
     gtk_label_set_justify (GTK_LABEL (label3), GTK_JUSTIFY_LEFT);

@@ -177,7 +177,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     status = DevGetPerfData (&(poConf->st_rdev), &oPerf);
 #endif
     if (status == -1) {
-    snprintf (acToolTips, sizeof(acToolTips), "%s: Device statistics unavailable.",
+    snprintf (acToolTips, sizeof(acToolTips), _("%s: Device statistics unavailable."),
               poConf->acTitle);
     gtk_tooltips_set_tip (s_poToolTips, GTK_WIDGET (poMonitor->wEventBox),
 			  acToolTips, 0);
@@ -216,7 +216,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 	}
     }
 
-    snprintf (acToolTips, sizeof(acToolTips), "%s\n"
+    snprintf (acToolTips, sizeof(acToolTips), _("%s\n"
 	     "----------------\n"
 	     "I/O    (MiB/s)\n"
 	     "  Read :%3.2f\n"
@@ -227,7 +227,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 	     "  Read : %3d\n"
 	     "  Write : %3d\n"
 #endif
-	     "  Total : %3d",
+         "  Total : %3d"),
 	     poConf->acTitle,
 	     arPerf[R_DATA],
 	     arPerf[W_DATA],

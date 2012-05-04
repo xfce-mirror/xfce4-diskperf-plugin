@@ -2,19 +2,19 @@
 # Copyright (C) 2007 THE xfce'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce package.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2007.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce 4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:24+0200\n"
+"POT-Creation-Date: 2012-05-04 16:57+0200\n"
 "PO-Revision-Date: 2007-08-31 18:17-0300\n"
 "Last-Translator: Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
@@ -26,7 +26,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Digite o nome do dispositivo e pressione <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-msgid "/dev/hda1"
+#, fuzzy
+msgid "/dev/sda1"
 msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:136
@@ -62,7 +63,8 @@ msgid "I/O transfer"
 msgstr "Transferência E/S"
 
 #: ../panel-plugin/config_gui.c:181
-msgid "MB transferred / second"
+#, fuzzy
+msgid "MiB transferred / second"
 msgstr "MB transferidos / segundo"
 
 #: ../panel-plugin/config_gui.c:187
@@ -74,7 +76,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Porcentagem de tempo em que o dispositivo está ocupado"
 
 #: ../panel-plugin/config_gui.c:202
-msgid "Max. I/O rate (MB/s) "
+#, fuzzy
+msgid "Max. I/O rate (MiB/s) "
 msgstr "Taxa de E/S máx. (MB/s) "
 
 #: ../panel-plugin/config_gui.c:213
@@ -132,11 +135,31 @@ msgstr "Escrita-Leitura"
 msgid "\"Write\" monitor first"
 msgstr "Monitor de \"Escrita\" primeiro"
 
-#: ../panel-plugin/main.c:820
+#: ../panel-plugin/main.c:180
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr ""
+
+#: ../panel-plugin/main.c:219
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr ""
+
+#: ../panel-plugin/main.c:823
 msgid "Select color"
 msgstr "Selecione a cor"
 
-#: ../panel-plugin/main.c:870
+#: ../panel-plugin/main.c:873
 #, c-format
 msgid ""
 "%s\n"
@@ -151,7 +174,7 @@ msgstr ""
 "Este monitor não irá funcionar!\n"
 "Por favor, remova-o."
 
-#: ../panel-plugin/main.c:881
+#: ../panel-plugin/main.c:884
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -168,7 +191,7 @@ msgstr ""
 "Este monitor não irá funcionar!\n"
 "Por favor, remova-o."
 
-#: ../panel-plugin/main.c:889
+#: ../panel-plugin/main.c:892
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,17 +204,19 @@ msgstr ""
 "Este monitor não irá funcionar!\n"
 "Por favor, remova-o."
 
-#: ../panel-plugin/main.c:908
+#: ../panel-plugin/main.c:914
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "O monitor Diskperf exibe instantaneamente taxas de transferência E/S e tempo ocupado de disco"
+msgstr ""
+"O monitor Diskperf exibe instantaneamente taxas de transferência E/S e tempo "
+"ocupado de disco"
 
-#: ../panel-plugin/main.c:910
+#: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor de Desempenho do Disco"
 

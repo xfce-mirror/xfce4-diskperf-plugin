@@ -1,20 +1,20 @@
 # Hungarian translation of xfce4-diskperf-plugin
 # Copyright (C) 2009, Free Software Foundation, Inc.
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
-# 
+#
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:24+0200\n"
+"POT-Creation-Date: 2012-05-04 16:57+0200\n"
 "PO-Revision-Date: 2009-06-03 22:05+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at gnome dot hu>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
@@ -27,7 +27,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Adja meg az eszköz nevét és nyomja meg az Enter billentyűt"
 
 #: ../panel-plugin/config_gui.c:118
-msgid "/dev/hda1"
+#, fuzzy
+msgid "/dev/sda1"
 msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:136
@@ -63,7 +64,8 @@ msgid "I/O transfer"
 msgstr "I/O átvitel"
 
 #: ../panel-plugin/config_gui.c:181
-msgid "MB transferred / second"
+#, fuzzy
+msgid "MiB transferred / second"
 msgstr "Átvitt MB/mp"
 
 #: ../panel-plugin/config_gui.c:187
@@ -75,7 +77,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Az eszköz által foglaltan töltött idő százalékos aránya"
 
 #: ../panel-plugin/config_gui.c:202
-msgid "Max. I/O rate (MB/s) "
+#, fuzzy
+msgid "Max. I/O rate (MiB/s) "
 msgstr "Max. I/O sebesség (MB/mp)"
 
 #: ../panel-plugin/config_gui.c:213
@@ -133,11 +136,31 @@ msgstr "Írás-olvasás"
 msgid "\"Write\" monitor first"
 msgstr "„Írás” figyelője előre"
 
-#: ../panel-plugin/main.c:820
+#: ../panel-plugin/main.c:180
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr ""
+
+#: ../panel-plugin/main.c:219
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr ""
+
+#: ../panel-plugin/main.c:823
 msgid "Select color"
 msgstr "Válasszon színt"
 
-#: ../panel-plugin/main.c:870
+#: ../panel-plugin/main.c:873
 #, c-format
 msgid ""
 "%s\n"
@@ -152,7 +175,7 @@ msgstr ""
 "Ez a figyelő működésképtelen!\n"
 "Távolítsa el."
 
-#: ../panel-plugin/main.c:881
+#: ../panel-plugin/main.c:884
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -169,7 +192,7 @@ msgstr ""
 "Ez a figyelő működésképtelen!\n"
 "Távolítsa el."
 
-#: ../panel-plugin/main.c:889
+#: ../panel-plugin/main.c:892
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,17 +205,19 @@ msgstr ""
 "Ez a figyelő működésképtelen!\n"
 "Távolítsa el."
 
-#: ../panel-plugin/main.c:908
+#: ../panel-plugin/main.c:914
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "A Diskperf figyelő megjeleníti a lemezek I/O átviteli sebességeit és az elfoglaltként töltött időt"
+msgstr ""
+"A Diskperf figyelő megjeleníti a lemezek I/O átviteli sebességeit és az "
+"elfoglaltként töltött időt"
 
-#: ../panel-plugin/main.c:910
+#: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Lemezteljesítmény-figyelő"
 

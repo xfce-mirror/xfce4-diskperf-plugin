@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:24+0200\n"
+"POT-Creation-Date: 2012-05-04 16:57+0200\n"
 "PO-Revision-Date: 2008-06-20 16:11+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
@@ -25,7 +25,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Masukkan nama divais, kemudian tekan <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-msgid "/dev/hda1"
+#, fuzzy
+msgid "/dev/sda1"
 msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:136
@@ -61,7 +62,8 @@ msgid "I/O transfer"
 msgstr "Transfer I/O"
 
 #: ../panel-plugin/config_gui.c:181
-msgid "MB transferred / second"
+#, fuzzy
+msgid "MiB transferred / second"
 msgstr "MB ditransfer / detik"
 
 #: ../panel-plugin/config_gui.c:187
@@ -73,7 +75,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Persentase waktu ketika divais sibuk"
 
 #: ../panel-plugin/config_gui.c:202
-msgid "Max. I/O rate (MB/s) "
+#, fuzzy
+msgid "Max. I/O rate (MiB/s) "
 msgstr "Rasio maksimum I/O (MB/s)"
 
 #: ../panel-plugin/config_gui.c:213
@@ -129,11 +132,31 @@ msgstr "Tulis-Baca"
 msgid "\"Write\" monitor first"
 msgstr "\"Tulis\" monitor dahulu"
 
-#: ../panel-plugin/main.c:820
+#: ../panel-plugin/main.c:180
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr ""
+
+#: ../panel-plugin/main.c:219
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr ""
+
+#: ../panel-plugin/main.c:823
 msgid "Select color"
 msgstr "Pilih warna"
 
-#: ../panel-plugin/main.c:870
+#: ../panel-plugin/main.c:873
 #, c-format
 msgid ""
 "%s\n"
@@ -148,7 +171,7 @@ msgstr ""
 "Monitor ini tak akan bekerja!\n"
 "Silakan hapus."
 
-#: ../panel-plugin/main.c:881
+#: ../panel-plugin/main.c:884
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -165,7 +188,7 @@ msgstr ""
 "Monitor ini tak akan bekerja!\n"
 "Silakan hapus."
 
-#: ../panel-plugin/main.c:889
+#: ../panel-plugin/main.c:892
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -178,17 +201,17 @@ msgstr ""
 "Monitor ini tak akan bekerja!\n"
 "Silakan hapus."
 
-#: ../panel-plugin/main.c:908
+#: ../panel-plugin/main.c:914
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr ""
 
-#: ../panel-plugin/main.c:910
+#: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr ""
 
-#: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor Performa Disk"
 

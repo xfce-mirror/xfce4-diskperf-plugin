@@ -2,19 +2,19 @@
 # Copyright (C) 2009 Xfce Desktop Environment Team
 # This file is distributed under the same license as the Xfce Desktop Environment package.
 # Valerio Cipriani <raid@darkforge.eu>, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4_diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:24+0200\n"
+"POT-Creation-Date: 2012-05-04 16:57+0200\n"
 "PO-Revision-Date: 2009-03-04 09:17+0100\n"
 "Last-Translator: Valerio Cipriani <raid@darkforge.eu>\n"
 "Language-Team: Darkforge Team <www.darkforge.it>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
@@ -27,7 +27,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Immettere il nome del volume e premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:118
-msgid "/dev/hda1"
+#, fuzzy
+msgid "/dev/sda1"
 msgstr "/dev/hda1"
 
 #: ../panel-plugin/config_gui.c:136
@@ -63,7 +64,8 @@ msgid "I/O transfer"
 msgstr "Trasferimento I/O"
 
 #: ../panel-plugin/config_gui.c:181
-msgid "MB transferred / second"
+#, fuzzy
+msgid "MiB transferred / second"
 msgstr "MB trasferiti / secondo"
 
 #: ../panel-plugin/config_gui.c:187
@@ -75,7 +77,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Percentuale di tempo in cui il dispositivo è occupato"
 
 #: ../panel-plugin/config_gui.c:202
-msgid "Max. I/O rate (MB/s) "
+#, fuzzy
+msgid "Max. I/O rate (MiB/s) "
 msgstr "Max rapporto I/O (MB/s) "
 
 #: ../panel-plugin/config_gui.c:213
@@ -132,11 +135,31 @@ msgstr "Scrittura-lettura"
 msgid "\"Write\" monitor first"
 msgstr "Prima osserva la \"Scrittura\""
 
-#: ../panel-plugin/main.c:820
+#: ../panel-plugin/main.c:180
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr ""
+
+#: ../panel-plugin/main.c:219
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr ""
+
+#: ../panel-plugin/main.c:823
 msgid "Select color"
 msgstr "Selezione colore"
 
-#: ../panel-plugin/main.c:870
+#: ../panel-plugin/main.c:873
 #, c-format
 msgid ""
 "%s\n"
@@ -151,7 +174,7 @@ msgstr ""
 "Questo monitoraggio non funzionerà!\n"
 "Rimuovilo."
 
-#: ../panel-plugin/main.c:881
+#: ../panel-plugin/main.c:884
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -168,7 +191,7 @@ msgstr ""
 "Questo osservatore non funzionerà!\n"
 "Prego rimuoverlo."
 
-#: ../panel-plugin/main.c:889
+#: ../panel-plugin/main.c:892
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,17 +204,19 @@ msgstr ""
 "Questo osservatore non funzionerà!\n"
 "Prego rimuoverlo."
 
-#: ../panel-plugin/main.c:908
+#: ../panel-plugin/main.c:914
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Diskperf monitor mostra la velocità istantanea di I/O del disco e i tempi di attesa"
+msgstr ""
+"Diskperf monitor mostra la velocità istantanea di I/O del disco e i tempi di "
+"attesa"
 
-#: ../panel-plugin/main.c:910
+#: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:944 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Osservatore delle prestazioni del disco"
 

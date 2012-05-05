@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: disk perf\n"
@@ -12,12 +12,11 @@ msgstr ""
 "PO-Revision-Date: 2012-04-21 13:00+0300\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -28,9 +27,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Įrašykite įrenginio vardą ir paspauskite <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -65,7 +63,6 @@ msgid "I/O transfer"
 msgstr "I/O perdavimas"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
 msgstr "perduota MB / per sekundę"
 
@@ -78,7 +75,6 @@ msgid "Percentage of time the device is busy"
 msgstr "Kiek laiko(procentais) įrenginys užimtas"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Didž. I/O santykis (MB/s)"
 
@@ -140,7 +136,7 @@ msgstr "Pirmiausia „Rašymo“ stebyklė"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Įrenginio statistika neprieinama"
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -156,6 +152,18 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"\t\r\n"
+"\r\n"
+"%s\n"
+"----------------\n"
+"I/O (MB/s)\n"
+" Skaitymas :%3.2f\n"
+" Rašymas :%3.2f\n"
+" Viso :%3.2f\n"
+"Užimtumo laikas (%c)\n"
+" Skaitymas : %3d\n"
+" Rašymas : %3d\n"
+" Viso : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

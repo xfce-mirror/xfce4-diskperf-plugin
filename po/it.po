@@ -2,7 +2,7 @@
 # Copyright (C) 2009 Xfce Desktop Environment Team
 # This file is distributed under the same license as the Xfce Desktop Environment package.
 # Valerio Cipriani <raid@darkforge.eu>, 2009.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4_diskperf-plugin\n"
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2009-03-04 09:17+0100\n"
 "Last-Translator: Valerio Cipriani <raid@darkforge.eu>\n"
 "Language-Team: Darkforge Team <www.darkforge.it>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
@@ -27,9 +27,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Immettere il nome del volume e premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -64,9 +63,8 @@ msgid "I/O transfer"
 msgstr "Trasferimento I/O"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB trasferiti / secondo"
+msgstr "MiB trasferiti / secondo"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -77,9 +75,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Percentuale di tempo in cui il dispositivo è occupato"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Max rapporto I/O (MB/s) "
+msgstr "Max rapporto I/O (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -138,7 +135,7 @@ msgstr "Prima osserva la \"Scrittura\""
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: statistiche del dispositivo non disponibili."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -154,6 +151,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Letti :%3.2f\n"
+"  Scritti :%3.2f\n"
+"  Totale :%3.2f\n"
+"Tempo di funzionamento (%c)\n"
+"  Letti : %3d\n"
+"  Scritti : %3d\n"
+"  Totale : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

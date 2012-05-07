@@ -143,6 +143,27 @@ typedef struct diskperf_t {
 
 static int timerNeedsUpdate = 0;
 
+static void UpdateProgressBars(struct diskperf_t *p_poPlugin, uint64_t rw, uint64_t r, uint64_t w) {
+ /* Update combined or separate progress bars with actual data */
+    struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
+    struct param_t *poConf = &(p_poPlugin->oConf.oParam);
+    struct perfbar_t *poPerf = poMonitor->aoPerfBar;
+
+    if (poConf->fRW_DataCombined)
+	gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR
+				       (*(poPerf[RW_DATA].pwBar)),
+				       rw);
+    else {
+	gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR
+				       (*(poPerf[R_DATA].pwBar)),
+				       r);
+	gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR
+				       (*(poPerf[W_DATA].pwBar)),
+				       w);
+    }
+}
+
+
 static int DisplayPerf (struct diskperf_t *p_poPlugin)
  /* Get the last disk perfomance data, compute the statistics and update
     the panel-docked monitor bars */
@@ -179,6 +200,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     if (status == -1) {
     snprintf (acToolTips, sizeof(acToolTips), _("%s: Device statistics unavailable."),
               poConf->acTitle);
+    UpdateProgressBars(p_poPlugin, 0, 0, 0);
     gtk_tooltips_set_tip (s_poToolTips, GTK_WIDGET (poMonitor->wEventBox),
 			  acToolTips, 0);
 	return (-1);
@@ -263,18 +285,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 	else if (*pr < 0)
 	    *pr = 0;
     }
-    if (poConf->fRW_DataCombined)
-	gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR
-				       (*(poPerf[RW_DATA].pwBar)),
-				       prData[RW_DATA]);
-    else {
-	gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR
-				       (*(poPerf[R_DATA].pwBar)),
-				       prData[R_DATA]);
-	gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR
-				       (*(poPerf[W_DATA].pwBar)),
-				       prData[W_DATA]);
-    }
+    UpdateProgressBars(p_poPlugin, prData[RW_DATA], prData[R_DATA], prData[W_DATA]);
 
     return (0);
 }				/* DisplayPerf() */

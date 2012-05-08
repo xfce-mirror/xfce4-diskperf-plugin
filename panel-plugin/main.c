@@ -1158,6 +1158,7 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
 #ifdef HAS_PANEL_49
     g_signal_connect (plugin, "mode-changed",
                       G_CALLBACK (diskperf_set_mode), diskperf);
+    xfce_panel_plugin_set_small (plugin, TRUE);
 #else
     g_signal_connect (plugin, "orientation-changed",
                       G_CALLBACK (diskperf_set_orientation), diskperf);

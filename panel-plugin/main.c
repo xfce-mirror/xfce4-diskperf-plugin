@@ -538,6 +538,14 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     else
         gtk_widget_hide (GTK_WIDGET (poMonitor->wTitle));
 
+#ifdef HAS_PANEL_49
+    /* unset small if we are in deskbar mode and we want the title */
+    if (poConf->fTitleDisplayed && xfce_panel_plugin_get_mode(poPlugin->plugin) == XFCE_PANEL_PLUGIN_MODE_DESKBAR)
+      xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), FALSE);
+    else
+      xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), TRUE);
+#endif
+
     if ((value = xfce_rc_read_entry (rc, (CONF_LABEL_TEXT), NULL))) {
         memset (poConf->acTitle, 0, sizeof (poConf->acTitle));
         strncpy (poConf->acTitle, value, sizeof (poConf->acTitle) - 1);
@@ -672,8 +680,17 @@ static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
 	gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
     if (poConf->fTitleDisplayed)
 	gtk_widget_show (GTK_WIDGET (poMonitor->wTitle));
+
     else
 	gtk_widget_hide (GTK_WIDGET (poMonitor->wTitle));
+
+#ifdef HAS_PANEL_49
+    /* unset small if we are in deskbar mode and we want the title */
+    if (poConf->fTitleDisplayed && xfce_panel_plugin_get_mode(poPlugin->plugin) == XFCE_PANEL_PLUGIN_MODE_DESKBAR)
+      xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), FALSE);
+    else
+      xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), TRUE);
+#endif
 }				/* ToggleTitle() */
 
 	/**************************************************************/
@@ -1114,6 +1131,12 @@ static void diskperf_set_mode (XfcePanelPlugin *plugin,
     gtk_label_set_angle (GTK_LABEL (poMonitor->wTitle),
                          (p_iMode != XFCE_PANEL_PLUGIN_MODE_VERTICAL) ?
                          0 : 270);
+    /* unset small if we are in deskbar mode and we want the title */
+    if (poPlugin->oConf.oParam.fTitleDisplayed && p_iMode == XFCE_PANEL_PLUGIN_MODE_DESKBAR)
+      xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (plugin), FALSE);
+    else
+      xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (plugin), TRUE);
+
     diskperf_set_size (plugin, xfce_panel_plugin_get_size (plugin), poPlugin);
 }				/* diskperf_set_orientation() */
 #else

@@ -2,7 +2,7 @@
 # Copyright (C) 2008 Roger Seguin et al.
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2012
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce 4-diskperf-plugin.master\n"
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2012-02-28 14:42+0900\n"
 "Last-Translator: Seong-ho, Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: xfce-i18n <xfce-i18n@xfce.org>\n"
-"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../panel-plugin/config_gui.c:101
@@ -26,9 +26,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "장치 이름을 입력하고, <Enter>를 누릅니다"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -63,9 +62,8 @@ msgid "I/O transfer"
 msgstr "입출력 전송"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "전송된 MB / 초"
+msgstr "전송된 MiB / 초"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -76,9 +74,8 @@ msgid "Percentage of time the device is busy"
 msgstr "장치 사용중 시간 백분율"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "최대 I/O 비율 (MB/s) "
+msgstr "최대 I/O 비율 (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -136,7 +133,7 @@ msgstr "\"쓰기\"를 먼저 봅니다"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: 장치 통계를 사용할 수 없습니다."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -152,6 +149,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O (MiB/s)\n"
+" 읽기 :%3.2f\n"
+" 쓰기 :%3.2f\n"
+" 총계 :%3.2f\n"
+"가동 시간 (%c)\n"
+" 읽기: %3d\n"
+" 쓰기 : %3d\n"
+" 총계 : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

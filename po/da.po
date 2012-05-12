@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2009-08-20 14:30+0100\n"
 "Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
-"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
 "X-Poedit-Language: Danish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Country: DENMARK\n"
@@ -28,9 +28,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Indtast enhedsnavnet og tryk på <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -65,9 +64,8 @@ msgid "I/O transfer"
 msgstr "I/O overførsel"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB overført / sekund"
+msgstr "MiB overført / sekund"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -78,9 +76,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Procentdel af tiden hvor enheden er optaget"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Maks. I/O-hastighed (MB/s) "
+msgstr "Maks. I/O-hastighed (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -138,7 +135,7 @@ msgstr "\"Skriv\"-overvågning først"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Enhedsstatistik er ikke tilrådighed."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -154,6 +151,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Læse :%3.2f\n"
+"  Skrive :%3.2f\n"
+"  Ialt :%3.2f\n"
+"Tid optaget (%c)\n"
+"  Læse : %3d\n"
+"  Skrive : %3d\n"
+"  Ialt : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

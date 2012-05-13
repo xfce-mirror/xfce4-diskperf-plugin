@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: xfce 4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2012-04-18 22:41-0600\n"
-"Last-Translator: Sergio <oigres200@gmail.com>\n"
-"Language-Team: Spanish\n"
+"PO-Revision-Date: 2012-05-13 11:45-0600\n"
+"Last-Translator: Sergio García <oigres200@gmail.com>\n"
+"Language-Team: Spanish <xfce-i18n@xfce.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Spanish\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -29,7 +30,7 @@ msgstr "Introduzca el nombre del dispositivo y presione <Enter>"
 #: ../panel-plugin/config_gui.c:118
 #, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -64,9 +65,8 @@ msgid "I/O transfer"
 msgstr "Transferencia de E/S"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB transferidos / segundo"
+msgstr "MiB transferidos / segundo"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -77,9 +77,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Porcentaje de tiempo que el dispositivo está ocupado"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Tasa máx. de E/S (MB/s)"
+msgstr "Tasa máx. de E/S (MiB/s)"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -101,7 +100,8 @@ msgstr "¿Combinar datos de lectura/escritura en un solo monitor?"
 msgid "Bar color "
 msgstr "Color de barra"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
+#: ../panel-plugin/config_gui.c:250
+#: ../panel-plugin/config_gui.c:316
 #: ../panel-plugin/config_gui.c:325
 msgid "Press to change color"
 msgstr "Pulse para cambiar de color"
@@ -137,10 +137,10 @@ msgstr "Primero monitor \"escritura\""
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Estadísticas de dispositivo no disponibles."
 
 #: ../panel-plugin/main.c:219
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "%s\n"
 "----------------\n"
@@ -153,6 +153,15 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s/n----------------\n"
+"E/S    (MiB/s)\n"
+"  Lectura :%3.2f\n"
+"  Escritura :%3.2f\n"
+"  Total :%3.2f\n"
+"Tiempo ocupado (%c)\n"
+"  Lectura : %3d\n"
+"  Escritura : %3d\n"
+"  Total : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"
@@ -204,18 +213,15 @@ msgstr ""
 "Por favor, elimínelo."
 
 #: ../panel-plugin/main.c:914
-msgid ""
-"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
-"times"
-msgstr ""
-"Diskperf muestra de forma instantánea tasas de transferencia de E/S y "
-"tiempos ocupados de disco"
+msgid "Diskperf monitor displays instantaneous disk I/O transfer rates and busy times"
+msgstr "Diskperf muestra de forma instantánea tasas de transferencia de E/S y tiempos ocupados de disco"
 
 #: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:952
+#: ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor de rendimiento de disco"
 

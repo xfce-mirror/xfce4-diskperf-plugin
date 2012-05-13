@@ -168,8 +168,6 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
  /* Get the last disk perfomance data, compute the statistics and update
     the panel-docked monitor bars */
 {
-    static GtkTooltips *s_poToolTips = 0;
-
     struct devperf_t oPerf;
     struct param_t *poConf = &(p_poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
@@ -183,9 +181,6 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     double          arPerf[NMONITORS], arBusy[NMONITORS], *prData, *pr;
     char            acToolTips[256];
     int             status, i;
-
-    if (!s_poToolTips)
-	s_poToolTips = gtk_tooltips_new ();
 
     rbytes = wbytes = iRBusy_ns = iWBusy_ns = -1;
     memset (&oPerf, 0, sizeof (oPerf));
@@ -201,8 +196,8 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     snprintf (acToolTips, sizeof(acToolTips), _("%s: Device statistics unavailable."),
               poConf->acTitle);
     UpdateProgressBars(p_poPlugin, 0, 0, 0);
-    gtk_tooltips_set_tip (s_poToolTips, GTK_WIDGET (poMonitor->wEventBox),
-			  acToolTips, 0);
+    gtk_widget_set_tooltip_text(GTK_WIDGET(poMonitor->wEventBox), acToolTips);
+
 	return (-1);
     }
     if (poMonitor->oPrevPerf.timestamp_ns) {
@@ -262,8 +257,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 	     (int) round(arBusy[W_DATA]) : -1,
 #endif
 	     (oPerf.qlen >= 0) ? (int) round(arBusy[RW_DATA]) : -1);
-    gtk_tooltips_set_tip (s_poToolTips, GTK_WIDGET (poMonitor->wEventBox),
-			  acToolTips, 0);
+    gtk_widget_set_tooltip_text(GTK_WIDGET(poMonitor->wEventBox), acToolTips);
 
     switch (poConf->eStatistics) {
 	case BUSY_TIME:
@@ -306,6 +300,14 @@ static gboolean SetTimer (void *p_pvPlugin)
         poPlugin->iTimerId = 0;
         timerNeedsUpdate = 0;
     }
+
+    /* reduce the default tooltip timeout to be smaller than the update interval otherwise
+     * we won't see tooltips on GTK 2.16 or newer */
+    GtkSettings *settings;
+    settings = gtk_settings_get_default();
+    if (g_object_class_find_property(G_OBJECT_GET_CLASS(settings), "gtk-tooltip-timeout"))
+        g_object_set(settings, "gtk-tooltip-timeout",
+                     poConf->iPeriod_ms - 10, NULL);
 
     if (!poPlugin->iTimerId)
         poPlugin->iTimerId = g_timeout_add (poConf->iPeriod_ms,

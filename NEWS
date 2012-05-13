@@ -1,3 +1,9 @@
+2.5.3 (2012/5/13):
+-----------------
+ * Use newer tooltip API (bug #8730)
+ * Make tooltip strings translatable and MB->MiB string updates (bug #8828)
+ * Always update progress bars even if stats are unavailable (bug #8845)
+
 2.5.2 (2012/4/29):
 -----------------
  * Gracefully allow to monitor non-present devices (bug #6749)

@@ -2,15 +2,16 @@
 # Copyright (C) 2006 THE xfce4-diskperf-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
 # Marek Hlava <headsvk@gmail.com>, 2011.
+# Tomáš Vadina <kyberdev@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2011-08-21 12:06+0100\n"
-"Last-Translator: Marek Hlava <headsvk@gmail.com>\n"
-"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"PO-Revision-Date: 2012-05-15 16:45+0200\n"
+"Last-Translator: Tomáš Vadina <kyberdev@gmail.com>\n"
+"Language-Team: slovenčina <slovenska-lokalizacia-xfce@googlegroups.com>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,9 +27,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Zadajte názov zariadenia a stlačte <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -63,9 +63,8 @@ msgid "I/O transfer"
 msgstr "I/O prenos"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB prenesených za sekundu"
+msgstr "MiB prenesených za sekundu"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -76,9 +75,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Percentuálny podiel aktivity zariadenia"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Max. I/O prenosová rýchlosť (MB/s) "
+msgstr "Max. I/O prenosová rýchlosť (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -136,7 +134,7 @@ msgstr "Najskôr sledovať „Zápis“"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Štatistiky zariadenia sú nedostupné."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -152,6 +150,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Čítanie :%3.2f\n"
+"  Zápis :%3.2f\n"
+"  Celkom :%3.2f\n"
+"Čas zaneprázdnenia (%c)\n"
+"  Čítanie : %3d\n"
+"  Zápis : %3d\n"
+"  Celkom : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

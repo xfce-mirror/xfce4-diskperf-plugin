@@ -474,6 +474,7 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     poPlugin->oMonitor.oPrevPerf.timestamp_ns = 0;
 
     poMonitor->wEventBox = gtk_event_box_new ();
+    gtk_event_box_set_visible_window(GTK_EVENT_BOX(poMonitor->wEventBox), FALSE);
     gtk_widget_show (poMonitor->wEventBox);
 
     xfce_panel_plugin_add_action_widget (plugin, poMonitor->wEventBox);

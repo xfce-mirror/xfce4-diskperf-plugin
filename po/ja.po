@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce 4-diskperf-plugin 2.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2012-04-23 21:09+0900\n"
+"POT-Creation-Date: 2012-05-17 20:58+0900\n"
+"PO-Revision-Date: 2012-05-17 21:01+0900\n"
 "Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
 "Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
 "Language: ja\n"
@@ -27,9 +27,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "デバイス名を入力してください"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -64,9 +63,8 @@ msgid "I/O transfer"
 msgstr "I/O 転送"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "毎秒の転送量をモニタリングします"
+msgstr "秒ごとの転送量 (MiB) を監視します"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -74,12 +72,11 @@ msgstr "使用率"
 
 #: ../panel-plugin/config_gui.c:191
 msgid "Percentage of time the device is busy"
-msgstr "デバイスを使用していた時間の割合 (%) をモニタリングします"
+msgstr "デバイスを使用していた時間の割合 (%) を監視します"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "最大 I/O レート (MB/s) "
+msgstr "最大 I/O レート (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -136,12 +133,12 @@ msgstr "書込-読込"
 msgid "\"Write\" monitor first"
 msgstr "\"書き込み\" を先に表示します"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: デバイスの統計情報を利用できません。"
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -155,12 +152,22 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  読込 :%3.2f\n"
+"  書込 :%3.2f\n"
+"  合計 :%3.2f\n"
+"ビジー時間 (%c)\n"
+"  読込 : %3d\n"
+"  書込 : %3d\n"
+"  合計 : %3d"
 
-#: ../panel-plugin/main.c:823
+#: ../panel-plugin/main.c:854
 msgid "Select color"
 msgstr "色を選択してください"
 
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:904
 #, c-format
 msgid ""
 "%s\n"
@@ -175,7 +182,7 @@ msgstr ""
 "このモニターは正しく動作しないでしょう!\n"
 "削除してください。"
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:915
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -193,7 +200,7 @@ msgstr ""
 "このモニターは正常に動作しないでしょう!\n"
 "削除してください。"
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:923
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -206,17 +213,17 @@ msgstr ""
 "このモニターは正常に動作しないでしょう!\n"
 "削除してください。"
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:945
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Diskperf はディスクの I/O 転送率とビジー時間を表示します"
+msgstr "Diskperf モニターはディスクの I/O 転送率とビジー時間を表示します"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:947
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "ディスクパフォーマンスモニター"
 

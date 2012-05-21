@@ -143,7 +143,7 @@ typedef struct diskperf_t {
 
 static int timerNeedsUpdate = 0;
 
-static void UpdateProgressBars(struct diskperf_t *p_poPlugin, uint64_t rw, uint64_t r, uint64_t w) {
+static void UpdateProgressBars(struct diskperf_t *p_poPlugin, double rw, double r, double w) {
  /* Update combined or separate progress bars with actual data */
     struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
     struct param_t *poConf = &(p_poPlugin->oConf.oParam);

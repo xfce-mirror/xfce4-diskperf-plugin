@@ -3,19 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Evaggelos Balaskas <ebalaskas@ebalaskas.gr>, 2008.
+# Efstathios Iosifidis <iosifidis@opensuse.org>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2008-04-28 00:16+0300\n"
-"Last-Translator: Evaggelos Balaskas <ebalaskas@ebalaskas.gr>\n"
-"Language-Team: Greek <nls@tux.hellug.gr>\n"
+"PO-Revision-Date: 2012-05-20 11:34+0300\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"Language-Team: Ελληνικά, Σύγχρονα <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bits\n"
 "X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -26,9 +29,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Εισαγωγή ονόματος συσκευής, μετά πατήστε <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -63,9 +65,8 @@ msgid "I/O transfer"
 msgstr "Μετάδοση I/O"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB μεταφέρθηκαν / δευτερόλεπτα"
+msgstr "MiB μεταφέρθηκαν / δευτερόλεπτο"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -76,9 +77,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Ποσοστό του χρόνου που η συσκευή είναι απασχολημένη"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Μέγιστο. I/O ρυθμός (MB/s) "
+msgstr "Μέγιστος ρυθμίς I/O (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -137,7 +137,7 @@ msgstr "\"Εγγραφή\" οθόνη πρώτα"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Μη διαθέσιμα στατιστικά συσκευής."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -153,6 +153,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Ανάγνωση :%3.2f\n"
+"  Εγγραφή :%3.2f\n"
+"  Σύνολο :%3.2f\n"
+"Χρόνος Απασχόλησης (%c)\n"
+"  Ανάγνωση : %3d\n"
+"  Εγγραφή : %3d\n"
+"  Σύνολο : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"
@@ -208,10 +218,12 @@ msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr ""
+"Ο επόπτης Diskperf εμφανίζει στιγμιαία ρυθμο μεταφοράς I/O και χρόνους "
+"απασχόλησης του δίσκου"
 
 #: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Πνευματικά Δικαιώματα (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

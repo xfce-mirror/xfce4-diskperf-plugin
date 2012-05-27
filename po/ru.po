@@ -1,7 +1,7 @@
 # Latvian translation of xfce4-diskperf-plugin.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
-#
+# 
 # Rihards Prieditis <rprieditis@inbox.lv>, 2007.
 # Rihards Prieditis <rprieditis@gmail.com>, 2009.
 msgid ""
@@ -12,12 +12,11 @@ msgstr ""
 "PO-Revision-Date: 2010-03-03 13:55+0200\n"
 "Last-Translator: Dima Smirnov <arch@cnc-parts.info>\n"
 "Language-Team: Latvian <translation-team-lv@lists.sourceforge.net>\n"
-"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
-"2);\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 "X-Generator: Lokalize 1.0\n"
 
 #: ../panel-plugin/config_gui.c:101
@@ -29,9 +28,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Введите название устройства и нажмите <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -66,9 +64,8 @@ msgid "I/O transfer"
 msgstr "I/O передача"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB передано/секунду"
+msgstr "MB передано / секунд"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -79,9 +76,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Занятость устройства (в процентах)"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Максимальная I/O скорость (MB/s) "
+msgstr "Максимальная скорость передачи данных (MB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -140,7 +136,7 @@ msgstr "Монитор \"Запись\" первый"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: статистика устройства недоступна."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -156,6 +152,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O (MiB/s)\n"
+" Чтение :%3.2f\n"
+" Запись :%3.2f\n"
+" Total :%3.2f\n"
+"Время занятости (%c)\n"
+" Чтение : %3d\n"
+" Запись : %3d\n"
+" Всего : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"
@@ -207,7 +213,6 @@ msgstr ""
 "Пожалуйста удалите его."
 
 #: ../panel-plugin/main.c:914
-#, fuzzy
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"

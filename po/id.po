@@ -2,7 +2,7 @@
 # Copyright (C) 2003-2004 Roger Seguin.
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
 # Andhika Padmawan <andhika.padmawan@gmail.com>, 2008.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2008-06-20 16:11+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
-"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -25,9 +25,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Masukkan nama divais, kemudian tekan <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -62,9 +61,8 @@ msgid "I/O transfer"
 msgstr "Transfer I/O"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB ditransfer / detik"
+msgstr "MiB ditransfer / detik"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -75,9 +73,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Persentase waktu ketika divais sibuk"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Rasio maksimum I/O (MB/s)"
+msgstr "Rasio maksimum I/O (MiB/s)"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -135,7 +132,7 @@ msgstr "\"Tulis\" monitor dahulu"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Statistik divais tidak tersedia."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -151,6 +148,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/d)\n"
+"  Dibaca :%3.2f\n"
+"  Ditulis :%3.2f\n"
+"  Total :%3.2f\n"
+"Waktu sibuk (%c)\n"
+"  Dibaca : %3d\n"
+"  Ditulis : %3d\n"
+"  Total : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"
@@ -205,11 +212,11 @@ msgstr ""
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Monitor Diskperf menampilkan rasio transfer dan waktu sibuk I/O cakram secara instan"
 
 #: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Hak Cipta 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

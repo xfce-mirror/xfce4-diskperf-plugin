@@ -387,13 +387,8 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
     Widget_t       *pwBar;
     int             i;
 
-    if (p_iOrientation == GTK_ORIENTATION_HORIZONTAL)
-	poMonitor->wBox = gtk_hbox_new (FALSE, 0);
-    else
-	poMonitor->wBox = gtk_vbox_new (FALSE, 0);
+    poMonitor->wBox = xfce_hvbox_new (p_iOrientation, FALSE, 0);
     gtk_widget_show (poMonitor->wBox);
-    gtk_container_set_border_width (GTK_CONTAINER
-				    (poMonitor->wBox), 4);
 
     gtk_container_add (GTK_CONTAINER (poMonitor->wEventBox),
 		       poMonitor->wBox);
@@ -402,7 +397,7 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
     if (poConf->fTitleDisplayed)
 	gtk_widget_show (poMonitor->wTitle);
     gtk_box_pack_start (GTK_BOX (poMonitor->wBox),
-			GTK_WIDGET (poMonitor->wTitle), FALSE, FALSE, 0);
+			GTK_WIDGET (poMonitor->wTitle), FALSE, FALSE, 2);
 
     for (i = 0; i < 2; i++) {
 	pwBar = poMonitor->awProgressBar + i;
@@ -1095,17 +1090,20 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
 {
     int             i, size1, size2;
     Widget_t       *pwBar;
+    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
 
-    TRACE ("diskperf_set_size()\n");
+    TRACE ("diskperf_set_size(%d)\n", p_size);
+    gtk_container_set_border_width (GTK_CONTAINER
+				    (poMonitor->wBox), p_size > 26 ? 2 : 1);
     if (xfce_panel_plugin_get_orientation (plugin) == 
             GTK_ORIENTATION_HORIZONTAL) {
-	size1 = BORDER;
+	size1 = 8;
         size2 = -1;
         gtk_widget_set_size_request (GTK_WIDGET (plugin), -1, p_size);
     }
     else {
 	size1 = -1;
-        size2 = BORDER;
+        size2 = 8;
         gtk_widget_set_size_request (GTK_WIDGET (plugin), p_size, -1);
     }
     for (i = 0; i < 2; i++) {

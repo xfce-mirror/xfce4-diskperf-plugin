@@ -1,3 +1,9 @@
+2.5.4 (2012/6/30):
+ * Better compliance with panel plugin HIG
+ * Use double values for progress bars (bug #8882)
+ * Facilitate bringing up the configuration dialog (bug #8899)
+ * Fix transparency (bug #8892)
+
 2.5.3 (2012/5/13):
 -----------------
  * Use newer tooltip API (bug #8730)

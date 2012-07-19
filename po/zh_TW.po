@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2012-01-15 18:35+0800\n"
+"PO-Revision-Date: 2012-07-19 22:00+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: chinese-l10n <chinese-l10n@googlegroups.com>\n"
 "Language: zh_Tw\n"
@@ -26,9 +26,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "輸入裝置名稱，然後按 <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -63,9 +62,8 @@ msgid "I/O transfer"
 msgstr "I/O 傳輸"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB 已傳輸 / 秒"
+msgstr "MiB 已傳輸 / 秒"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -76,9 +74,8 @@ msgid "Percentage of time the device is busy"
 msgstr "裝置忙碌時間百分比"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "最大 I/O 率(MB/s) "
+msgstr "最大 I/O 率 (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -100,7 +97,8 @@ msgstr "要將讀取/寫入資料合併為單一監視條？"
 msgid "Bar color "
 msgstr "條色彩"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
+#: ../panel-plugin/config_gui.c:250
+#: ../panel-plugin/config_gui.c:316
 #: ../panel-plugin/config_gui.c:325
 msgid "Press to change color"
 msgstr "按下以變更色彩"
@@ -136,7 +134,7 @@ msgstr "「寫入」監視器在前"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s：裝置統計數據不可用。"
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -152,6 +150,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  讀取：%3.2f\n"
+"  寫入：%3.2f\n"
+"  總計：%3.2f\n"
+"忙碌時間 (%c)\n"
+"  讀取：%3d\n"
+"  寫入：%3d\n"
+"  總計：%3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"
@@ -203,16 +211,15 @@ msgstr ""
 "請移除它。"
 
 #: ../panel-plugin/main.c:914
-msgid ""
-"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
-"times"
-msgstr ""
+msgid "Diskperf monitor displays instantaneous disk I/O transfer rates and busy times"
+msgstr "Diskperf 監視器會顯示即時的磁碟 I/O 傳輸率與忙碌時間"
 
 #: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "著作權 (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:952
+#: ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "磁碟效能監視器"
 

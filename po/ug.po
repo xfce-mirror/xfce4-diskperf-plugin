@@ -55,7 +55,7 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:173
 msgid "Monitor    "
-msgstr "كۆزەتكۈ    "
+msgstr "كۆزەتكۈچ    "
 
 #: ../panel-plugin/config_gui.c:178
 msgid "I/O transfer"
@@ -63,7 +63,7 @@ msgstr "I/O ئۇزىتىش"
 
 #: ../panel-plugin/config_gui.c:181
 msgid "MiB transferred / second"
-msgstr ""
+msgstr "مېگابايت ئەۋەتىلدى / سېكۇنت"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -75,7 +75,7 @@ msgstr "ئۈسكۈنىنى ئىشلەتكەن ۋاقتىنى پىرسەنتتە 
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Max. I/O rate (MiB/s) "
-msgstr "ئەڭ چوڭ I/O تېزلىكى (م بىت /س)"
+msgstr "ئەڭ چوڭ I/O تېزلىكى (مېگابايت /س) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -148,8 +148,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
-"%s\n"
+msgstr "%s\n"
 "----------------\n"
 "I/O    (م بىت/س)\n"
 "  ئوقۇش :%3.2f\n"
@@ -188,7 +187,7 @@ msgid ""
 "This monitor will not work!\n"
 "Please remove it."
 msgstr "%s: دىسكا ئۇچۇرلىرى تېپىلمىدى!\n"
-"kernel كونا (2.4.20 نىڭدىن بۇرۇنقى) ياكى \n"
+"يادرو(kernel) كونا (2.4.20 نىڭدىن بۇرۇنقى) ياكى \n"
 "CONFIG_BLK_STATS تاللانمىسىنى ئىشلىتىپ \n"
 " يۇغۇرۇلماپتۇ\n"
 "\n"
@@ -211,7 +210,7 @@ msgstr "%s: نامەلۇم خاتالىق\n"
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "مەزكۇر Diskperf كۆزەتچىسى دىسكىنىڭ I/O تېزلىكى ۋە ئالدىراش ۋاقتىنى كۆرسىتىپ بېرىدۇ."
 
 #: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"

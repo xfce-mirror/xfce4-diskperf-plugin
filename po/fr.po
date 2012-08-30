@@ -2,7 +2,7 @@
 # Copyright (C) 2003-2004 Roger Seguin.
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
 # Maximilian Schleiss <maximilian@xfce.org>, 2006.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2006-09-18 14:45+0100\n"
 "Last-Translator: Maximilian Schleiss <maximilian@xfce.org>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -25,9 +25,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Insérer le nom du périphérique et confirmer avec la touche  <retour>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -62,9 +61,8 @@ msgid "I/O transfer"
 msgstr "Transfert I/O"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "Mo transférés / seconde"
+msgstr "Mio transférés / seconde"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -75,9 +73,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Pourcentage du temps d'occupation"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Vitesse I/O max. (Mo/s)"
+msgstr "Vitesse E/S max. (Mio/s)"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -135,12 +132,12 @@ msgid "\"Write\" monitor first"
 msgstr "Contrôleur d' \"écriture\" en premier"
 
 #: ../panel-plugin/main.c:180
-#, c-format
+#, c-format, fuzzy
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Statistiques périphérique indisponible."
 
 #: ../panel-plugin/main.c:219
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%s\n"
 "----------------\n"
@@ -153,6 +150,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"E/S    (Mio/s)\n"
+"  Lecture :%3.2f\n"
+"  Ecriture :%3.2f\n"
+"  Total :%3.2f\n"
+"Temps d'occupation (%c)\n"
+"  Lecture : %3d\n"
+"  Ecriture : %3d\n"
+"  Total : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

@@ -75,7 +75,7 @@ msgstr "ئۈسكۈنىنى ئىشلەتكەن ۋاقتىنى پىرسەنتتە 
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Max. I/O rate (MiB/s) "
-msgstr "ئەڭ چوڭ I/O تېزلىكى (مېگابايت /س) "
+msgstr "ئەڭ چوڭ I/O تېزلىكى (م بىت /س) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"

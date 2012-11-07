@@ -139,7 +139,7 @@ msgid "%s: Device statistics unavailable."
 msgstr "%s: Statistiken für das Gerät sind nicht verfügbar."
 
 #: ../panel-plugin/main.c:219
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s\n"
 "----------------\n"
@@ -152,18 +152,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
-" \t\r\n"
-"\r\n"
 "%s\n"
 "----------------\n"
 "I/O (MiB/s)\n"
-" Lesen: %3.2f\n"
-" Schreiben: %3.2f\n"
-" Gesamt: %3.2f\n"
+"  Lesen:\t\t%3.2f\n"
+"  Schreiben:\t%3.2f\n"
+"  Gesamt:\t%3.2f\n"
 "Arbeitszeit (%c)\n"
-" Lesen: %3d\n"
-" Schreiben: %3d\n"
-" Gesamt: %3d"
+"  Lesen:\t\t%3d\n"
+"  Schreiben:\t%3d\n"
+"  Gesamt:\t%3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

@@ -2,7 +2,7 @@
 # Copyright (C) 2006 THE xfce4-diskperf-plugin'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
 # Michal Várady  <miko.vaji@gmail.com>, 2006-2009.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2009-02-01 02:15+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: ../panel-plugin/config_gui.c:101
@@ -63,9 +63,8 @@ msgid "I/O transfer"
 msgstr "Přenos V/V"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB přeneseno za sekundu"
+msgstr "MiB přeneseno za sekundu"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -76,9 +75,8 @@ msgid "Percentage of time the device is busy"
 msgstr "Procentuální podíl aktivity zařízení"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Nejvyšší přenosová rychlost V/V (MB/s) "
+msgstr "Nejvyšší přenosová rychlost V/V (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -136,7 +134,7 @@ msgstr "Sledovat „Zápis“ jako první"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Statistika o zařízení není dostupná."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -152,6 +150,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"V/V    (MiB/s)\n"
+"  Čtení:%3.2f\n"
+"  Zápis:%3.2f\n"
+"  Celkem:%3.2f\n"
+"Doba zaneprázdněnosti (%c)\n"
+"  Čtení: %3d\n"
+"  Zápis: %3d\n"
+"  Celkem: %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"
@@ -206,11 +214,11 @@ msgstr ""
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Monitorování výkonu disku okamžitě zobrazuje aktuální přenosové rychlosti vstupně výstupních operací a vytížení."
 
 #: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

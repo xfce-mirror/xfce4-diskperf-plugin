@@ -26,7 +26,6 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Zadejte název zařízení a stiskněte <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 

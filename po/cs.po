@@ -28,7 +28,7 @@ msgstr "Zadejte název zařízení a stiskněte <Enter>"
 #: ../panel-plugin/config_gui.c:118
 #, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"

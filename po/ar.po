@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
 # Maximilian Schleiss <maximilian@xfce.org>, 2006.
 # كريم اولاد الشلحة <herr.linux88@gmail.com>, 2012.
+# محمد الحرقان <malham1@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2012-02-04 21:29+0000\n"
-"Last-Translator: كريم اولاد الشلحة <herr.linux88@gmail.com>\n"
-"Language-Team: Arabic Xfce Translation Team\n"
+"PO-Revision-Date: 2012-11-18 19:37+0300\n"
+"Last-Translator: محمد الحرقان <malham1@gmail.com>\n"
+"Language-Team: http://www.vertaal.com.ar/files/factory/ar/list/\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -28,29 +29,28 @@ msgid "Input the device name, then press <Enter>"
 msgstr "أدخل إسم الجهاز, تم أضغط <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
-msgstr "مدة جمع المعلومات"
+msgstr "فترة جمع البيانات"
 
 #: ../panel-plugin/config_gui.c:139
 msgid "Update interval (s) "
-msgstr "مجال التحدبث (ات) "
+msgstr "فترة التحدبث (s) "
 
 #: ../panel-plugin/config_gui.c:147
 msgid "Label"
-msgstr "وسم"
+msgstr "التسمية"
 
 #: ../panel-plugin/config_gui.c:152
 msgid "Tick to display label"
-msgstr "أشر لإطهار الوسم"
+msgstr "ضع علامة لعرض التسمية"
 
 #: ../panel-plugin/config_gui.c:161
 msgid "Input the label, then press <Enter>"
-msgstr "أدخل الوسم, تم أضغط <Enter>"
+msgstr "أدخل الاسم, ثم أضغط <Enter>"
 
 #: ../panel-plugin/config_gui.c:163
 msgid "hda1"
@@ -65,9 +65,8 @@ msgid "I/O transfer"
 msgstr "نقل I/O"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "م.أ تم نقلها / ثانية"
+msgstr "ميقا بايت منقولة / الثانية"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -78,13 +77,12 @@ msgid "Percentage of time the device is busy"
 msgstr "نسبة مدة إنشغال الجهاز"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "سرعة I/O القصوى. (م.أ/ث)"
+msgstr "سرعة I/O القصوى. (م.أ/ث) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "أدخل أقصى للنقل I/O للجهاز, تم إضغط <Enter>"
+msgstr "أدخل أقصى سرعة نقل I/O للجهاز, تم إضغط <Enter>"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "35"
@@ -125,7 +123,7 @@ msgstr "قراءة-كتابة"
 
 #: ../panel-plugin/config_gui.c:292
 msgid "\"Read\" monitor first"
-msgstr "مراقبة \"قراءة\" أولا"
+msgstr "\"قراءة\" مراقبة أولا"
 
 #: ../panel-plugin/config_gui.c:299
 msgid "Write-Read"
@@ -133,12 +131,12 @@ msgstr "كتابة-قراءة"
 
 #: ../panel-plugin/config_gui.c:304
 msgid "\"Write\" monitor first"
-msgstr "مراقبة \"كتابة\" أولا"
+msgstr "\"كتابة\" مراقبة أولا"
 
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: إحصاءات الجهاز غير متوفر."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -154,6 +152,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  قراءة :%3.2f\n"
+"  كتابة :%3.2f\n"
+"  مجموع :%3.2f\n"
+"زمن الإنشغال (%c)\n"
+"  قراءة : %3d\n"
+"  كتابة : %3d\n"
+"  مجموع : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"
@@ -189,7 +197,7 @@ msgstr ""
 "تشغيل التجميع بـ CONFIG_BLK_STATS.\n"
 "\n"
 "هذا المراقب لن يعمل!\n"
-"الرحاء حذفه."
+"الرجاء حذفه."
 
 #: ../panel-plugin/main.c:892
 #, c-format
@@ -202,17 +210,17 @@ msgstr ""
 "%s: خطأ مجهول\n"
 "\n"
 "هذا المراقب لن يعمل!\n"
-"الرحاء حذفه."
+"الرجاء حذفه."
 
 #: ../panel-plugin/main.c:914
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "يعرض مراقب Diskperf معدلات نقل إدخال/إخراج القرص اللحظية وزمن العمل"
 
 #: ../panel-plugin/main.c:916
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "حقوق الطبع والنشر (ج) عام 2003، 2004 روجيه سيغان"
 
 #: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

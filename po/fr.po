@@ -132,12 +132,12 @@ msgid "\"Write\" monitor first"
 msgstr "Contrôleur d' \"écriture\" en premier"
 
 #: ../panel-plugin/main.c:180
-#, c-format, fuzzy
+#, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Statistiques périphérique indisponible."
 
 #: ../panel-plugin/main.c:219
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%s\n"
 "----------------\n"

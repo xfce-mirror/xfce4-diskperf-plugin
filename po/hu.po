@@ -1,7 +1,7 @@
 # Hungarian translation of xfce4-diskperf-plugin
 # Copyright (C) 2009, Free Software Foundation, Inc.
 # This file is distributed under the same license as the xfce4-diskperf-plugin package.
-#
+# 
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009.
 msgid ""
 msgstr ""
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2009-06-03 22:05+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at gnome dot hu>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
@@ -27,9 +27,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Adja meg az eszköz nevét és nyomja meg az Enter billentyűt"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -64,7 +63,6 @@ msgid "I/O transfer"
 msgstr "I/O átvitel"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
 msgstr "Átvitt MB/mp"
 
@@ -77,7 +75,6 @@ msgid "Percentage of time the device is busy"
 msgstr "Az eszköz által foglaltan töltött idő százalékos aránya"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Max. I/O sebesség (MB/mp)"
 
@@ -139,7 +136,7 @@ msgstr "„Írás” figyelője előre"
 #: ../panel-plugin/main.c:180
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Az eszközstatisztikák nem érhetők el."
 
 #: ../panel-plugin/main.c:219
 #, c-format
@@ -155,6 +152,16 @@ msgid ""
 "  Write : %3d\n"
 "  Total : %3d"
 msgstr ""
+"%s\n"
+"----------------\n"
+"I/O    (MB/mp)\n"
+"  Olvasás :%3.2f\n"
+"  Írás :%3.2f\n"
+"  Összes :%3.2f\n"
+"Foglalt (%c)\n"
+"  Olvasás : %3d\n"
+"  Írás : %3d\n"
+"  Összes : %3d"
 
 #: ../panel-plugin/main.c:823
 msgid "Select color"

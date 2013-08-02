@@ -1,21 +1,23 @@
-# Turkish translation of xfce4-diskperf-plugin.
-# Copyright (C) 2008 THE XFCE4-DISKPERF-PLUGIN'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfce4-diskperf-plugin package.
-#
-# GÃ¶kmen GÃ¶rgen <gkmngrgn@gmail.com>, 2008.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# GÃ¶kmen GÃ¶rgen <gkmngrgn@gmail.com>, 2008
+# Necdet Yücel <necdetyucel@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.2.0\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2008-11-06 17:05+0200\n"
-"Last-Translator: Gökmen Görgen <gkmngrgn@gmail.com>\n"
-"Language-Team: Turkish <turkce@pardus.org.tr>\n"
-"Language: tr\n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2013-08-02 13:23+0000\n"
+"Last-Translator: Necdet Yücel <necdetyucel@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/xfce/language/tr/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -26,9 +28,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Aygıt ismini girin ve <Giriş> tuşuna basın"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -63,9 +64,8 @@ msgid "I/O transfer"
 msgstr "I/O aktarımı"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB aktarıldı / saniyede"
+msgstr "MiB / saniye"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -76,14 +76,12 @@ msgid "Percentage of time the device is busy"
 msgstr "Aygıt kullanım yüzdesi"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "En yüksek I/O oranı (MB/s) "
+msgstr "Mak. I/O oranı (MiB/s)"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr ""
-"Aygıtların en yüksek I/O aktarım oranını girin ve sonra <Giriş> tuşuna basın"
+msgstr "Aygıtların en yüksek I/O aktarım oranını girin ve sonra <Giriş> tuşuna basın"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "35"
@@ -134,12 +132,12 @@ msgstr "Okuma-Yazma"
 msgid "\"Write\" monitor first"
 msgstr "\"Yazma\" ekranı başta"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Aygıt istetistikleri mevcut değil."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -152,13 +150,13 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  Okuma :%3.2f\n  Yazma :%3.2f\n  Toplam :%3.2f\nMeşgulken (%c)\n  Okuma : %3d\n  Yazma : %3d\n  Toplam : %3d"
 
-#: ../panel-plugin/main.c:823
+#: ../panel-plugin/main.c:850
 msgid "Select color"
 msgstr "Renk seçin"
 
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:900
 #, c-format
 msgid ""
 "%s\n"
@@ -166,14 +164,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Bu ekran çalışmayacak!\n"
-"Lütfen onu silin."
+msgstr "%s\n%s: %s (%d)\n\nBu ekran çalışmayacak!\nLütfen onu silin."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:911
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -182,69 +175,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Genişletilmiş disk istatistikleri bulunamadı!\n"
-"Ya çekirdek eski (< 2.4.20), ya da\n"
-"CONFIG_BLK_STATS açık halde derlenmiş.\n"
-"\n"
-"Bu ekran çalışmayacak!\n"
-"Lütfen onu silin."
+msgstr "%s: Genişletilmiş disk istatistikleri bulunamadı!\nYa çekirdek eski (< 2.4.20), ya da\nCONFIG_BLK_STATS açık halde derlenmiş.\n\nBu ekran çalışmayacak!\nLütfen onu silin."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:919
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s:Bilinmeyen hata\n"
-"\n"
-"Bu ekran çalışmayacak!\n"
-"Lütfen onu silin."
+msgstr "%s:Bilinmeyen hata\n\nBu ekran çalışmayacak!\nLütfen onu silin."
 
-#: ../panel-plugin/main.c:914
-#, fuzzy
+#: ../panel-plugin/main.c:941
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr ""
-"Diskperf anlık giriş/çıkış aktarma oranlarını ve meşgul zamanları gösterir."
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Disk performans ekranı"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "Disk performansını göster"
-
-#~ msgid "About..."
-#~ msgstr "Hakkında..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "Disk Performansı"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - Disk Performans Ekranı\n"
-#~ "Linux ve NetBSD sistemlerde, anlık disk I/O aktarım oranını ve meşgul "
-#~ "zamanları görüntüler\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD istatistikleri birikimi: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "Yapılandırma"

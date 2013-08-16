@@ -1,22 +1,23 @@
-# Itlaian translation for xfce4-diskperf-plugin
-# Copyright (C) 2009 Xfce Desktop Environment Team
-# This file is distributed under the same license as the Xfce Desktop Environment package.
-# Valerio Cipriani <raid@darkforge.eu>, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# cri <cri.penta@gmail.com>, 2013
+# Valerio Cipriani <raid@darkforge.eu>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4_diskperf-plugin\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2009-03-04 09:17+0100\n"
-"Last-Translator: Valerio Cipriani <raid@darkforge.eu>\n"
-"Language-Team: Darkforge Team <www.darkforge.it>\n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2013-08-16 14:11+0000\n"
+"Last-Translator: cri <cri.penta@gmail.com>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/xfce/language/it/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -24,7 +25,7 @@ msgstr "Dispositivo"
 
 #: ../panel-plugin/config_gui.c:115
 msgid "Input the device name, then press <Enter>"
-msgstr "Immettere il nome del volume e premere «Invio»"
+msgstr "Immettere il nome del dispositivo e premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:118
 msgid "/dev/sda1"
@@ -44,11 +45,11 @@ msgstr "Etichetta"
 
 #: ../panel-plugin/config_gui.c:152
 msgid "Tick to display label"
-msgstr "Seleziona per mostrare l'etichetta"
+msgstr "Selezionare per mostrare l'etichetta"
 
 #: ../panel-plugin/config_gui.c:161
 msgid "Input the label, then press <Enter>"
-msgstr "Immettere l'etichetta, e premere «Invio»"
+msgstr "Immettere l'etichetta, poi premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:163
 msgid "hda1"
@@ -80,8 +81,7 @@ msgstr "Max rapporto I/O (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr ""
-"Immetti il massimo rapporto di trasferimento I/O del device, e premi <Invio>"
+msgstr "Immetti il massimo rapporto di trasferimento I/O del device, poi premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "35"
@@ -122,7 +122,7 @@ msgstr "Lettura-scrittura"
 
 #: ../panel-plugin/config_gui.c:292
 msgid "\"Read\" monitor first"
-msgstr "Prima osserva la \"Lettura\""
+msgstr "Monitora la \"lettura\" per prima"
 
 #: ../panel-plugin/config_gui.c:299
 msgid "Write-Read"
@@ -130,14 +130,14 @@ msgstr "Scrittura-lettura"
 
 #: ../panel-plugin/config_gui.c:304
 msgid "\"Write\" monitor first"
-msgstr "Prima osserva la \"Scrittura\""
+msgstr "Monitora la \"scrittura\" per prima"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: statistiche del dispositivo non disponibili."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -150,23 +150,13 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
-"%s\n"
-"----------------\n"
-"I/O    (MiB/s)\n"
-"  Letti :%3.2f\n"
-"  Scritti :%3.2f\n"
-"  Totale :%3.2f\n"
-"Tempo di funzionamento (%c)\n"
-"  Letti : %3d\n"
-"  Scritti : %3d\n"
-"  Totale : %3d"
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  Letti :%3.2f\n  Scritti :%3.2f\n  Totale :%3.2f\nTempo di funzionamento (%c)\n  Letti : %3d\n  Scritti : %3d\n  Totale : %3d"
 
-#: ../panel-plugin/main.c:823
+#: ../panel-plugin/main.c:850
 msgid "Select color"
 msgstr "Selezione colore"
 
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:900
 #, c-format
 msgid ""
 "%s\n"
@@ -174,14 +164,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Questo monitoraggio non funzionerà!\n"
-"Rimuovilo."
+msgstr "%s\n%s: %s (%d)\n\nQuesto monitoraggio non funzionerà!\nRimuoverlo."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:911
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -190,69 +175,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Nessuna statistica estesa trovata su disco!\n"
-"Vecchio kernel (<2.4.20) o non è stato\n"
-"compilato con l'opzione CONFIG_BLK_STATUS attivata.\n"
-"\n"
-"Questo osservatore non funzionerà!\n"
-"Prego rimuoverlo."
+msgstr "%s: Nessuna statistica estesa trovata su disco!\nIl kernel è vecchio (<2.4.20) o non è stato\ncompilato con l'opzione CONFIG_BLK_STATUS attivata.\n\nQuesto monitoraggio non funzionerà!\nRimuoverlo."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:919
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Errore sconosciuto\n"
-"\n"
-"Questo osservatore non funzionerà!\n"
-"Prego rimuoverlo."
+msgstr "%s: Errore sconosciuto\n\nQuesto monitoraggio non funzionerà!\nRimuoverlo."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:941
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
-"Diskperf monitor mostra la velocità istantanea di I/O del disco e i tempi di "
-"attesa"
+msgstr "Diskperf monitor mostra la velocità istantanea di I/O del disco e i tempi di attesa"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Osservatore delle prestazioni del disco"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "Mostra le prestazioni di un disco"
-
-#~ msgid "About..."
-#~ msgstr "Info..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "Prestazioni disco"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Mostra rapporti di trasferimento I/O e tempi di lavoro su sistemi Linux e "
-#~ "NetBSD\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "Raggruppamento statistiche NetBSD: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "Configurazione"

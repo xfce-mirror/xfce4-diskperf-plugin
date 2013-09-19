@@ -1,21 +1,20 @@
-# Dutch translation of the xfce4-diskperf-plugin package.
-# Copyright (C) The Xfce development team.
-# This file is distributed under the same license as the
-# xfce4-diskperf-plugin package.
-# Pjotr <pjotrvertaalt@gmail.com> , 2011 - 2013.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2011-09-09 11:34+0200\n"
-"Last-Translator: Pjotr pjotrvertaalt@gmail.com\n"
-"Language-Team: Dutch (Flemish)\n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2013-09-19 14:36+0000\n"
+"Last-Translator: Pjotr123 <pjotrvertaalt@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/xfce/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl (Dutch)\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
@@ -68,7 +67,7 @@ msgstr "MB overgebracht / seconde"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
-msgstr "Bezige tijd"
+msgstr "Activiteit"
 
 #: ../panel-plugin/config_gui.c:191
 msgid "Percentage of time the device is busy"
@@ -80,9 +79,7 @@ msgstr "Max. I/O-snelheid (MB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr ""
-"Voer de maximale I/O-overdrachtsnelheid van het apparaat in, en druk dan op "
-"<Enter>"
+msgstr "Voer de maximale I/O-overdrachtsnelheid van het apparaat in, en druk dan op <Enter>"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "35"
@@ -133,12 +130,12 @@ msgstr "Schrijven-Lezen"
 msgid "\"Write\" monitor first"
 msgstr "'Schrijf'-bewaking eerst"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: apparaatstatistieken niet beschikbaar."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -151,23 +148,13 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
-"%s\n"
-"----------------\n"
-"I/O    (MiB/s)\n"
-"  Lezen :%3.2f\n"
-"  Schrijven :%3.2f\n"
-"  Totaal :%3.2f\n"
-"Actieve periode (%c)\n"
-"  Lezen : %3d\n"
-"  Schrijven : %3d\n"
-"  Total : %3d"
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  Lezen :%3.2f\n  Schrijven :%3.2f\n  Totaal :%3.2f\nActiviteit (%c)\n  Lezen : %3d\n  Schrijven : %3d\n  Total : %3d"
 
-#: ../panel-plugin/main.c:823
+#: ../panel-plugin/main.c:850
 msgid "Select color"
 msgstr "Kies kleur"
 
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:900
 #, c-format
 msgid ""
 "%s\n"
@@ -175,14 +162,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Deze monitor zal het niet doen!\n"
-"Verwijder hem a.u.b."
+msgstr "%s\n%s: %s (%d)\n\nDeze monitor zal het niet doen!\nVerwijder hem a.u.b."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:911
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -191,69 +173,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Geen uitgebreide schijfstatistieken gevonden!\n"
-"Of te oude kernel (< 2.4.20) of niet\n"
-"gecompileerd met CONFIG_BLK_STATS aan.\n"
-"\n"
-"Deze monitor zal het niet doen!\n"
-"Verwijder hem a.u.b."
+msgstr "%s: Geen uitgebreide schijfstatistieken gevonden!\nOf te oude kernel (< 2.4.20) of niet\ngecompileerd met CONFIG_BLK_STATS aan.\n\nDeze monitor zal het niet doen!\nVerwijder hem a.u.b."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:919
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Onbekende fout\n"
-"\n"
-"Deze monitor zal het niet doen!\n"
-"Verwijder hem a.u.b."
+msgstr "%s: Onbekende fout\n\nDeze monitor zal het niet doen!\nVerwijder hem a.u.b."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:941
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
-"Schijfprestatiebewaker toont ogenblikkelijke I/O-overdrachtsnelheden en "
-"bezige tijden van de schijf"
+msgstr "Schijfprestatiebewaker toont ogenblikkelijke I/O-overdrachtsnelheden en activiteit van de schijf"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Auteursrecht (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Schijfprestatiebewaker"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "Toon schijfprestatie"
-
-#~ msgid "About..."
-#~ msgstr "Over..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "Schijfprestatie"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - Schijfprestatiemonitor\n"
-#~ "Toon onmiddellijke I/O-overdrachtsnelheden en activiteitperioden van de  "
-#~ "schijf in Linux en NetBSD\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "Configuratie"

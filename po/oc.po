@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Cedric31 <cvalmary@yahoo.fr>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2013-12-04 18:18+0000\n"
+"Last-Translator: Cedric31 <cvalmary@yahoo.fr>\n"
+"Language-Team: Occitan (post 1500) (http://www.transifex.com/projects/p/xfce/language/oc/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: oc\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../panel-plugin/config_gui.c:101
+msgid "Device"
+msgstr "Periferic"
+
+#: ../panel-plugin/config_gui.c:115
+msgid "Input the device name, then press <Enter>"
+msgstr "Inserir lo nom del periferic e confirmar amb la tòca  <retorn>"
+
+#: ../panel-plugin/config_gui.c:118
+msgid "/dev/sda1"
+msgstr "/dev/sda1"
+
+#: ../panel-plugin/config_gui.c:136
+msgid "Data collection period"
+msgstr "Periòde de presa de las donadas"
+
+#: ../panel-plugin/config_gui.c:139
+msgid "Update interval (s) "
+msgstr "Interval de la(s) mesa(s) a jorn"
+
+#: ../panel-plugin/config_gui.c:147
+msgid "Label"
+msgstr "Etiqueta"
+
+#: ../panel-plugin/config_gui.c:152
+msgid "Tick to display label"
+msgstr "Marcar per afichar l'etiqueta"
+
+#: ../panel-plugin/config_gui.c:161
+msgid "Input the label, then press <Enter>"
+msgstr "Entratz l'etiqueta, puèi quichatz sus <Entrada>"
+
+#: ../panel-plugin/config_gui.c:163
+msgid "hda1"
+msgstr "hda1"
+
+#: ../panel-plugin/config_gui.c:173
+msgid "Monitor    "
+msgstr "Contrarotlador"
+
+#: ../panel-plugin/config_gui.c:178
+msgid "I/O transfer"
+msgstr "Transferiment E/S"
+
+#: ../panel-plugin/config_gui.c:181
+msgid "MiB transferred / second"
+msgstr "Mio transferits / segonda"
+
+#: ../panel-plugin/config_gui.c:187
+msgid "Busy time"
+msgstr "Temps d'ocupacion"
+
+#: ../panel-plugin/config_gui.c:191
+msgid "Percentage of time the device is busy"
+msgstr "Percentatge del temps ont lo periferic es ocupat"
+
+#: ../panel-plugin/config_gui.c:202
+msgid "Max. I/O rate (MiB/s) "
+msgstr "Velocitat E/S max. (Mio/s)"
+
+#: ../panel-plugin/config_gui.c:213
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr "Inserir lo taus de transferiment E/S max. del periferic, puèi quichatz sus <Entrada>"
+
+#: ../panel-plugin/config_gui.c:216
+msgid "35"
+msgstr "35"
+
+#: ../panel-plugin/config_gui.c:223
+msgid "Combine Read/Write data"
+msgstr "Combinar las donadas de lectura/escritura"
+
+#: ../panel-plugin/config_gui.c:228
+msgid "Combine Read/Write data into one single monitor?"
+msgstr "Combinar las donadas de lectura/escritura en un sol monitor ?"
+
+#: ../panel-plugin/config_gui.c:235
+msgid "Bar color "
+msgstr "Color de la barra"
+
+#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
+#: ../panel-plugin/config_gui.c:325
+msgid "Press to change color"
+msgstr "Clicar per cambiar la color"
+
+#: ../panel-plugin/config_gui.c:256
+msgid "Read bar color "
+msgstr "Color de la barra de lectura"
+
+#: ../panel-plugin/config_gui.c:264
+msgid "Write bar color "
+msgstr "Color de la barra d'escritura"
+
+#: ../panel-plugin/config_gui.c:272
+msgid "Bar order"
+msgstr "Disposicion de las barras"
+
+#: ../panel-plugin/config_gui.c:287
+msgid "Read-Write"
+msgstr "lectura-escritura"
+
+#: ../panel-plugin/config_gui.c:292
+msgid "\"Read\" monitor first"
+msgstr "« Lectura » primièr monitor"
+
+#: ../panel-plugin/config_gui.c:299
+msgid "Write-Read"
+msgstr "Escritura-lectura"
+
+#: ../panel-plugin/config_gui.c:304
+msgid "\"Write\" monitor first"
+msgstr "« Escritura » primièr monitor"
+
+#: ../panel-plugin/main.c:196
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr "%s: Estatisticas periferic indisponiblas."
+
+#: ../panel-plugin/main.c:236
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr "%s\n----------------\nE/S    (Mio/s)\n  Lectura :%3.2f\n  Escritura :%3.2f\n  Total :%3.2f\nTemps d'ocupacion (%c)\n  Lectura : %3d\n  Escritura : %3d\n  Total : %3d"
+
+#: ../panel-plugin/main.c:850
+msgid "Select color"
+msgstr "Causir la color"
+
+#: ../panel-plugin/main.c:900
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s\n%s : %s (%d)\n\nAqueste contrarotlador foncionarà pas !\nSuprimissètz-lo."
+
+#: ../panel-plugin/main.c:911
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s : estatistica espandida de disc pas trobada !\nSiá avètz un nucli tròp ancian (< 2.4.20) o alara\ncompilat sens l'opcion CONFIG_BLK_STATS.\n\nAqueste contrarotlador foncionarà pas !\nSuprimissètz-lo."
+
+#: ../panel-plugin/main.c:919
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s : Error desconeguda\n\nAqueste contrarotlador foncionarà pas !\nSuprimissètz-lo."
+
+#: ../panel-plugin/main.c:941
+msgid ""
+"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
+"times"
+msgstr "Lo contrarotlador Diskperf aficha los tauses instantanèus de transferiments I/O del disc e los tempses d'ocupacion "
+
+#: ../panel-plugin/main.c:943
+msgid "Copyright (c) 2003, 2004 Roger Seguin"
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
+
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
+msgid "Disk Performance Monitor"
+msgstr "Contrarotlador de performància de disc"
+
+#: ../panel-plugin/diskperf.desktop.in.h:2
+msgid "Show disk performance"
+msgstr "Afichar la performància del disc"

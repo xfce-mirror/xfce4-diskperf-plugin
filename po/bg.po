@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:57+0200\n"
-"PO-Revision-Date: 2014-01-12 16:19+0000\n"
+"PO-Revision-Date: 2014-01-13 06:23+0000\n"
 "Last-Translator: lyubomirv\n"
 "Language-Team: Bulgarian (http://www.transifex.com/projects/p/xfce/language/bg/)\n"
 "MIME-Version: 1.0\n"
@@ -174,7 +174,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s: Няма намерени разширени статистики за диск!\nИли ядрото е старо (< 2.4.20) или не е\nкомпилирано с включена CONFIG_BLK_STATS.\n\nТози наблюдател няма да работи!\nМоля, премахнете го."
 
 #: ../panel-plugin/main.c:919
 #, c-format
@@ -183,22 +183,22 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s: Непозната грешка\n\nТози наблюдател няма да работи!\nМоля, премахнете го."
 
 #: ../panel-plugin/main.c:941
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Наблюдателя за производителност на диска показва моментните В/И скорости на пренос и времена на заетост"
 
 #: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Авторски права (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr ""
+msgstr "Наблюдате за производителност на диска"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
-msgstr ""
+msgstr "Показване на производителността на диска"

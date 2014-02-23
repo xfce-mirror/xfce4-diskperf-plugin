@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# abuyop <abuyop@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2014-02-23 02:20+0000\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
+"Language-Team: Malay (http://www.transifex.com/projects/p/xfce/language/ms/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ms\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../panel-plugin/config_gui.c:101
+msgid "Device"
+msgstr "Peranti"
+
+#: ../panel-plugin/config_gui.c:115
+msgid "Input the device name, then press <Enter>"
+msgstr "Masukkan nama peranti, kemudian tekan <Enter>"
+
+#: ../panel-plugin/config_gui.c:118
+msgid "/dev/sda1"
+msgstr "/dev/sda1"
+
+#: ../panel-plugin/config_gui.c:136
+msgid "Data collection period"
+msgstr "Tempoh koleksi data"
+
+#: ../panel-plugin/config_gui.c:139
+msgid "Update interval (s) "
+msgstr "Sela kemaskini (s)"
+
+#: ../panel-plugin/config_gui.c:147
+msgid "Label"
+msgstr "Label"
+
+#: ../panel-plugin/config_gui.c:152
+msgid "Tick to display label"
+msgstr "Tanda untuk papar label"
+
+#: ../panel-plugin/config_gui.c:161
+msgid "Input the label, then press <Enter>"
+msgstr "Masukkan label, kemudian tekan <Enter>"
+
+#: ../panel-plugin/config_gui.c:163
+msgid "hda1"
+msgstr "hda1"
+
+#: ../panel-plugin/config_gui.c:173
+msgid "Monitor    "
+msgstr "Pemantau"
+
+#: ../panel-plugin/config_gui.c:178
+msgid "I/O transfer"
+msgstr "Pemindahan I/O"
+
+#: ../panel-plugin/config_gui.c:181
+msgid "MiB transferred / second"
+msgstr "MiB dipindah / saat"
+
+#: ../panel-plugin/config_gui.c:187
+msgid "Busy time"
+msgstr "Masa sibuk"
+
+#: ../panel-plugin/config_gui.c:191
+msgid "Percentage of time the device is busy"
+msgstr "Peratus masa peranti sibuk"
+
+#: ../panel-plugin/config_gui.c:202
+msgid "Max. I/O rate (MiB/s) "
+msgstr "Kadar I/O maks. (MiB/s)"
+
+#: ../panel-plugin/config_gui.c:213
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr "Masukkan kadar pemindahan I/O maksimum peranti, kemudian tekan <Enter>"
+
+#: ../panel-plugin/config_gui.c:216
+msgid "35"
+msgstr "35"
+
+#: ../panel-plugin/config_gui.c:223
+msgid "Combine Read/Write data"
+msgstr "Gabung data Baca/Tulis"
+
+#: ../panel-plugin/config_gui.c:228
+msgid "Combine Read/Write data into one single monitor?"
+msgstr "Gabung data Baca/Tulis ke satu pemantau tunggal?"
+
+#: ../panel-plugin/config_gui.c:235
+msgid "Bar color "
+msgstr "Warna palang"
+
+#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
+#: ../panel-plugin/config_gui.c:325
+msgid "Press to change color"
+msgstr "Tekan untuk ubah warna"
+
+#: ../panel-plugin/config_gui.c:256
+msgid "Read bar color "
+msgstr "Warna palang baca"
+
+#: ../panel-plugin/config_gui.c:264
+msgid "Write bar color "
+msgstr "Warna palang tulis"
+
+#: ../panel-plugin/config_gui.c:272
+msgid "Bar order"
+msgstr "Tertib palang"
+
+#: ../panel-plugin/config_gui.c:287
+msgid "Read-Write"
+msgstr "Baca-Tulis"
+
+#: ../panel-plugin/config_gui.c:292
+msgid "\"Read\" monitor first"
+msgstr "Pemantau \"Baca\" dahulu"
+
+#: ../panel-plugin/config_gui.c:299
+msgid "Write-Read"
+msgstr "Tulis-Baca"
+
+#: ../panel-plugin/config_gui.c:304
+msgid "\"Write\" monitor first"
+msgstr "Pemantau \"Tulis\" dahulu"
+
+#: ../panel-plugin/main.c:196
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr "%s: Statistik peranti tidak tersedia."
+
+#: ../panel-plugin/main.c:236
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr "%s\n----------------\nI/O (MiB/s)\nBaca :%3.2f\nTulis :%3.2f\nJumlah :%3.2f\nMasa sibuk (%c)\nBaca : %3d\nTulis : %3d\nJumlah : %3d"
+
+#: ../panel-plugin/main.c:850
+msgid "Select color"
+msgstr "Pilih warna"
+
+#: ../panel-plugin/main.c:900
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s\n%s: %s (%d)\n\nPemantau ini tidak akan berfungsi!\nSila buang ia."
+
+#: ../panel-plugin/main.c:911
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: Tiada statistik lanjutan cakera ditemui!\nSama ada kernel lama (< 2.4.20) atau tidak\ndikompil dengan CONFIG_BLK_STATS dihidupkan.\n\nPemantau ini tidak akan berfungsi!\nSila buang ia."
+
+#: ../panel-plugin/main.c:919
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: Ralat tidak diketahui\n\nPemantau ini tidak akan berfungsi!\nSila buang ia."
+
+#: ../panel-plugin/main.c:941
+msgid ""
+"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
+"times"
+msgstr "Pemantau Diskperf papar kadar pemindahan dan masa sibuk I/O cakera secara langsung"
+
+#: ../panel-plugin/main.c:943
+msgid "Copyright (c) 2003, 2004 Roger Seguin"
+msgstr "Hakcipta (c) 2003, 2004 Roger Seguin"
+
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
+msgid "Disk Performance Monitor"
+msgstr "Pemantau Prestasi Cakera"
+
+#: ../panel-plugin/diskperf.desktop.in.h:2
+msgid "Show disk performance"
+msgstr "Tunjuk prestasi cakera"

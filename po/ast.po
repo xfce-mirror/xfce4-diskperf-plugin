@@ -1,30 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# Tornes Llume <l.lumex03.tornes@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce 4-diskperf-complementu\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2009-07-13 19:55+0100\n"
-"Last-Translator: Marcos Antonio Alvarez Costales <marcoscostales@gmail.com>\n"
-"Language-Team: Asturian <alministradores@softastur.org>\n"
-"Language: ast\n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2014-04-14 01:51+0000\n"
+"Last-Translator: Tornes Llume <l.lumex03.tornes@gmail.com>\n"
+"Language-Team: Asturian (http://www.transifex.com/projects/p/xfce/language/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ast\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
-msgstr "Preseos"
+msgstr "Preséu"
 
 #: ../panel-plugin/config_gui.c:115
 msgid "Input the device name, then press <Enter>"
 msgstr "Introduz el nome del preséu y calca <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -32,7 +36,7 @@ msgstr "Periodu de recoyida de datos"
 
 #: ../panel-plugin/config_gui.c:139
 msgid "Update interval (s) "
-msgstr "Intervalu d'anovación (s)"
+msgstr "Intervalu d'anovamientu (s)"
 
 #: ../panel-plugin/config_gui.c:147
 msgid "Label"
@@ -40,7 +44,7 @@ msgstr "Etiqueta"
 
 #: ../panel-plugin/config_gui.c:152
 msgid "Tick to display label"
-msgstr "Marcar p'amosar n'etiqueta"
+msgstr "Conseñar p'amosar n'etiqueta"
 
 #: ../panel-plugin/config_gui.c:161
 msgid "Input the label, then press <Enter>"
@@ -59,9 +63,8 @@ msgid "I/O transfer"
 msgstr "Tresferencia d'E/S"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
-msgstr "MB tresferíos / segundu"
+msgstr "MiB tresferíos / segundu"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -72,13 +75,12 @@ msgid "Percentage of time the device is busy"
 msgstr "Porcentaxe de tiempu que'l preséu ta ocupáu"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Tasa máx. d'E/S (MB/s)"
+msgstr "Max. I/O tasa (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Introduz la máxima tasa de tresferencia d'E/S y calca <Enter>"
+msgstr "Introduz la tasa máxima de tresferencia d'E/S y calca <Enter>"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "35"
@@ -86,11 +88,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:223
 msgid "Combine Read/Write data"
-msgstr "Amestar datos de llectura/escritura"
+msgstr "Combinar datos de llectura/escritura"
 
 #: ../panel-plugin/config_gui.c:228
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "¿Amestar datos de llectura/escritura nun solo monitor?"
+msgstr "¿Combinar datos de llectura/escritura namái nun monitor?"
 
 #: ../panel-plugin/config_gui.c:235
 msgid "Bar color "
@@ -129,12 +131,12 @@ msgstr "Escritura-Llectura"
 msgid "\"Write\" monitor first"
 msgstr "Primer monitor \"escritura\""
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Estadístiques del preséu non disponibles."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -147,13 +149,13 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
+msgstr "%s\n----------------\nE/S    (MiB/s)\n  Llectura :%3.2f\n  Escritura :%3.2f\n  Total :%3.2f\nTIempu ocupáu (%c)\n  Llectura : %3d\n  Escritura : %3d\n  Total : %3d"
 
-#: ../panel-plugin/main.c:823
+#: ../panel-plugin/main.c:850
 msgid "Select color"
-msgstr "Seleicionar color"
+msgstr "Esbillar color"
 
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:900
 #, c-format
 msgid ""
 "%s\n"
@@ -161,14 +163,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"¡Esti monitor nun furrulará!\n"
-"Por favor, desanicialu."
+msgstr "%s\n%s: %s (%d)\n\n¡Esti monitor nun furrulará!\nPor favor, desanicialu."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:911
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -177,67 +174,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: ¡Nun s'alcontraron estadístiques estendíes de discu!\n"
-"El kernel ye antiguu (< 2.4.20) o non\n"
-"compilóse con CONFIG_BLK_STATS activáu.\n"
-"\n"
-"¡Esti monitor non furrulará!\n"
-"Por favor, desanicialu."
+msgstr "%s: ¡Nun s'alcontraron estadístiques de discu estendíes!\nEl kernel ye antiguu (< 2.4.20) o nun\nse compiló con CONFIG_BLK_STATS activáu.\n\n¡Esti monitor non furrulará!\nPor favor, desanicialu."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:919
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Fallu desconocíu\n"
-"\n"
-"¡Esti monitor nun furrulará!\n"
-"Por favor, desanicialu."
+msgstr "%s: Erru desconocíu\n\n¡Esti monitor nun furrulará!\nPor favor, desanicialu."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:941
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "El monitor Diskperf amuesa tases de tresferencia de discu E/S y vegaes ocupáu"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Monitor de rendimientu de discu"
+msgstr "Monitor de rindimientu de discu"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
-msgstr "Amosar rendimientu de discu"
-
-#~ msgid "About..."
-#~ msgstr "Tocante a..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "Rendimientu de discu"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - Monitor de rendimientu de discu\n"
-#~ "Amuesa tases de tresferencia d'E/S nel intre y tiempos d'ocupación en "
-#~ "sistemes Linux y NetBSD\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "Recoyía d'estadístiques de NetBSD: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "Configuración"
+msgstr "Amosar rindimientu de discu"

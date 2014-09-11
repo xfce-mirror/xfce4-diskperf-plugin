@@ -257,16 +257,12 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 {
 	struct timeval tv;
 	struct timespec ts;
-	struct statinfo stats;
-	struct devinfo dinfo;
+	static struct devinfo dinfo;
+	static struct statinfo stats = {.dinfo = &dinfo};
 	struct devstat dev;
 	kvm_t *kd = NULL;
 	int i, found = 0;
 	char *check_dev = (char *) p_pvDevice;
-
-	memset(&stats, 0, sizeof(stats));
-	memset(&dinfo, 0, sizeof(dinfo));
-	stats.dinfo = &dinfo;
 
 	if(devstat_getdevs(kd, &stats) == -1) {
 		syslog(0, "DISKPERF: getdevs fail");

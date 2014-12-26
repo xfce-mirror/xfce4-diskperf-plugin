@@ -4,14 +4,14 @@
 # 
 # Translators:
 #  <abel.martin.ruiz@gmail.com>, 2009
-# Pablo Lezaeta <prflr88@gmail.com>, 2014
+# Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:57+0200\n"
-"PO-Revision-Date: 2014-05-19 05:25+0000\n"
-"Last-Translator: Pablo Lezaeta <prflr88@gmail.com>\n"
+"PO-Revision-Date: 2014-12-25 23:43+0000\n"
+"Last-Translator: Pablo Roberto Francisco Lezaeta Reyes <prflr88@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/xfce-panel-plugins/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,11 +61,11 @@ msgstr "Monitor"
 
 #: ../panel-plugin/config_gui.c:178
 msgid "I/O transfer"
-msgstr "Transferencia de E/S"
+msgstr "Trasferencia de E/S"
 
 #: ../panel-plugin/config_gui.c:181
 msgid "MiB transferred / second"
-msgstr "MiB transferidos / segundo"
+msgstr "MiB trasferidos por segundo"
 
 #: ../panel-plugin/config_gui.c:187
 msgid "Busy time"
@@ -122,7 +122,7 @@ msgstr "Lectura-Escritura"
 
 #: ../panel-plugin/config_gui.c:292
 msgid "\"Read\" monitor first"
-msgstr "Primero monitor \"lectura\""
+msgstr "Primero monitor «lectura»"
 
 #: ../panel-plugin/config_gui.c:299
 msgid "Write-Read"
@@ -130,7 +130,7 @@ msgstr "Escritura-Lectura"
 
 #: ../panel-plugin/config_gui.c:304
 msgid "\"Write\" monitor first"
-msgstr "Primero monitor \"escritura\""
+msgstr "Primero monitor «escritura»"
 
 #: ../panel-plugin/main.c:196
 #, c-format
@@ -150,7 +150,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr "%s/n----------------\nE/S    (MiB/s)\n  Lectura :%3.2f\n  Escritura :%3.2f\n  Total :%3.2f\nTiempo ocupado (%c)\n  Lectura : %3d\n  Escritura : %3d\n  Total : %3d"
+msgstr "%s/n----------------\n  E/S    (MiB/s)\n  Lectura :%3.2f\n  Escritura :%3.2f\n  Total :%3.2f\n  Tiempo ocupado (%c)\n  Lectura : %3d\n  Escritura : %3d\n  Total : %3d"
 
 #: ../panel-plugin/main.c:850
 msgid "Select color"
@@ -175,7 +175,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: ¡No se encontraron estadísticas extendidas de disco!\nEl kernel es antiguo (< 2.4.20) o no\nse compiló con CONFIG_BLK_STATS activado.\n\n¡Este monitor no funcionará!\nPor favor, elimínelo."
+msgstr "%s: ¡No se encontraron estadísticas extendidas de disco!\nEl núcleo es antiguo (< 2.4.20) o no\nse compiló con CONFIG_BLK_STATS activado.\n\n¡Este monitor no funcionará!\nPor favor, elimínelo."
 
 #: ../panel-plugin/main.c:919
 #, c-format
@@ -190,7 +190,7 @@ msgstr "%s: Error desconocido\n\n¡Este monitor no funcionará!\nPor favor, elim
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Diskperf muestra de forma instantánea tasas de transferencia de E/S y tiempos ocupados de disco"
+msgstr "El monitor del rendimiento del disco muestra de forma instantánea tasas de trasferencia de E/S y tiempos ocupados de disco"
 
 #: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"

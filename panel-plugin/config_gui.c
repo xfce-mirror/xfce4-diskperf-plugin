@@ -90,9 +90,6 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     GtkWidget      *wRB_WriteReadOrder;
     GtkWidget      *wPB_Rcolor;
     GtkWidget      *wPB_Wcolor;
-    GtkTooltips    *tooltips;
-
-    tooltips = gtk_tooltips_new ();
 
     table1 = gtk_table_new (3, 2, FALSE);
     gtk_widget_show (table1);
@@ -111,9 +108,8 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_table_attach (GTK_TABLE (table1), wTF_Device, 1, 2, 0, 1,
 		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
 		      (GtkAttachOptions) (0), 0, 0);
-    gtk_tooltips_set_tip (tooltips, wTF_Device,
-			  _("Input the device name, then press <Enter>"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wTF_Device,
+			  _("Input the device name, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Device), 64);
     gtk_entry_set_text (GTK_ENTRY (wTF_Device), _("/dev/sda1"));
 
@@ -132,8 +128,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 	gtk_spin_button_new (GTK_ADJUSTMENT (wSc_Period_adj), 1, 3);
     gtk_widget_show (wSc_Period);
     gtk_container_add (GTK_CONTAINER (alignment1), wSc_Period);
-    gtk_tooltips_set_tip (tooltips, wSc_Period,
-			  _("Data collection period"), NULL);
+    gtk_widget_set_tooltip_text (wSc_Period, _("Data collection period"));
     gtk_spin_button_set_numeric (GTK_SPIN_BUTTON (wSc_Period), TRUE);
 
     label2 = gtk_label_new (_("Update interval (s) "));
@@ -149,16 +144,15 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_table_attach (GTK_TABLE (table1), wTB_Title, 0, 1, 1, 2,
 		      (GtkAttachOptions) (GTK_FILL),
 		      (GtkAttachOptions) (0), 0, 0);
-    gtk_tooltips_set_tip (tooltips, wTB_Title, _("Tick to display label"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wTB_Title, _("Tick to display label"));
 
     wTF_Title = gtk_entry_new ();
     gtk_widget_show (wTF_Title);
     gtk_table_attach (GTK_TABLE (table1), wTF_Title, 1, 2, 1, 2,
 		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
 		      (GtkAttachOptions) (0), 0, 0);
-    gtk_tooltips_set_tip (tooltips, wTF_Title,
-			  _("Input the label, then press <Enter>"), NULL);
+    gtk_widget_set_tooltip_text (wTF_Title,
+			  _("Input the label, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Title), 16);
     gtk_entry_set_text (GTK_ENTRY (wTF_Title), _("hda1"));
 
@@ -178,8 +172,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     wRB_IO = gtk_radio_button_new_with_mnemonic (NULL, _("I/O transfer"));
     gtk_widget_show (wRB_IO);
     gtk_box_pack_start (GTK_BOX (hbox2), wRB_IO, FALSE, FALSE, 0);
-    gtk_tooltips_set_tip (tooltips, wRB_IO, _("MiB transferred / second"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wRB_IO, _("MiB transferred / second"));
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_IO), wRB_IO_group);
     wRB_IO_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_IO));
 
@@ -187,9 +180,8 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 	gtk_radio_button_new_with_mnemonic (NULL, _("Busy time"));
     gtk_widget_show (wRB_BusyTime);
     gtk_box_pack_start (GTK_BOX (hbox2), wRB_BusyTime, FALSE, FALSE, 0);
-    gtk_tooltips_set_tip (tooltips, wRB_BusyTime,
-			  _("Percentage of time the device is busy"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wRB_BusyTime,
+			  _("Percentage of time the device is busy"));
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_BusyTime),
 				wRB_IO_group);
     wRB_IO_group =
@@ -208,10 +200,8 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     wTF_MaxXfer = gtk_entry_new ();
     gtk_widget_show (wTF_MaxXfer);
     gtk_box_pack_start (GTK_BOX (wHBox_MaxIO), wTF_MaxXfer, TRUE, TRUE, 0);
-    gtk_tooltips_set_tip (tooltips, wTF_MaxXfer,
-			  _
-			  ("Input the maximum I/O transfer rate of the device, then press <Enter>"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wTF_MaxXfer,
+			  _("Input the maximum I/O transfer rate of the device, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_MaxXfer), 3);
     gtk_entry_set_text (GTK_ENTRY (wTF_MaxXfer), _("35"));
 
@@ -223,10 +213,8 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 	gtk_check_button_new_with_mnemonic (_("Combine Read/Write data"));
     gtk_widget_show (wTB_RWcombined);
     gtk_box_pack_start (GTK_BOX (vbox1), wTB_RWcombined, FALSE, FALSE, 0);
-    gtk_tooltips_set_tip (tooltips, wTB_RWcombined,
-			  _
-			  ("Combine Read/Write data into one single monitor?"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wTB_RWcombined,
+			  _("Combine Read/Write data into one single monitor?"));
 
     wTa_SingleBar = gtk_table_new (1, 2, FALSE);
     gtk_widget_show (wTa_SingleBar);
@@ -246,8 +234,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_table_attach (GTK_TABLE (wTa_SingleBar), wPB_RWcolor, 1, 2, 0, 1,
 		      (GtkAttachOptions) (GTK_FILL | GTK_EXPAND),
 		      (GtkAttachOptions) (GTK_FILL), 0, 0);
-    gtk_tooltips_set_tip (tooltips, wPB_RWcolor,
-			  _("Press to change color"), NULL);
+    gtk_widget_set_tooltip_text (wPB_RWcolor, _("Press to change color"));
 
     wTa_DualBars = gtk_table_new (3, 2, FALSE);
     gtk_widget_show (wTa_DualBars);
@@ -288,8 +275,8 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (wRB_ReadWriteOrder);
     gtk_box_pack_start (GTK_BOX (hbox1), wRB_ReadWriteOrder, FALSE, FALSE,
 			0);
-    gtk_tooltips_set_tip (tooltips, wRB_ReadWriteOrder,
-			  _("\"Read\" monitor first"), NULL);
+    gtk_widget_set_tooltip_text (wRB_ReadWriteOrder,
+			  _("\"Read\" monitor first"));
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_ReadWriteOrder),
 				wRB_ReadWriteOrder_group);
     wRB_ReadWriteOrder_group =
@@ -300,8 +287,8 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (wRB_WriteReadOrder);
     gtk_box_pack_start (GTK_BOX (hbox1), wRB_WriteReadOrder, FALSE, FALSE,
 			0);
-    gtk_tooltips_set_tip (tooltips, wRB_WriteReadOrder,
-			  _("\"Write\" monitor first"), NULL);
+    gtk_widget_set_tooltip_text (wRB_WriteReadOrder,
+			  _("\"Write\" monitor first"));
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder),
 				wRB_ReadWriteOrder_group);
     wRB_ReadWriteOrder_group =
@@ -313,8 +300,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_table_attach (GTK_TABLE (wTa_DualBars), wPB_Rcolor, 1, 2, 1, 2,
 		      (GtkAttachOptions) (GTK_FILL),
 		      (GtkAttachOptions) (GTK_FILL), 0, 0);
-    gtk_tooltips_set_tip (tooltips, wPB_Rcolor, _("Press to change color"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wPB_Rcolor, _("Press to change color"));
 
     wPB_Wcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_Wcolor);
@@ -322,8 +308,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_table_attach (GTK_TABLE (wTa_DualBars), wPB_Wcolor, 1, 2, 2, 3,
 		      (GtkAttachOptions) (GTK_FILL),
 		      (GtkAttachOptions) (GTK_FILL), 0, 0);
-    gtk_tooltips_set_tip (tooltips, wPB_Wcolor, _("Press to change color"),
-			  NULL);
+    gtk_widget_set_tooltip_text (wPB_Wcolor, _("Press to change color"));
 
     if (p_poGUI) {
 	COPYVAL (p_poGUI, wTF_Device);

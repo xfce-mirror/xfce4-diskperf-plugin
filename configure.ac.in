@@ -5,7 +5,7 @@ dnl
 
 m4_define([diskperf_version_major], [2])
 m4_define([diskperf_version_minor], [5])
-m4_define([diskperf_version_micro], [4])
+m4_define([diskperf_version_micro], [5])
 m4_define([diskperf_version_build], [@REVISION@])
 m4_define([diskperf_version_tag], []) # leave empty for releases
 m4_define([diskperf_version], [diskperf_version_major().diskperf_version_minor().diskperf_version_micro()ifelse(diskperf_version_tag(), [git], [diskperf_version_tag()-diskperf_version_build()], [diskperf_version_tag()])])
@@ -32,7 +32,7 @@ dnl ********************************
 AC_PROG_CC_C99()
 AC_PROG_LD()
 AC_PROG_INSTALL()
-AC_PROG_INTLTOOL()
+IT_PROG_INTLTOOL([0.35.0])
 
 LT_PREREQ([2.2.6])
 LT_INIT([disable-static])

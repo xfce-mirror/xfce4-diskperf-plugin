@@ -1,4 +1,14 @@
+2.5.5 (2015/3/3):
+-----------------
+* Use the new GtkTooltip API
+* Fix a memory leak in the FreeBSD codepath (#11153)
+* Add support for FreeBSD (bug #10350)
+* New translations: th, ms, bg, oc, hr, en_AU, sr
+* Updated translations: ar, ast, bg, cs, de, es, fr, it,
+  hr, hu. ko, nb, nl, ug, pl, sv, tr, zh_CN, zh_TW
+
 2.5.4 (2012/6/30):
+-----------------
  * Better compliance with panel plugin HIG
  * Use double values for progress bars (bug #8882)
  * Facilitate bringing up the configuration dialog (bug #8899)

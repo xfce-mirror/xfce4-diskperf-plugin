@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 20:57+0200\n"
-"PO-Revision-Date: 2014-02-17 20:02+0000\n"
-"Last-Translator: PavelNicklasson <pavelnicklasson@bahnhof.se>\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/xfce/language/sv/)\n"
+"PO-Revision-Date: 2015-07-19 17:18+0000\n"
+"Last-Translator: Påvel Nicklasson <pavelnicklasson@bahnhof.se>\n"
+"Language-Team: Swedish (http://www.transifex.com/p/xfce-panel-plugins/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,7 +56,7 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:173
 msgid "Monitor    "
-msgstr "Övervakare"
+msgstr "Övervaka"
 
 #: ../panel-plugin/config_gui.c:178
 msgid "I/O transfer"
@@ -92,7 +92,7 @@ msgstr "Kombinera Läs/Skriv-data"
 
 #: ../panel-plugin/config_gui.c:228
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Kombinera Läs/Skriv-data till en enda övervakare?"
+msgstr "Kombinera Läs/Skriv-data till en enda övervakning?"
 
 #: ../panel-plugin/config_gui.c:235
 msgid "Bar color "
@@ -121,7 +121,7 @@ msgstr "Läs-Skriv"
 
 #: ../panel-plugin/config_gui.c:292
 msgid "\"Read\" monitor first"
-msgstr "\"Läs\"-övervakare först"
+msgstr "\"Läs\"-övervakning först"
 
 #: ../panel-plugin/config_gui.c:299
 msgid "Write-Read"
@@ -129,7 +129,7 @@ msgstr "Skriv-Läs"
 
 #: ../panel-plugin/config_gui.c:304
 msgid "\"Write\" monitor first"
-msgstr "\"Skriv\"-övervakare först"
+msgstr "\"Skriv\"-övervakning först"
 
 #: ../panel-plugin/main.c:196
 #, c-format
@@ -163,7 +163,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s\n%s: %s (%d)\n\nDenna övervakare kommer inte att fungera!\nTa bort den."
+msgstr "%s\n%s: %s (%d)\n\nDenna övervakning kommer inte att fungera!\nTa bort den."
 
 #: ../panel-plugin/main.c:911
 #, c-format
@@ -174,7 +174,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Ingen utökad diskstatistik hittades!\nAntingen gammal kärna (< 2.4.20) eller inte\nkompilerad med CONFIG_BLK_STATS påslagen.\n\nDenna övervakare kommer inte att fungera!\nTa bort den."
+msgstr "%s: Ingen utökad diskstatistik hittades!\nAntingen gammal kärna (< 2.4.20) eller inte\nkompilerad med CONFIG_BLK_STATS påslagen.\n\nDenna övervakning kommer inte att fungera!\nTa bort den."
 
 #: ../panel-plugin/main.c:919
 #, c-format
@@ -183,13 +183,13 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Okänt fel\n\nDenna övervakare kommer inte att fungera!\nTa bort den."
+msgstr "%s: Okänt fel\n\nDenna övervakning kommer inte att fungera!\nTa bort den."
 
 #: ../panel-plugin/main.c:941
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Diskperf övervakning visar omedelbart disk I/O överföringshastighet och upptagentider"
+msgstr "Diskperf-övervakning visar omedelbart disk I/O överföringshastighet och upptagettider"
 
 #: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
@@ -197,7 +197,7 @@ msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Övervakare för diskprestanda"
+msgstr "Övervakning av diskprestanda"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"

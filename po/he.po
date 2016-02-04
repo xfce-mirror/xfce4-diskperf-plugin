@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Elishai Eliyahu <e1907@mm.st>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2016-02-04 10:42+0000\n"
+"Last-Translator: Elishai Eliyahu <e1907@mm.st>\n"
+"Language-Team: Hebrew (http://www.transifex.com/xfce/xfce-panel-plugins/language/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../panel-plugin/config_gui.c:101
+msgid "Device"
+msgstr "התקן"
+
+#: ../panel-plugin/config_gui.c:115
+msgid "Input the device name, then press <Enter>"
+msgstr "הכנס את שם ההתקן, לאחר מכן לחץ <אנטר>"
+
+#: ../panel-plugin/config_gui.c:118
+msgid "/dev/sda1"
+msgstr "/dev/sda1"
+
+#: ../panel-plugin/config_gui.c:136
+msgid "Data collection period"
+msgstr "תקופת איסוף מידע"
+
+#: ../panel-plugin/config_gui.c:139
+msgid "Update interval (s) "
+msgstr "מרווח(י) עדכון"
+
+#: ../panel-plugin/config_gui.c:147
+msgid "Label"
+msgstr "תווית"
+
+#: ../panel-plugin/config_gui.c:152
+msgid "Tick to display label"
+msgstr "סמן להצגת תווית"
+
+#: ../panel-plugin/config_gui.c:161
+msgid "Input the label, then press <Enter>"
+msgstr "הכנס את התווית, לאחר מכן לחץ <אנטר>"
+
+#: ../panel-plugin/config_gui.c:163
+msgid "hda1"
+msgstr "hda1"
+
+#: ../panel-plugin/config_gui.c:173
+msgid "Monitor    "
+msgstr "עקוב"
+
+#: ../panel-plugin/config_gui.c:178
+msgid "I/O transfer"
+msgstr "מעבר קלט/פלט"
+
+#: ../panel-plugin/config_gui.c:181
+msgid "MiB transferred / second"
+msgstr "מגהבייט שהועברו / שנייה"
+
+#: ../panel-plugin/config_gui.c:187
+msgid "Busy time"
+msgstr "זמן תפוס"
+
+#: ../panel-plugin/config_gui.c:191
+msgid "Percentage of time the device is busy"
+msgstr "אחוז הזמן שבו ההתקן עסוק"
+
+#: ../panel-plugin/config_gui.c:202
+msgid "Max. I/O rate (MiB/s) "
+msgstr "קצב קלט/פלט מירבי (מגהבייט/שנייה)"
+
+#: ../panel-plugin/config_gui.c:213
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr "הכנס את קצב מעבר קלט/פלט המירבי של ההתקן, לאחר מכן לחץ <אנטר>"
+
+#: ../panel-plugin/config_gui.c:216
+msgid "35"
+msgstr "35"
+
+#: ../panel-plugin/config_gui.c:223
+msgid "Combine Read/Write data"
+msgstr "שלב מידע קריאה/כתיבה"
+
+#: ../panel-plugin/config_gui.c:228
+msgid "Combine Read/Write data into one single monitor?"
+msgstr "לשלב מידע קריאה/כתיבה לתוך עוקב יחיד?"
+
+#: ../panel-plugin/config_gui.c:235
+msgid "Bar color "
+msgstr "צבע סרגל"
+
+#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
+#: ../panel-plugin/config_gui.c:325
+msgid "Press to change color"
+msgstr "לחץ לשינוי צבע"
+
+#: ../panel-plugin/config_gui.c:256
+msgid "Read bar color "
+msgstr "קרא צבע סרגל"
+
+#: ../panel-plugin/config_gui.c:264
+msgid "Write bar color "
+msgstr "כתוב צבע סרגל"
+
+#: ../panel-plugin/config_gui.c:272
+msgid "Bar order"
+msgstr "סדר סרגל"
+
+#: ../panel-plugin/config_gui.c:287
+msgid "Read-Write"
+msgstr "קריאה-כתיבה"
+
+#: ../panel-plugin/config_gui.c:292
+msgid "\"Read\" monitor first"
+msgstr "\"קרא\" קודם עוקב"
+
+#: ../panel-plugin/config_gui.c:299
+msgid "Write-Read"
+msgstr "כתיבה-קריאה"
+
+#: ../panel-plugin/config_gui.c:304
+msgid "\"Write\" monitor first"
+msgstr "\"כתוב\" קודם עוקב"
+
+#: ../panel-plugin/main.c:196
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr "%s: סטטיסטיקת התקן לא זמינה."
+
+#: ../panel-plugin/main.c:236
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr "%s\n----------------\nקלט/פלט    (מגהבייט/שנייה)\n  קריאה :%3.2f\n  כתיבה :%3.2f\n  סה\"כ :%3.2f\nזמן תפוס (%c)\n  קריאה : %3d\n  כתיבה : %3d\n  סה\"כ : %3d"
+
+#: ../panel-plugin/main.c:850
+msgid "Select color"
+msgstr "בחר צבע"
+
+#: ../panel-plugin/main.c:900
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s\n%s: %s (%d)\n\nעוקב זה לא יעבוד!\nאנא הסר אותו."
+
+#: ../panel-plugin/main.c:911
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: לא נמצאה סטטיסטיקה מורחבת של דיסק!\nאו שהקרנל ישן (<2.4.20) \nאו שעבר הדרה עם CONFIG_BLK_STATS דלוק.\n\nעוקב זה לא יעבוד!\nאנא הסר אותו."
+
+#: ../panel-plugin/main.c:919
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: שגיאה לא ידועה\n\nעוקב זה לא יעבוד!\nאנא הסר אותו."
+
+#: ../panel-plugin/main.c:941
+msgid ""
+"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
+"times"
+msgstr "עוקב Diskperf מציג קצבי מעבר קלט/פלט רגעיים וזמנים תפוסים"
+
+#: ../panel-plugin/main.c:943
+msgid "Copyright (c) 2003, 2004 Roger Seguin"
+msgstr "זכות יוצרים (c) 2003,2004 רוג'ר סגואין"
+
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
+msgid "Disk Performance Monitor"
+msgstr "עוקב ביצועי דיסק"
+
+#: ../panel-plugin/diskperf.desktop.in.h:2
+msgid "Show disk performance"
+msgstr "הצג ביצועי דיסק"

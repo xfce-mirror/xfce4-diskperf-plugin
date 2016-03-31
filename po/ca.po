@@ -1,24 +1,23 @@
-# Catalan translation of xfce4-diskperf-plugin.
-# Copyright (C) 2006 xfce4-diskperf-plugin's copyright holder.
-# This file is distributed under the same license as the
-# xfce4-diskperf-plugin package.
-# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2006.
-#
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Carles Muñoz Gorriz <carlesmu@internautas.org>, 2006
+# Davidmp <medipas@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2006-12-02 13:01+0100\n"
-"Last-Translator: Carles Muñoz Gorriz <carlesmu@internautas.org>\n"
-"Language-Team: Catalan <xfce-i18n@xfce.org>\n"
-"Language: ca\n"
+"POT-Creation-Date: 2013-07-03 20:57+0200\n"
+"PO-Revision-Date: 2016-03-31 16:18+0000\n"
+"Last-Translator: Davidmp <medipas@gmail.com>\n"
+"Language-Team: Catalan (http://www.transifex.com/xfce/xfce-panel-plugins/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../panel-plugin/config_gui.c:101
 msgid "Device"
@@ -29,9 +28,8 @@ msgid "Input the device name, then press <Enter>"
 msgstr "Introduïu el nom del dispositiu, després premeu «retorn»"
 
 #: ../panel-plugin/config_gui.c:118
-#, fuzzy
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:136
 msgid "Data collection period"
@@ -66,7 +64,6 @@ msgid "I/O transfer"
 msgstr "Transferència d'E/S"
 
 #: ../panel-plugin/config_gui.c:181
-#, fuzzy
 msgid "MiB transferred / second"
 msgstr "MB transferits per segon"
 
@@ -79,15 +76,12 @@ msgid "Percentage of time the device is busy"
 msgstr "Percentatge de temps en que el dispositiu està ocupat"
 
 #: ../panel-plugin/config_gui.c:202
-#, fuzzy
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Max. rati d'E/S (MB/s)"
+msgstr "Ràtio màx. d'E/S (MB/s)"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr ""
-"Introduïu el rati de transferència màxima d'E/S del dispositiu, després "
-"premeu «retorn»"
+msgstr "Introduïu el rati de transferència màxima d'E/S del dispositiu, després premeu «retorn»"
 
 #: ../panel-plugin/config_gui.c:216
 msgid "35"
@@ -138,12 +132,12 @@ msgstr "Escriptura-Lectura"
 msgid "\"Write\" monitor first"
 msgstr "Primer monitor d'escriptura"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: no disponibles les estadístiques de dispositius."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -156,13 +150,13 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
+msgstr "%s\n----------------\nE/S    (MiB/s)\n  Lectura: %3.2f\n  Escriptura: %3.2f\n  Total: %3.2f\nTemps ocupat (%c)\n  Lectura: %3d\n  Escriptura: %3d\n  Total: %3d"
 
-#: ../panel-plugin/main.c:823
+#: ../panel-plugin/main.c:850
 msgid "Select color"
 msgstr "Seleccioneu el color"
 
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:900
 #, c-format
 msgid ""
 "%s\n"
@@ -170,14 +164,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Aquest connector no funcionarà.\n"
-"Si us plau, traieu-lo."
+msgstr "%s\n%s: %s (%d)\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:911
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -186,67 +175,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: No s'han trobat estadístiques esteses de disc\n"
-"O hi ha un nucli antic (< 2.4.20) o no s'ha\n"
-"compilat amb «CONFIG_BLK_STATS» activat.\n"
-"\n"
-"Aquest connector no funcionarà.\n"
-"Si us plau, traieu-lo."
+msgstr "%s: No s'han trobat estadístiques esteses de disc\nO hi ha un nucli antic (< 2.4.20) o no s'ha\ncompilat amb «CONFIG_BLK_STATS» activat.\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:919
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Error desconegut\n"
-"\n"
-"Aquest connector no funcionarà.\n"
-"Si us plau, traieu-lo."
+msgstr "%s: Error desconegut\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:941
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "El Diskperf mostra les ràtios instantànies de transferència de disc E/S i el temps d'ocupació"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:943
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor de rendiment de disc"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "Mostra rendiment de disc"
-
-#~ msgid "About..."
-#~ msgstr "Quant a…"
-
-#~ msgid "Disk Performance"
-#~ msgstr "Rendiment del disc"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - Monitor de rendiment de disc\n"
-#~ "Mostra de forma instantània transferències d'E/S i de temps ocupat de "
-#~ "disc en sistemes Linux iNetBSD\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD coŀlecció d'estadístiques: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "Configuració"

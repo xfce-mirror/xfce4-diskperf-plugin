@@ -387,7 +387,7 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
     Widget_t       *pwBar;
     int             i;
 
-    poMonitor->wBox = xfce_hvbox_new (p_iOrientation, FALSE, 0);
+    poMonitor->wBox = gtk_box_new (p_iOrientation, 0);
     gtk_widget_show (poMonitor->wBox);
 
     gtk_container_add (GTK_CONTAINER (poMonitor->wEventBox),
@@ -961,7 +961,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     gtk_window_set_position (GTK_WINDOW (dlg), GTK_WIN_POS_CENTER);
     gtk_window_set_icon_name (GTK_WINDOW (dlg), "drive-harddisk");
     
-    vbox = gtk_vbox_new(FALSE, BORDER);
+    vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, BORDER);
     gtk_container_set_border_width (GTK_CONTAINER (vbox), BORDER - 2);
     gtk_widget_show(vbox);
     gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dlg)->vbox), vbox,

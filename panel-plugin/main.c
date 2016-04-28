@@ -1036,14 +1036,8 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     apwColorPB[W_DATA] = &(poGUI->wPB_Wcolor);
     apwColorPB[RW_DATA] = &(poGUI->wPB_RWcolor);
     for (i = 0; i < NMONITORS; i++) {
-	poColorWidgets = poPlugin->oConf.aoColorWidgets + i;
-	poColorWidgets->wDA = gtk_drawing_area_new ();
-	gtk_widget_modify_bg (poColorWidgets->wDA, GTK_STATE_NORMAL,
-			      poConf->aoColor + i);
-	gtk_container_add (GTK_CONTAINER (*(apwColorPB[i])),
-			   poColorWidgets->wDA);
-	gtk_widget_show (GTK_WIDGET (poColorWidgets->wDA));
-	g_signal_connect (GTK_WIDGET (*(apwColorPB[i])), "clicked",
+	gtk_color_chooser_set_rgba(GTK_COLOR_CHOOSER(*(apwColorPB[i])), poConf->aoColor + i);
+	g_signal_connect (GTK_WIDGET (*(apwColorPB[i])), "color-set",
 			  G_CALLBACK (ChooseColor), poPlugin);
     }
 		      

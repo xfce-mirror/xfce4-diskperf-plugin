@@ -6,3 +6,4 @@ _Comment=Show disk performance
 Icon=drive-harddisk
 X-XFCE-Internal=FALSE
 X-XFCE-Module=diskperf
+X-XFCE-API=2.0

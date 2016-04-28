@@ -609,9 +609,6 @@ static void diskperf_write_config (XfcePanelPlugin *plugin,
 	/* Write diskperf configuration into xml file */
 {
     struct param_t *poConf = &(poPlugin->oConf.oParam);
-    const char     *acColorFormat = "#%02X%02X%02X";
-    GdkColor       *poColor;
-    char            acBuffer[16];
     XfceRc *rc;
     char *file;
 
@@ -939,7 +936,6 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct gui_t   *poGUI = &(poPlugin->oConf.oGUI);
     char            acBuffer[16];
-    struct color_selector_t *poColorWidgets;
     Widget_t       *apwColorPB[NMONITORS];
     int             i;
 

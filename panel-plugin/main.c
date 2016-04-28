@@ -326,15 +326,28 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     Widget_t       *pwBar;
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
-	gtk_widget_modify_bg(GTK_WIDGET(*pwBar),
+#if GTK_CHECK_VERSION (3, 16, 0)
+    GtkCssProvider *css_provider;
+    gchar * css = g_strdup_printf("progressbar progress { background-color: %s; background-image: none; }", gdk_rgba_to_string(&poConf->aoColor[p_iBar]));
+    /* Setup Gtk style */
+    css_provider = gtk_css_provider_new ();
+    gtk_css_provider_load_from_data (css_provider, css, strlen(css), NULL);
+    gtk_style_context_add_provider (
+        GTK_STYLE_CONTEXT (gtk_widget_get_style_context (GTK_WIDGET (*pwBar))),
+        GTK_STYLE_PROVIDER (css_provider),
+        GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+    g_free(css);
+#else
+	gtk_widget_override_background_color(GTK_WIDGET(*pwBar),
 						 GTK_STATE_PRELIGHT,
 						 &poConf->aoColor[p_iBar]);
-	gtk_widget_modify_bg(GTK_WIDGET(*pwBar),
+	gtk_widget_override_background_color(GTK_WIDGET(*pwBar),
 						 GTK_STATE_SELECTED,
 						 &poConf->aoColor[p_iBar]);
-	gtk_widget_modify_base(GTK_WIDGET(*pwBar),
+	gtk_widget_override_color(GTK_WIDGET(*pwBar),
 						 GTK_STATE_SELECTED,
 						 &poConf->aoColor[p_iBar]);
+#endif
     return (0);
 }				/* SetSingleBarColor() */
 

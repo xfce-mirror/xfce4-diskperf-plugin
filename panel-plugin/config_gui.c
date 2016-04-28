@@ -100,7 +100,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (label1);
     gtk_grid_attach (GTK_GRID (table1), label1, 0, 0, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label1), GTK_JUSTIFY_LEFT);
-    gtk_misc_set_alignment (GTK_MISC (label1), 0, 0.5);
+    gtk_widget_set_valign(GTK_WIDGET (label1), GTK_ALIGN_CENTER);
 
     wTF_Device = gtk_entry_new ();
     gtk_widget_show (wTF_Device);
@@ -130,7 +130,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (label2);
     gtk_grid_attach (GTK_GRID (table1), label2, 0, 2, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label2), GTK_JUSTIFY_LEFT);
-    gtk_misc_set_alignment (GTK_MISC (label2), 0, 0.5);
+    gtk_widget_set_valign(GTK_WIDGET (label2), GTK_ALIGN_CENTER);
 
     wTB_Title = gtk_check_button_new_with_mnemonic (_("Label"));
     gtk_widget_show (wTB_Title);
@@ -184,7 +184,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (label3);
     gtk_box_pack_start (GTK_BOX (wHBox_MaxIO), label3, FALSE, FALSE, 0);
     gtk_label_set_justify (GTK_LABEL (label3), GTK_JUSTIFY_LEFT);
-    gtk_misc_set_alignment (GTK_MISC (label3), 0, 0.5);
+    gtk_widget_set_valign (GTK_WIDGET (label3), GTK_ALIGN_CENTER);
 
     wTF_MaxXfer = gtk_entry_new ();
     gtk_widget_show (wTF_MaxXfer);
@@ -215,7 +215,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (label7);
     gtk_grid_attach (GTK_GRID (wTa_SingleBar), label7, 0, 0, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label7), GTK_JUSTIFY_LEFT);
-    gtk_misc_set_alignment (GTK_MISC (label7), 0, 0.5);
+    gtk_widget_set_valign (GTK_WIDGET (label7), GTK_ALIGN_CENTER);
 
     wPB_RWcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_RWcolor);
@@ -232,19 +232,19 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (label5);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), label5, 0, 1, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label5), GTK_JUSTIFY_LEFT);
-    gtk_misc_set_alignment (GTK_MISC (label5), 0, 0.5);
+    gtk_widget_set_valign (GTK_WIDGET (label5), GTK_ALIGN_CENTER);
 
     label6 = gtk_label_new (_("Write bar color "));
     gtk_widget_show (label6);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), label6, 0, 2, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label6), GTK_JUSTIFY_LEFT);
-    gtk_misc_set_alignment (GTK_MISC (label6), 0, 0.5);
+    gtk_widget_set_valign (GTK_WIDGET (label6), GTK_ALIGN_CENTER);
 
     label8 = gtk_label_new (_("Bar order"));
     gtk_widget_show (label8);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), label8, 0, 0, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label8), GTK_JUSTIFY_LEFT);
-    gtk_misc_set_alignment (GTK_MISC (label8), 0, 0.5);
+    gtk_widget_set_valign (GTK_WIDGET (label8), GTK_ALIGN_CENTER);
 
     hbox1 = gtk_hbox_new (FALSE, 8);
     gtk_widget_show (hbox1);

@@ -90,23 +90,21 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     GtkWidget      *wPB_Rcolor;
     GtkWidget      *wPB_Wcolor;
 
-    table1 = gtk_table_new (3, 2, FALSE);
+    table1 = gtk_grid_new ();
+    gtk_grid_set_column_spacing(GTK_GRID (table1), 2);
+    gtk_grid_set_row_spacing(GTK_GRID (table1), 2);
     gtk_widget_show (table1);
     gtk_box_pack_start (GTK_BOX (vbox1), table1, FALSE, FALSE, 0);
 
     label1 = gtk_label_new (_("Device"));
     gtk_widget_show (label1);
-    gtk_table_attach (GTK_TABLE (table1), label1, 0, 1, 0, 1,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (table1), label1, 0, 0, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label1), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (label1), 0, 0.5);
 
     wTF_Device = gtk_entry_new ();
     gtk_widget_show (wTF_Device);
-    gtk_table_attach (GTK_TABLE (table1), wTF_Device, 1, 2, 0, 1,
-		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (table1), wTF_Device, 1, 0, 1, 1);
     gtk_widget_set_tooltip_text (wTF_Device,
 			  _("Input the device name, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Device), 64);
@@ -130,24 +128,18 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     label2 = gtk_label_new (_("Update interval (s) "));
     gtk_widget_show (label2);
-    gtk_table_attach (GTK_TABLE (table1), label2, 0, 1, 2, 3,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (table1), label2, 0, 2, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label2), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (label2), 0, 0.5);
 
     wTB_Title = gtk_check_button_new_with_mnemonic (_("Label"));
     gtk_widget_show (wTB_Title);
-    gtk_table_attach (GTK_TABLE (table1), wTB_Title, 0, 1, 1, 2,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (table1), wTB_Title, 0, 1, 1, 1);
     gtk_widget_set_tooltip_text (wTB_Title, _("Tick to display label"));
 
     wTF_Title = gtk_entry_new ();
     gtk_widget_show (wTF_Title);
-    gtk_table_attach (GTK_TABLE (table1), wTF_Title, 1, 2, 1, 2,
-		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (table1), wTF_Title, 1, 1, 1, 1);
     gtk_widget_set_tooltip_text (wTF_Title,
 			  _("Input the label, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Title), 16);
@@ -213,59 +205,50 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_set_tooltip_text (wTB_RWcombined,
 			  _("Combine Read/Write data into one single monitor?"));
 
-    wTa_SingleBar = gtk_table_new (1, 2, FALSE);
+    wTa_SingleBar = gtk_grid_new ();
+    gtk_grid_set_column_spacing(GTK_GRID (wTa_SingleBar), 2);
+    gtk_grid_set_row_spacing(GTK_GRID (wTa_SingleBar), 2);
     gtk_widget_show (wTa_SingleBar);
     gtk_box_pack_start (GTK_BOX (vbox1), wTa_SingleBar, FALSE, FALSE, 0);
 
     label7 = gtk_label_new (_("Bar color "));
     gtk_widget_show (label7);
-    gtk_table_attach (GTK_TABLE (wTa_SingleBar), label7, 0, 1, 0, 1,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_SingleBar), label7, 0, 0, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label7), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (label7), 0, 0.5);
 
     wPB_RWcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_RWcolor);
-    gtk_widget_set_size_request (wPB_RWcolor, -1, 25);
-    gtk_table_attach (GTK_TABLE (wTa_SingleBar), wPB_RWcolor, 1, 2, 0, 1,
-		      (GtkAttachOptions) (GTK_FILL | GTK_EXPAND),
-		      (GtkAttachOptions) (GTK_FILL), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_SingleBar), wPB_RWcolor, 1, 0, 1, 1);
     gtk_widget_set_tooltip_text (wPB_RWcolor, _("Press to change color"));
 
-    wTa_DualBars = gtk_table_new (3, 2, FALSE);
+    wTa_DualBars = gtk_grid_new ();
+    gtk_grid_set_column_spacing(GTK_GRID (wTa_DualBars), 2);
+    gtk_grid_set_row_spacing(GTK_GRID (wTa_DualBars), 2);
     gtk_widget_show (wTa_DualBars);
     gtk_box_pack_start (GTK_BOX (vbox1), wTa_DualBars, FALSE, FALSE, 0);
 
     label5 = gtk_label_new (_("Read bar color "));
     gtk_widget_show (label5);
-    gtk_table_attach (GTK_TABLE (wTa_DualBars), label5, 0, 1, 1, 2,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_DualBars), label5, 0, 1, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label5), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (label5), 0, 0.5);
 
     label6 = gtk_label_new (_("Write bar color "));
     gtk_widget_show (label6);
-    gtk_table_attach (GTK_TABLE (wTa_DualBars), label6, 0, 1, 2, 3,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_DualBars), label6, 0, 2, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label6), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (label6), 0, 0.5);
 
     label8 = gtk_label_new (_("Bar order"));
     gtk_widget_show (label8);
-    gtk_table_attach (GTK_TABLE (wTa_DualBars), label8, 0, 1, 0, 1,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (0), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_DualBars), label8, 0, 0, 1, 1);
     gtk_label_set_justify (GTK_LABEL (label8), GTK_JUSTIFY_LEFT);
     gtk_misc_set_alignment (GTK_MISC (label8), 0, 0.5);
 
     hbox1 = gtk_hbox_new (FALSE, 8);
     gtk_widget_show (hbox1);
-    gtk_table_attach (GTK_TABLE (wTa_DualBars), hbox1, 1, 2, 0, 1,
-		      (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
-		      (GtkAttachOptions) (GTK_FILL), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_DualBars), hbox1, 1, 0, 1, 1);
 
     wRB_ReadWriteOrder =
 	gtk_radio_button_new_with_mnemonic (NULL, _("Read-Write"));
@@ -293,18 +276,12 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     wPB_Rcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_Rcolor);
-    gtk_widget_set_size_request (wPB_Rcolor, -1, 25);
-    gtk_table_attach (GTK_TABLE (wTa_DualBars), wPB_Rcolor, 1, 2, 1, 2,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (GTK_FILL), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_DualBars), wPB_Rcolor, 1, 1, 1, 1);
     gtk_widget_set_tooltip_text (wPB_Rcolor, _("Press to change color"));
 
     wPB_Wcolor = gtk_button_new_with_mnemonic ("");
     gtk_widget_show (wPB_Wcolor);
-    gtk_widget_set_size_request (wPB_Wcolor, -1, 25);
-    gtk_table_attach (GTK_TABLE (wTa_DualBars), wPB_Wcolor, 1, 2, 2, 3,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (GTK_FILL), 0, 0);
+    gtk_grid_attach (GTK_GRID (wTa_DualBars), wPB_Wcolor, 1, 2, 1, 1);
     gtk_widget_set_tooltip_text (wPB_Wcolor, _("Press to change color"));
 
     if (p_poGUI) {

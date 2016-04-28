@@ -149,7 +149,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (hseparator7);
     gtk_box_pack_start (GTK_BOX (vbox1), hseparator7, TRUE, TRUE, 0);
 
-    hbox2 = gtk_hbox_new (FALSE, 8);
+    hbox2 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
     gtk_widget_show (hbox2);
     gtk_box_pack_start (GTK_BOX (vbox1), hbox2, TRUE, TRUE, 0);
 
@@ -176,7 +176,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     wRB_IO_group =
 	gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_BusyTime));
 
-    wHBox_MaxIO = gtk_hbox_new (FALSE, 0);
+    wHBox_MaxIO = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
     gtk_widget_show (wHBox_MaxIO);
     gtk_box_pack_start (GTK_BOX (vbox1), wHBox_MaxIO, TRUE, TRUE, 0);
 
@@ -246,7 +246,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_label_set_justify (GTK_LABEL (label8), GTK_JUSTIFY_LEFT);
     gtk_widget_set_valign (GTK_WIDGET (label8), GTK_ALIGN_CENTER);
 
-    hbox1 = gtk_hbox_new (FALSE, 8);
+    hbox1 = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 8);
     gtk_widget_show (hbox1);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), hbox1, 1, 0, 1, 1);
 

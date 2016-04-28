@@ -145,7 +145,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Title), 16);
     gtk_entry_set_text (GTK_ENTRY (wTF_Title), _("hda1"));
 
-    hseparator7 = gtk_hseparator_new ();
+    hseparator7 = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
     gtk_widget_show (hseparator7);
     gtk_box_pack_start (GTK_BOX (vbox1), hseparator7, TRUE, TRUE, 0);
 
@@ -194,7 +194,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_entry_set_max_length (GTK_ENTRY (wTF_MaxXfer), 3);
     gtk_entry_set_text (GTK_ENTRY (wTF_MaxXfer), _("35"));
 
-    hseparator8 = gtk_hseparator_new ();
+    hseparator8 = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
     gtk_widget_show (hseparator8);
     gtk_box_pack_start (GTK_BOX (vbox1), hseparator8, FALSE, FALSE, 0);
 

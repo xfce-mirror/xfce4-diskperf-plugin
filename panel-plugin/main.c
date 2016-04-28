@@ -98,7 +98,7 @@ typedef struct param_t {
     int             iMaxXferMBperSec;
     int             fRW_DataCombined;
     uint32_t        iPeriod_ms;
-    GdkColor        aoColor[NMONITORS];
+    GdkRGBA         aoColor[NMONITORS];
 } param_t;
 
 typedef struct color_selector_t {
@@ -459,9 +459,9 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
 
     poConf->fTitleDisplayed = 1;
 
-    gdk_color_parse ("#0000FF", poConf->aoColor + R_DATA);
-    gdk_color_parse ("#FF0000", poConf->aoColor + W_DATA);
-    gdk_color_parse ("#00FF00", poConf->aoColor + RW_DATA);
+    gdk_rgba_parse (poConf->aoColor + R_DATA, "#0000FF");
+    gdk_rgba_parse (poConf->aoColor + W_DATA, "#FF0000");
+    gdk_rgba_parse (poConf->aoColor + RW_DATA, "#00FF00");
 
     poConf->iMaxXferMBperSec = 40;
     poConf->fRW_DataCombined = 1;
@@ -586,15 +586,15 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
         xfce_rc_read_int_entry (rc, (CONF_MONITOR_BAR_ORDER), RW_ORDER);
 
     if ((value = xfce_rc_read_entry (rc, (CONF_READ_COLOR), NULL))) {
-        gdk_color_parse (value, poConf->aoColor + R_DATA);
+        gdk_rgba_parse (poConf->aoColor + R_DATA, value);
     }
 
     if ((value = xfce_rc_read_entry (rc, (CONF_WRITE_COLOR), NULL))) {
-        gdk_color_parse (value, poConf->aoColor + W_DATA);
+        gdk_rgba_parse (poConf->aoColor + W_DATA, value);
     }
 
     if ((value = xfce_rc_read_entry (rc, (CONF_READ_WRITE_COLOR), NULL))) {
-        gdk_color_parse (value, poConf->aoColor + RW_DATA);
+        gdk_rgba_parse (poConf->aoColor + RW_DATA, value);
     }
     SetMonitorBarColor (poPlugin);
 
@@ -642,20 +642,9 @@ static void diskperf_write_config (XfcePanelPlugin *plugin,
     xfce_rc_write_int_entry (rc, CONF_MONITOR_BAR_ORDER, 
                              poConf->eMonitorBarOrder);
 
-    poColor = poConf->aoColor + R_DATA;
-    snprintf (acBuffer, 16, acColorFormat,
-	     poColor->red >> 8, poColor->green >> 8, poColor->blue >> 8);
-    xfce_rc_write_entry (rc, CONF_READ_COLOR, acBuffer);
-
-    poColor = poConf->aoColor + W_DATA;
-    snprintf (acBuffer, 16, acColorFormat,
-	     poColor->red >> 8, poColor->green >> 8, poColor->blue >> 8);
-    xfce_rc_write_entry (rc, CONF_WRITE_COLOR, acBuffer);
-
-    poColor = poConf->aoColor + RW_DATA;
-    snprintf (acBuffer, 16, acColorFormat,
-	     poColor->red >> 8, poColor->green >> 8, poColor->blue >> 8);
-    xfce_rc_write_entry (rc, CONF_READ_WRITE_COLOR, acBuffer);
+    xfce_rc_write_entry (rc, CONF_READ_COLOR, gdk_rgba_to_string(poConf->aoColor + R_DATA));
+    xfce_rc_write_entry (rc, CONF_WRITE_COLOR, gdk_rgba_to_string(poConf->aoColor + W_DATA));
+    xfce_rc_write_entry (rc, CONF_READ_WRITE_COLOR, gdk_rgba_to_string(poConf->aoColor + RW_DATA));
 
     xfce_rc_close (rc);
 }				/* diskperf_write_config() */
@@ -834,11 +823,8 @@ static void ChooseColor (Widget_t p_wPB, void *p_pvPlugin)
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct gui_t   *poGUI = &(poPlugin->oConf.oGUI);
-    Widget_t        wDialog;
-    GdkColor       *poColor;
-    GtkColorSelection *colorsel;
+    GdkRGBA         poColor;
     int             iPerfBar;
-    int             iResponse;
 
     if (p_wPB == poGUI->wPB_Rcolor)
 	iPerfBar = R_DATA;
@@ -848,26 +834,10 @@ static void ChooseColor (Widget_t p_wPB, void *p_pvPlugin)
 	iPerfBar = RW_DATA;
     else
 	return;
-    poColor = poConf->aoColor + iPerfBar;
-
-    wDialog = gtk_color_selection_dialog_new (_("Select color"));
-    gtk_window_set_transient_for (GTK_WINDOW (wDialog),
-				  GTK_WINDOW (poPlugin->oConf.wTopLevel));
-    colorsel = GTK_COLOR_SELECTION (GTK_COLOR_SELECTION_DIALOG (wDialog)->
-				    colorsel);
-    gtk_color_selection_set_previous_color (colorsel, poColor);
-    gtk_color_selection_set_current_color (colorsel, poColor);
-    gtk_color_selection_set_has_palette (colorsel, TRUE);
-
-    iResponse = gtk_dialog_run (GTK_DIALOG (wDialog));
-    if (iResponse == GTK_RESPONSE_OK) {
-	gtk_color_selection_get_current_color (colorsel, poColor);
-	gtk_widget_modify_bg (poPlugin->oConf.aoColorWidgets[iPerfBar].wDA,
-			      GTK_STATE_NORMAL, poColor);
-	SetMonitorBarColor (poPlugin);
-    }
-
-    gtk_widget_destroy (wDialog);
+    gtk_color_chooser_get_rgba(GTK_COLOR_CHOOSER(p_wPB), &poColor);
+    DBG("color changed to %s for monitor %d", gdk_rgba_to_string(&poColor), iPerfBar);
+    poConf->aoColor[iPerfBar] = poColor;
+    SetMonitorBarColor (poPlugin);
 }				/* ChooseColor() */
 
 	/**************************************************************/

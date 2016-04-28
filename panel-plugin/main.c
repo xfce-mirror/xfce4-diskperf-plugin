@@ -402,11 +402,11 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
     for (i = 0; i < 2; i++) {
 	pwBar = poMonitor->awProgressBar + i;
 	*pwBar = GTK_WIDGET (gtk_progress_bar_new ());
-	gtk_progress_bar_set_orientation (GTK_PROGRESS_BAR (*pwBar),
-					  (p_iOrientation ==
-					   GTK_ORIENTATION_HORIZONTAL ?
-					   GTK_PROGRESS_BOTTOM_TO_TOP :
-					   GTK_PROGRESS_LEFT_TO_RIGHT));
+	gtk_orientable_set_orientation (GTK_ORIENTABLE(*pwBar), !p_iOrientation);
+	gtk_progress_bar_set_inverted (GTK_PROGRESS_BAR(*pwBar),
+					   (p_iOrientation ==
+					    GTK_ORIENTATION_HORIZONTAL));
+
 	if ((i == 1) && poConf->fRW_DataCombined)
 	    gtk_widget_hide (GTK_WIDGET (*pwBar));
 	else

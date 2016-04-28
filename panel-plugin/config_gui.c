@@ -217,10 +217,11 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_label_set_justify (GTK_LABEL (label7), GTK_JUSTIFY_LEFT);
     gtk_widget_set_valign (GTK_WIDGET (label7), GTK_ALIGN_CENTER);
 
-    wPB_RWcolor = gtk_button_new_with_mnemonic ("");
+    wPB_RWcolor = gtk_color_button_new();
     gtk_widget_show (wPB_RWcolor);
     gtk_grid_attach (GTK_GRID (wTa_SingleBar), wPB_RWcolor, 1, 0, 1, 1);
     gtk_widget_set_tooltip_text (wPB_RWcolor, _("Press to change color"));
+    gtk_widget_set_hexpand (GTK_WIDGET (wPB_RWcolor), TRUE);
 
     wTa_DualBars = gtk_grid_new ();
     gtk_grid_set_column_spacing(GTK_GRID (wTa_DualBars), 2);
@@ -274,15 +275,17 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     wRB_ReadWriteOrder_group =
 	gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder));
 
-    wPB_Rcolor = gtk_button_new_with_mnemonic ("");
+    wPB_Rcolor = gtk_color_button_new();
     gtk_widget_show (wPB_Rcolor);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), wPB_Rcolor, 1, 1, 1, 1);
     gtk_widget_set_tooltip_text (wPB_Rcolor, _("Press to change color"));
+    gtk_widget_set_hexpand (GTK_WIDGET (wPB_Rcolor), TRUE);
 
-    wPB_Wcolor = gtk_button_new_with_mnemonic ("");
+    wPB_Wcolor = gtk_color_button_new();
     gtk_widget_show (wPB_Wcolor);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), wPB_Wcolor, 1, 2, 1, 1);
     gtk_widget_set_tooltip_text (wPB_Wcolor, _("Press to change color"));
+    gtk_widget_set_hexpand (GTK_WIDGET (wPB_Wcolor), TRUE);
 
     if (p_poGUI) {
 	COPYVAL (p_poGUI, wTF_Device);

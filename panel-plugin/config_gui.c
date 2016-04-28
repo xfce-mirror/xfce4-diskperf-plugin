@@ -60,8 +60,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     GtkWidget      *label1;
     GtkWidget      *wTF_Device;
     GtkWidget      *eventbox1;
-    GtkWidget      *alignment1;
-    GtkObject      *wSc_Period_adj;
+    GtkAdjustment  *wSc_Period_adj;
     GtkWidget      *wSc_Period;
     GtkWidget      *label2;
     GtkWidget      *wTB_Title;
@@ -115,19 +114,17 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 
     eventbox1 = gtk_event_box_new ();
     gtk_widget_show (eventbox1);
-    gtk_table_attach (GTK_TABLE (table1), eventbox1, 1, 2, 2, 3,
-		      (GtkAttachOptions) (GTK_FILL),
-		      (GtkAttachOptions) (GTK_FILL), 0, 0);
-
-    alignment1 = gtk_alignment_new (0.5, 0.5, 1, 1);
-    gtk_widget_show (alignment1);
-    gtk_container_add (GTK_CONTAINER (eventbox1), alignment1);
+    gtk_grid_attach (GTK_GRID (table1), eventbox1, 1, 2, 1, 1);
+    gtk_widget_set_valign(GTK_WIDGET(eventbox1), GTK_ALIGN_CENTER);
+    gtk_widget_set_halign(GTK_WIDGET(eventbox1), GTK_ALIGN_CENTER);
+    gtk_widget_set_vexpand(GTK_WIDGET(eventbox1), TRUE);
+    gtk_widget_set_hexpand(GTK_WIDGET(eventbox1), TRUE);
 
     wSc_Period_adj = gtk_adjustment_new (0.5, 0.25, 4, 0.05, 1, 0);
     wSc_Period =
 	gtk_spin_button_new (GTK_ADJUSTMENT (wSc_Period_adj), 1, 3);
     gtk_widget_show (wSc_Period);
-    gtk_container_add (GTK_CONTAINER (alignment1), wSc_Period);
+    gtk_container_add (GTK_CONTAINER (eventbox1), wSc_Period);
     gtk_widget_set_tooltip_text (wSc_Period, _("Data collection period"));
     gtk_spin_button_set_numeric (GTK_SPIN_BUTTON (wSc_Period), TRUE);
 

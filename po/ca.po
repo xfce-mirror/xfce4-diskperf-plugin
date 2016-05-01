@@ -5,13 +5,14 @@
 # Translators:
 # Carles Muñoz Gorriz <carlesmu@internautas.org>, 2006
 # Davidmp <medipas@gmail.com>, 2016
+# Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:57+0200\n"
-"PO-Revision-Date: 2016-03-31 16:18+0000\n"
-"Last-Translator: Davidmp <medipas@gmail.com>\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2016-05-01 15:17+0000\n"
+"Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/xfce-panel-plugins/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,116 +20,116 @@ msgstr ""
 "Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "Dispositiu"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Introduïu el nom del dispositiu, després premeu «retorn»"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
-msgstr "Període de recoŀlecció de dades"
+msgstr "Període de recol·lecció de dades"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "Interval d'actualització (s)"
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "Etiqueta"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "Rètol de l'etiqueta"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "Introduïu l'etiqueta, després premeu «retorn»"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "Monitor"
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "Transferència d'E/S"
 
-#: ../panel-plugin/config_gui.c:181
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
 msgstr "MB transferits per segon"
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "Temps ocupat"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "Percentatge de temps en que el dispositiu està ocupat"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Ràtio màx. d'E/S (MB/s)"
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Introduïu el rati de transferència màxima d'E/S del dispositiu, després premeu «retorn»"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "Combina lectura i escriptura"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Voleu combinar dades de lectura i escriptura en un únic monitor?"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "Color de la barra"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "Clicar per canviar el color"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "Color de la barra de lectura"
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "Color de la barra d'escriptura"
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "Ordre de les barres"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "Lectura-Escriptura"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr "Primer monitor de lectura"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "Escriptura-Lectura"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr "Primer monitor d'escriptura"
 
@@ -152,11 +153,7 @@ msgid ""
 "  Total : %3d"
 msgstr "%s\n----------------\nE/S    (MiB/s)\n  Lectura: %3.2f\n  Escriptura: %3.2f\n  Total: %3.2f\nTemps ocupat (%c)\n  Lectura: %3d\n  Escriptura: %3d\n  Total: %3d"
 
-#: ../panel-plugin/main.c:850
-msgid "Select color"
-msgstr "Seleccioneu el color"
-
-#: ../panel-plugin/main.c:900
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -166,7 +163,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
 
-#: ../panel-plugin/main.c:911
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -177,7 +174,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: No s'han trobat estadístiques esteses de disc\nO hi ha un nucli antic (< 2.4.20) o no s'ha\ncompilat amb «CONFIG_BLK_STATS» activat.\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
 
-#: ../panel-plugin/main.c:919
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -186,17 +183,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: Error desconegut\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
 
-#: ../panel-plugin/main.c:941
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "El Diskperf mostra les ràtios instantànies de transferència de disc E/S i el temps d'ocupació"
 
-#: ../panel-plugin/main.c:943
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor de rendiment de disc"
 

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2016-05-03 16:30+0000\n"
+"PO-Revision-Date: 2016-05-03 16:44+0000\n"
 "Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/xfce/xfce-panel-plugins/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -78,11 +78,11 @@ msgstr "Percentatge de temps en que el dispositiu està ocupat"
 
 #: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Ràtio màx. d'E/S (MB/s)"
+msgstr "Taxa màx. d'E/S (MiB/s)"
 
 #: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Introduïu el rati de transferència màxima d'E/S del dispositiu, després premeu «retorn»"
+msgstr "Introduïu la taxa de transferència màxima d'E/S del dispositiu, després premeu <Retorn>"
 
 #: ../panel-plugin/config_gui.c:195
 msgid "35"
@@ -90,11 +90,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
-msgstr "Combina lectura i escriptura"
+msgstr "Combina les dades de lectura i d'escriptura"
 
 #: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Voleu combinar dades de lectura i escriptura en un únic monitor?"
+msgstr "Voleu combinar les dades de lectura i d'escriptura en un sol monitor?"
 
 #: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
@@ -103,7 +103,7 @@ msgstr "Color de la barra"
 #: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
 #: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
-msgstr "Clicar per canviar el color"
+msgstr "Premeu per canviar el color"
 
 #: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
@@ -123,7 +123,7 @@ msgstr "Lectura-Escriptura"
 
 #: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
-msgstr "Primer monitor de lectura"
+msgstr "Primer el monitor de «Lectura»"
 
 #: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
@@ -131,12 +131,12 @@ msgstr "Escriptura-Lectura"
 
 #: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
-msgstr "Primer monitor d'escriptura"
+msgstr "Primer el monitor d'«Escriptura»"
 
 #: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr "%s: no disponibles les estadístiques de dispositius."
+msgstr "%s: les estadístiques dels dispositius no estan disponibles."
 
 #: ../panel-plugin/main.c:236
 #, c-format
@@ -161,7 +161,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s\n%s: %s (%d)\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
+msgstr "%s\n%s: %s (%d)\n\nAquest monitor no funcionarà!\nSi us plau, traieu-lo."
 
 #: ../panel-plugin/main.c:894
 #, c-format
@@ -172,7 +172,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: No s'han trobat estadístiques esteses de disc\nO hi ha un nucli antic (< 2.4.20) o no s'ha\ncompilat amb «CONFIG_BLK_STATS» activat.\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
+msgstr "%s: No s'han trobat estadístiques esteses de disc!\nO hi ha un nucli antic (< 2.4.20) o no s'ha\ncompilat amb l'activació de «CONFIG_BLK_STATS».\n\nAquest monitor no funcionarà!\nSi us plau, traieu-lo."
 
 #: ../panel-plugin/main.c:902
 #, c-format
@@ -181,13 +181,13 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Error desconegut\n\nAquest connector no funcionarà.\nSi us plau, traieu-lo."
+msgstr "%s: Error desconegut\n\nAquest monitor no funcionarà!\nSi us plau, traieu-lo."
 
 #: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "El Diskperf mostra les ràtios instantànies de transferència de disc E/S i el temps d'ocupació"
+msgstr "Diskperf mostra les taxes instantànies de les transferències d'E/S del disc i els temps d'ocupació"
 
 #: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
@@ -195,7 +195,7 @@ msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Monitor de rendiment de disc"
+msgstr "Monitor del rendiment del disc"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"

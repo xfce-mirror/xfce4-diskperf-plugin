@@ -1,3 +1,7 @@
+2.5.99 (2016/6/5):
+-----------------
+* port to gtk+3/libxfce4ui-2/libxfce4panel-2.0
+
 2.5.5 (2015/3/3):
 -----------------
 * Use the new GtkTooltip API

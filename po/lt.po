@@ -1,144 +1,143 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012.
 # 
+# Translators:
+# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012
+# Moo, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: disk perf\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2012-04-21 13:00+0300\n"
-"Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
-"Language-Team: Lietuvių <>\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2016-09-14 09:21+0000\n"
+"Last-Translator: Moo\n"
+"Language-Team: Lithuanian (http://www.transifex.com/xfce/xfce-panel-plugins/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "Įrenginys"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Įrašykite įrenginio vardą ir paspauskite <Enter>"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "Duomenų rinkimo periodas"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "Atnaujinimo intervalas"
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
-msgstr "Antraštė"
+msgstr "Etiketė"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
-msgstr "Pažymėkite norėdami jog būtų rodoma antraštė"
+msgstr "Pažymėkite norėdami, kad būtų rodoma etiketė"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
-msgstr "Įrašykite antraštę ir paspauskite <Enter>"
+msgstr "Įrašykite etiketę ir paspauskite <Enter>"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
-msgstr "Stebėtojas"
+msgstr "Stebėti"
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
-msgstr "I/O perdavimas"
+msgstr "I/O perdavimą"
 
-#: ../panel-plugin/config_gui.c:181
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
-msgstr "perduota MB / per sekundę"
+msgstr "Kiek perduota MB / per sekundę"
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
-msgstr "Užimtumas"
+msgstr "Užimtumą"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
-msgstr "Kiek laiko(procentais) įrenginys užimtas"
+msgstr "Kiek laiko (procentais) įrenginys užimtas"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Didž. I/O santykis (MB/s)"
+msgstr "Didžiausias I/O santykis (MB/s)"
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr ""
-"Įveskite didžiausią šio įrenginio I/O perdavimo santykį ir paspauskite "
-"<Enter>"
+msgstr "Įveskite didžiausią šio įrenginio I/O perdavimo santykį ir paspauskite <Enter>"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "Skaitymo/Rašymo duomenys kartu"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Rodyti Skaitymo/Rašymo duomenis vienoje stebyklėje?"
+msgstr "Rodyti skaitymo/rašymo duomenis vienoje prižiūryklėje?"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "Juostos spalva"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
-msgstr "Paspauskite norėdami pakeisti spalvą"
+msgstr "Paspauskite, norėdami pakeisti spalvą"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "Skaitymo juostos spalva"
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "Rašymo juostos spalva"
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "Juostų tvarka"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "Skaitymas-Rašymas"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
-msgstr "Pirmiausia „Skaitymo“ stebyklė"
+msgstr "Pirmiausia „Skaitymo“ prižiūryklė"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "Rašyti-Skaityti"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
-msgstr "Pirmiausia „Rašymo“ stebyklė"
+msgstr "Pirmiausia „Rašymo“ prižiūryklė"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr "%s: Įrenginio statistika neprieinama"
+msgstr "%s: Įrenginio statistika neprieinama."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -151,25 +150,9 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
-"\t\r\n"
-"\r\n"
-"%s\n"
-"----------------\n"
-"I/O (MB/s)\n"
-" Skaitymas :%3.2f\n"
-" Rašymas :%3.2f\n"
-" Viso :%3.2f\n"
-"Užimtumo laikas (%c)\n"
-" Skaitymas : %3d\n"
-" Rašymas : %3d\n"
-" Viso : %3d"
+msgstr "\t\r\n\r\n%s\n----------------\nI/O (MB/s)\n Skaitymas :%3.2f\n Rašymas :%3.2f\n Viso :%3.2f\nUžimtumo laikas (%c)\n Skaitymas : %3d\n Rašymas : %3d\n Viso : %3d"
 
-#: ../panel-plugin/main.c:823
-msgid "Select color"
-msgstr "Pasirinkite spalvą"
-
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -177,14 +160,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Ši stebyklė neveiks!\n"
-"Pašalinkite ją."
+msgstr "%s\n%s: %s (%d)\n\nŠi prižiūryklė neveiks!\nPašalinkite ją."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -193,42 +171,30 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Nerasta išplėstinių disko duomenų!\n"
-"Arba senas branduolys (< 2.4.20) arba\n"
-"sukompiliuota su išjungtu CONFIG_BLK_STATS.\n"
-"\n"
-"Ši stebyklė neveiks!\n"
-"Pašalinkite ją."
+msgstr "%s: Nerasta išplėstinių disko duomenų!\nArba senas branduolys (< 2.4.20) arba\nsukompiliuota su išjungtu CONFIG_BLK_STATS.\n\nŠi prižiūryklė neveiks!\nPašalinkite ją."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Nežinoma klaida\n"
-"\n"
-"Ši stebyklė neveiks!\n"
-"Pašalinkite ją."
+msgstr "%s: Nežinoma klaida\n\nŠi prižiūryklė neveiks!\nPašalinkite ją."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
-"Diskperf stebyklė rodo dabartinius disko I/O perdavimo greičius ir užimtumo "
-"laiką"
+msgstr "Diskperf prižiūyklė rodo dabartinius disko I/O perdavimo greičius ir užimtumo laiką"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Autorinės teisės 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Disko našumo stebyklė"
+msgstr "Disko našumo prižiūryklė"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"

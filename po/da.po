@@ -1,143 +1,143 @@
-# translation of xfce4-diskperf-plugin to Danish
-# Copyright (C) 2007 THE xfce4-diskperf-plugin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfce4-diskperf-plugin package.
-# Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2007.
-# Per Kongstad <p_kongstad@op.pl>, 2008, 09
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2007
+# scootergrisen, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin 2.2.0\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2009-08-20 14:30+0100\n"
-"Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
-"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2017-01-16 12:50+0000\n"
+"Last-Translator: scootergrisen\n"
+"Language-Team: Danish (http://www.transifex.com/xfce/xfce-panel-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: da\n"
-"X-Poedit-Language: Danish\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Country: DENMARK\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "Enhed"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Indtast enhedsnavnet og tryk på <Enter>"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "Opsamlingsperiode for data"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "Opdateringsinterval(ler) "
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "Mærkat"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "Markér for at vise mærkat"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "Indtast mærkaten og tryk på <Enter>"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "Overvåg    "
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "I/O overførsel"
 
-#: ../panel-plugin/config_gui.c:181
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
 msgstr "MiB overført / sekund"
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "Optaget tid"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "Procentdel af tiden hvor enheden er optaget"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Maks. I/O-hastighed (MiB/s) "
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Indtast maksimal I/O-overførselsrate for enheden og tryk på <Enter>"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "Kombinér læs/skriv-data"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Kombinér læs/skriv-data i en enkelt overvågning?"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "Bjælkefarve "
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "Tryk for at ændre farve"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "Læs bjælkefarve "
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "Skriv bjælkefarve "
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "Bjælkerækkefølge"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "Læs-skriv"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr "\"Læs\"-overvågning først"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "Skriv-læs"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr "\"Skriv\"-overvågning først"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Enhedsstatistik er ikke tilrådighed."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -150,23 +150,9 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
-"%s\n"
-"----------------\n"
-"I/O    (MiB/s)\n"
-"  Læse :%3.2f\n"
-"  Skrive :%3.2f\n"
-"  Ialt :%3.2f\n"
-"Tid optaget (%c)\n"
-"  Læse : %3d\n"
-"  Skrive : %3d\n"
-"  Ialt : %3d"
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  Læse :%3.2f\n  Skrive :%3.2f\n  I alt :%3.2f\nTid optaget (%c)\n  Læse : %3d\n  Skrive : %3d\n  I alt : %3d"
 
-#: ../panel-plugin/main.c:823
-msgid "Select color"
-msgstr "Vælg farve"
-
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -174,14 +160,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Denne overvågning vil ikke virke!\n"
-"Fjern den venligst."
+msgstr "%s\n%s: %s (%d)\n\nDenne overvågning vil ikke virke!\nFjern den venligst."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -190,68 +171,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Ingen udvidede diskstatistikker fundet!\n"
-"Enten en gammel kerne (< 2.4.20) eller ej\n"
-"kompileret med CONFIG_BLK_STATS aktiveret.\n"
-"\n"
-"Denne overvågning vil ikke virke!\n"
-"Fjern den venligst."
+msgstr "%s: Ingen udvidede diskstatistikker fundet!\nEnten en gammel kerne (< 2.4.20) eller ej\nkompileret med CONFIG_BLK_STATS aktiveret.\n\nDenne overvågning vil ikke virke!\nFjern den venligst."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Ukendt fejl\n"
-"\n"
-"Denne overvågning vil ikke virke!\n"
-"Fjern den venligst."
+msgstr "%s: Ukendt fejl\n\nDenne overvågning vil ikke virke!\nFjern den venligst."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
-"Diskperfovervågning viser direkte disk læse- og skrive-målinger samt optaget"
+msgstr "Diskperfovervågning viser direkte disk læse- og skrive-målinger samt optaget"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Rettigheder (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Diskydelsesovervågning"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "Vis diskydelse"
-
-#~ msgid "About..."
-#~ msgstr "Om..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "Diskydelse"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - Diskydelsesovervågning\n"
-#~ "Viser aktuelle disk I/O-overførselshastigheder og optaget-tider på Linux- "
-#~ "og NetBSD-systemer\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistikopsamling: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "Opsætning"

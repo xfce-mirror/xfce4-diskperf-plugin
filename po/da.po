@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2017-01-16 12:50+0000\n"
+"PO-Revision-Date: 2017-01-21 19:38+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/xfce-panel-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -41,15 +41,15 @@ msgstr "Opdateringsinterval(ler) "
 
 #: ../panel-plugin/config_gui.c:135
 msgid "Label"
-msgstr "Mærkat"
+msgstr "Etiket"
 
 #: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
-msgstr "Markér for at vise mærkat"
+msgstr "Markér for at vise etiket"
 
 #: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
-msgstr "Indtast mærkaten og tryk på <Enter>"
+msgstr "Indtast Etiketten og tryk på <Enter>"
 
 #: ../panel-plugin/config_gui.c:146
 msgid "hda1"

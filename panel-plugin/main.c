@@ -284,6 +284,7 @@ static gboolean SetTimer (void *p_pvPlugin)
 	/* Recurrently update the panel-docked monitor bars through a
 	   timer */
 {
+    GtkSettings *settings;
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
 
@@ -297,7 +298,6 @@ static gboolean SetTimer (void *p_pvPlugin)
 
     /* reduce the default tooltip timeout to be smaller than the update interval otherwise
      * we won't see tooltips on GTK 2.16 or newer */
-    GtkSettings *settings;
     settings = gtk_settings_get_default();
     if (g_object_class_find_property(G_OBJECT_GET_CLASS(settings), "gtk-tooltip-timeout"))
         g_object_set(settings, "gtk-tooltip-timeout",
@@ -314,6 +314,9 @@ static gboolean SetTimer (void *p_pvPlugin)
 static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
 	/* Set the color of a single monitor bar */
 {
+#if GTK_CHECK_VERSION (3, 16, 0)
+    gchar * css;
+#endif
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
@@ -322,9 +325,9 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
 #if GTK_CHECK_VERSION (3, 16, 0)
 #if GTK_CHECK_VERSION (3, 20, 0)
-    gchar * css = g_strdup_printf("progressbar progress { background-color: %s; background-image: none; }",
+    css = g_strdup_printf("progressbar progress { background-color: %s; background-image: none; }",
 #else
-    gchar * css = g_strdup_printf(".progressbar progress { background-color: %s; background-image: none; }",
+    css = g_strdup_printf(".progressbar progress { background-color: %s; background-image: none; }",
 #endif
                                   gdk_rgba_to_string(&poConf->aoColor[p_iBar]));
     /* Setup Gtk style */

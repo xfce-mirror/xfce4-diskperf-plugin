@@ -745,7 +745,7 @@ static void ToggleStatistics (Widget_t p_w, void *p_pvPlugin)
     struct gui_t   *poGUI = &(poPlugin->oConf.oGUI);
 
     poConf->eStatistics = !(poConf->eStatistics);
-    TRACE ("ToggleStatistics(): %d\n", poConf->eStatistics);
+    DBG ("%d", poConf->eStatistics);
     switch (poConf->eStatistics) {
 	case BUSY_TIME:
 	    gtk_widget_hide (GTK_WIDGET (poGUI->wHBox_MaxIO));
@@ -779,7 +779,7 @@ static void ToggleRWintegration (Widget_t p_w, void *p_pvPlugin)
 
     poConf->fRW_DataCombined =
 	gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
-    TRACE ("ToggleRWintegration(): %d\n", poConf->fRW_DataCombined);
+    DBG ("%d", poConf->fRW_DataCombined);
     if (poConf->fRW_DataCombined) {
 	gtk_widget_hide (GTK_WIDGET (poGUI->wTa_DualBars));
 	gtk_widget_show (GTK_WIDGET (poGUI->wTa_SingleBar));
@@ -802,7 +802,7 @@ static void ToggleRWorder (Widget_t p_w, void *p_pvPlugin)
     struct param_t *poConf = &(poPlugin->oConf.oParam);
 
     poConf->eMonitorBarOrder = !(poConf->eMonitorBarOrder);
-    TRACE ("ToggleRWorder(): %d\n", poConf->eMonitorBarOrder);
+    DBG ("%d", poConf->eMonitorBarOrder);
     ResetMonitorBar (poPlugin);
 }				/* ToggleRWorder() */
 
@@ -835,7 +835,6 @@ static void SetPeriod (Widget_t p_wSc, void *p_pvPlugin)
     float           r;
 
     timerNeedsUpdate = 1;
-    TRACE ("SetPeriod()\n");
     r = gtk_spin_button_get_value (GTK_SPIN_BUTTON (p_wSc));
     poConf->iPeriod_ms = round(r * 1000);
     DBG("Update period rounded to %dms\n", poConf->iPeriod_ms);
@@ -873,7 +872,7 @@ static void UpdateConf (diskperf_t *poPlugin)
     struct conf_t  *poConf = &(poPlugin->oConf);
     struct gui_t   *poGUI = &(poConf->oGUI);
 
-    TRACE ("UpdateConf()\n");
+    DBG ("!");
     SetDevice (poGUI->wTF_Device, poPlugin);
     SetLabel (poGUI->wTF_Title, poPlugin);
     SetXferRate (poGUI->wTF_MaxXfer, poPlugin);
@@ -967,7 +966,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     Widget_t       *apwColorPB[NMONITORS];
     int             i;
 
-    TRACE ("diskperf_create_options()\n");
+    DBG ("!");
 
     (void) CheckStatsAvailability ();
 
@@ -1083,7 +1082,7 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
     Widget_t       *pwBar;
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
 
-    TRACE ("diskperf_set_size(%d)\n", p_size);
+    DBG ("%d", p_size);
     gtk_container_set_border_width (GTK_CONTAINER
 				    (poMonitor->wBox), p_size > 26 ? 2 : 1);
     if (xfce_panel_plugin_get_orientation (plugin) == 
@@ -1116,7 +1115,7 @@ static void diskperf_set_mode (XfcePanelPlugin *plugin,
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
     GtkOrientation    p_iOrientation;
 
-    TRACE ("diskperf_set_mode()\n");
+    DBG ("!");
 
     p_iOrientation =
       (p_iMode == XFCE_PANEL_PLUGIN_MODE_HORIZONTAL) ?

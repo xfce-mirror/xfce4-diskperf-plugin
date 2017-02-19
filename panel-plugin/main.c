@@ -321,25 +321,15 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
 #if GTK_CHECK_VERSION (3, 16, 0)
-    GtkCssProvider *css_provider;
 #if GTK_CHECK_VERSION (3, 20, 0)
-    gchar * cssorient = (gtk_orientable_get_orientation(GTK_ORIENTABLE(*pwBar)) == GTK_ORIENTATION_VERTICAL ? "width" : "height");
-    gchar * css = g_strdup_printf("progressbar trough { min-%s: 4px } \
-                                   progressbar progress { min-%s: 4px ;\
-                                                          background-color: %s; background-image: none; }",
-                                  cssorient, cssorient,
+    gchar * css = g_strdup_printf("progressbar progress { background-color: %s; background-image: none; }",
 #else
-    gchar * css = g_strdup_printf(".progressbar { background-color: %s; background-image: none; }",
+    gchar * css = g_strdup_printf(".progressbar progress { background-color: %s; background-image: none; }",
 #endif
                                   gdk_rgba_to_string(&poConf->aoColor[p_iBar]));
     /* Setup Gtk style */
-    DBG("setting css to %s", css);
-    css_provider = gtk_css_provider_new ();
-    gtk_css_provider_load_from_data (css_provider, css, strlen(css), NULL);
-    gtk_style_context_add_provider (
-        GTK_STYLE_CONTEXT (gtk_widget_get_style_context (GTK_WIDGET (*pwBar))),
-        GTK_STYLE_PROVIDER (css_provider),
-        GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+    DBG("setting css to %s for bar %d", css, p_iBar);
+    gtk_css_provider_load_from_data (g_object_get_data(G_OBJECT(*pwBar),"css_provider"), css, strlen(css), NULL);
     g_free(css);
 #else
 	gtk_widget_override_background_color(GTK_WIDGET(*pwBar),
@@ -398,6 +388,9 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
 			      GtkOrientation p_iOrientation)
 	/* Create the panel progressive bars */
 {
+#if GTK_CHECK_VERSION (3, 16, 0)
+    GtkCssProvider *css_provider;
+#endif
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
@@ -423,6 +416,28 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
 	gtk_progress_bar_set_inverted (GTK_PROGRESS_BAR(*pwBar),
 					   (p_iOrientation ==
 					    GTK_ORIENTATION_HORIZONTAL));
+#if GTK_CHECK_VERSION (3, 16, 0)
+	css_provider = gtk_css_provider_new ();
+#if GTK_CHECK_VERSION (3, 20, 0)
+	gtk_css_provider_load_from_data (css_provider, "\
+		progressbar.horizontal trough { min-height: 4px; }\
+		progressbar.horizontal progress { min-height: 4px; }\
+		progressbar.vertical trough { min-width: 4px; }\
+		progressbar.vertical progress { min-width: 4px; }",
+#else
+	gtk_css_provider_load_from_data (css_provider, "\
+		.progressbar.horizontal trough { min-height: 4px; }\
+		.progressbar.horizontal progress { min-height: 4px; }\
+		.progressbar.vertical trough { min-width: 4px; }\
+		.progressbar.vertical progress { min-width: 4px; }",
+#endif
+		-1, NULL);
+	gtk_style_context_add_provider (
+		GTK_STYLE_CONTEXT (gtk_widget_get_style_context (GTK_WIDGET (*pwBar))),
+		GTK_STYLE_PROVIDER (css_provider),
+		GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+	g_object_set_data(G_OBJECT(*pwBar), "css_provider", css_provider);
+#endif
 
 	if ((i == 1) && poConf->fRW_DataCombined)
 	    gtk_widget_hide (GTK_WIDGET (*pwBar));

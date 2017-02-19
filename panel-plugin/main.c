@@ -629,7 +629,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     if ((value = xfce_rc_read_entry (rc, (CONF_READ_WRITE_COLOR), NULL))) {
         gdk_rgba_parse (poConf->aoColor + RW_DATA, value);
     }
-    SetMonitorBarColor (poPlugin);
+    ResetMonitorBar (poPlugin);
 
     xfce_rc_close (rc);
 }				/* diskperf_read_config() */

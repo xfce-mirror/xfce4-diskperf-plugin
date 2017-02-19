@@ -39,12 +39,6 @@
 #include <errno.h>
 #include <sys/stat.h>
 
-#ifdef LIBXFCE4PANEL_CHECK_VERSION
-#if LIBXFCE4PANEL_CHECK_VERSION (4,9,0)
-#define HAS_PANEL_49
-#endif
-#endif
-
 #define PLUGIN_NAME	"DiskPerf"
 #define BORDER          8
 
@@ -574,13 +568,11 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     else
         gtk_widget_hide (GTK_WIDGET (poMonitor->wTitle));
 
-#ifdef HAS_PANEL_49
     /* unset small if we are in deskbar mode and we want the title */
     if (poConf->fTitleDisplayed && xfce_panel_plugin_get_mode(poPlugin->plugin) == XFCE_PANEL_PLUGIN_MODE_DESKBAR)
       xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), FALSE);
     else
       xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), TRUE);
-#endif
 
     if ((value = xfce_rc_read_entry (rc, (CONF_LABEL_TEXT), NULL))) {
         memset (poConf->acTitle, 0, sizeof (poConf->acTitle));
@@ -706,13 +698,11 @@ static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
     else
 	gtk_widget_hide (GTK_WIDGET (poMonitor->wTitle));
 
-#ifdef HAS_PANEL_49
     /* unset small if we are in deskbar mode and we want the title */
     if (poConf->fTitleDisplayed && xfce_panel_plugin_get_mode(poPlugin->plugin) == XFCE_PANEL_PLUGIN_MODE_DESKBAR)
       xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), FALSE);
     else
       xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), TRUE);
-#endif
 }				/* ToggleTitle() */
 
 	/**************************************************************/
@@ -1100,7 +1090,6 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
     return TRUE;
 }				/* diskperf_set_size() */
 
-#ifdef HAS_PANEL_49
 	/**************************************************************/
 
 static void diskperf_set_mode (XfcePanelPlugin *plugin,
@@ -1138,29 +1127,6 @@ static void diskperf_set_mode (XfcePanelPlugin *plugin,
 
     diskperf_set_size (plugin, xfce_panel_plugin_get_size (plugin), poPlugin);
 }				/* diskperf_set_orientation() */
-#else
-	/**************************************************************/
-
-static void diskperf_set_orientation (XfcePanelPlugin *plugin,
-                                      GtkOrientation p_iOrientation,
-                                      diskperf_t *poPlugin)
-	/* Plugin API */
-	/* Invoked when the panel changes orientation */
-{
-    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
-
-    TRACE ("diskperf_set_orientation()\n");
-    if (poPlugin->iTimerId) {
-	g_source_remove (poPlugin->iTimerId);
-	poPlugin->iTimerId = 0;
-    }
-    gtk_container_remove (GTK_CONTAINER (poMonitor->wEventBox),
-			  GTK_WIDGET (poMonitor->wBox));
-    CreateMonitorBars (poPlugin, p_iOrientation);
-    SetTimer (poPlugin);
-    diskperf_set_size (plugin, xfce_panel_plugin_get_size (plugin), poPlugin);
-}				/* diskperf_set_orientation() */
-#endif
 	/**************************************************************/
 
 static void diskperf_construct (XfcePanelPlugin *plugin)
@@ -1177,14 +1143,9 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
     g_signal_connect (plugin, "size-changed", G_CALLBACK (diskperf_set_size), 
                       diskperf);
 
-#ifdef HAS_PANEL_49
     g_signal_connect (plugin, "mode-changed",
                       G_CALLBACK (diskperf_set_mode), diskperf);
     xfce_panel_plugin_set_small (plugin, TRUE);
-#else
-    g_signal_connect (plugin, "orientation-changed",
-                      G_CALLBACK (diskperf_set_orientation), diskperf);
-#endif
 
     xfce_panel_plugin_menu_show_about (plugin);
     g_signal_connect (plugin, "about", G_CALLBACK (About), NULL);

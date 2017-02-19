@@ -807,6 +807,7 @@ static void ToggleRWorder (Widget_t p_w, void *p_pvPlugin)
     poConf->eMonitorBarOrder = !(poConf->eMonitorBarOrder);
     DBG ("%d", poConf->eMonitorBarOrder);
     ResetMonitorBar (poPlugin);
+    DisplayPerf (poPlugin);
 }				/* ToggleRWorder() */
 
 	/**************************************************************/

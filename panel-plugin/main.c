@@ -1117,23 +1117,25 @@ static void diskperf_set_mode (XfcePanelPlugin *plugin,
 	/* Invoked when the panel changes mode */
 {
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    int i;
+    Widget_t       *pwBar;
     GtkOrientation    p_iOrientation;
 
-    DBG ("!");
+    DBG ("%d", p_iMode);
 
     p_iOrientation =
       (p_iMode == XFCE_PANEL_PLUGIN_MODE_HORIZONTAL) ?
       GTK_ORIENTATION_HORIZONTAL : GTK_ORIENTATION_VERTICAL;
 
+    gtk_orientable_set_orientation(GTK_ORIENTABLE(poMonitor->wBox), p_iOrientation);
 
-    if (poPlugin->iTimerId) {
-	g_source_remove (poPlugin->iTimerId);
-	poPlugin->iTimerId = 0;
+    for (i = 0; i < 2; i++) {
+	pwBar = poPlugin->oMonitor.awProgressBar + i;
+	gtk_orientable_set_orientation (GTK_ORIENTABLE(*pwBar), !p_iOrientation);
+	gtk_progress_bar_set_inverted (GTK_PROGRESS_BAR(*pwBar),
+					   (p_iOrientation ==
+					    GTK_ORIENTATION_HORIZONTAL));
     }
-    gtk_container_remove (GTK_CONTAINER (poMonitor->wEventBox),
-			  GTK_WIDGET (poMonitor->wBox));
-    CreateMonitorBars (poPlugin, p_iOrientation);
-    SetTimer (poPlugin);
     gtk_label_set_angle (GTK_LABEL (poMonitor->wTitle),
                          (p_iMode != XFCE_PANEL_PLUGIN_MODE_VERTICAL) ?
                          0 : 270);

@@ -356,6 +356,7 @@ static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
 
+    DBG("!");
     if (poConf->fRW_DataCombined)
 	SetSingleBarColor (p_poPlugin, RW_DATA);
     else {
@@ -373,6 +374,7 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    DBG("!");
 
     poMonitor->aoPerfBar[R_DATA].pwBar =
 	poMonitor->awProgressBar + (poConf->eMonitorBarOrder == WR_ORDER);
@@ -399,6 +401,7 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
     Widget_t       *pwBar;
     int             i;
+    DBG("!");
 
     poMonitor->wBox = gtk_box_new (p_iOrientation, 0);
     gtk_widget_show (poMonitor->wBox);

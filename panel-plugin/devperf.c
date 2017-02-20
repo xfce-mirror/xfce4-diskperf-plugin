@@ -33,6 +33,9 @@
 #include <string.h>
 #include <errno.h>
 #include <sys/time.h>
+/* for major() and minor() */
+#define _BSD_SOURCE
+#include <sys/types.h>
 
 
 #if defined(__linux__)
@@ -59,8 +62,8 @@ static GetPerfData_t m_mGetPerfData = 0;
 static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 	/* Get disk performance statistics from STATISTICS_FILE_1 */
 {
-    const int       iMajorNo = (p_iDevice >> 8) & 0xFF, /**/
-	iMinorNo = p_iDevice & 0xFF;
+    const int       iMajorNo = major(p_iDevice),
+	iMinorNo = minor(p_iDevice);
     struct timeval  oTimeStamp;
     FILE           *pF;
     unsigned int    major, minor, rsect, wsect, ruse, wuse, use;

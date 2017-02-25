@@ -1,3 +1,9 @@
+2.6.1 (2017/02/25):
+------------------
+* stop always showing activity (#12942)
+* fix sizing issues and GtkCssProvider lifecycle
+* fix linux for devices with major > 255 (#13281)
+
 2.6.0 (2016/11/1):
 -----------------
 * set progressbar minimal width/height to 4px

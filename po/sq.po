@@ -1,144 +1,142 @@
-# Albanian translation for the xfce4-diskperf-plugin package.
-# Copyright (C) 2003-2004 Roger Seguin.
-# This file is distributed under the same license as the xfce4-diskperf-plugin package.
-# Besnik Bleta <besnik@programeshqip.org>, 2007.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Besnik <besnik@programeshqip.org>, 2007
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2008-11-04 23:25+0200\n"
-"Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
-"Language-Team: Albanian <translation-team-sq@lists.sourceforge.net>\n"
-"Language: sq\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2017-07-25 11:28+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"Language-Team: Albanian (http://www.transifex.com/xfce/xfce-panel-plugins/language/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "Pajisje"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Jepni emrin e pajisjes, mandej shtypni <Enter>"
 
-#: ../panel-plugin/config_gui.c:118
-#, fuzzy
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr ""
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "Periudhë grumbullimi të dhënash"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "Interval(e) përditësimi"
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "Etiketë"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "I vini shenjë që të shfaqë etiketë"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "Jepni etiketën, mandej shtypni <Enter>"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "Monitor"
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "Shpërngulje I/O"
 
-#: ../panel-plugin/config_gui.c:181
-#, fuzzy
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
-msgstr "MB shpërngulur / sekondë"
+msgstr ""
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "Kohë e të qenit e zënë: "
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "Përqindje kohe që pajisja është e zënë"
 
-#: ../panel-plugin/config_gui.c:202
-#, fuzzy
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Shpejtësia më e madhe I/O (MB/s)"
-
-#: ../panel-plugin/config_gui.c:213
-msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr ""
-"Jepni shpejtësinë më të madhe të shpërnguljeve I/O për pajisjen, mandej "
-"<Enter>"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:193
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr "Jepni shpejtësinë më të madhe të shpërnguljeve I/O për pajisjen, mandej <Enter>"
+
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "Ndërthur të dhëna Leximi/Shkrimi"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Të ndërthur në një mbikëqyrës të vetëm të dhëna Leximi/Shkrimi?"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "Ngjyrë shtylle"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "Shtypeni për ndryshim ngjyre"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "Ngjyrë shtylle leximi"
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "Ngjyrë shtylle shkrimi"
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "Renditje shtyllash"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "Lexim-Shkrim"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr "Mbikëqyrës \"Leximi\" së pari"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "Shkrim-Lexim"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr "Mbikëqyrë \"Shkrimi\" së pari"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr ""
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -153,11 +151,7 @@ msgid ""
 "  Total : %3d"
 msgstr ""
 
-#: ../panel-plugin/main.c:823
-msgid "Select color"
-msgstr "Përzgjidhni ngjyrë"
-
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -165,14 +159,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"Ky mbikëqyrës nuk do të funksionojë!\n"
-"Ju lutem hiqeni."
+msgstr "%s\n%s: %s (%d)\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutem hiqeni."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -181,67 +170,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Nuk u gjetën statistika të zgjeruara disku!\n"
-"Ose kerneli është i vjetër (< 2.4.20), ose nuk qe\n"
-"përpiluar me CONFIG_BLK_STATS veprues.\n"
-"\n"
-"Ky mbikëqyrës nuk do të funksionojë!\n"
-"Ju lutem hiqeni."
+msgstr "%s: Nuk u gjetën statistika të zgjeruara disku!\nOse kerneli është i vjetër (< 2.4.20), ose nuk qe\npërpiluar me CONFIG_BLK_STATS veprues.\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutem hiqeni."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: Gabim i panjohur\n"
-"\n"
-"Ky mbikëqyrës nuk do të funksionojë!\n"
-"Ju lutem hiqeni."
+msgstr "%s: Gabim i panjohur\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutem hiqeni."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr ""
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr ""
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Mbikëqyr Sukseshmëri Disku"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "Shfaq suksesshmëri disku"
-
-#~ msgid "About..."
-#~ msgstr "Rreth..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "Suksesshmëri Disku"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - Mbikëqyrë Sukseshmërie Disku\n"
-#~ "Shfaq shpejtësi shpërguljesh I/O disku dhe kohë të të qenit i zënë, të "
-#~ "atypëratyshme, në sisteme Linux dhe NetBSD\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "Përmbledhje statistikash NetBSD: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "Formësim"

@@ -1,135 +1,133 @@
-# Japanese translations for xfce4-diskperf-plugin package
-# xfce4-diskperf-plugin パッケージに対する英訳.
-# Copyright (C) 2008-2012 THE xfce4-diskperf-plugin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfce package.
-# HASHIMOTO Masato <cabezon.hashimoto@gmail.com>, 2008, 2012.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Masato HASHIMOTO <cabezon.hashimoto@gmail.com>, 2008,2012
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce 4-diskperf-plugin 2.1.0\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-17 20:58+0900\n"
-"PO-Revision-Date: 2012-05-17 21:01+0900\n"
-"Last-Translator: Masato Hashimoto <cabezon.hashimoto@gmail.com>\n"
-"Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
-"Language: ja\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2017-07-25 11:28+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"Language-Team: Japanese (http://www.transifex.com/xfce/xfce-panel-plugins/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "デバイス"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "デバイス名を入力してください"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "データを収集する時間間隔を入力してください"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "更新間隔 (秒)"
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "ラベル"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "ラベルを表示する場合はチェックマークをつけてください"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "ラベルを入力してください"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "モニター    "
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "I/O 転送"
 
-#: ../panel-plugin/config_gui.c:181
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
 msgstr "秒ごとの転送量 (MiB) を監視します"
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "使用率"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "デバイスを使用していた時間の割合 (%) を監視します"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
 msgstr "最大 I/O レート (MiB/s) "
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "デバイスの最大 I/O 転送レートを入力してください"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "読み込み/書き込みデータを合わせて表示する"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
-msgstr ""
-"読み込みデータと書き込みデータを合わせて表示する場合はチェックマークをつけて"
-"ください"
+msgstr "読み込みデータと書き込みデータを合わせて表示する場合はチェックマークをつけてください"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "バーの色"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "色を変える時はここを押してください"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "読み込みバーの色 "
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "書き込みバーの色 "
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "バーの順序"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "読込-書込"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr "\"読み込み\" を先に表示します"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "書込-読込"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr "\"書き込み\" を先に表示します"
 
@@ -151,23 +149,9 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
-"%s\n"
-"----------------\n"
-"I/O    (MiB/s)\n"
-"  読込 :%3.2f\n"
-"  書込 :%3.2f\n"
-"  合計 :%3.2f\n"
-"ビジー時間 (%c)\n"
-"  読込 : %3d\n"
-"  書込 : %3d\n"
-"  合計 : %3d"
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  読込 :%3.2f\n  書込 :%3.2f\n  合計 :%3.2f\nビジー時間 (%c)\n  読込 : %3d\n  書込 : %3d\n  合計 : %3d"
 
-#: ../panel-plugin/main.c:854
-msgid "Select color"
-msgstr "色を選択してください"
-
-#: ../panel-plugin/main.c:904
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -175,14 +159,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"このモニターは正しく動作しないでしょう!\n"
-"削除してください。"
+msgstr "%s\n%s: %s (%d)\n\nこのモニターは正しく動作しないでしょう!\n削除してください。"
 
-#: ../panel-plugin/main.c:915
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -191,39 +170,28 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: ディスクの拡張情報が検出できません!\n"
-"カーネルが古い (2.4.20 以前) か、または\n"
-"CONFIG_BLK_STATS を有効にしてビルドされて\n"
-"いません。\n"
-"\n"
-"このモニターは正常に動作しないでしょう!\n"
-"削除してください。"
+msgstr "%s: ディスクの拡張情報が検出できません!\nカーネルが古い (2.4.20 以前) か、または\nCONFIG_BLK_STATS を有効にしてビルドされて\nいません。\n\nこのモニターは正常に動作しないでしょう!\n削除してください。"
 
-#: ../panel-plugin/main.c:923
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: 未知のエラーです\n"
-"\n"
-"このモニターは正常に動作しないでしょう!\n"
-"削除してください。"
+msgstr "%s: 未知のエラーです\n\nこのモニターは正常に動作しないでしょう!\n削除してください。"
 
-#: ../panel-plugin/main.c:945
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf モニターはディスクの I/O 転送率とビジー時間を表示します"
 
-#: ../panel-plugin/main.c:947
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "ディスクパフォーマンスモニター"
 

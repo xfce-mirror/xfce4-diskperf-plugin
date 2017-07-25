@@ -1,147 +1,143 @@
-# English/GB translation of xfce4-diskperf-plugin.
-# Copyright (C) 2007 THE xfce4-diskperf-plugin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the xfce4-diskperf-plugin package.
-# , fuzzy
-#
-#
-# Jeff Bailes <thepizzaking@gmail.com>, 2007.
-# A S Alam <aalam@users.sf.net>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# A S Alam <aalam@users.sf.net>, 2010
+# Jeff Bailes <thepizzaking@gmail.com>, 2007
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2010-04-04 09:45+0530\n"
-"Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2017-07-25 11:28+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"Language-Team: Panjabi (Punjabi) (http://www.transifex.com/xfce/xfce-panel-plugins/language/pa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bitX-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pa\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "ਜੰਤਰ"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "ਇੰਪੁੱਟ ਜੰਤਰ ਨਾਂ ਦਿਓ, ਅਤੇ <Enter> ਦੱਬੋ"
 
-#: ../panel-plugin/config_gui.c:118
-#, fuzzy
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr ""
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "ਡਾਟਾ ਇੱਕਠਾ ਕਰਨ ਸਮਾਂ"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "ਅੱਪਡੇਟ ਅੰਤਰਾਲ"
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "ਲੇਬਲ"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "ਲੇਬਲ ਵੇਖਣ ਲਈ ਚੁਣੋ"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "ਲੇਬਲ ਦਿਓ ਅਤੇ <Enter> ਦੱਬੋ"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "ਮਾਨੀਟਰ   "
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "I/O ਟਰਾਂਸਫਰ"
 
-#: ../panel-plugin/config_gui.c:181
-#, fuzzy
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
-msgstr "ਟਰਾਂਸਫਰ ਹੋਏ MB / ਸਕਿੰ"
+msgstr ""
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "ਰੁੱਝਿਆ ਸਮਾਂ"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "ਫੀਸਦੀ ਸਮਾਂ, ਜਿਸ ਲਈ ਜੰਤਰ ਰੁੱਝਿਆ ਸੀ"
 
-#: ../panel-plugin/config_gui.c:202
-#, fuzzy
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
-msgstr "ਵੱਧੋ-ਵੱਧ I/O ਰੇਟ (MB/s) "
+msgstr ""
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr ""
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "੩੫"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "ਇੱਕਠਾ ਪੜ੍ਹਨ/ਲਿਖਣ ਡਾਟਾ"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
 msgstr ""
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "ਬਾਰ ਰੰਗ "
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "ਰੰਗ ਬਦਲਣ ਲਈ ਦੱਬੋ"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "ਬਾਰ ਰੰਗ ਪੜ੍ਹੋ "
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "ਬਾਰ ਰੰਗ ਲਿਖੋ "
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "ਬਾਰ ਕ੍ਰਮ"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "ਪੜ੍ਹਨ-ਲਿਖਣ"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr ""
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "ਲਿਖਣ-ਪੜ੍ਹਨ"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr ""
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr ""
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -156,11 +152,7 @@ msgid ""
 "  Total : %3d"
 msgstr ""
 
-#: ../panel-plugin/main.c:823
-msgid "Select color"
-msgstr "ਰੰਗ ਚੁਣੋ"
-
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -168,14 +160,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"ਇਹ ਮਾਨੀਟਰ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ!\n"
-"ਇਹ ਹਟਾਉ ਜੀ।"
+msgstr "%s\n%s: %s (%d)\n\nਇਹ ਮਾਨੀਟਰ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ!\nਇਹ ਹਟਾਉ ਜੀ।"
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -186,42 +173,29 @@ msgid ""
 "Please remove it."
 msgstr ""
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: ਅਣਜਾਣ ਗਲਤੀ\n"
-"\n"
-"ਇਹ ਮਾਨੀਟਰ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ!\n"
-"ਇਹ ਹਟਾਉ ਜੀ।"
+msgstr "%s: ਅਣਜਾਣ ਗਲਤੀ\n\nਇਹ ਮਾਨੀਟਰ ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ!\nਇਹ ਹਟਾਉ ਜੀ।"
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr ""
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr ""
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "ਡਿਸਕ ਕਾਰਗੁਜ਼ਾਰੀ ਮਾਨੀਟਰ"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "ਡਿਸਕ ਕਾਰਗੁਜ਼ਾਰੀ ਵੇਖੋ"
-
-#~ msgid "About..."
-#~ msgstr "ਇਸ ਬਾਰੇ..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "ਡਿਸਕ ਕਾਰਗੁਜ਼ਾਰੀ"
-
-#~ msgid "Configuration"
-#~ msgstr "ਸੰਰਚਨਾ"

@@ -1,144 +1,144 @@
-# French translations for the xfce4-diskperf-plugin package.
-# Copyright (C) 2003-2004 Roger Seguin.
-# This file is distributed under the same license as the xfce4-diskperf-plugin package.
-# Maximilian Schleiss <maximilian@xfce.org>, 2006.
-# كريم اولاد الشلحة <herr.linux88@gmail.com>, 2012.
-# محمد الحرقان <malham1@gmail.com>, 2012.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Maximilian Schleiss <maximilian@xfce.org>, 2006
+# كريم أولاد الشلحة <herr.linux88@gmail.com>, 2012
+# محمد الحرقان <malham1@gmail.com>, 2012
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-diskperf-plugin 2.0\n"
+"Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-04 16:57+0200\n"
-"PO-Revision-Date: 2012-11-18 19:37+0300\n"
-"Last-Translator: محمد الحرقان <malham1@gmail.com>\n"
-"Language-Team: http://www.vertaal.com.ar/files/factory/ar/list/\n"
-"Language: ar\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2017-07-25 11:28+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"Language-Team: Arabic (http://www.transifex.com/xfce/xfce-panel-plugins/language/ar/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "جهاز"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "أدخل إسم الجهاز, تم أضغط <Enter>"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "فترة جمع البيانات"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "فترة التحدبث (s) "
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "التسمية"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "ضع علامة لعرض التسمية"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "أدخل الاسم, ثم أضغط <Enter>"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "مراقب    "
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "نقل I/O"
 
-#: ../panel-plugin/config_gui.c:181
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
 msgstr "ميقا بايت منقولة / الثانية"
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "مدة الإنشغال"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "نسبة مدة إنشغال الجهاز"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
 msgstr "سرعة I/O القصوى. (م.أ/ث) "
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "أدخل أقصى سرعة نقل I/O للجهاز, تم إضغط <Enter>"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "دمج بيانات قراءة/كتابة"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "دمج بيانات قراءة-كتابة في مراقب واحد؟"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "لون الشريط "
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "إضغط لتغيير اللون"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "لون شريط القراءة "
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "لون شريط الكتابة "
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "ترتيب الشريط"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "قراءة-كتابة"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr "\"قراءة\" مراقبة أولا"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "كتابة-قراءة"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr "\"كتابة\" مراقبة أولا"
 
-#: ../panel-plugin/main.c:180
+#: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: إحصاءات الجهاز غير متوفر."
 
-#: ../panel-plugin/main.c:219
+#: ../panel-plugin/main.c:236
 #, c-format
 msgid ""
 "%s\n"
@@ -151,23 +151,9 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
-"%s\n"
-"----------------\n"
-"I/O    (MiB/s)\n"
-"  قراءة :%3.2f\n"
-"  كتابة :%3.2f\n"
-"  مجموع :%3.2f\n"
-"زمن الإنشغال (%c)\n"
-"  قراءة : %3d\n"
-"  كتابة : %3d\n"
-"  مجموع : %3d"
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  قراءة :%3.2f\n  كتابة :%3.2f\n  مجموع :%3.2f\nزمن الإنشغال (%c)\n  قراءة : %3d\n  كتابة : %3d\n  مجموع : %3d"
 
-#: ../panel-plugin/main.c:823
-msgid "Select color"
-msgstr "حدد لون"
-
-#: ../panel-plugin/main.c:873
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -175,14 +161,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s\n"
-"%s: %s (%d)\n"
-"\n"
-"هذا المراقب لا يعمل!\n"
-"الرجاء حذفه."
+msgstr "%s\n%s: %s (%d)\n\nهذا المراقب لا يعمل!\nالرجاء حذفه."
 
-#: ../panel-plugin/main.c:884
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -191,66 +172,31 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: لم يتم العثور على إحصاءات قرص!\n"
-"هل تملك نواة أقدم من (< 2.4.20) أو لا\n"
-"تشغيل التجميع بـ CONFIG_BLK_STATS.\n"
-"\n"
-"هذا المراقب لن يعمل!\n"
-"الرجاء حذفه."
+msgstr "%s: لم يتم العثور على إحصاءات قرص!\nهل تملك نواة أقدم من (< 2.4.20) أو لا\nتشغيل التجميع بـ CONFIG_BLK_STATS.\n\nهذا المراقب لن يعمل!\nالرجاء حذفه."
 
-#: ../panel-plugin/main.c:892
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
-"%s: خطأ مجهول\n"
-"\n"
-"هذا المراقب لن يعمل!\n"
-"الرجاء حذفه."
+msgstr "%s: خطأ مجهول\n\nهذا المراقب لن يعمل!\nالرجاء حذفه."
 
-#: ../panel-plugin/main.c:914
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "يعرض مراقب Diskperf معدلات نقل إدخال/إخراج القرص اللحظية وزمن العمل"
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "حقوق الطبع والنشر (ج) عام 2003، 2004 روجيه سيغان"
 
-#: ../panel-plugin/main.c:952 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "مراقب أداء القرص"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
 msgstr "عرض أداء القرص"
-
-#~ msgid "About..."
-#~ msgstr "حول..."
-
-#~ msgid "Disk Performance"
-#~ msgstr "أداء القرص"
-
-#~ msgid ""
-#~ "%s %s - Disk Performance Monitor\n"
-#~ "Display instantaneous disk I/O transfer rates and busy times on Linux and "
-#~ "NetBSD systems\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-#~ msgstr ""
-#~ "%s %s - %s %s - مراقب أداء القرص\n"
-#~ "يظهر معدلات النقل I/O و وقت إنشغال القرص في أنظمة لينكس و NetBSD\n"
-#~ "\n"
-#~ "(c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>\n"
-#~ "NetBSD statistics collection: (c) 2003 Benedikt Meurer\n"
-#~ "\t<benedikt.meurer@unix-ag.uni-siegen.de>"
-
-#~ msgid "Configuration"
-#~ msgstr "إعدادات"

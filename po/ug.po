@@ -8,126 +8,126 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:57+0200\n"
-"PO-Revision-Date: 2013-07-17 06:45+0000\n"
-"Last-Translator: kawichi\n"
-"Language-Team: Uighur (http://www.transifex.com/projects/p/xfce/language/ug/)\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2017-07-25 11:28+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"Language-Team: Uighur (http://www.transifex.com/xfce/xfce-panel-plugins/language/ug/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ug\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "ئۈسكۈنە"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "ئۈسكۈنە ئاتىنى كىرگۈزۈپ <Enter> نى كىرگۈزۈڭ"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "سانلىق ئاساسلارنى يىغىدىغان ۋاقىتنى كىرگۈزۈڭ(ئىنتېرۋال)"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "يېڭىلاش ۋاقتى(ئىنتېرۋال)(سېكۇنت) "
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "ئەن"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "ئەننى كۆرسىتىش ئۈچۈن بەلگە قويۇڭ."
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "ئەننى كىرگۈزۈپ <Enter> نى بېسىڭ"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "كۆزەتكۈچ    "
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "I/O ئۇزىتىش"
 
-#: ../panel-plugin/config_gui.c:181
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
 msgstr "مېگابايت ئەۋەتىلدى / سېكۇنت"
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "ئالدىراش ۋاقتى"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "ئۈسكۈنىنى ئىشلەتكەن ۋاقتىنى پىرسەنتتە ئىپادىلەپ كۆزىتىدۇ"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
 msgstr "ئەڭ چوڭ I/O تېزلىكى (م بىت /س) "
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "ئۈسكىنىڭ ئەڭ چوڭ I/O ئۇزىتىش تېزلىكىنى كىرگۈزۈڭ"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "ئوقۇغان/يازغان سانلىق ئاساسلارنى بىرلىكتە كۆرسىتىدۇ"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "ئوقۇغان/يازغان سانلىق ئاساسلارنى بىر كۆزەتكۈدە بىرلىكتە كۆرسەتسۇنمۇ؟"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "بالداق رېڭى "
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "رەڭنى ئۆزگەرتىش ئۈچۈن چېكىڭ"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "ئوقۇش بالدىقىنىڭ رېڭى "
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "يېزىش بالدىقىنىڭ رېڭى "
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "بالداقنىڭ تەرتىپى"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "ئوقۇش-يېزىش"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr "«ئوقۇش» نى ئاۋۋال كۆرسەت"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "يېزىش-ئوقۇش"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr "«يېزىش» نى ئاۋۋال كۆرسەت"
 
@@ -151,11 +151,7 @@ msgid ""
 "  Total : %3d"
 msgstr "%s\n----------------\nI/O    (م بىت/س)\n  ئوقۇش :%3.2f\n  يېزىش :%3.2f\n  جەمئىي :%3.2f\nئالدىراش ۋاقىت (%c)\n  ئوقۇش : %3d\n  يېزىش : %3d\n  جەمئىي : %3d"
 
-#: ../panel-plugin/main.c:850
-msgid "Select color"
-msgstr "رەڭ تاللا"
-
-#: ../panel-plugin/main.c:900
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -165,7 +161,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nبۇ كۆزەتكۈ نورمال ئىشلىمەيدۇ!\nئۆچۈرۈۋېتىڭ."
 
-#: ../panel-plugin/main.c:911
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -176,7 +172,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: دىسكا ئۇچۇرلىرى تېپىلمىدى!\nيادرو(kernel) كونا (2.4.20 نىڭدىن بۇرۇنقى) ياكى \nCONFIG_BLK_STATS تاللانمىسىنى ئىشلىتىپ \n يۇغۇرۇلماپتۇ\n\nبۇ كۆزەتكۈ نورمال ئىشلىمەيدۇ!\nئۆچۈرۈۋېتىڭ."
 
-#: ../panel-plugin/main.c:919
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -185,17 +181,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: نامەلۇم خاتالىق\n\nبۇ كۆزەتكۈ نورمال ئىشلىمەيدۇ!\nئۆچۈرۈۋېتىڭ."
 
-#: ../panel-plugin/main.c:941
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "مەزكۇر Diskperf كۆزەتچىسى دىسكىنىڭ I/O تېزلىكى ۋە ئالدىراش ۋاقتىنى كۆرسىتىپ بېرىدۇ."
 
-#: ../panel-plugin/main.c:943
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "نەشر ھوقۇقى Roger Seguin (2003، 2004)(c) غا تەۋە"
 
-#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "دىسكا ئىقتىدارىنى كۆزەتكۈ"
 

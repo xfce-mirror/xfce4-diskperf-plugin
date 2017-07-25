@@ -3,131 +3,131 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Darkcircle <darkcircle.0426@gmail.com>, 2012,2014
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2012,2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-03 20:57+0200\n"
-"PO-Revision-Date: 2014-05-16 10:58+0000\n"
-"Last-Translator: Darkcircle <darkcircle.0426@gmail.com>\n"
-"Language-Team: Korean (http://www.transifex.com/projects/p/xfce-panel-plugins/language/ko/)\n"
+"POT-Creation-Date: 2016-04-28 18:31+0200\n"
+"PO-Revision-Date: 2017-07-25 11:28+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"Language-Team: Korean (http://www.transifex.com/xfce/xfce-panel-plugins/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../panel-plugin/config_gui.c:101
+#: ../panel-plugin/config_gui.c:99
 msgid "Device"
 msgstr "장치"
 
-#: ../panel-plugin/config_gui.c:115
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "장치 이름을 입력하고, <Enter>를 누릅니다"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
 msgstr "데이터 수집 주기"
 
-#: ../panel-plugin/config_gui.c:139
+#: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
 msgstr "업데이트 주기 (초)"
 
-#: ../panel-plugin/config_gui.c:147
+#: ../panel-plugin/config_gui.c:135
 msgid "Label"
 msgstr "레이블"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:138
 msgid "Tick to display label"
 msgstr "레이블을 표시하려면 선택합니다"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
 msgstr "레이블을 입력히고, <Enter>를 누릅니다"
 
-#: ../panel-plugin/config_gui.c:163
+#: ../panel-plugin/config_gui.c:146
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:156
 msgid "Monitor    "
 msgstr "감시기"
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
 msgstr "입출력 전송"
 
-#: ../panel-plugin/config_gui.c:181
+#: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
 msgstr "전송된 MiB / 초"
 
-#: ../panel-plugin/config_gui.c:187
+#: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
 msgstr "사용 시"
 
-#: ../panel-plugin/config_gui.c:191
+#: ../panel-plugin/config_gui.c:173
 msgid "Percentage of time the device is busy"
 msgstr "장치 사용중 시간 백분율"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
 msgstr "최대 I/O 비율 (MiB/s) "
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "장치의 최대 입출력 전송율을 입력하고, <Enter>를 누릅니다"
 
-#: ../panel-plugin/config_gui.c:216
+#: ../panel-plugin/config_gui.c:195
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:223
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
 msgstr "읽기/쓰기 데이터 합침"
 
-#: ../panel-plugin/config_gui.c:228
+#: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "단일 감시기에 읽기/쓰기 데이터를 합칩니까?"
 
-#: ../panel-plugin/config_gui.c:235
+#: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
 msgstr "막대 색"
 
-#: ../panel-plugin/config_gui.c:250 ../panel-plugin/config_gui.c:316
-#: ../panel-plugin/config_gui.c:325
+#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
 msgstr "색을 바꾸려면 누릅니다"
 
-#: ../panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
 msgstr "읽기 막대 색"
 
-#: ../panel-plugin/config_gui.c:264
+#: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
 msgstr "쓰기 막대 색"
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
 msgstr "막대 순서"
 
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
 msgstr "읽기-쓰기"
 
-#: ../panel-plugin/config_gui.c:292
+#: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
 msgstr "\"읽기\"를 먼저 봅니다"
 
-#: ../panel-plugin/config_gui.c:299
+#: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
 msgstr "쓰기-읽기"
 
-#: ../panel-plugin/config_gui.c:304
+#: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
 msgstr "\"쓰기\"를 먼저 봅니다"
 
@@ -151,11 +151,7 @@ msgid ""
 "  Total : %3d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n 읽기 :%3.2f\n 쓰기 :%3.2f\n 총계 :%3.2f\n가동 시간 (%c)\n 읽기: %3d\n 쓰기 : %3d\n 총계 : %3d"
 
-#: ../panel-plugin/main.c:850
-msgid "Select color"
-msgstr "색 선택"
-
-#: ../panel-plugin/main.c:900
+#: ../panel-plugin/main.c:883
 #, c-format
 msgid ""
 "%s\n"
@@ -165,7 +161,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\n이 감시기는 동작하지 않습니다!\n제거하십시오."
 
-#: ../panel-plugin/main.c:911
+#: ../panel-plugin/main.c:894
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -176,7 +172,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: 디스크 확장 통계를 찾을 수 없습니다!\n커널이 오래되었거나 (< 2.4.20) \nCONFIG_BLK_STATS을 켜고 컴파일 하지 않았습니다.\n\n이 감시기는 동작하지 않습니다!\n제거하십시오."
 
-#: ../panel-plugin/main.c:919
+#: ../panel-plugin/main.c:902
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -185,17 +181,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: 알 수 없는 오류\n\n이 감시기는 동작하지 않습니다!\n제거하십시오."
 
-#: ../panel-plugin/main.c:941
+#: ../panel-plugin/main.c:924
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "디스크 성능 감시기는 디스크 I/O 전송률과 사용시간을 동시에 보여줍니다"
 
-#: ../panel-plugin/main.c:943
+#: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:979 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "디스크 성능 감시기"
 

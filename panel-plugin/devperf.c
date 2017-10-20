@@ -35,6 +35,9 @@
 #include <sys/time.h>
 /* for major() and minor() */
 #define _BSD_SOURCE
+#ifdef HAVE_SYS_SYSMACROS_H
+#include <sys/sysmacros.h>
+#endif
 #include <sys/types.h>
 
 

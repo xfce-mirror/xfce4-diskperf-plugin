@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2017-09-19 18:06+0000\n"
+"PO-Revision-Date: 2017-11-01 16:57+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/xfce-panel-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
-msgstr "Opsamlingsperiode for data"
+msgstr "Periode for dataopsamling"
 
 #: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
@@ -49,7 +49,7 @@ msgstr "Markér for at vise etiket"
 
 #: ../panel-plugin/config_gui.c:144
 msgid "Input the label, then press <Enter>"
-msgstr "Indtast Etiketten og tryk på <Enter>"
+msgstr "Indtast etiketten og tryk på <Enter>"
 
 #: ../panel-plugin/config_gui.c:146
 msgid "hda1"
@@ -61,11 +61,11 @@ msgstr "Overvåg    "
 
 #: ../panel-plugin/config_gui.c:161
 msgid "I/O transfer"
-msgstr "I/O overførsel"
+msgstr "I/O-overførsel"
 
 #: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
-msgstr "MiB overført / sekund"
+msgstr "MiB overført/sekund"
 
 #: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
@@ -81,7 +81,7 @@ msgstr "Maks. I/O-hastighed (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Indtast maksimal I/O-overførselsrate for enheden og tryk på <Enter>"
+msgstr "Indtast enhedens maksimale I/O-overførselsrate og tryk på <Enter>"
 
 #: ../panel-plugin/config_gui.c:195
 msgid "35"
@@ -89,11 +89,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
-msgstr "Kombinér læs/skriv-data"
+msgstr "Kombinér læse/skrive-data"
 
 #: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Kombinér læs/skriv-data i en enkelt overvågning?"
+msgstr "Kombinér læse/skrive-data i en enkelt overvågning?"
 
 #: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
@@ -102,15 +102,15 @@ msgstr "Bjælkefarve "
 #: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
 #: ../panel-plugin/config_gui.c:287
 msgid "Press to change color"
-msgstr "Tryk for at ændre farve"
+msgstr "Tryk for at skifte farve"
 
 #: ../panel-plugin/config_gui.c:232
 msgid "Read bar color "
-msgstr "Læs bjælkefarve "
+msgstr "Læse-bjælkefarve "
 
 #: ../panel-plugin/config_gui.c:238
 msgid "Write bar color "
-msgstr "Skriv bjælkefarve "
+msgstr "Skrive-bjælkefarve "
 
 #: ../panel-plugin/config_gui.c:244
 msgid "Bar order"
@@ -118,24 +118,24 @@ msgstr "Bjælkerækkefølge"
 
 #: ../panel-plugin/config_gui.c:255
 msgid "Read-Write"
-msgstr "Læs-skriv"
+msgstr "Læse-skrive"
 
 #: ../panel-plugin/config_gui.c:260
 msgid "\"Read\" monitor first"
-msgstr "\"Læs\"-overvågning først"
+msgstr "\"Læse\"-overvågning først"
 
 #: ../panel-plugin/config_gui.c:267
 msgid "Write-Read"
-msgstr "Skriv-læs"
+msgstr "Skrive-læse"
 
 #: ../panel-plugin/config_gui.c:272
 msgid "\"Write\" monitor first"
-msgstr "\"Skriv\"-overvågning først"
+msgstr "\"Skrive\"-overvågning først"
 
 #: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr "%s: Enhedsstatistik er ikke tilrådighed."
+msgstr "%s: Enhedsstatistik er ikke tilgængelig."
 
 #: ../panel-plugin/main.c:236
 #, c-format
@@ -150,7 +150,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr "%s\n----------------\nI/O    (MiB/s)\n  Læse :%3.2f\n  Skrive :%3.2f\n  I alt :%3.2f\nTid optaget (%c)\n  Læse : %3d\n  Skrive : %3d\n  I alt : %3d"
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  Læse :%3.2f\n  Skrive :%3.2f\n  Samlet :%3.2f\nOptaget tid (%c)\n  Læse : %3d\n  Skrive : %3d\n  Samlet : %3d"
 
 #: ../panel-plugin/main.c:883
 #, c-format
@@ -171,7 +171,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Ingen udvidede diskstatistikker fundet!\nEnten en gammel kerne (< 2.4.20) eller ej\nkompileret med CONFIG_BLK_STATS aktiveret.\n\nDenne overvågning vil ikke virke!\nFjern den venligst."
+msgstr "%s: Ingen statistikker for udvidede diske fundet!\nEnten en gammel kerne (< 2.4.20) eller ikke\nkompileret med CONFIG_BLK_STATS slået til.\n\nDenne overvågning vil ikke virke!\nFjern den venligst."
 
 #: ../panel-plugin/main.c:902
 #, c-format
@@ -186,15 +186,15 @@ msgstr "%s: Ukendt fejl\n\nDenne overvågning vil ikke virke!\nFjern den venligs
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Diskperfovervågning viser direkte disk læse- og skrive-målinger samt optaget"
+msgstr "Diskperf-overvågning viser øjeblikkelig diskens læs- og skriv-overførsleshastigheder samt optaget tider"
 
 #: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Rettigheder (c) 2003, 2004 Roger Seguin"
+msgstr "Ophavsret (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Diskydelsesovervågning"
+msgstr "Overvågning af diskydelse"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"

@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Cristian Marchi <cri.penta@gmail.com>, 2013
+# Emanuele Petriglia <inbox@emanuelepetriglia.me>, 2018
 # Valerio Cipriani <raid@darkforge.eu>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2018-07-11 15:07+0000\n"
+"PO-Revision-Date: 2018-07-13 12:49+0000\n"
 "Last-Translator: Emanuele Petriglia <inbox@emanuelepetriglia.me>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/xfce-panel-plugins/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +38,7 @@ msgstr "Periodo di reperimento dati"
 
 #: ../panel-plugin/config_gui.c:129
 msgid "Update interval (s) "
-msgstr "Intervallo/i di aggiornamento"
+msgstr "Intervallo di aggiornamento (secondi)"
 
 #: ../panel-plugin/config_gui.c:135
 msgid "Label"
@@ -77,11 +78,11 @@ msgstr "Percentuale di tempo in cui il dispositivo è occupato"
 
 #: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Max rapporto I/O (MiB/s) "
+msgstr "Rapporto massimo di I/O (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Immetti il massimo rapporto di trasferimento I/O del device, poi premere «Invio»"
+msgstr "Immettere il massimo rapporto di trasferimento I/O del dispositivo, poi premere «Invio»"
 
 #: ../panel-plugin/config_gui.c:195
 msgid "35"
@@ -93,7 +94,7 @@ msgstr "Combina i dati in lettura/scrittura"
 
 #: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Combinare i dati di lettura/scrittura in un singolo controllore?"
+msgstr "Combinare i dati di lettura/scrittura in un singolo monitor?"
 
 #: ../panel-plugin/config_gui.c:214
 msgid "Bar color "
@@ -194,7 +195,7 @@ msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Osservatore delle prestazioni del disco"
+msgstr "Monitor delle prestazioni del disco"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"

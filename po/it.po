@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2018-07-13 12:49+0000\n"
+"PO-Revision-Date: 2018-07-15 10:49+0000\n"
 "Last-Translator: Emanuele Petriglia <inbox@emanuelepetriglia.me>\n"
 "Language-Team: Italian (http://www.transifex.com/xfce/xfce-panel-plugins/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -191,7 +191,7 @@ msgstr "Diskperf monitor mostra la velocità istantanea di I/O del disco e i tem
 
 #: ../panel-plugin/main.c:926
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Copyright (c) 2003, 2004 Roger Seguin"
+msgstr "Copyright © 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

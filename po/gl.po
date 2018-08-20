@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Daniel Muñiz Fontoira <dani@damufo.com>, 2018
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2008-2009
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2017-09-19 18:06+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2018-08-20 14:56+0000\n"
+"Last-Translator: Daniel Muñiz Fontoira <dani@damufo.com>\n"
 "Language-Team: Galician (http://www.transifex.com/xfce/xfce-panel-plugins/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +29,7 @@ msgstr "Introduza o nome do dispositivo, e despois prema <Intro>"
 
 #: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
-msgstr ""
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:126
 msgid "Data collection period"
@@ -64,7 +65,7 @@ msgstr "Transferencia de E/S"
 
 #: ../panel-plugin/config_gui.c:164
 msgid "MiB transferred / second"
-msgstr ""
+msgstr "MB transferido por segundo"
 
 #: ../panel-plugin/config_gui.c:169
 msgid "Busy time"
@@ -76,7 +77,7 @@ msgstr "Porcentaxe de tempo que o dispositivo está ocupado"
 
 #: ../panel-plugin/config_gui.c:183
 msgid "Max. I/O rate (MiB/s) "
-msgstr ""
+msgstr "Taxa de E/S máx. (MB/s) "
 
 #: ../panel-plugin/config_gui.c:193
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -134,7 +135,7 @@ msgstr "Primeiro o monitor de \"Escritura\""
 #: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: As estatísticas do dispositivo non están dispoñíbeis."
 
 #: ../panel-plugin/main.c:236
 #, c-format
@@ -149,7 +150,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
+msgstr "%s\n----------------\nE/S (MB/s)\nLectura : %3.2f \nEscritura : %3.2f \nTotal : %3.2f\nTempo ocupado (%c) \nLectura : %3d \nEscritura : %3d \nTotal : %3d"
 
 #: ../panel-plugin/main.c:883
 #, c-format

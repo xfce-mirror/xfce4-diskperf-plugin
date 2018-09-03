@@ -984,6 +984,8 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
                                                 GTK_DIALOG_DESTROY_WITH_PARENT,
                                                 "gtk-close", GTK_RESPONSE_OK,
                                                 NULL);
+
+    gtk_window_set_resizable (GTK_WINDOW (dlg), FALSE);
     
     g_signal_connect (G_OBJECT (dlg), "response",
                       G_CALLBACK (diskperf_dialog_response), poPlugin);
@@ -991,8 +993,8 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     gtk_window_set_position (GTK_WINDOW (dlg), GTK_WIN_POS_CENTER);
     gtk_window_set_icon_name (GTK_WINDOW (dlg), "drive-harddisk");
     
-    vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, BORDER);
-    gtk_container_set_border_width (GTK_CONTAINER (vbox), BORDER - 2);
+    vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 18);
+    gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
     gtk_widget_show(vbox);
     gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area(GTK_DIALOG (dlg))), vbox,
                         TRUE, TRUE, 0);

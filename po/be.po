@@ -5,13 +5,14 @@
 # Translators:
 # Rihards Priedītis <rprieditis@gmail.com>, 2009
 # Rihards Prieditis <rprieditis@inbox.lv>, 2007
+# Zmicer Turok <zmicerturok@gmail.com>, 2019
 # Zmicer Turok <zmicerturok@gmail.com >, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2018-06-23 18:22+0000\n"
+"PO-Revision-Date: 2019-01-15 08:56+0000\n"
 "Last-Translator: Zmicer Turok <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/xfce/xfce-panel-plugins/language/be/)\n"
 "MIME-Version: 1.0\n"
@@ -136,7 +137,7 @@ msgstr "Спачатку манітор \"Запіс\""
 #: ../panel-plugin/main.c:196
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr "%s: статыстыка прылады недаступна."
+msgstr "%s: статыстыка прылады недаступная."
 
 #: ../panel-plugin/main.c:236
 #, c-format

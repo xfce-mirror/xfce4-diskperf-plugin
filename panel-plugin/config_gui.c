@@ -114,7 +114,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_grid_attach (GTK_GRID (table1), wTF_Device, 1, 0, 2, 1);
     gtk_widget_set_tooltip_text (wTF_Device,
 			  _("Input the device name, then press <Enter>"));
-    gtk_entry_set_max_length (GTK_ENTRY (wTF_Device), 64);
+    gtk_entry_set_max_length (GTK_ENTRY (wTF_Device), 128);
     gtk_entry_set_text (GTK_ENTRY (wTF_Device), _("/dev/sda1"));
 
     eventbox1 = gtk_event_box_new ();

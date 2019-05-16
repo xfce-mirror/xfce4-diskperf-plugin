@@ -79,7 +79,7 @@ typedef enum monitor_bar_order_t {
 
 typedef struct param_t {
     /* Configurable parameters */
-    char            acDevice[64];
+    char            acDevice[128];
 #if  !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     dev_t           st_rdev;
 #endif
@@ -480,16 +480,16 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     poPlugin->plugin = plugin;
     
 #if defined(__NetBSD__) || defined(__OpenBSD__)
-    strncpy (poConf->acDevice, "wd0", 64);
+    strncpy (poConf->acDevice, "wd0", 128);
     strncpy (poConf->acTitle, "wd0", 16);
 #elif defined(__FreeBSD__)
-    strncpy (poConf->acDevice, "ada0", 64);
+    strncpy (poConf->acDevice, "ada0", 128);
     strncpy (poConf->acTitle, "ada0", 16);
 #elif defined(__sun__)
-    strncpy (poConf->acDevice, "sd0", 64);
+    strncpy (poConf->acDevice, "sd0", 128);
     strncpy (poConf->acTitle, "sd0", 16);
 #else
-    strncpy (poConf->acDevice, "/dev/sda", 64);
+    strncpy (poConf->acDevice, "/dev/sda", 128);
     status = stat (poConf->acDevice, &oStat);
     poConf->st_rdev = (status == -1 ? 0 : oStat.st_rdev);
     strncpy (poConf->acTitle, "sda", 16);

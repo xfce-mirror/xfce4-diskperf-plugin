@@ -4,13 +4,13 @@
 # 
 # Translators:
 # Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2007
-# scootergrisen, 2017-2018
+# scootergrisen, 2017-2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2018-03-04 23:12+0000\n"
+"PO-Revision-Date: 2019-05-16 20:28+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/xfce-panel-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -89,11 +89,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data"
-msgstr "Kombinér læse/skrive-data"
+msgstr "Kombinér læse-/skrivedata"
 
 #: ../panel-plugin/config_gui.c:206
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Kombinér læse/skrive-data i en enkelt overvågning?"
+msgstr "Kombinér læse-/skrivedata i en enkelt overvågning?"
 
 #: ../panel-plugin/config_gui.c:214
 msgid "Bar color "

@@ -200,7 +200,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_box_pack_start (GTK_BOX (wHBox_MaxIO), wTF_MaxXfer, FALSE, TRUE, 0);
     gtk_widget_set_tooltip_text (wTF_MaxXfer,
 			  _("Input the maximum I/O transfer rate of the device, then press <Enter>"));
-    gtk_entry_set_max_length (GTK_ENTRY (wTF_MaxXfer), 3);
+    gtk_entry_set_max_length (GTK_ENTRY (wTF_MaxXfer), 5);
     gtk_entry_set_text (GTK_ENTRY (wTF_MaxXfer), _("35"));
 
     hseparator8 = gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);

@@ -38,6 +38,7 @@
 #include <string.h>
 #include <errno.h>
 #include <sys/stat.h>
+#include <stdint.h>
 
 #define PLUGIN_NAME	"DiskPerf"
 #define BORDER          8
@@ -825,8 +826,8 @@ static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
 
     /* Make it a multiple of 5 MB/s */
     poConf->iMaxXferMBperSec = 5 * round((double) atoi(pcXferRate) / 5);
-    if (poConf->iMaxXferMBperSec > 995)
-	poConf->iMaxXferMBperSec = 995;
+    if (poConf->iMaxXferMBperSec > INT16_MAX)
+	poConf->iMaxXferMBperSec = INT16_MAX - 2;
     else if (poConf->iMaxXferMBperSec < 5)
 	poConf->iMaxXferMBperSec = 5;
     DBG("XferRate rounded to %dMb/s\n", poConf->iMaxXferMBperSec);

@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 18:31+0200\n"
-"PO-Revision-Date: 2019-01-15 08:56+0000\n"
+"POT-Creation-Date: 2019-05-17 00:35+0200\n"
+"PO-Revision-Date: 2019-06-04 15:46+0000\n"
 "Last-Translator: Zmicer Turok <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/xfce/xfce-panel-plugins/language/be/)\n"
 "MIME-Version: 1.0\n"
@@ -21,125 +21,125 @@ msgstr ""
 "Language: be\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../panel-plugin/config_gui.c:99
+#: ../panel-plugin/config_gui.c:102
 msgid "Device"
 msgstr "Прылада"
 
-#: ../panel-plugin/config_gui.c:109
+#: ../panel-plugin/config_gui.c:116
 msgid "Input the device name, then press <Enter>"
 msgstr "Увядзіце назву прылады і націсніце <Enter>"
 
-#: ../panel-plugin/config_gui.c:111
+#: ../panel-plugin/config_gui.c:118
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:126
+#: ../panel-plugin/config_gui.c:132
 msgid "Data collection period"
 msgstr "Перыяд збору даных"
 
-#: ../panel-plugin/config_gui.c:129
+#: ../panel-plugin/config_gui.c:135
 msgid "Update interval (s) "
 msgstr "Інтэрвал абнаўлення (с) "
 
-#: ../panel-plugin/config_gui.c:135
+#: ../panel-plugin/config_gui.c:141
 msgid "Label"
 msgstr "Адмеціна"
 
-#: ../panel-plugin/config_gui.c:138
+#: ../panel-plugin/config_gui.c:144
 msgid "Tick to display label"
 msgstr "Націсніце, каб праглядзець адмеціну"
 
-#: ../panel-plugin/config_gui.c:144
+#: ../panel-plugin/config_gui.c:150
 msgid "Input the label, then press <Enter>"
 msgstr "Увядзіце адмеціну і націсніце <Enter>"
 
-#: ../panel-plugin/config_gui.c:146
+#: ../panel-plugin/config_gui.c:152
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:156
-msgid "Monitor    "
-msgstr "Манітор    "
+#: ../panel-plugin/config_gui.c:160
+msgid "Monitor"
+msgstr "Манітор"
 
-#: ../panel-plugin/config_gui.c:161
+#: ../panel-plugin/config_gui.c:166
 msgid "I/O transfer"
 msgstr "I/O перадача"
 
-#: ../panel-plugin/config_gui.c:164
+#: ../panel-plugin/config_gui.c:169
 msgid "MiB transferred / second"
 msgstr "MБ перададзена / секунд"
 
-#: ../panel-plugin/config_gui.c:169
+#: ../panel-plugin/config_gui.c:174
 msgid "Busy time"
 msgstr "Час занятасці"
 
-#: ../panel-plugin/config_gui.c:173
+#: ../panel-plugin/config_gui.c:178
 msgid "Percentage of time the device is busy"
 msgstr "Час занятасці прылады ў адсотках"
 
-#: ../panel-plugin/config_gui.c:183
+#: ../panel-plugin/config_gui.c:188
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Максімальная хуткасць перадачы даных (MB/s) "
 
-#: ../panel-plugin/config_gui.c:193
+#: ../panel-plugin/config_gui.c:202
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Увядзіце максімальную хуткасць перадачы I/O  для прылады, пасля націсніце <Enter>"
 
-#: ../panel-plugin/config_gui.c:195
+#: ../panel-plugin/config_gui.c:204
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:213
 msgid "Combine Read/Write data"
 msgstr "Аб'яднанне даных Чытанне/Запіс"
 
-#: ../panel-plugin/config_gui.c:206
+#: ../panel-plugin/config_gui.c:217
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Аб'яднаць даныя Чытанне/Запіс у адзін манітор?"
 
-#: ../panel-plugin/config_gui.c:214
+#: ../panel-plugin/config_gui.c:225
 msgid "Bar color "
 msgstr "Колер радка "
 
-#: ../panel-plugin/config_gui.c:223 ../panel-plugin/config_gui.c:281
-#: ../panel-plugin/config_gui.c:287
+#: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
+#: ../panel-plugin/config_gui.c:300
 msgid "Press to change color"
 msgstr "Націсніце, каб змяніць колер"
 
-#: ../panel-plugin/config_gui.c:232
+#: ../panel-plugin/config_gui.c:246
 msgid "Read bar color "
 msgstr "Колер радка чытання "
 
-#: ../panel-plugin/config_gui.c:238
+#: ../panel-plugin/config_gui.c:255
 msgid "Write bar color "
 msgstr "Колер радка запісу "
 
-#: ../panel-plugin/config_gui.c:244
+#: ../panel-plugin/config_gui.c:262
 msgid "Bar order"
 msgstr "Парадак радкоў"
 
-#: ../panel-plugin/config_gui.c:255
+#: ../panel-plugin/config_gui.c:270
 msgid "Read-Write"
 msgstr "Чытанне-Запіс"
 
-#: ../panel-plugin/config_gui.c:260
+#: ../panel-plugin/config_gui.c:274
 msgid "\"Read\" monitor first"
 msgstr "Спачатку манітор \"Чытанне\""
 
-#: ../panel-plugin/config_gui.c:267
+#: ../panel-plugin/config_gui.c:281
 msgid "Write-Read"
 msgstr "Запіс-Чытанне"
 
-#: ../panel-plugin/config_gui.c:272
+#: ../panel-plugin/config_gui.c:285
 msgid "\"Write\" monitor first"
 msgstr "Спачатку манітор \"Запіс\""
 
-#: ../panel-plugin/main.c:196
+#: ../panel-plugin/main.c:191
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: статыстыка прылады недаступная."
 
-#: ../panel-plugin/main.c:236
+#: ../panel-plugin/main.c:231
 #, c-format
 msgid ""
 "%s\n"
@@ -154,7 +154,7 @@ msgid ""
 "  Total : %3d"
 msgstr "%s\n----------------\nI/O (Mб/с)\n Чытанне :%3.2f\n Запіс :%3.2f\n Агулам :%3.2f\nЧас занятасці (%c)\n Чытанне : %3d\n Запіс : %3d\n Агулам : %3d"
 
-#: ../panel-plugin/main.c:883
+#: ../panel-plugin/main.c:905
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\\Гэты манітор не працуе!\nКалі ласка, выдаліце яго."
 
-#: ../panel-plugin/main.c:894
+#: ../panel-plugin/main.c:916
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: пашыраная статыстыка дыска не знойдзена!\nХутчэй за ўсё, у вас старое ядро (< 2.4.20) альбо \nяно скампілявана з параметрам CONFIG_BLK_STATS.\n\nГэты манітор не працуе!\nКалі ласка, выдаліце яго."
 
-#: ../panel-plugin/main.c:902
+#: ../panel-plugin/main.c:924
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,17 +184,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: Невядомая памылка\n\nГэты манітор не працуе!\nКалі ласка, выдаліце яго."
 
-#: ../panel-plugin/main.c:924
+#: ../panel-plugin/main.c:946
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf - манітор, які адлюстроўвае хуткасць ўводу/вываду, перадачы даных і час занятасці дыскаў"
 
-#: ../panel-plugin/main.c:926
+#: ../panel-plugin/main.c:948
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:961 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Манітор прадукцыйнасці дыскаў"
 

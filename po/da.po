@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-05-17 11:51+0000\n"
+"PO-Revision-Date: 2019-06-05 14:39+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/xfce/xfce-panel-plugins/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:132
 msgid "Data collection period"
-msgstr "Periode for dataopsamling"
+msgstr "Periode for dataindsamling"
 
 #: ../panel-plugin/config_gui.c:135
 msgid "Update interval (s) "
@@ -81,7 +81,7 @@ msgstr "Maks. I/O-hastighed (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Indtast enhedens maksimale I/O-overførselsrate og tryk på <Enter>"
+msgstr "Indtast enhedens maksimale I/O-overførselshastighed og tryk på <Enter>"
 
 #: ../panel-plugin/config_gui.c:204
 msgid "35"
@@ -186,7 +186,7 @@ msgstr "%s: Ukendt fejl\n\nDenne overvågning vil ikke virke!\nFjern den venligs
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Diskperf-overvågning viser øjeblikkeligt diskens I/O-overførselsrate samt optaget tider"
+msgstr "Diskperf-overvågning viser øjeblikkeligt diskens I/O-overførselshastigheder samt optaget tider"
 
 #: ../panel-plugin/main.c:948
 msgid "Copyright (c) 2003, 2004 Roger Seguin"

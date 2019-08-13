@@ -1,6 +1,10 @@
 2.6.2 (2019/09/13):
 ------------------
 * translation updates
+* Allow for MaxIO up to 32Gb/s (bug #15376)
+* Allow for 128 chars device names (bug #15375)
+* Improve spacing in settings dialog (bug #14663)
+* Support <sys/sysmacros.h> include required for glibc-2.25+ (Fixes #13940)
 
 2.6.1 (2017/02/25):
 ------------------

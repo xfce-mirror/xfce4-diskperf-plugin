@@ -1,7 +1,9 @@
 po/*.gmo
 po/*.pot
+po/POTFILES
 *Makefile
 *Makefile.in
+*Makefile.in.in
 stamp*
 */.deps
 .libs
@@ -11,6 +13,7 @@ stamp*
 *.la
 \[config.h\].in
 *,orig
+INSTALL
 configure
 config.*
 configure.ac

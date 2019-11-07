@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-11-06 16:50+0000\n"
+"PO-Revision-Date: 2019-11-07 20:27+0000\n"
 "Last-Translator: Arnold Marko <arnold.marko@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/xfce/xfce-panel-plugins/language/sl/)\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:160
 msgid "Monitor"
-msgstr "<b>Nadzornik</b>"
+msgstr "<b>Prikazovalnik</b>"
 
 #: ../panel-plugin/config_gui.c:166
 msgid "I/O transfer"
@@ -92,7 +92,7 @@ msgstr "Kombiniraj branje/pisanje podatkov"
 
 #: ../panel-plugin/config_gui.c:217
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Kombiniram branje/pisanje podatkov v enem nadzorniku?"
+msgstr "Kombiniram branje/pisanje podatkov v enem prikazovalniku?"
 
 #: ../panel-plugin/config_gui.c:225
 msgid "Bar color "
@@ -101,40 +101,40 @@ msgstr "Barva prikaza"
 #: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
 #: ../panel-plugin/config_gui.c:300
 msgid "Press to change color"
-msgstr ""
+msgstr "Pritisnite za spremembo barve"
 
 #: ../panel-plugin/config_gui.c:246
 msgid "Read bar color "
-msgstr ""
+msgstr "Preberi barvo stolpca"
 
 #: ../panel-plugin/config_gui.c:255
 msgid "Write bar color "
-msgstr ""
+msgstr "Zapiši barvo stolpc"
 
 #: ../panel-plugin/config_gui.c:262
 msgid "Bar order"
-msgstr ""
+msgstr "Zaporedje stolpca"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Read-Write"
-msgstr ""
+msgstr "Branje-Zapisovanje"
 
 #: ../panel-plugin/config_gui.c:274
 msgid "\"Read\" monitor first"
-msgstr ""
+msgstr "\"Beri\" najprej prikazovalnik"
 
 #: ../panel-plugin/config_gui.c:281
 msgid "Write-Read"
-msgstr ""
+msgstr "Zapisovanje-Branje"
 
 #: ../panel-plugin/config_gui.c:285
 msgid "\"Write\" monitor first"
-msgstr ""
+msgstr "\"Zaqpiši\" najprej prikazovalnik"
 
 #: ../panel-plugin/main.c:191
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Statistika naprave ni na voljo"
 
 #: ../panel-plugin/main.c:231
 #, c-format
@@ -149,7 +149,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr ""
+msgstr "%s\n----------------\nVhod/izhod   (MiB/s)\n  Branje :%3.2f\n  Pisanje:%3.2f\n  Skupaj :%3.2f\nZasedenost (%c)\n  Branje : %3d\n  Pisanje : %3d\n  Skupaj : %3d"
 
 #: ../panel-plugin/main.c:905
 #, c-format
@@ -159,7 +159,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s\n%s: %s (%d)\n\nTa prikaz ne bo deloval\nOdstranite ga, prosim."
 
 #: ../panel-plugin/main.c:916
 #, c-format
@@ -170,7 +170,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s: Ni razširjene statistike!\nLahko gre za staro jedro (< 2.4.20) ali ni bil\npreveden z vklopljenim CONFIG_BLK_STATS.\n\nTa prikaz ne bo deloval!\nOdstranite ga, prosim."
 
 #: ../panel-plugin/main.c:924
 #, c-format
@@ -179,22 +179,22 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr ""
+msgstr "%s: Neznana napaka\n\nTa prikaz ne bo deloval!\nOdstranite ga, prosim."
 
 #: ../panel-plugin/main.c:946
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Diskperf prikazovalnik, prikaže trenutni vhodno-izhodni pretok diksa in čas zasedenosti"
 
 #: ../panel-plugin/main.c:948
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr ""
+msgstr "Prikazovalnik zmogljivosti diska"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
-msgstr ""
+msgstr "Prikaz zmogljivosti diska"

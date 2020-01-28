@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Besnik <besnik@programeshqip.org>, 2007,2019-2020
 # Besnik <besnik@programeshqip.org>, 2007
 # Besnik <besnik@programeshqip.org>, 2019
 msgid ""
@@ -10,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-05-24 12:22+0000\n"
+"PO-Revision-Date: 2020-01-28 18:22+0000\n"
 "Last-Translator: Besnik <besnik@programeshqip.org>\n"
 "Language-Team: Albanian (http://www.transifex.com/xfce/xfce-panel-plugins/language/sq/)\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +94,7 @@ msgstr "Ndërthur të dhëna Leximi/Shkrimi"
 
 #: ../panel-plugin/config_gui.c:217
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Të ndërthur në një mbikëqyrës të vetëm të dhëna Leximi/Shkrimi?"
+msgstr "Të ndërthuren në një mbikëqyrës të vetëm të dhëna Leximi/Shkrimi?"
 
 #: ../panel-plugin/config_gui.c:225
 msgid "Bar color "
@@ -160,7 +161,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s\n%s: %s (%d)\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutem hiqeni."
+msgstr "%s\n%s: %s (%d)\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutemi, hiqeni."
 
 #: ../panel-plugin/main.c:916
 #, c-format
@@ -171,7 +172,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Nuk u gjetën statistika të zgjeruara disku!\nOse kerneli është i vjetër (< 2.4.20), ose nuk qe\npërpiluar me CONFIG_BLK_STATS veprues.\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutem hiqeni."
+msgstr "%s: S’u gjetën statistika të zgjeruara disku!\nOse kerneli është i vjetër (< 2.4.20), ose s’qe\npërpiluar me CONFIG_BLK_STATS  aktiv.\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutemi, hiqeni."
 
 #: ../panel-plugin/main.c:924
 #, c-format
@@ -180,13 +181,13 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Gabim i panjohur\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutem hiqeni."
+msgstr "%s: Gabim i panjohur\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutemi, hiqeni."
 
 #: ../panel-plugin/main.c:946
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Mbikëqyrësi Diskperf shfaq shpejtësi të atëçastshme shpërnguljesh I/O disku dhe kohë funksionimi"
+msgstr "Mbikëqyrësi Diskperf shfaq shpejtësi të atypëratyshme shpërnguljesh I/O në disk dhe kohë funksionimi"
 
 #: ../panel-plugin/main.c:948
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
@@ -194,8 +195,8 @@ msgstr "Të drejta Kopjimi (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Mbikëqyr Sukseshmëri Disku"
+msgstr "Mbikëqyrës Punimi Disku"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
-msgstr "Shfaq suksesshmëri disku"
+msgstr "Shfaq si punon disku"

@@ -5,7 +5,7 @@
 # Translators:
 #  <abel.martin.ruiz@gmail.com>, 2009
 # Casper casper, 2019
-# Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>, 2014-2015
+# prflr88 <prflr88@gmail.com>, 2014-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"

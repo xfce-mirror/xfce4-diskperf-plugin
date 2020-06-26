@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# No Ne, 2019
+# No Ne, 2019-2020
 # Piotr Maliński <admin@rk.edu.pl>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-05-17 13:10+0000\n"
+"PO-Revision-Date: 2020-06-26 11:12+0000\n"
 "Last-Translator: No Ne\n"
 "Language-Team: Polish (http://www.transifex.com/xfce/xfce-panel-plugins/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -61,11 +61,11 @@ msgstr "Monitorowanie"
 
 #: ../panel-plugin/config_gui.c:166
 msgid "I/O transfer"
-msgstr "Transfer we/wy"
+msgstr "Transfer wejścia-wyjścia"
 
 #: ../panel-plugin/config_gui.c:169
 msgid "MiB transferred / second"
-msgstr "MB przesłano / sekunda"
+msgstr "MiB przesłano / sekunda"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Busy time"
@@ -77,7 +77,7 @@ msgstr "Monitoruje czas wykonywania operacji określony procentowo"
 
 #: ../panel-plugin/config_gui.c:188
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Maksymalna wartość Wejście/Wyjście (MB/s)"
+msgstr "Maksymalna wartość wejścia-wyjścia (MiB/s)"
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -118,7 +118,7 @@ msgstr "Kolejność:"
 
 #: ../panel-plugin/config_gui.c:270
 msgid "Read-Write"
-msgstr "Odczyt, zapis"
+msgstr "Odczyt-zapis"
 
 #: ../panel-plugin/config_gui.c:274
 msgid "\"Read\" monitor first"
@@ -126,7 +126,7 @@ msgstr "Wyświetla wskaźnik odczytu jako pierwszy"
 
 #: ../panel-plugin/config_gui.c:281
 msgid "Write-Read"
-msgstr "Zapis, odczyt"
+msgstr "Zapis-odczyt"
 
 #: ../panel-plugin/config_gui.c:285
 msgid "\"Write\" monitor first"
@@ -150,7 +150,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr "%s\n----------------\nWej/Wyj    (MB/s)\n  Odczyt:%3.2f\n  Zapis:%3.2f\n  Łącznie:%3.2f\nCzas zajętości (%c)\n  Odczyt: %3d\n  Zapis: %3d\n  Łącznie: %3d"
+msgstr "%s\n----------------\nWej-wyj    (MiB/s)\n  Odczyt:%3.2f\n  Zapis:%3.2f\n  Łącznie:%3.2f\nCzas zajętości (%c)\n  Odczyt: %3d\n  Zapis: %3d\n  Łącznie: %3d"
 
 #: ../panel-plugin/main.c:905
 #, c-format
@@ -186,7 +186,7 @@ msgstr "%s:  Nieznany błąd\n\nMonitorowanie nie będzie możliwe."
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Monitor diskperf wyświetla na bieżąco wskaźniki transferu dysku Wejście/Wyjście i czasy zajętości"
+msgstr "Monitor diskperf wyświetla na bieżąco wskaźniki transferu dysku wejścia/wyjścia i czasy zajętości"
 
 #: ../panel-plugin/main.c:948
 msgid "Copyright (c) 2003, 2004 Roger Seguin"

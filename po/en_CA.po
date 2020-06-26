@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Steve Harris <steve@cultureofweb.com>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-17 00:35+0200\n"
+"PO-Revision-Date: 2020-06-26 02:28+0000\n"
+"Last-Translator: Steve Harris <steve@cultureofweb.com>\n"
+"Language-Team: English (Canada) (http://www.transifex.com/xfce/xfce-panel-plugins/language/en_CA/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_CA\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../panel-plugin/config_gui.c:102
+msgid "Device"
+msgstr "Device"
+
+#: ../panel-plugin/config_gui.c:116
+msgid "Input the device name, then press <Enter>"
+msgstr "Input the device name, then press <Enter>"
+
+#: ../panel-plugin/config_gui.c:118
+msgid "/dev/sda1"
+msgstr "/dev/sda1"
+
+#: ../panel-plugin/config_gui.c:132
+msgid "Data collection period"
+msgstr "Data collection period"
+
+#: ../panel-plugin/config_gui.c:135
+msgid "Update interval (s) "
+msgstr "Update interval (s) "
+
+#: ../panel-plugin/config_gui.c:141
+msgid "Label"
+msgstr "Label"
+
+#: ../panel-plugin/config_gui.c:144
+msgid "Tick to display label"
+msgstr "Tick to display label"
+
+#: ../panel-plugin/config_gui.c:150
+msgid "Input the label, then press <Enter>"
+msgstr "Input the label, then press <Enter>"
+
+#: ../panel-plugin/config_gui.c:152
+msgid "hda1"
+msgstr "hda1"
+
+#: ../panel-plugin/config_gui.c:160
+msgid "Monitor"
+msgstr "Monitor"
+
+#: ../panel-plugin/config_gui.c:166
+msgid "I/O transfer"
+msgstr "I/O transfer"
+
+#: ../panel-plugin/config_gui.c:169
+msgid "MiB transferred / second"
+msgstr "MiB transferred / second"
+
+#: ../panel-plugin/config_gui.c:174
+msgid "Busy time"
+msgstr "Busy time"
+
+#: ../panel-plugin/config_gui.c:178
+msgid "Percentage of time the device is busy"
+msgstr "Percentage of time the device is busy"
+
+#: ../panel-plugin/config_gui.c:188
+msgid "Max. I/O rate (MiB/s) "
+msgstr "Max. I/O rate (MiB/s) "
+
+#: ../panel-plugin/config_gui.c:202
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr "Input the maximum I/O transfer rate of the device, then press <Enter>"
+
+#: ../panel-plugin/config_gui.c:204
+msgid "35"
+msgstr "35"
+
+#: ../panel-plugin/config_gui.c:213
+msgid "Combine Read/Write data"
+msgstr "Combine Read/Write data"
+
+#: ../panel-plugin/config_gui.c:217
+msgid "Combine Read/Write data into one single monitor?"
+msgstr "Combine Read/Write data into one single monitor?"
+
+#: ../panel-plugin/config_gui.c:225
+msgid "Bar color "
+msgstr "Bar colour "
+
+#: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
+#: ../panel-plugin/config_gui.c:300
+msgid "Press to change color"
+msgstr "Press to change colour"
+
+#: ../panel-plugin/config_gui.c:246
+msgid "Read bar color "
+msgstr "Read bar colour "
+
+#: ../panel-plugin/config_gui.c:255
+msgid "Write bar color "
+msgstr "Write bar colour "
+
+#: ../panel-plugin/config_gui.c:262
+msgid "Bar order"
+msgstr "Bar order"
+
+#: ../panel-plugin/config_gui.c:270
+msgid "Read-Write"
+msgstr "Read-Write"
+
+#: ../panel-plugin/config_gui.c:274
+msgid "\"Read\" monitor first"
+msgstr "\"Read\" monitor first"
+
+#: ../panel-plugin/config_gui.c:281
+msgid "Write-Read"
+msgstr "Write-Read"
+
+#: ../panel-plugin/config_gui.c:285
+msgid "\"Write\" monitor first"
+msgstr "\"Write\" monitor first"
+
+#: ../panel-plugin/main.c:191
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr "%s: Device statistics unavailable."
+
+#: ../panel-plugin/main.c:231
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O    (MiB/s)\n"
+"  Read :%3.2f\n"
+"  Write :%3.2f\n"
+"  Total :%3.2f\n"
+"Busy time (%c)\n"
+"  Read : %3d\n"
+"  Write : %3d\n"
+"  Total : %3d"
+msgstr "%s\n----------------\nI/O    (MiB/s)\n  Read :%3.2f\n  Write :%3.2f\n  Total :%3.2f\nBusy time (%c)\n  Read : %3d\n  Write : %3d\n  Total : %3d"
+
+#: ../panel-plugin/main.c:905
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s\n%s: %s (%d)\n\nThis monitor will not work!\nPlease remove it."
+
+#: ../panel-plugin/main.c:916
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: No disk extended statistics found!\nEither old kernel (< 2.4.20) or not\ncompiled with CONFIG_BLK_STATS turned on.\n\nThis monitor will not work!\nPlease remove it."
+
+#: ../panel-plugin/main.c:924
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: Unknown error\n\nThis monitor will not work!\nPlease remove it."
+
+#: ../panel-plugin/main.c:946
+msgid ""
+"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
+"times"
+msgstr "Diskperf monitor displays instantaneous disk I/O transfer rates and busy times"
+
+#: ../panel-plugin/main.c:948
+msgid "Copyright (c) 2003, 2004 Roger Seguin"
+msgstr "Copyright (c) 2003, 2004 Roger Seguin"
+
+#: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
+msgid "Disk Performance Monitor"
+msgstr "Disk Performance Monitor"
+
+#: ../panel-plugin/diskperf.desktop.in.h:2
+msgid "Show disk performance"
+msgstr "Show disk performance"

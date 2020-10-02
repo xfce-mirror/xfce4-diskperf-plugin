@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Dušan Kazik <prescott66@gmail.com>, 2020
 # Marek Hlava <headsvk@gmail.com>, 2011
-# Tomáš Vadina <inactive+kyberdev@transifex.com>, 2012
+# 7dcd6f74323fe8d9c477949ff8fcbb1c_c427b63 <3fcd202e3dfab15fda15b8e88e54d449_7173>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-05-16 22:35+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2020-10-02 09:27+0000\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak (http://www.transifex.com/xfce/xfce-panel-plugins/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,11 +42,11 @@ msgstr "Interval obnovenia (s)"
 
 #: ../panel-plugin/config_gui.c:141
 msgid "Label"
-msgstr "Popisok"
+msgstr "Menovka"
 
 #: ../panel-plugin/config_gui.c:144
 msgid "Tick to display label"
-msgstr "Zaškrtnúť pre zobrazenie popisku"
+msgstr "Zaškrtnutím zobrazíte menovku"
 
 #: ../panel-plugin/config_gui.c:150
 msgid "Input the label, then press <Enter>"
@@ -57,11 +58,11 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:160
 msgid "Monitor"
-msgstr ""
+msgstr "Sledovať"
 
 #: ../panel-plugin/config_gui.c:166
 msgid "I/O transfer"
-msgstr "I/O prenos"
+msgstr "V/V prenos"
 
 #: ../panel-plugin/config_gui.c:169
 msgid "MiB transferred / second"
@@ -69,19 +70,19 @@ msgstr "MiB prenesených za sekundu"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Busy time"
-msgstr "Aktivita"
+msgstr "Zaneprázdnenie"
 
 #: ../panel-plugin/config_gui.c:178
 msgid "Percentage of time the device is busy"
-msgstr "Percentuálny podiel aktivity zariadenia"
+msgstr "Percento času, počas ktorého je zariadenie zaneprázdnené"
 
 #: ../panel-plugin/config_gui.c:188
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Max. I/O prenosová rýchlosť (MiB/s) "
+msgstr "Max. V/V prenosová rýchlosť (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Zadajte maximálnú I/O prenosovú rýchlosť zariadenia a stlačte <Enter>"
+msgstr "Zadajte maximálnu vstupno-výstupnú prenosovú rýchlosť zariadenia a stlačte <Enter>"
 
 #: ../panel-plugin/config_gui.c:204
 msgid "35"
@@ -89,11 +90,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Combine Read/Write data"
-msgstr "Čítanie a zápis dát súčasne"
+msgstr "Kombinovať údaje čítania/zápisu"
 
 #: ../panel-plugin/config_gui.c:217
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Spojiť sledovanie prečítaných a zapísaných dát?"
+msgstr "Kombinovať údaje čítania/zápisu do jedného sledovača?"
 
 #: ../panel-plugin/config_gui.c:225
 msgid "Bar color "
@@ -102,7 +103,7 @@ msgstr "Farba panelu"
 #: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
 #: ../panel-plugin/config_gui.c:300
 msgid "Press to change color"
-msgstr "Stlačiť pre zmenu farby"
+msgstr "Stlačením zmeníte farbu"
 
 #: ../panel-plugin/config_gui.c:246
 msgid "Read bar color "
@@ -135,7 +136,7 @@ msgstr "Najskôr sledovať „Zápis“"
 #: ../panel-plugin/main.c:191
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr "%s: Štatistiky zariadenia sú nedostupné."
+msgstr "%s: Štatistika zariadenia nie je dostupná."
 
 #: ../panel-plugin/main.c:231
 #, c-format
@@ -150,7 +151,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr "%s\n----------------\nI/O    (MiB/s)\n  Čítanie :%3.2f\n  Zápis :%3.2f\n  Celkom :%3.2f\nČas zaneprázdnenia (%c)\n  Čítanie : %3d\n  Zápis : %3d\n  Celkom : %3d"
+msgstr "%s\n----------------\nV/V    (MiB/s)\n  Čítanie :%3.2f\n  Zápis :%3.2f\n  Celkom :%3.2f\nČas zaneprázdnenia (%c)\n  Čítanie : %3d\n  Zápis : %3d\n  Celkom : %3d"
 
 #: ../panel-plugin/main.c:905
 #, c-format

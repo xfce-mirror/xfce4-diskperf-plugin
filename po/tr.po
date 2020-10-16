@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Cenk Yıldızlı <goncagul@national.shitposting.agency>, 2019
+# 0d1bdb3b9a0d4e8f77bc854af8bf3dfc_e6913f4, 2019
 # GÃ¶kmen GÃ¶rgen <gkmngrgn@gmail.com>, 2008
 # Necdet Yücel <necdetyucel@gmail.com>, 2013
 # Serdar Sağlam <teknomobil@msn.com>, 2019

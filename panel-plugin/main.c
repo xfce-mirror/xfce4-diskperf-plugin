@@ -128,7 +128,7 @@ typedef struct monitor_t {
 
 typedef struct diskperf_t {
     XfcePanelPlugin *plugin;
-    unsigned int    iTimerId;	/* Cyclic update */
+    guint           iTimerId;	/* Cyclic update */
     struct conf_t   oConf;
     struct monitor_t
                     oMonitor;
@@ -281,16 +281,21 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 
 	/**************************************************************/
 
-static gboolean SetTimer (void *p_pvPlugin)
+static gboolean Timer (gpointer user_data)
+{
+    struct diskperf_t *poPlugin = user_data;
+
+    DisplayPerf (poPlugin);
+    return TRUE;
+}
+
+static void SetTimer (diskperf_t *poPlugin)
 	/* Recurrently update the panel-docked monitor bars through a
 	   timer */
 {
     GtkSettings *settings;
-    struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
 
-    DisplayPerf (poPlugin);
-    
     if (timerNeedsUpdate) {
         g_source_remove (poPlugin->iTimerId);
         poPlugin->iTimerId = 0;
@@ -305,9 +310,7 @@ static gboolean SetTimer (void *p_pvPlugin)
                      poConf->iPeriod_ms - 10, NULL);
 
     if (!poPlugin->iTimerId)
-        poPlugin->iTimerId = g_timeout_add (poConf->iPeriod_ms,
-					    (GSourceFunc) SetTimer, poPlugin);
-    return TRUE;
+        poPlugin->iTimerId = g_timeout_add (poConf->iPeriod_ms, Timer, poPlugin);
 }				/* SetTimer() */
 
 	/**************************************************************/
@@ -884,6 +887,7 @@ static void UpdateConf (diskperf_t *poPlugin)
     SetDevice (poGUI->wTF_Device, poPlugin);
     SetLabel (poGUI->wTF_Title, poPlugin);
     SetXferRate (poGUI->wTF_MaxXfer, poPlugin);
+    DisplayPerf (poPlugin);
     SetTimer (poPlugin);
 }				/* UpdateConf() */
 
@@ -1187,6 +1191,7 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
     diskperf_read_config (plugin, diskperf);
     DevPerfInit();
     
+    DisplayPerf (poPlugin);
     SetTimer (diskperf);
 }
 

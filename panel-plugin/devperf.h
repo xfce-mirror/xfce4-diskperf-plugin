@@ -46,7 +46,7 @@ typedef struct devperf_t {
 extern          "C" {
 #endif
 
-    int             DevPerfInit ();
+    int             DevPerfInit (void);
     /* Make required initialisations */
     /* Return 0 on success */
 

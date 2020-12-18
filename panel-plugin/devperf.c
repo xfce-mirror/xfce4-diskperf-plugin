@@ -159,7 +159,7 @@ static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 
 	/**************************************************************/
 
-int DevPerfInit ()
+int DevPerfInit (void)
 {
     FILE           *pF = 0;
     char            acLine[256];
@@ -249,7 +249,7 @@ int main ()
 
 #define MAXNAMELEN 256
 
-int DevPerfInit ()
+int DevPerfInit (void)
 {
 	return (0);
 }
@@ -326,7 +326,7 @@ int main ()
 #include <sys/param.h>
 #include <sys/sysctl.h>
 
-int DevPerfInit ()
+int DevPerfInit (void)
 {
 	return (0);
 }
@@ -404,7 +404,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 #include <sys/sysctl.h>
 #include <sys/disk.h>
 
-int DevPerfInit ()
+int DevPerfInit (void)
 {
         return (0);
 }
@@ -479,7 +479,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 #include <kstat.h>
 static kstat_ctl_t *kc;
 
-int DevPerfInit ()
+int DevPerfInit (void)
 {
 	kc = kstat_open ();
         return (0);

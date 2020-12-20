@@ -5,18 +5,20 @@ dnl
 
 m4_define([diskperf_version_major], [2])
 m4_define([diskperf_version_minor], [6])
-m4_define([diskperf_version_micro], [2])
+m4_define([diskperf_version_micro], [3])
 m4_define([diskperf_version_build], [@REVISION@])
 m4_define([diskperf_version_tag], []) # leave empty for releases
 m4_define([diskperf_version], [diskperf_version_major().diskperf_version_minor().diskperf_version_micro()ifelse(diskperf_version_tag(), [git], [diskperf_version_tag()-diskperf_version_build()], [diskperf_version_tag()])])
 
+m4_define([diskperf_debug_default], [ifelse(diskperf_version_tag(), [git], [yes], [minimum])])
+
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
-AC_COPYRIGHT([Copyright (c) 2006-2007
+AC_COPYRIGHT([Copyright (c) 2006-2020
         The Xfce development team. All rights reserved.])
-AC_INIT([xfce4-diskperf-plugin], [diskperf_version], [https://bugzilla.xfce.org/], [xfce4-diskperf-plugin])
-AC_PREREQ([2.50])
+AC_INIT([xfce4-diskperf-plugin], [diskperf_version], [https://gitlab.xfce.org/panel-plugins/xfce4-diskperf-plugin/], [xfce4-diskperf-plugin])
+AC_PREREQ([2.69])
 AC_CANONICAL_TARGET()
 
 dnl ***************************
@@ -26,12 +28,13 @@ AM_INIT_AUTOMAKE([1.8 dist-bzip2 tar-ustar no-dist-gzip])
 AM_CONFIG_HEADER([config.h])
 AM_MAINTAINER_MODE()
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+AC_CONFIG_MACRO_DIRS([m4])
 
 dnl ********************************
 dnl *** Check for basic programs ***
 dnl ********************************
 AC_PROG_CC_C99()
-AC_PROG_LD()
+LT_PATH_LD([])
 AC_PROG_INSTALL()
 IT_PROG_INTLTOOL([0.35.0])
 
@@ -43,7 +46,7 @@ dnl *** Check for standard headers ***
 dnl **********************************
 AC_HEADER_STDC()
 AC_CHECK_HEADERS([sys/sysmacros.h])
-AC_CHECK_LIBM
+LT_LIB_M
 AC_SUBST(LIBM)
 
 dnl ******************************
@@ -60,10 +63,11 @@ XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-2], [4.12.0])
 dnl ***********************************
 dnl *** Check for debugging support ***
 dnl ***********************************
-XDT_FEATURE_DEBUG()
+XDT_FEATURE_DEBUG([diskperf_debug_default])
 
-AC_OUTPUT([
+AC_CONFIG_FILES([
 Makefile
 panel-plugin/Makefile
 po/Makefile.in
 ])
+AC_OUTPUT

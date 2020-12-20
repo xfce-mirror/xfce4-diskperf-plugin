@@ -1,3 +1,20 @@
+2.6.3 (2020/12/21):
+------------------
+- Fix build with panel 4.15+
+- Fix missing-prototypes
+- Remove GSourceFunc casts
+- Add basic GitLab pipeline
+- Update URLs from goodies.x.o to docs.x.o (Bug #16160)
+- Update .gitignore
+- Make build less verbose
+- Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Belarusian, Chinese (Taiwan),
+  Croatian, Eastern Armenian, English (Canada), English (United
+  Kingdom), Galician, Greek, Hebrew, Indonesian, Korean, Latvian,
+  Occitan (post 1500), Panjabi (Punjabi), Polish, Portuguese (Brazil),
+  Slovak, Slovenian, Spanish, Swedish, Turkish, Urdu, Urdu (Pakistan),
+  Uyghur
+
 2.6.2 (2019/09/13):
 ------------------
 * translation updates

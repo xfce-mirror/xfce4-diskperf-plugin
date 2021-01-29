@@ -66,7 +66,6 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     GtkWidget      *wTB_Title;
     GtkWidget      *wTF_Title;
     GtkWidget      *hseparator7;
-    GtkWidget      *hbox2;
     GtkWidget      *label9;
     GtkWidget      *wRB_IO;
     GSList         *wRB_IO_group = NULL;
@@ -83,7 +82,6 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     GtkWidget      *label5;
     GtkWidget      *label6;
     GtkWidget      *label8;
-    GtkWidget      *hbox1;
     GtkWidget      *wRB_ReadWriteOrder;
     GSList         *wRB_ReadWriteOrder_group = NULL;
     GtkWidget      *wRB_WriteReadOrder;

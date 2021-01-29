@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2021-01-29 11:49+0000\n"
+"PO-Revision-Date: 2021-01-29 12:03+0000\n"
 "Last-Translator: Андрій Мізик <andmizyk@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/xfce/xfce-panel-plugins/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -70,11 +70,11 @@ msgstr "МіБ передано / секунду"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Busy time"
-msgstr "Час зайнятості"
+msgstr "Час роботи"
 
 #: ../panel-plugin/config_gui.c:178
 msgid "Percentage of time the device is busy"
-msgstr "Відсотків часу пристрій був зайнятий"
+msgstr "Час у відсотках, скільки пристрій був зайнятим"
 
 #: ../panel-plugin/config_gui.c:188
 msgid "Max. I/O rate (MiB/s) "
@@ -187,7 +187,7 @@ msgstr "%s: Невідома помилка\n\nЦе спостереження �
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Монітор Diskperf показує миттєву швидкість передачі даних вводу/виводу і час роботи"
+msgstr "Монітор Diskpref показує миттєву оцінку передачі вводу/виводу для диска та його час роботи"
 
 #: ../panel-plugin/main.c:948
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
@@ -199,4 +199,4 @@ msgstr "Контроль за продуктивністю диска"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
-msgstr "Показати продуктивність диска"
+msgstr "Показує продуктивність диска"

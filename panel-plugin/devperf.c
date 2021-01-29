@@ -65,14 +65,14 @@ static GetPerfData_t m_mGetPerfData = 0;
 static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 	/* Get disk performance statistics from STATISTICS_FILE_1 */
 {
-    const int       iMajorNo = major(p_iDevice),
-	iMinorNo = minor(p_iDevice);
-    struct timeval  oTimeStamp;
-    FILE           *pF;
-    unsigned int    major, minor, rsect, wsect, ruse, wuse, use;
-    int             running;
-    char            acStats[128];
-    int             c, n;
+    const unsigned int  iMajorNo = major(p_iDevice),
+                        iMinorNo = minor(p_iDevice);
+    struct timeval      oTimeStamp;
+    FILE               *pF;
+    unsigned int        major, minor, rsect, wsect, ruse, wuse, use;
+    int                 running;
+    char                acStats[128];
+    int                 c, n;
 
     pF = fopen (STATISTICS_FILE_1, "r");
     if (!pF) {
@@ -122,13 +122,13 @@ static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 	/* Get disk performance statistics from STATISTICS_FILE_2 */
 {
-    const int       iMajorNo = (p_iDevice >> 8) & 0xFF, /**/
-	iMinorNo = p_iDevice & 0xFF;
-    struct timeval  oTimeStamp;
-    FILE           *pF;
-    unsigned int    major, minor, rsect, wsect, ruse, wuse, use;
-    int             running;
-    int             c, n;
+    const unsigned int  iMajorNo = (p_iDevice >> 8) & 0xFF, /**/
+                        iMinorNo = p_iDevice & 0xFF;
+    struct timeval      oTimeStamp;
+    FILE               *pF;
+    unsigned int        major, minor, rsect, wsect, ruse, wuse, use;
+    int                 running;
+    int                 c, n;
 
     pF = fopen (STATISTICS_FILE_2, "r");
     if (!pF) {

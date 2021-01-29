@@ -5,13 +5,14 @@
 # Translators:
 # Dmitry Nikitin <luckas_fb@mail.ru>, 2007
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2019
+# Андрій Мізик <andmizyk@gmail.com>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-07-09 19:18+0000\n"
-"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
+"PO-Revision-Date: 2021-01-29 11:49+0000\n"
+"Last-Translator: Андрій Мізик <andmizyk@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/xfce/xfce-panel-plugins/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +26,7 @@ msgstr "Пристрій"
 
 #: ../panel-plugin/config_gui.c:116
 msgid "Input the device name, then press <Enter>"
-msgstr "Введіть назву пристрою, потім натисніть <Ввід>"
+msgstr "Уведіть назву пристрою, потім натисніть <Enter>"
 
 #: ../panel-plugin/config_gui.c:118
 msgid "/dev/sda1"
@@ -37,7 +38,7 @@ msgstr "Період збору даних"
 
 #: ../panel-plugin/config_gui.c:135
 msgid "Update interval (s) "
-msgstr "Період поновлення (сек) "
+msgstr "Період оновлення (сек) "
 
 #: ../panel-plugin/config_gui.c:141
 msgid "Label"
@@ -45,11 +46,11 @@ msgstr "Мітка"
 
 #: ../panel-plugin/config_gui.c:144
 msgid "Tick to display label"
-msgstr "Підв'язати до показу мітки"
+msgstr "Відмітити для показу міток"
 
 #: ../panel-plugin/config_gui.c:150
 msgid "Input the label, then press <Enter>"
-msgstr "Введіть мітку, потім натисніть <Ввід>"
+msgstr "Уведіть мітку, потім натисніть <Enter>"
 
 #: ../panel-plugin/config_gui.c:152
 msgid "hda1"
@@ -57,19 +58,19 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:160
 msgid "Monitor"
-msgstr "Монітор"
+msgstr "Відображати"
 
 #: ../panel-plugin/config_gui.c:166
 msgid "I/O transfer"
-msgstr "I/O передача"
+msgstr "Передача I/O"
 
 #: ../panel-plugin/config_gui.c:169
 msgid "MiB transferred / second"
-msgstr "Мб передано / секунд"
+msgstr "МіБ передано / секунду"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Busy time"
-msgstr "Зайняло часу"
+msgstr "Час зайнятості"
 
 #: ../panel-plugin/config_gui.c:178
 msgid "Percentage of time the device is busy"
@@ -77,11 +78,11 @@ msgstr "Відсотків часу пристрій був зайнятий"
 
 #: ../panel-plugin/config_gui.c:188
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Макс. швидкість I/O (Мб/с) "
+msgstr "Макс. поріг I/O (МіБ/с) "
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Введіть максимальну швидкість I/O передачі пристрою, потім натисніть <Ввід>"
+msgstr "Уведіть максимальний поріг передачі I/O для пристрою, потім натисніть <Enter>"
 
 #: ../panel-plugin/config_gui.c:204
 msgid "35"
@@ -89,11 +90,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Combine Read/Write data"
-msgstr "Поєднувати Читання/Запис даних"
+msgstr "Об'єднати дані читання/запису"
 
 #: ../panel-plugin/config_gui.c:217
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Поєднувати Читання/Запис даних всередині єдиного спостереження?"
+msgstr "Об'єднати дані читання/запису в один монітор?"
 
 #: ../panel-plugin/config_gui.c:225
 msgid "Bar color "
@@ -102,7 +103,7 @@ msgstr "Колір зони"
 #: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
 #: ../panel-plugin/config_gui.c:300
 msgid "Press to change color"
-msgstr "Натисніть для вибору кольору"
+msgstr "Натисніть, щоб змінити колір"
 
 #: ../panel-plugin/config_gui.c:246
 msgid "Read bar color "
@@ -122,7 +123,7 @@ msgstr "Читання-Запис"
 
 #: ../panel-plugin/config_gui.c:274
 msgid "\"Read\" monitor first"
-msgstr "\"Читати\" спостерігати першим"
+msgstr "\"Читання\" відображати першим"
 
 #: ../panel-plugin/config_gui.c:281
 msgid "Write-Read"
@@ -130,7 +131,7 @@ msgstr "Запис-Читання"
 
 #: ../panel-plugin/config_gui.c:285
 msgid "\"Write\" monitor first"
-msgstr "\"Запис\" спостерігати першим"
+msgstr "\"Запис\" відображати першим"
 
 #: ../panel-plugin/main.c:191
 #, c-format
@@ -150,7 +151,7 @@ msgid ""
 "  Read : %3d\n"
 "  Write : %3d\n"
 "  Total : %3d"
-msgstr "%s\n----------------\nI/O    (Мб/с)\n  Чиатння :%3.2f\n  Запис :%3.2f\n  Всього :%3.2f\nПотрачений час (%c)\n  Читання : %3d\n  Запис : %3d\n  Всього : %3d"
+msgstr "%s\n-------------------\nI/O (МіБ/c)\n  Читання:%3.2f\n  Запис:%3.2f\n  Всього:%3.2f\nПотрачено часу (%c)\n  Читання: %3d\n  Запис: %3d\n  Всього: %3d"
 
 #: ../panel-plugin/main.c:905
 #, c-format
@@ -160,7 +161,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s\n%s: %s (%d)\n\nЦе спостереження не робоче!\nБудь-ласка видаліть це."
+msgstr "%s\n%s: %s (%d)\n\nЦе спостереження не працює!\nБудь ласка, видаліть його."
 
 #: ../panel-plugin/main.c:916
 #, c-format
@@ -171,7 +172,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Не знайдено розширеної інформації про диск!\nВикористовується старе ядро (< 2.4.20) або\nкомпільоване з CONFIG_BLK_STATS значення в on.\n\nЦе спостереження не робоче!\nБудь-ласка видаліть це."
+msgstr "%s: Не знайдено розширеної інформації про диск!\nВикористовується старе ядро (< 2.4.20) або\nкомпільоване з CONFIG_BLK_STATS значення в on.\n\nЦе спостереження не працює!\nБудь ласка, видаліть його."
 
 #: ../panel-plugin/main.c:924
 #, c-format
@@ -180,7 +181,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Невідома помилка\n\nЦе спостереження не робоче!\nБудь-ласка видаліть це."
+msgstr "%s: Невідома помилка\n\nЦе спостереження не працює!\nБудь ласка, видаліть його."
 
 #: ../panel-plugin/main.c:946
 msgid ""
@@ -194,8 +195,8 @@ msgstr "Всі права застережено (c) 2003, 2004 Roger Seguin"
 
 #: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
-msgstr "Спостереження за продуктивністю диску"
+msgstr "Контроль за продуктивністю диска"
 
 #: ../panel-plugin/diskperf.desktop.in.h:2
 msgid "Show disk performance"
-msgstr "Показати продуктивність диску"
+msgstr "Показати продуктивність диска"

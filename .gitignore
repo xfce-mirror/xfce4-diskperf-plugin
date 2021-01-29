@@ -1,6 +1,8 @@
 po/*.gmo
+po/.intltool-merge-cache*
 po/*.pot
 po/POTFILES
+m4/
 *Makefile
 *Makefile.in
 *Makefile.in.in

@@ -166,7 +166,6 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     struct devperf_t oPerf;
     struct param_t *poConf = &(p_poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
-    struct perfbar_t *poPerf = poMonitor->aoPerfBar;
 #if !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat     oStat;
 #endif
@@ -697,9 +696,8 @@ static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
     const char     *pcDevice = gtk_entry_get_text (GTK_ENTRY (p_wTF));
 #if !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat     oStat;
-    int             status;
 
-    status = stat (pcDevice, &oStat);
+    stat (pcDevice, &oStat);
     poConf->st_rdev = oStat.st_rdev;
 #endif
     memset (poConf->acDevice, 0, sizeof (poConf->acDevice));
@@ -893,7 +891,7 @@ static void UpdateConf (diskperf_t *poPlugin)
 
 	/**************************************************************/
 
-static int CheckStatsAvailability ()
+static int CheckStatsAvailability (void)
 	/* Check disk performance statistics availability */
 	/* Return 0 on success, -1 otherwise */
 {

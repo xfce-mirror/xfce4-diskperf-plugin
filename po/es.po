@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2021-05-07 14:51+0000\n"
+"PO-Revision-Date: 2021-05-15 07:52+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/xfce-panel-plugins/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Dispositivo"
 
 #: ../panel-plugin/config_gui.c:116
 msgid "Input the device name, then press <Enter>"
-msgstr "Escriba el nombre del dispositivo y pulse <Enter>"
+msgstr "Escriba el nombre del dispositivo y pulse Intro"
 
 #: ../panel-plugin/config_gui.c:118
 msgid "/dev/sda1"
@@ -51,7 +51,7 @@ msgstr "Marcar para mostrar la etiqueta"
 
 #: ../panel-plugin/config_gui.c:150
 msgid "Input the label, then press <Enter>"
-msgstr "Escriba la etiqueta y pulse <Enter>"
+msgstr "Escriba la etiqueta y pulse Intro"
 
 #: ../panel-plugin/config_gui.c:152
 msgid "hda1"
@@ -79,11 +79,11 @@ msgstr "Porcentaje de tiempo que el dispositivo está ocupado"
 
 #: ../panel-plugin/config_gui.c:188
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Tasa máx. de E/S (MiB/s)"
+msgstr "Tasa máxima de E/S (MiB/s)"
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Escriba máxima tasa de transferencia de E/S y pulse <Enter>"
+msgstr "Escriba la tasa máxima de transferencia de E/S y pulse Intro"
 
 #: ../panel-plugin/config_gui.c:204
 msgid "35"
@@ -91,11 +91,11 @@ msgstr "35"
 
 #: ../panel-plugin/config_gui.c:213
 msgid "Combine Read/Write data"
-msgstr "Combinar los datos de lectura i escritura"
+msgstr "Combinar los datos de lectura y escritura"
 
 #: ../panel-plugin/config_gui.c:217
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "¿Quiere combinar los datos de lectura i escritura en un solo monitor?"
+msgstr "¿Quiere combinar los datos de lectura y escritura en un solo monitor?"
 
 #: ../panel-plugin/config_gui.c:225
 msgid "Bar color "
@@ -137,7 +137,7 @@ msgstr "Primero el monitor de escritura"
 #: ../panel-plugin/main.c:191
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr "%s: las estadísticas del dispositivo no están disponibles."
+msgstr "%s: Las estadísticas del dispositivo no están disponibles."
 
 #: ../panel-plugin/main.c:231
 #, c-format
@@ -188,11 +188,11 @@ msgstr "%s: Error desconocido\n\n¡Este monitor no funcionará!\nElimínelo."
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "El monitor del rendimiento del disco muestra las tasas de trasferencia de E/S y el tiempo ocupado"
+msgstr "El monitor del rendimiento del disco muestra\nlas tasas de trasferencia de E/S y los tiempos de actividad"
 
 #: ../panel-plugin/main.c:948
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Copyright (c) 2003, 2004 Roger Seguin"
+msgstr "Copyright (c) Roger Seguin, 2003-2004"
 
 #: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"

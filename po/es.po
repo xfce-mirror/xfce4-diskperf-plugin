@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2021-05-22 18:54+0000\n"
+"PO-Revision-Date: 2021-05-23 13:21+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/xfce/xfce-panel-plugins/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Periodo de recogida de datos"
 
 #: ../panel-plugin/config_gui.c:135
 msgid "Update interval (s) "
-msgstr "Intervalo de actualización (s)"
+msgstr "Intervalo de actualización (s) "
 
 #: ../panel-plugin/config_gui.c:141
 msgid "Label"
@@ -79,7 +79,7 @@ msgstr "Porcentaje de tiempo que el dispositivo está ocupado"
 
 #: ../panel-plugin/config_gui.c:188
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Tasa máxima de E/S (MiB/s)"
+msgstr "Tasa máxima de E/S (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:202
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -99,20 +99,20 @@ msgstr "¿Quiere combinar los datos de lectura y escritura en un solo monitor?"
 
 #: ../panel-plugin/config_gui.c:225
 msgid "Bar color "
-msgstr "Color de la barra"
+msgstr "Color de la barra "
 
 #: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
 #: ../panel-plugin/config_gui.c:300
 msgid "Press to change color"
-msgstr "Pulse para cambiar de color"
+msgstr "Pulse para cambiar de color "
 
 #: ../panel-plugin/config_gui.c:246
 msgid "Read bar color "
-msgstr "Color de la barra de lectura"
+msgstr "Color de la barra de lectura "
 
 #: ../panel-plugin/config_gui.c:255
 msgid "Write bar color "
-msgstr "Color de la barra de escritura"
+msgstr "Color de la barra de escritura "
 
 #: ../panel-plugin/config_gui.c:262
 msgid "Bar order"

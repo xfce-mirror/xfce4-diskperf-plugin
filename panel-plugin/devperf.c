@@ -102,8 +102,7 @@ static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 	fclose (pF);
 	gettimeofday (&oTimeStamp, 0);
 	p_poPerf->timestamp_ns =
-	    (uint64_t) 1000 *1000 * 1000 * oTimeStamp.tv_sec +
-	    1000 * oTimeStamp.tv_usec;
+	    (uint64_t) 1000 *1000 * 1000 * oTimeStamp.tv_sec + 1000 * oTimeStamp.tv_usec;
 	p_poPerf->rbytes = SECTOR_SIZE * rsect;
 	p_poPerf->wbytes = SECTOR_SIZE * wsect;
 	p_poPerf->qlen = running;
@@ -141,8 +140,7 @@ static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 	    fclose (pF);
 	    gettimeofday (&oTimeStamp, 0);
 	    p_poPerf->timestamp_ns =
-		(uint64_t) 1000 *1000 * 1000 * oTimeStamp.tv_sec +
-		1000 * oTimeStamp.tv_usec;
+		(uint64_t) 1000 *1000 * 1000 * oTimeStamp.tv_sec + 1000 * oTimeStamp.tv_usec;
 	    p_poPerf->rbytes = SECTOR_SIZE * rsect;
 	    p_poPerf->wbytes = SECTOR_SIZE * wsect;
 	    p_poPerf->qlen = running;
@@ -269,8 +267,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	for(found = 0, i = 0; i < (stats.dinfo)->numdevs; i++) {
 		char dev_name[MAXNAMELEN];
 		dev = (stats.dinfo)->devices[i];
-		snprintf(dev_name, MAXNAMELEN-1, "%s%d",
-				dev.device_name, dev.unit_number);
+		snprintf(dev_name, MAXNAMELEN-1, "%s%d", dev.device_name, dev.unit_number);
 		if ((check_dev != NULL) && (strcmp(check_dev, dev_name) != 0))
 			continue;
 		else {
@@ -284,8 +281,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 		perf->wbytes = dev.bytes[DEVSTAT_WRITE];
 		perf->rbytes = dev.bytes[DEVSTAT_READ];
 		gettimeofday (&tv, 0);
-		perf->timestamp_ns = (uint64_t)1000ull * 1000ull * 1000ull *
-			tv.tv_sec + 1000ull * tv.tv_usec;
+		perf->timestamp_ns = (uint64_t)1000ull * 1000ull * 1000ull * tv.tv_sec + 1000ull * tv.tv_usec;
 		perf->qlen = dev.start_count - dev.end_count;
 		// I'm not sure about rbusy and wbusy calculation
 		bintime2timespec(&dev.busy_time, &ts);
@@ -340,11 +336,11 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	mib[1] = HW_DISKSTATS;
 	mib[2] = sizeof(struct disk_sysctl);
 	if (sysctl(mib, 3, NULL, &size, NULL, 0) == -1)
-		return(-1);
+		return -1;
 	ndrives = size / sizeof(struct disk_sysctl);
 	drives = malloc(size);
 	if (sysctl(mib, 3, drives, &size, NULL, 0) == -1)
-		return(-1);
+		return -1;
 
 	for (i = 0; i < ndrives; i++) {
 		if (strcmp(drives[i].dk_name, device) == 0) {
@@ -356,11 +352,10 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	free(drives);
 
 	if (i == ndrives)
-		return(-1);
+		return -1;
 
 	gettimeofday (&tv, 0);
-	perf->timestamp_ns = (uint64_t)1000ull * 1000ull * 1000ull *
-		tv.tv_sec + 1000ull * tv.tv_usec;
+	perf->timestamp_ns = (uint64_t)1000ull * 1000ull * 1000ull * tv.tv_sec + 1000ull * tv.tv_usec;
 #if defined(__NetBSD_Version__) && (__NetBSD_Version__ < 106110000)
   /* NetBSD < 1.6K does not have separate read/write statistics. */
 	perf->rbytes = drive.dk_bytes;
@@ -380,7 +375,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
     + 1000ull * drive.dk_time_usec) / 2ull;
   perf->wbusy_ns = perf->rbusy_ns;
 
-	return(0);
+	return 0;
 }
 
 /**************************	NetBSD End	***************/
@@ -397,12 +392,12 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 
 int DevPerfInit (void)
 {
-        return (0);
+        return 0;
 }
 
 int DevCheckStatAvailability(char const **strptr)
 {
-        return (0);
+        return 0;
 }
 
 int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
@@ -418,7 +413,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	len = sizeof(diskn);
 
 	if (sysctl(mib, 2, &diskn, &len, NULL, 0) < 0)
-		return (-1);
+		return -1;
 
 	mib[0] = CTL_HW;
 	mib[1] = HW_DISKSTATS;
@@ -426,11 +421,11 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 
 	ds = malloc(len);
 	if (ds == NULL)
-		return (-1);
+		return -1;
 
 	if (sysctl(mib, 2, ds, &len, NULL, 0) < 0) {
 		free(ds);
-		return (-1);
+		return -1;
 	}
 
 	for (x = 0; x < diskn; x++)
@@ -439,16 +434,15 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 
 	if (x == diskn) {
 		free(ds);
-		return (-1);
+		return -1;
 	}
 
 	if (gettimeofday(&tv, NULL)) {
 		free(ds);
-		return (-1);
+		return -1;
 	}
 
-	perf->timestamp_ns = (uint64_t)1000ull * 1000ull * 1000ull * tv.tv_sec
-	    + 1000ull * tv.tv_usec; 
+	perf->timestamp_ns = (uint64_t)1000ull * 1000ull * 1000ull * tv.tv_sec + 1000ull * tv.tv_usec;
         perf->rbusy_ns = ((uint64_t)1000ull * 1000ull * 1000ull *
 	    ds[x].ds_time.tv_sec + 1000ull * ds[x].ds_time.tv_usec) / 2ull;
 
@@ -459,7 +453,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 
 	free(ds);
 
-	return (0);
+	return 0;
 }
 
 #elif defined (__sun__)
@@ -473,12 +467,12 @@ static kstat_ctl_t *kc;
 int DevPerfInit (void)
 {
 	kc = kstat_open ();
-        return (0);
+        return 0;
 }
 
 int DevCheckStatAvailability(char const **strptr)
 {
-        return (0);
+        return 0;
 }
 
 int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
@@ -498,17 +492,17 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	 * this list to the user and get them to pick the one they want.
 	 */
 	if(!(ksp = kstat_lookup (kc, NULL, -1, devname))) {
-		return (-1);
+		return -1;
 	}
 	if (kstat_read(kc, ksp, 0) == -1) {
-		return (-1);
+		return -1;
 	}
 	/*
 	 * Just in case we accidentally matched something that wasn't
 	 * an I/O device.
 	 */
 	if (ksp->ks_type != KSTAT_TYPE_IO) {
-		return (-1);
+		return -1;
 	}
 	kiot = KSTAT_IO_PTR(ksp);
 	perf->timestamp_ns = (uint64_t)ksp->ks_snaptime;
@@ -524,7 +518,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	 * qlen isn't used, so set it to zero rather than calculate it.
 	 */
 	perf->qlen = 0;
-	return (0);
+	return 0;
 }
 
 #else

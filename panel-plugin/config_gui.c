@@ -108,8 +108,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (wTF_Device);
     gtk_widget_set_hexpand (wTF_Device, TRUE);
     gtk_grid_attach (GTK_GRID (table1), wTF_Device, 1, 0, 2, 1);
-    gtk_widget_set_tooltip_text (wTF_Device,
-			  _("Input the device name, then press <Enter>"));
+    gtk_widget_set_tooltip_text (wTF_Device, _("Input the device name, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Device), 128);
     gtk_entry_set_text (GTK_ENTRY (wTF_Device), _("/dev/sda1"));
 
@@ -120,8 +119,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_set_hexpand(GTK_WIDGET(eventbox1), TRUE);
 
     wSc_Period_adj = gtk_adjustment_new (0.5, 0.25, 4, 0.05, 1, 0);
-    wSc_Period =
-	gtk_spin_button_new (GTK_ADJUSTMENT (wSc_Period_adj), 1, 3);
+    wSc_Period = gtk_spin_button_new (GTK_ADJUSTMENT (wSc_Period_adj), 1, 3);
     gtk_widget_set_halign (GTK_WIDGET (wSc_Period), GTK_ALIGN_START);
     gtk_widget_show (wSc_Period);
     gtk_container_add (GTK_CONTAINER (eventbox1), wSc_Period);
@@ -142,8 +140,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     wTF_Title = gtk_entry_new ();
     gtk_widget_show (wTF_Title);
     gtk_grid_attach (GTK_GRID (table1), wTF_Title, 1, 1, 2, 1);
-    gtk_widget_set_tooltip_text (wTF_Title,
-			  _("Input the label, then press <Enter>"));
+    gtk_widget_set_tooltip_text (wTF_Title, _("Input the label, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_Title), 16);
     gtk_entry_set_text (GTK_ENTRY (wTF_Title), _("hda1"));
 
@@ -166,16 +163,12 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_IO), wRB_IO_group);
     wRB_IO_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_IO));
 
-    wRB_BusyTime =
-	gtk_radio_button_new_with_mnemonic (NULL, _("Busy time"));
+    wRB_BusyTime = gtk_radio_button_new_with_mnemonic (NULL, _("Busy time"));
     gtk_widget_show (wRB_BusyTime);
     gtk_grid_attach (GTK_GRID (table1), wRB_BusyTime, 2, 4, 1, 1);
-    gtk_widget_set_tooltip_text (wRB_BusyTime,
-			  _("Percentage of time the device is busy"));
-    gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_BusyTime),
-				wRB_IO_group);
-    wRB_IO_group =
-	gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_BusyTime));
+    gtk_widget_set_tooltip_text (wRB_BusyTime, _("Percentage of time the device is busy"));
+    gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_BusyTime), wRB_IO_group);
+    wRB_IO_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_BusyTime));
 
     wHBox_MaxIO = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
     gtk_widget_show (wHBox_MaxIO);
@@ -205,12 +198,10 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_show (hseparator8);
     gtk_grid_attach (GTK_GRID (table1), hseparator8, 0, 6, 3, 1);
 
-    wTB_RWcombined =
-	gtk_check_button_new_with_mnemonic (_("Combine Read/Write data"));
+    wTB_RWcombined = gtk_check_button_new_with_mnemonic (_("Combine Read/Write data"));
     gtk_widget_show (wTB_RWcombined);
     gtk_grid_attach (GTK_GRID (table1), wTB_RWcombined, 0, 7, 3, 1);
-    gtk_widget_set_tooltip_text (wTB_RWcombined,
-			  _("Combine Read/Write data into one single monitor?"));
+    gtk_widget_set_tooltip_text (wTB_RWcombined, _("Combine Read/Write data into one single monitor?"));
 
     wTa_SingleBar = gtk_grid_new ();
     gtk_grid_set_column_spacing(GTK_GRID (wTa_SingleBar), 12);
@@ -262,27 +253,19 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_set_valign (GTK_WIDGET (label8), GTK_ALIGN_CENTER);
     gtk_label_set_xalign (GTK_LABEL (label8), 0.0f);
 
-    wRB_ReadWriteOrder =
-	gtk_radio_button_new_with_mnemonic (NULL, _("Read-Write"));
+    wRB_ReadWriteOrder = gtk_radio_button_new_with_mnemonic (NULL, _("Read-Write"));
     gtk_widget_show (wRB_ReadWriteOrder);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), wRB_ReadWriteOrder, 1, 0, 1, 1);
-    gtk_widget_set_tooltip_text (wRB_ReadWriteOrder,
-			  _("\"Read\" monitor first"));
-    gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_ReadWriteOrder),
-				wRB_ReadWriteOrder_group);
-    wRB_ReadWriteOrder_group =
-	gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_ReadWriteOrder));
+    gtk_widget_set_tooltip_text (wRB_ReadWriteOrder, _("\"Read\" monitor first"));
+    gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_ReadWriteOrder), wRB_ReadWriteOrder_group);
+    wRB_ReadWriteOrder_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_ReadWriteOrder));
 
-    wRB_WriteReadOrder =
-	gtk_radio_button_new_with_mnemonic (NULL, _("Write-Read"));
+    wRB_WriteReadOrder = gtk_radio_button_new_with_mnemonic (NULL, _("Write-Read"));
     gtk_widget_show (wRB_WriteReadOrder);
     gtk_grid_attach (GTK_GRID (wTa_DualBars), wRB_WriteReadOrder, 2, 0, 1, 1);
-    gtk_widget_set_tooltip_text (wRB_WriteReadOrder,
-			  _("\"Write\" monitor first"));
-    gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder),
-				wRB_ReadWriteOrder_group);
-    wRB_ReadWriteOrder_group =
-	gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder));
+    gtk_widget_set_tooltip_text (wRB_WriteReadOrder, _("\"Write\" monitor first"));
+    gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder), wRB_ReadWriteOrder_group);
+    wRB_ReadWriteOrder_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder));
 
     wPB_Rcolor = gtk_color_button_new();
     gtk_widget_show (wPB_Rcolor);

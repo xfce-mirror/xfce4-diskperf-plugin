@@ -44,14 +44,12 @@
 
 
 #if defined(__linux__)
-	/**************************************************************/
-	/**************************	Linux	***********************/
-	/**************************************************************/
+/**************************************************************/
+/**************************	Linux	***********************/
+/**************************************************************/
 
-static const char STATISTICS_FILE_1[] = "/proc/diskstats";	/* Kernel
-								   2.6 */
-static const char STATISTICS_FILE_2[] = "/proc/partitions";	/* Kernel
-								   2.4 */
+static const char STATISTICS_FILE_1[] = "/proc/diskstats";	/* Kernel 2.6 */
+static const char STATISTICS_FILE_2[] = "/proc/partitions";	/* Kernel 2.4 */
 
 static const uint64_t SECTOR_SIZE = 512;
 
@@ -62,10 +60,8 @@ typedef int     (*GetPerfData_t) (dev_t dev, struct devperf_t * perf);
 
 static GetPerfData_t m_mGetPerfData = 0;
 
-	/**************************************************************/
-
+/* Get disk performance statistics from STATISTICS_FILE_1 */
 static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
-	/* Get disk performance statistics from STATISTICS_FILE_1 */
 {
     const unsigned int  iMajorNo = major(p_iDevice),
                         iMinorNo = minor(p_iDevice);
@@ -118,13 +114,12 @@ static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
   Error:
     fclose (pF);
     return (-1);
-}				/* DevGetPerfData1() */
+}
 
-
+/* Get disk performance statistics from STATISTICS_FILE_2 */
 static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
-	/* Get disk performance statistics from STATISTICS_FILE_2 */
 {
-    const unsigned int  iMajorNo = (p_iDevice >> 8) & 0xFF, /**/
+    const unsigned int  iMajorNo = (p_iDevice >> 8) & 0xFF,
                         iMinorNo = p_iDevice & 0xFF;
     struct timeval      oTimeStamp;
     FILE               *pF;
@@ -157,9 +152,7 @@ static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
 	}
     fclose (pF);
     return (-1);
-}				/* DevGetPerfData2() */
-
-	/**************************************************************/
+}
 
 int DevPerfInit (void)
 {
@@ -189,27 +182,24 @@ int DevPerfInit (void)
     if (pF)
 	fclose (pF);
     return (m_iInitStatus);
-}				/* DevPerfInit() */
-
+}
 
 int DevCheckStatAvailability (char const **p_ppcStatFile)
 {
     if (p_ppcStatFile)
 	*p_ppcStatFile = m_pcStatFile;
     return (m_iInitStatus);
-}				/* DevCheckStatAvailability() */
-
+}
 
 int DevGetPerfData (const void *p_pvDevice, struct devperf_t *p_poPerf)
 {
     const dev_t     p_iDevice = *((dev_t *) p_pvDevice);
     return ((m_mGetPerfData && !m_iInitStatus) ?
 	    (*m_mGetPerfData) (p_iDevice, p_poPerf) : -1);
-}				/* DevGetPerfData() */
+}
 
-	/**************************************************************/
-
-#if 0				/* Standalone test purpose */
+/* Standalone test */
+#if 0
 int main ()
 {
     int             iMajor = 3, /**/ iMinor = 3;
@@ -231,7 +221,7 @@ int main ()
 }
 #endif
 
-	/**************************	Linux End	***************/
+/**************************	Linux End	***************/
 
 #elif defined(__FreeBSD__)
 
@@ -306,7 +296,8 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	return (0);
 }
 
-#if 0				/* Standalone test purpose */
+/* Standalone test */
+#if 0
 int main ()
 {
     struct devperf_t oPerf;
@@ -319,10 +310,9 @@ int main ()
 
 
 #elif defined(__NetBSD__)
-	/**************************************************************/
-	/**************************	NetBSD	***********************/
-	/**************************************************************/
-/* *INDENT-OFF* */
+/**************************************************************/
+/**************************	NetBSD	***********************/
+/**************************************************************/
 
 #include <sys/disk.h>
 #include <sys/param.h>
@@ -393,8 +383,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 	return(0);
 }
 
-/* *INDENT-ON* */
-	/**************************	NetBSD End	***************/
+/**************************	NetBSD End	***************/
 
 #elif defined(__OpenBSD__)
 /*
@@ -539,8 +528,8 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
 }
 
 #else
-	/**************************************************************/
-	/********************	Unsupported platform	***************/
-	/**************************************************************/
+/**************************************************************/
+/********************	Unsupported platform	***************/
+/**************************************************************/
 #error "Your platform is not yet supported"
 #endif

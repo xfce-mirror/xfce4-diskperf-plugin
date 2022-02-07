@@ -47,8 +47,8 @@
 #define BORDER          8
 
 
- /* Some platforms do not provide busy times as separate read and write
-    data, but only a single value combining both */
+/* Some platforms do not provide busy times as separate read and write
+   data, but only a single value combining both */
 #if  defined(__NetBSD__)
 #define	SEPARATE_BUSY_TIMES	0
 #elif  defined(__sun__)
@@ -64,8 +64,7 @@ typedef GtkWidget *Widget_t;
 
 typedef enum statistics_t {
     IO_TRANSFER,		/* MB transferred per second */
-    BUSY_TIME			/* Percentage of time the device has been
-				   busy */
+    BUSY_TIME			/* Percentage of time the device has been busy */
 } statistics_t;
 
 enum {
@@ -137,12 +136,10 @@ typedef struct diskperf_t {
                     oMonitor;
 } diskperf_t;
 
-	/**************************************************************/
-
 static int timerNeedsUpdate = 0;
 
+/* Update combined or separate progress bars with actual data */
 static void UpdateProgressBars(struct diskperf_t *p_poPlugin, double rw, double r, double w) {
- /* Update combined or separate progress bars with actual data */
     struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
     struct param_t *poConf = &(p_poPlugin->oConf.oParam);
     struct perfbar_t *poPerf = poMonitor->aoPerfBar;
@@ -161,10 +158,9 @@ static void UpdateProgressBars(struct diskperf_t *p_poPlugin, double rw, double 
     }
 }
 
-
+/* Get the last disk perfomance data, compute the statistics and update
+   the panel-docked monitor bars */
 static int DisplayPerf (struct diskperf_t *p_poPlugin)
- /* Get the last disk perfomance data, compute the statistics and update
-    the panel-docked monitor bars */
 {
     struct devperf_t oPerf;
     struct param_t *poConf = &(p_poPlugin->oConf.oParam);
@@ -279,9 +275,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     UpdateProgressBars(p_poPlugin, prData[RW_DATA], prData[R_DATA], prData[W_DATA]);
 
     return (0);
-}				/* DisplayPerf() */
-
-	/**************************************************************/
+}
 
 static gboolean Timer (gpointer user_data)
 {
@@ -291,9 +285,8 @@ static gboolean Timer (gpointer user_data)
     return TRUE;
 }
 
+/* Recurrently update the panel-docked monitor bars through a timer */
 static void SetTimer (diskperf_t *poPlugin)
-	/* Recurrently update the panel-docked monitor bars through a
-	   timer */
 {
     GtkSettings *settings;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -313,12 +306,10 @@ static void SetTimer (diskperf_t *poPlugin)
 
     if (!poPlugin->iTimerId)
         poPlugin->iTimerId = g_timeout_add (poConf->iPeriod_ms, Timer, poPlugin);
-}				/* SetTimer() */
+}
 
-	/**************************************************************/
-
+/* Set the color of a single monitor bar */
 static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
-	/* Set the color of a single monitor bar */
 {
 #if GTK_CHECK_VERSION (3, 16, 0)
     gchar * css;
@@ -352,12 +343,10 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
 						 &poConf->aoColor[p_iBar]);
 #endif
     return (0);
-}				/* SetSingleBarColor() */
+}
 
-	/**************************************************************/
-
+/* Set the monitor bar colors */
 static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
-	/* Set the monitor bar colors */
 {
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -370,12 +359,10 @@ static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
 	SetSingleBarColor (p_poPlugin, W_DATA);
     }
     return (0);
-}				/* SetMonitorBarColor() */
+}
 
-	/**************************************************************/
-
+/* Set order (Read-Write or Write-Read) and colors */
 static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
-	/* Set order (Read-Write or Write-Read) and colors */
 {
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -391,13 +378,11 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
     SetMonitorBarColor (poPlugin);
 
     return (0);
-}				/* ResetMonitorBar() */
+}
 
-	/**************************************************************/
-
+/* Create the panel progressive bars */
 static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
 			      GtkOrientation p_iOrientation)
-	/* Create the panel progressive bars */
 {
 #if GTK_CHECK_VERSION (3, 16, 0)
     GtkCssProvider *css_provider;
@@ -462,13 +447,11 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
     ResetMonitorBar (poPlugin);
 
     return (0);
-}				/* CreateMonitorBars() */
+}
 
-	/**************************************************************/
-
+/* Plugin API */
+/* Create the diskperf */
 static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
-	/* Plugin API */
-	/* Create the diskperf */
 {
     struct diskperf_t *poPlugin;
     struct param_t *poConf;
@@ -523,21 +506,17 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     xfce_panel_plugin_add_action_widget (plugin, poMonitor->wEventBox);
     
     return poPlugin;
-}				/* diskperf_create_control() */
+}
 
-	/**************************************************************/
-
+/* Plugin API */
 static void diskperf_free (XfcePanelPlugin *plugin, diskperf_t *poPlugin)
-	/* Plugin API */
 {
     if (poPlugin->iTimerId)
 	g_source_remove (poPlugin->iTimerId);
     g_free (poPlugin);
-}				/* diskperf_free() */
+}
 
-	/**************************************************************/
-
-	/* Configuration Keywords */
+/* Configuration Keywords */
 #define CONF_USE_LABEL		"UseLabel"
 #define CONF_LABEL_TEXT		"Text"
 #define CONF_DEVICE		"Device"
@@ -550,13 +529,11 @@ static void diskperf_free (XfcePanelPlugin *plugin, diskperf_t *poPlugin)
 #define CONF_WRITE_COLOR	"WriteColor"
 #define CONF_READ_WRITE_COLOR	"ReadWriteColor"
 
-	/**************************************************************/
-
-static void diskperf_read_config (XfcePanelPlugin *plugin, 
+/* Plugin API */
+/* Executed when the panel is started - Read the configuration
+   previously stored in xml file */
+static void diskperf_read_config (XfcePanelPlugin *plugin,
                                   diskperf_t *poPlugin)
-	/* Plugin API */
-	/* Executed when the panel is started - Read the configuration
-	   previously stored in xml file */
 {
     const char *value;
     char *file;
@@ -641,14 +618,12 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     ResetMonitorBar (poPlugin);
 
     xfce_rc_close (rc);
-}				/* diskperf_read_config() */
+}
 
-	/**************************************************************/
-
+/* Plugin API */
+/* Write diskperf configuration into xml file */
 static void diskperf_write_config (XfcePanelPlugin *plugin, 
                                    diskperf_t *poPlugin)
-	/* Plugin API */
-	/* Write diskperf configuration into xml file */
 {
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     XfceRc *rc;
@@ -686,13 +661,11 @@ static void diskperf_write_config (XfcePanelPlugin *plugin,
     xfce_rc_write_entry (rc, CONF_READ_WRITE_COLOR, gdk_rgba_to_string(poConf->aoColor + RW_DATA));
 
     xfce_rc_close (rc);
-}				/* diskperf_write_config() */
+}
 
-	/**************************************************************/
-
+/* GUI callback setting the device name, whose performance will be
+   displayed using the panel-docked monitor bars */
 static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
-	/* GUI callback setting the device name, whose performance will be 
-	   displayed using the panel-docked monitor bars */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -705,12 +678,10 @@ static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
 #endif
     memset (poConf->acDevice, 0, sizeof (poConf->acDevice));
     strncpy (poConf->acDevice, pcDevice, sizeof (poConf->acDevice) - 1);
-}				/* SetDevice() */
+}
 
-	/**************************************************************/
-
+/* GUI callback turning on/off the monitor bar legend */
 static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
-	/* GUI callback turning on/off the monitor bar legend */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -729,12 +700,10 @@ static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
       xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), FALSE);
     else
       xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (poPlugin->plugin), TRUE);
-}				/* ToggleTitle() */
+}
 
-	/**************************************************************/
-
+/* GUI callback setting the legend of the monitor bars */
 static void SetLabel (Widget_t p_wTF, void *p_pvPlugin)
-	/* GUI callback setting the legend of the monitor bars */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -744,12 +713,10 @@ static void SetLabel (Widget_t p_wTF, void *p_pvPlugin)
     memset (poConf->acTitle, 0, sizeof (poConf->acTitle));
     strncpy (poConf->acTitle, acTitle, sizeof (poConf->acTitle) - 1);
     gtk_label_set_text (GTK_LABEL (poMonitor->wTitle), poConf->acTitle);
-}				/* SetLabel() */
+}
 
-	/**************************************************************/
-
+/* GUI callback allowing to choose statistics to monitor */
 static void ToggleStatistics (Widget_t p_w, void *p_pvPlugin)
-	/* GUI callback allowing to choose statistics to monitor */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -774,14 +741,12 @@ static void ToggleStatistics (Widget_t p_w, void *p_pvPlugin)
     gtk_widget_set_sensitive (GTK_WIDGET (poGUI->wTB_RWcombined),
 			      (poConf->eStatistics != BUSY_TIME)
 			      || SEPARATE_BUSY_TIMES);
-}				/* ToggleStatistics() */
+}
 
-	/**************************************************************/
-
+/* GUI callback allowing either to combine write + read data in a
+   single monitor bar, or to keep them separate using 2 dedicated
+   monitor bars */
 static void ToggleRWintegration (Widget_t p_w, void *p_pvPlugin)
-	/* GUI callback allowing either to combine write + read data in a
-	   single monitor bar, or to keep them separate using 2 dedicated
-	   monitor bars */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -802,12 +767,10 @@ static void ToggleRWintegration (Widget_t p_w, void *p_pvPlugin)
 	gtk_widget_show (GTK_WIDGET (*pw2ndBar));
     }
     SetMonitorBarColor (poPlugin);
-}				/* ToggleRWintegration() */
+}
 
-	/**************************************************************/
-
+/* GUI callback allowing to swap Read/Write monitor bars */
 static void ToggleRWorder (Widget_t p_w, void *p_pvPlugin)
-	/* GUI callback allowing to swap Read/Write monitor bars */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -816,13 +779,10 @@ static void ToggleRWorder (Widget_t p_w, void *p_pvPlugin)
     DBG ("%d", poConf->eMonitorBarOrder);
     ResetMonitorBar (poPlugin);
     DisplayPerf (poPlugin);
-}				/* ToggleRWorder() */
+}
 
-	/**************************************************************/
-
+/* GUI callback setting the maximum I/O transfer rate of the device */
 static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
-	/* GUI callback setting the maximum I/O transfer rate of the
-	   device */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -835,12 +795,10 @@ static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
     else if (poConf->iMaxXferMBperSec < 5)
 	poConf->iMaxXferMBperSec = 5;
     DBG("XferRate rounded to %dMb/s\n", poConf->iMaxXferMBperSec);
-}				/* SetXferRate() */
+}
 
-	/**************************************************************/
-
+/* Set the update period - To be used by the timer */
 static void SetPeriod (Widget_t p_wSc, void *p_pvPlugin)
-	/* Set the update period - To be used by the timer */
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -850,9 +808,7 @@ static void SetPeriod (Widget_t p_wSc, void *p_pvPlugin)
     r = gtk_spin_button_get_value (GTK_SPIN_BUTTON (p_wSc));
     poConf->iPeriod_ms = round(r * 1000);
     DBG("Update period rounded to %dms\n", poConf->iPeriod_ms);
-}				/* SetPeriod() */
-
-	/**************************************************************/
+}
 
 static void ChooseColor (Widget_t p_wPB, void *p_pvPlugin)
 {
@@ -874,12 +830,10 @@ static void ChooseColor (Widget_t p_wPB, void *p_pvPlugin)
     DBG("color changed to %s for monitor %d", gdk_rgba_to_string(&poColor), iPerfBar);
     poConf->aoColor[iPerfBar] = poColor;
     SetMonitorBarColor (poPlugin);
-}				/* ChooseColor() */
+}
 
-	/**************************************************************/
-
+/* Called back when the configuration/options window is closed */
 static void UpdateConf (diskperf_t *poPlugin)
-	/* Called back when the configuration/options window is closed */
 {
     struct conf_t  *poConf = &(poPlugin->oConf);
     struct gui_t   *poGUI = &(poConf->oGUI);
@@ -890,13 +844,11 @@ static void UpdateConf (diskperf_t *poPlugin)
     SetXferRate (poGUI->wTF_MaxXfer, poPlugin);
     DisplayPerf (poPlugin);
     SetTimer (poPlugin);
-}				/* UpdateConf() */
+}
 
-	/**************************************************************/
-
+/* Check disk performance statistics availability */
+/* Return 0 on success, -1 otherwise */
 static int CheckStatsAvailability (void)
-	/* Check disk performance statistics availability */
-	/* Return 0 on success, -1 otherwise */
 {
     const char     *pcStatFile = 0;
     int             status;
@@ -931,12 +883,10 @@ static int CheckStatsAvailability (void)
 		      "Please remove it."), PLUGIN_NAME);
     }
     return (-1);
-}				/* CheckStatsAvailability() */
+}
 
-	/**************************************************************/
-
+/* Called back when the About button in clicked */
 static void About (Widget_t w, void *unused)
-	/* Called back when the About button in clicked */
 {
    GdkPixbuf *icon;
    const gchar *auth[] = { "Roger Seguin <roger_seguin@msn.com>",
@@ -954,9 +904,7 @@ static void About (Widget_t w, void *unused)
       "authors", auth, NULL);
    if(icon)
       g_object_unref(G_OBJECT(icon));
-}				/* About() */
-
-	/**************************************************************/
+}
 
 static void diskperf_dialog_response (GtkWidget *dlg, int response, 
                                       diskperf_t *diskperf)
@@ -967,10 +915,10 @@ static void diskperf_dialog_response (GtkWidget *dlg, int response,
     diskperf_write_config (diskperf->plugin, diskperf);
 }
 
+/* Plugin API */
+/* Create/pop up the configuration/options GUI */
 static void diskperf_create_options (XfcePanelPlugin *plugin,
                                      diskperf_t *poPlugin)
-	/* Plugin API */
-	/* Create/pop up the configuration/options GUI */
 {
     GtkWidget *dlg, *vbox;
     struct param_t *poConf = &(poPlugin->oConf.oParam);
@@ -1084,14 +1032,12 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     }
 		      
     gtk_widget_show (dlg);
-}				/* diskperf_create_options() */
+}
 
-	/**************************************************************/
-
+/* Plugin API */
+/* Set the size of the panel-docked monitor bars */
 static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
                                diskperf_t *poPlugin)
-	/* Plugin API */
-	/* Set the size of the panel-docked monitor bars */
 {
     int             i, size1, size2;
     Widget_t       *pwBar;
@@ -1117,15 +1063,13 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
     }
 
     return TRUE;
-}				/* diskperf_set_size() */
+}
 
-	/**************************************************************/
-
+/* Plugin API */
+/* Invoked when the panel changes mode */
 static void diskperf_set_mode (XfcePanelPlugin *plugin,
                                XfcePanelPluginMode p_iMode,
                                diskperf_t *poPlugin)
-	/* Plugin API */
-	/* Invoked when the panel changes mode */
 {
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
     int i;
@@ -1157,8 +1101,7 @@ static void diskperf_set_mode (XfcePanelPlugin *plugin,
       xfce_panel_plugin_set_small (XFCE_PANEL_PLUGIN (plugin), TRUE);
 
     diskperf_set_size (plugin, xfce_panel_plugin_get_size (plugin), poPlugin);
-}				/* diskperf_set_orientation() */
-	/**************************************************************/
+}
 
 static void diskperf_construct (XfcePanelPlugin *plugin)
 {

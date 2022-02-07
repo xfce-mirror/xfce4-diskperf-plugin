@@ -38,12 +38,10 @@
 #define COPYVAL(var, field)	((var)->field = field)
 
 
-	/**** GUI initially created using glade-2 ****/
+/**** GUI initially created using glade-2 ****/
 
-	/* Use the gtk_button_new_with_mnemonic() function for text-based
-	   push buttons */
-	/* Use "#define gtk_button_new_with_mnemonic(x) gtk_button_new()"
-	   for color-filled buttons */
+/* Use the gtk_button_new_with_mnemonic() function for text-based push buttons */
+/* Use "#define gtk_button_new_with_mnemonic(x) gtk_button_new()" for color-filled buttons */
 
 #define gtk_button_new_with_mnemonic(x) gtk_button_new()
 
@@ -317,4 +315,4 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
 	COPYVAL (p_poGUI, wPB_Wcolor);
     }
     return (0);
-}				/* CreateConfigGUI() */
+}

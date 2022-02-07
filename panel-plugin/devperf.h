@@ -25,16 +25,15 @@
 #include <config.h>
 #endif
 
+#include <glib.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <inttypes.h>
-
 
 enum {
     NO_ERROR,
     NO_EXTENDED_STATS
 };
-
 
 typedef struct devperf_t {
     uint64_t        timestamp_ns;
@@ -45,27 +44,21 @@ typedef struct devperf_t {
     int32_t         qlen;	/* Current queue length */
 } devperf_t;
 
+G_BEGIN_DECLS
 
-#ifdef __cplusplus
-extern          "C" {
-#endif
+/* Make required initialisations */
+/* Return 0 on success */
+int DevPerfInit (void);
 
-    int             DevPerfInit (void);
-    /* Make required initialisations */
-    /* Return 0 on success */
+/* Check the availability of required kernel statistics */
+/* Get the statistics file name */
+/* Return 0 on success */
+int DevCheckStatAvailability (char const **StatisticsFile);
 
-    int             DevCheckStatAvailability (char const **StatisticsFile);
-    /* Check the availability of required kernel statistics */
-    /* Get the statistics file name */
-    /* Return 0 on success */
+/* Get disk performance data stored by the kernel */
+/* Return 0 on success, -1 otherwise */
+int DevGetPerfData (const void *devid, struct devperf_t *perf);
 
-    int             DevGetPerfData (const void *devid,
-				    struct devperf_t *perf);
-    /* Get disk performance data stored by the kernel */
-    /* Return 0 on success, -1 otherwise */
+G_END_DECLS
 
-#ifdef __cplusplus
-}				/* extern "C" */
-#endif
-
-#endif				/* _devperf_h */
+#endif /* _devperf_h */

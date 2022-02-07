@@ -25,11 +25,11 @@
 #include <config.h>
 #endif
 
+#include <glib.h>
 #include <gtk/gtk.h>
 
 #include <libxfce4util/libxfce4util.h>
 #include <libxfce4ui/libxfce4ui.h>
-
 
 typedef struct gui_t {
     /* Configuration GUI widgets */
@@ -51,18 +51,12 @@ typedef struct gui_t {
     GtkWidget      *wPB_Wcolor;
 } gui_t;
 
+G_BEGIN_DECLS
 
-#ifdef __cplusplus
-extern          "C" {
-#endif
+/* Create configuration/Option GUI */
+/* Return 0 on success, -1 otherwise */
+int CreateConfigGUI (GtkWidget * ParentWindow, struct gui_t *gui);
 
-    int             CreateConfigGUI (GtkWidget * ParentWindow,
-				     struct gui_t *gui);
-    /* Create configuration/Option GUI */
-    /* Return 0 on success, -1 otherwise */
+G_END_DECLS
 
-#ifdef __cplusplus
-}				/* extern "C" */
-#endif
-
-#endif				/* _config_gui_h */
+#endif /* _config_gui_h */

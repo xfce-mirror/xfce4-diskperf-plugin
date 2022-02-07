@@ -186,16 +186,14 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     status = DevGetPerfData (&(poConf->st_rdev), &oPerf);
 #endif
     if (status == -1) {
-    snprintf (acToolTips, sizeof(acToolTips), _("%s: Device statistics unavailable."),
-              poConf->acTitle);
+    snprintf (acToolTips, sizeof(acToolTips), _("%s: Device statistics unavailable."), poConf->acTitle);
     UpdateProgressBars(p_poPlugin, 0, 0, 0);
     gtk_widget_set_tooltip_text(GTK_WIDGET(poMonitor->wEventBox), acToolTips);
 
 	return (-1);
     }
     if (poMonitor->oPrevPerf.timestamp_ns) {
-	iInterval_ns =
-	    oPerf.timestamp_ns - poMonitor->oPrevPerf.timestamp_ns;
+	iInterval_ns = oPerf.timestamp_ns - poMonitor->oPrevPerf.timestamp_ns;
 	rbytes = oPerf.rbytes - poMonitor->oPrevPerf.rbytes;
 	wbytes = oPerf.wbytes - poMonitor->oPrevPerf.wbytes;
 	iRBusy_ns = oPerf.rbusy_ns - poMonitor->oPrevPerf.rbusy_ns;
@@ -217,8 +215,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     else {
 	arBusy[R_DATA] = (double) 100.0 *iRBusy_ns / iInterval_ns;
 	arBusy[W_DATA] = (double) 100.0 *iWBusy_ns / iInterval_ns;
-	arBusy[RW_DATA] =
-	    (double) 100.0 *(iRBusy_ns + iWBusy_ns) / iInterval_ns;
+	arBusy[RW_DATA] = (double) 100.0 *(iRBusy_ns + iWBusy_ns) / iInterval_ns;
 	for (i = 0; i < NMONITORS; i++) {
 	    pr = arBusy + i;
 	    if (*pr > 100)
@@ -301,8 +298,7 @@ static void SetTimer (diskperf_t *poPlugin)
      * we won't see tooltips on GTK 2.16 or newer */
     settings = gtk_settings_get_default();
     if (g_object_class_find_property(G_OBJECT_GET_CLASS(settings), "gtk-tooltip-timeout"))
-        g_object_set(settings, "gtk-tooltip-timeout",
-                     poConf->iPeriod_ms - 10, NULL);
+        g_object_set(settings, "gtk-tooltip-timeout", poConf->iPeriod_ms - 10, NULL);
 
     if (!poPlugin->iTimerId)
         poPlugin->iTimerId = g_timeout_add (poConf->iPeriod_ms, Timer, poPlugin);
@@ -369,10 +365,8 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
     DBG("!");
 
-    poMonitor->aoPerfBar[R_DATA].pwBar =
-	poMonitor->awProgressBar + (poConf->eMonitorBarOrder == WR_ORDER);
-    poMonitor->aoPerfBar[W_DATA].pwBar =
-	poMonitor->awProgressBar + (poConf->eMonitorBarOrder == RW_ORDER);
+    poMonitor->aoPerfBar[R_DATA].pwBar = poMonitor->awProgressBar + (poConf->eMonitorBarOrder == WR_ORDER);
+    poMonitor->aoPerfBar[W_DATA].pwBar = poMonitor->awProgressBar + (poConf->eMonitorBarOrder == RW_ORDER);
     poMonitor->aoPerfBar[RW_DATA].pwBar = poMonitor->awProgressBar + 0;
 
     SetMonitorBarColor (poPlugin);
@@ -403,16 +397,14 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin,
     poMonitor->wTitle = gtk_label_new (poConf->acTitle);
     if (poConf->fTitleDisplayed)
 	gtk_widget_show (poMonitor->wTitle);
-    gtk_box_pack_start (GTK_BOX (poMonitor->wBox),
-			GTK_WIDGET (poMonitor->wTitle), FALSE, FALSE, 2);
+    gtk_box_pack_start (GTK_BOX (poMonitor->wBox), GTK_WIDGET (poMonitor->wTitle), FALSE, FALSE, 2);
 
     for (i = 0; i < 2; i++) {
 	pwBar = poMonitor->awProgressBar + i;
 	*pwBar = GTK_WIDGET (gtk_progress_bar_new ());
 	gtk_orientable_set_orientation (GTK_ORIENTABLE(*pwBar), !p_iOrientation);
 	gtk_progress_bar_set_inverted (GTK_PROGRESS_BAR(*pwBar),
-					   (p_iOrientation ==
-					    GTK_ORIENTATION_HORIZONTAL));
+					   (p_iOrientation == GTK_ORIENTATION_HORIZONTAL));
 #if GTK_CHECK_VERSION (3, 16, 0)
 	css_provider = gtk_css_provider_new ();
 #if GTK_CHECK_VERSION (3, 20, 0)
@@ -564,8 +556,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
 #endif
     }
 
-    poConf->fTitleDisplayed = 
-        xfce_rc_read_int_entry (rc, (CONF_USE_LABEL), 1);
+    poConf->fTitleDisplayed = xfce_rc_read_int_entry (rc, (CONF_USE_LABEL), 1);
 
     if (poConf->fTitleDisplayed)
         gtk_widget_show (GTK_WIDGET (poMonitor->wTitle));
@@ -581,28 +572,22 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     if ((value = xfce_rc_read_entry (rc, (CONF_LABEL_TEXT), NULL))) {
         memset (poConf->acTitle, 0, sizeof (poConf->acTitle));
         strncpy (poConf->acTitle, value, sizeof (poConf->acTitle) - 1);
-        gtk_label_set_text (GTK_LABEL (poMonitor->wTitle),
-                            poConf->acTitle);
+        gtk_label_set_text (GTK_LABEL (poMonitor->wTitle), poConf->acTitle);
     }
 
-    poConf->iPeriod_ms = 
-        xfce_rc_read_int_entry (rc, (CONF_UPDATE_PERIOD), 500);
-    poConf->eStatistics = 
-        xfce_rc_read_int_entry (rc, (CONF_STATISTICS), IO_TRANSFER);
+    poConf->iPeriod_ms = xfce_rc_read_int_entry (rc, (CONF_UPDATE_PERIOD), 500);
+    poConf->eStatistics = xfce_rc_read_int_entry (rc, (CONF_STATISTICS), IO_TRANSFER);
 
-    poConf->iMaxXferMBperSec = 
-        xfce_rc_read_int_entry (rc, (CONF_XFER_RATE), 40);
+    poConf->iMaxXferMBperSec = xfce_rc_read_int_entry (rc, (CONF_XFER_RATE), 40);
 
-    poConf->fRW_DataCombined = 
-        xfce_rc_read_int_entry (rc, (CONF_COMBINE_RW_DATA), 1);
+    poConf->fRW_DataCombined = xfce_rc_read_int_entry (rc, (CONF_COMBINE_RW_DATA), 1);
 
     if (poConf->fRW_DataCombined)
         gtk_widget_hide (GTK_WIDGET (*pw2ndBar));
     else
         gtk_widget_show (GTK_WIDGET (*pw2ndBar));
 
-    poConf->eMonitorBarOrder = 
-        xfce_rc_read_int_entry (rc, (CONF_MONITOR_BAR_ORDER), RW_ORDER);
+    poConf->eMonitorBarOrder = xfce_rc_read_int_entry (rc, (CONF_MONITOR_BAR_ORDER), RW_ORDER);
 
     if ((value = xfce_rc_read_entry (rc, (CONF_READ_COLOR), NULL))) {
         gdk_rgba_parse (poConf->aoColor + R_DATA, value);
@@ -650,11 +635,9 @@ static void diskperf_write_config (XfcePanelPlugin *plugin,
 
     xfce_rc_write_int_entry (rc, CONF_XFER_RATE, poConf->iMaxXferMBperSec);
 
-    xfce_rc_write_int_entry (rc, CONF_COMBINE_RW_DATA, 
-                             poConf->fRW_DataCombined);
+    xfce_rc_write_int_entry (rc, CONF_COMBINE_RW_DATA, poConf->fRW_DataCombined);
 
-    xfce_rc_write_int_entry (rc, CONF_MONITOR_BAR_ORDER, 
-                             poConf->eMonitorBarOrder);
+    xfce_rc_write_int_entry (rc, CONF_MONITOR_BAR_ORDER, poConf->eMonitorBarOrder);
 
     xfce_rc_write_entry (rc, CONF_READ_COLOR, gdk_rgba_to_string(poConf->aoColor + R_DATA));
     xfce_rc_write_entry (rc, CONF_WRITE_COLOR, gdk_rgba_to_string(poConf->aoColor + W_DATA));
@@ -687,11 +670,9 @@ static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
     struct param_t *poConf = &(poPlugin->oConf.oParam);
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
 
-    poConf->fTitleDisplayed =
-	gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
+    poConf->fTitleDisplayed = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
     if (poConf->fTitleDisplayed)
 	gtk_widget_show (GTK_WIDGET (poMonitor->wTitle));
-
     else
 	gtk_widget_hide (GTK_WIDGET (poMonitor->wTitle));
 
@@ -729,8 +710,7 @@ static void ToggleStatistics (Widget_t p_w, void *p_pvPlugin)
 	    gtk_widget_hide (GTK_WIDGET (poGUI->wHBox_MaxIO));
 	    if (!SEPARATE_BUSY_TIMES) {
 		poConf->fRW_DataCombined = 1;
-		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON
-					      (poGUI->wTB_RWcombined),
+		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wTB_RWcombined),
 					      poConf->fRW_DataCombined);
 	    }
 	    break;
@@ -753,8 +733,7 @@ static void ToggleRWintegration (Widget_t p_w, void *p_pvPlugin)
     struct gui_t   *poGUI = &(poPlugin->oConf.oGUI);
     Widget_t       *pw2ndBar = poPlugin->oMonitor.awProgressBar + 1;
 
-    poConf->fRW_DataCombined =
-	gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
+    poConf->fRW_DataCombined = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
     DBG ("%d", poConf->fRW_DataCombined);
     if (poConf->fRW_DataCombined) {
 	gtk_widget_hide (GTK_WIDGET (poGUI->wTa_DualBars));
@@ -941,8 +920,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
 
     gtk_window_set_resizable (GTK_WINDOW (dlg), FALSE);
     
-    g_signal_connect (G_OBJECT (dlg), "response",
-                      G_CALLBACK (diskperf_dialog_response), poPlugin);
+    g_signal_connect (G_OBJECT (dlg), "response", G_CALLBACK (diskperf_dialog_response), poPlugin);
 
     gtk_window_set_position (GTK_WINDOW (dlg), GTK_WIN_POS_CENTER);
     gtk_window_set_icon_name (GTK_WINDOW (dlg), "drive-harddisk");
@@ -950,8 +928,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 18);
     gtk_container_set_border_width (GTK_CONTAINER (vbox), 12);
     gtk_widget_show(vbox);
-    gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area(GTK_DIALOG (dlg))), vbox,
-                        TRUE, TRUE, 0);
+    gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area(GTK_DIALOG (dlg))), vbox, TRUE, TRUE, 0);
     
     poPlugin->oConf.wTopLevel = dlg;
 
@@ -962,11 +939,9 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     g_signal_connect (GTK_WIDGET (poGUI->wTB_Title), "toggled",
 		      G_CALLBACK (ToggleTitle), poPlugin);
 
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON
-				  (poGUI->wRB_IO),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wRB_IO),
 				  (poConf->eStatistics == IO_TRANSFER));
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON
-				  (poGUI->wRB_BusyTime),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wRB_BusyTime),
 				  (poConf->eStatistics == BUSY_TIME));
     if (poConf->eStatistics == IO_TRANSFER)
 	gtk_widget_show (GTK_WIDGET (poGUI->wHBox_MaxIO));
@@ -978,8 +953,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     g_signal_connect (GTK_WIDGET (poGUI->wRB_IO), "toggled",
 		      G_CALLBACK (ToggleStatistics), poPlugin);
 
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON
-				  (poGUI->wTB_RWcombined),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wTB_RWcombined),
 				  poConf->fRW_DataCombined);
     gtk_widget_set_sensitive (GTK_WIDGET (poGUI->wTB_RWcombined),
 			      (poConf->eStatistics != BUSY_TIME)
@@ -1013,11 +987,9 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     g_signal_connect (GTK_WIDGET (poGUI->wSc_Period), "value_changed",
 		      G_CALLBACK (SetPeriod), poPlugin);
 
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON
-				  (poGUI->wRB_ReadWriteOrder),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wRB_ReadWriteOrder),
 				  (poConf->eMonitorBarOrder == RW_ORDER));
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON
-				  (poGUI->wRB_WriteReadOrder),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wRB_WriteReadOrder),
 				  (poConf->eMonitorBarOrder == WR_ORDER));
     g_signal_connect (GTK_WIDGET (poGUI->wRB_ReadWriteOrder), "toggled",
 		      G_CALLBACK (ToggleRWorder), poPlugin);
@@ -1044,8 +1016,7 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size,
     struct monitor_t *poMonitor = &(poPlugin->oMonitor);
 
     DBG ("%d", p_size);
-    gtk_container_set_border_width (GTK_CONTAINER
-				    (poMonitor->wBox), p_size > 26 ? 2 : 1);
+    gtk_container_set_border_width (GTK_CONTAINER (poMonitor->wBox), p_size > 26 ? 2 : 1);
     if (xfce_panel_plugin_get_orientation (plugin) == 
             GTK_ORIENTATION_HORIZONTAL) {
 	size1 = 8;
@@ -1108,25 +1079,17 @@ static void diskperf_construct (XfcePanelPlugin *plugin)
     diskperf_t *diskperf = diskperf_create_control (plugin);
     xfce_textdomain(GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
-    g_signal_connect (plugin, "free-data", G_CALLBACK (diskperf_free), 
-                      diskperf);
-
-    g_signal_connect (plugin, "save", G_CALLBACK (diskperf_write_config), 
-                      diskperf);
-
-    g_signal_connect (plugin, "size-changed", G_CALLBACK (diskperf_set_size), 
-                      diskperf);
-
-    g_signal_connect (plugin, "mode-changed",
-                      G_CALLBACK (diskperf_set_mode), diskperf);
+    g_signal_connect (plugin, "free-data", G_CALLBACK (diskperf_free), diskperf);
+    g_signal_connect (plugin, "save", G_CALLBACK (diskperf_write_config), diskperf);
+    g_signal_connect (plugin, "size-changed", G_CALLBACK (diskperf_set_size), diskperf);
+    g_signal_connect (plugin, "mode-changed", G_CALLBACK (diskperf_set_mode), diskperf);
     xfce_panel_plugin_set_small (plugin, TRUE);
 
     xfce_panel_plugin_menu_show_about (plugin);
     g_signal_connect (plugin, "about", G_CALLBACK (About), NULL);
 
     xfce_panel_plugin_menu_show_configure (plugin);
-    g_signal_connect (plugin, "configure-plugin", 
-                      G_CALLBACK (diskperf_create_options), diskperf);
+    g_signal_connect (plugin, "configure-plugin", G_CALLBACK (diskperf_create_options), diskperf);
 
     gtk_container_add (GTK_CONTAINER (plugin), diskperf->oMonitor.wEventBox);
 

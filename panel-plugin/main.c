@@ -26,22 +26,21 @@
 #endif
 
 #include <gtk/gtk.h>
-
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
 #include <libxfce4panel/libxfce4panel.h>
+#include <libxfce4ui/libxfce4ui.h>
+#include <libxfce4util/libxfce4util.h>
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <memory.h>
-#include <math.h>
-#include <string.h>
-#include <inttypes.h>
-#include <string.h>
 #include <errno.h>
-#include <sys/stat.h>
+#include <inttypes.h>
+#include <math.h>
+#include <memory.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
 #define PLUGIN_NAME	"DiskPerf"
 #define BORDER          8

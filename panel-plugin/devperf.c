@@ -22,19 +22,17 @@
 
 #include "devperf.h"
 
-
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
 
-
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <memory.h>
-#include <string.h>
 #include <errno.h>
+#include <memory.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <sys/time.h>
+#include <unistd.h>
 /* for major() and minor() */
 #define _BSD_SOURCE
 #ifdef HAVE_SYS_SYSMACROS_H

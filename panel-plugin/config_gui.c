@@ -22,7 +22,6 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-
 #include "config_gui.h"
 
 #ifdef HAVE_CONFIG_H
@@ -30,9 +29,8 @@
 #endif
 
 #include <gtk/gtk.h>
-
-#include <libxfce4util/libxfce4util.h>
 #include <libxfce4ui/libxfce4ui.h>
+#include <libxfce4util/libxfce4util.h>
 
 
 #define COPYVAL(var, field)	((var)->field = field)

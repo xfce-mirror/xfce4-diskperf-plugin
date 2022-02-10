@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Kiril Kirilov <cybercop_montana@abv.bg>, 2019
+# Kiril Kirilov <cybercop_montana@abv.bg>, 2019,2022
 # Любомир Василев, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-05-17 05:41+0000\n"
+"POT-Creation-Date: 2022-02-10 12:53+0100\n"
+"PO-Revision-Date: 2022-02-10 18:23+0000\n"
 "Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/xfce/xfce-panel-plugins/language/bg/)\n"
 "MIME-Version: 1.0\n"
@@ -19,140 +19,140 @@ msgstr ""
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:102
+#: ../panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Устройство"
 
-#: ../panel-plugin/config_gui.c:116
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Въведете името на устройството и натиснете <Enter>"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:132
+#: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Период за събиране на данни"
 
-#: ../panel-plugin/config_gui.c:135
+#: ../panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Интервал на опресняване (с)"
 
-#: ../panel-plugin/config_gui.c:141
+#: ../panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Етикет"
 
-#: ../panel-plugin/config_gui.c:144
+#: ../panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Изберете, за да се показва етикета"
 
-#: ../panel-plugin/config_gui.c:150
+#: ../panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Въведете етикет и след това натиснете <Enter>"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:160
+#: ../panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Монитор"
 
-#: ../panel-plugin/config_gui.c:166
+#: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "В/И пренос"
 
-#: ../panel-plugin/config_gui.c:169
+#: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "Прехвълени МБ / секунда"
 
-#: ../panel-plugin/config_gui.c:174
+#: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Време в заетост"
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Процент от времето, през което устройството е било заето с дейност"
 
-#: ../panel-plugin/config_gui.c:188
+#: ../panel-plugin/config_gui.c:175
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Максимална В/И скорост (МБ/с)"
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:189
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Въведете максималната В/И скорост на прехвърляне на устройството и натиснете <Enter>"
 
-#: ../panel-plugin/config_gui.c:204
+#: ../panel-plugin/config_gui.c:191
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:199
 msgid "Combine Read/Write data"
 msgstr "Комбиниране на данните за четене/писане"
 
-#: ../panel-plugin/config_gui.c:217
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Комбиниране на данните за четене/писане в един общ изглед?"
 
-#: ../panel-plugin/config_gui.c:225
+#: ../panel-plugin/config_gui.c:210
 msgid "Bar color "
 msgstr "Цвят на стълбовете"
 
-#: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
-#: ../panel-plugin/config_gui.c:300
+#: ../panel-plugin/config_gui.c:222 ../panel-plugin/config_gui.c:271
+#: ../panel-plugin/config_gui.c:277
 msgid "Press to change color"
 msgstr "Натиснете, за да смените цвета"
 
-#: ../panel-plugin/config_gui.c:246
+#: ../panel-plugin/config_gui.c:231
 msgid "Read bar color "
 msgstr "Цвят на стълб за четене"
 
-#: ../panel-plugin/config_gui.c:255
+#: ../panel-plugin/config_gui.c:240
 msgid "Write bar color "
 msgstr "Цвят на стълб за писане"
 
-#: ../panel-plugin/config_gui.c:262
+#: ../panel-plugin/config_gui.c:247
 msgid "Bar order"
 msgstr "Ред на стълбовете"
 
-#: ../panel-plugin/config_gui.c:270
+#: ../panel-plugin/config_gui.c:254
 msgid "Read-Write"
 msgstr "Четене-писане"
 
-#: ../panel-plugin/config_gui.c:274
+#: ../panel-plugin/config_gui.c:257
 msgid "\"Read\" monitor first"
 msgstr "Първо стълба за „четене“"
 
-#: ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:261
 msgid "Write-Read"
 msgstr "Писане-четене"
 
-#: ../panel-plugin/config_gui.c:285
+#: ../panel-plugin/config_gui.c:264
 msgid "\"Write\" monitor first"
 msgstr "Първо стълба за „писане“"
 
-#: ../panel-plugin/main.c:191
+#: ../panel-plugin/main.c:188
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Няма статистика за устройството."
 
-#: ../panel-plugin/main.c:231
+#: ../panel-plugin/main.c:225
 #, c-format
 msgid ""
 "%s\n"
 "----------------\n"
-"I/O    (MiB/s)\n"
-"  Read :%3.2f\n"
-"  Write :%3.2f\n"
-"  Total :%3.2f\n"
+"I/O (MiB/s)\n"
+"  Read: %3.2f\n"
+"  Write: %3.2f\n"
+"  Total: %3.2f\n"
 "Busy time (%c)\n"
-"  Read : %3d\n"
-"  Write : %3d\n"
-"  Total : %3d"
-msgstr "%s\n----------------\nВ/И (МБ/я)\nЧетене :%3.2f\nПисане :%3.2f\nОбщо :%3.2f\nВреме в заетост (%c)\nЧетене : %3d\nПисане : %3d\nОбщо : %3d"
+"  Read: %d\n"
+"  Write: %d\n"
+"  Total: %d"
+msgstr "%s\n----------------\nВх./Изх. (MiB/s)\n    Четене: %3.2f\n    Запис: %3.2f\n    Общо: %3.2f\n    Време на заетост (%c)\n    Четене: %d\n    Запис: %d\n    Общо: %d"
 
-#: ../panel-plugin/main.c:905
+#: ../panel-plugin/main.c:829
 #, c-format
 msgid ""
 "%s\n"
@@ -162,7 +162,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nТози наблюдател няма да работи!\nМоля, премахнете го."
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -173,7 +173,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Няма намерени разширени статистики за диск!\nИли ядрото е старо (< 2.4.20) или не е\nкомпилирано с включена CONFIG_BLK_STATS.\n\nТози наблюдател няма да работи!\nМоля, премахнете го."
 
-#: ../panel-plugin/main.c:924
+#: ../panel-plugin/main.c:848
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,17 +182,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: Непозната грешка\n\nТози наблюдател няма да работи!\nМоля, премахнете го."
 
-#: ../panel-plugin/main.c:946
+#: ../panel-plugin/main.c:871
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Наблюдателя за производителност на диска показва моментните В/И скорости на пренос и времена на заетост"
 
-#: ../panel-plugin/main.c:948
+#: ../panel-plugin/main.c:873
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Авторски права (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Наблюдате за производителност на диска"
 

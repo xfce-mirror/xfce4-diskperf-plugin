@@ -33,7 +33,7 @@
 #include <libxfce4util/libxfce4util.h>
 
 
-#define COPYVAL(var, field)	((var)->field = field)
+#define COPYVAL(var, field) ((var)->field = field)
 
 
 /**** GUI initially created using glade-2 ****/
@@ -186,7 +186,7 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_set_hexpand (wTF_MaxXfer, TRUE);
     gtk_box_pack_start (GTK_BOX (wHBox_MaxIO), wTF_MaxXfer, FALSE, TRUE, 0);
     gtk_widget_set_tooltip_text (wTF_MaxXfer,
-			  _("Input the maximum I/O transfer rate of the device, then press <Enter>"));
+                                 _("Input the maximum I/O transfer rate of the device, then press <Enter>"));
     gtk_entry_set_max_length (GTK_ENTRY (wTF_MaxXfer), 5);
     gtk_entry_set_text (GTK_ENTRY (wTF_MaxXfer), _("35"));
 
@@ -278,22 +278,22 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_widget_set_hexpand (GTK_WIDGET (wPB_Wcolor), TRUE);
 
     if (p_poGUI) {
-	COPYVAL (p_poGUI, wTF_Device);
-	COPYVAL (p_poGUI, wSc_Period);
-	COPYVAL (p_poGUI, wTB_Title);
-	COPYVAL (p_poGUI, wTF_Title);
-	COPYVAL (p_poGUI, wRB_IO);
-	COPYVAL (p_poGUI, wRB_BusyTime);
-	COPYVAL (p_poGUI, wHBox_MaxIO);
-	COPYVAL (p_poGUI, wTF_MaxXfer);
-	COPYVAL (p_poGUI, wTB_RWcombined);
-	COPYVAL (p_poGUI, wTa_SingleBar);
-	COPYVAL (p_poGUI, wTa_DualBars);
-	COPYVAL (p_poGUI, wRB_ReadWriteOrder);
-	COPYVAL (p_poGUI, wRB_WriteReadOrder);
-	COPYVAL (p_poGUI, wPB_RWcolor);
-	COPYVAL (p_poGUI, wPB_Rcolor);
-	COPYVAL (p_poGUI, wPB_Wcolor);
+        COPYVAL (p_poGUI, wTF_Device);
+        COPYVAL (p_poGUI, wSc_Period);
+        COPYVAL (p_poGUI, wTB_Title);
+        COPYVAL (p_poGUI, wTF_Title);
+        COPYVAL (p_poGUI, wRB_IO);
+        COPYVAL (p_poGUI, wRB_BusyTime);
+        COPYVAL (p_poGUI, wHBox_MaxIO);
+        COPYVAL (p_poGUI, wTF_MaxXfer);
+        COPYVAL (p_poGUI, wTB_RWcombined);
+        COPYVAL (p_poGUI, wTa_SingleBar);
+        COPYVAL (p_poGUI, wTa_DualBars);
+        COPYVAL (p_poGUI, wRB_ReadWriteOrder);
+        COPYVAL (p_poGUI, wRB_WriteReadOrder);
+        COPYVAL (p_poGUI, wPB_RWcolor);
+        COPYVAL (p_poGUI, wPB_Rcolor);
+        COPYVAL (p_poGUI, wPB_Wcolor);
     }
     return (0);
 }

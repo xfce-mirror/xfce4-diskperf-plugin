@@ -32,22 +32,22 @@
 
 typedef struct gui_t {
     /* Configuration GUI widgets */
-    GtkWidget      *wTF_Device;
-    GtkWidget      *wTB_Title;
-    GtkWidget      *wTF_Title;
-    GtkWidget      *wSc_Period;
-    GtkWidget      *wRB_IO;
-    GtkWidget      *wRB_BusyTime;
-    GtkWidget      *wHBox_MaxIO;
-    GtkWidget      *wTF_MaxXfer;
-    GtkWidget      *wTB_RWcombined;
-    GtkWidget      *wTa_SingleBar;
-    GtkWidget      *wTa_DualBars;
-    GtkWidget      *wRB_ReadWriteOrder;
-    GtkWidget      *wRB_WriteReadOrder;
-    GtkWidget      *wPB_RWcolor;
-    GtkWidget      *wPB_Rcolor;
-    GtkWidget      *wPB_Wcolor;
+    GtkWidget *wTF_Device;
+    GtkWidget *wTB_Title;
+    GtkWidget *wTF_Title;
+    GtkWidget *wSc_Period;
+    GtkWidget *wRB_IO;
+    GtkWidget *wRB_BusyTime;
+    GtkWidget *wHBox_MaxIO;
+    GtkWidget *wTF_MaxXfer;
+    GtkWidget *wTB_RWcombined;
+    GtkWidget *wTa_SingleBar;
+    GtkWidget *wTa_DualBars;
+    GtkWidget *wRB_ReadWriteOrder;
+    GtkWidget *wRB_WriteReadOrder;
+    GtkWidget *wPB_RWcolor;
+    GtkWidget *wPB_Rcolor;
+    GtkWidget *wPB_Wcolor;
 } gui_t;
 
 G_BEGIN_DECLS

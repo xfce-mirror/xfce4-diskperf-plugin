@@ -27,28 +27,27 @@
 
 #include <glib.h>
 #include <gtk/gtk.h>
-
-#include <libxfce4util/libxfce4util.h>
 #include <libxfce4ui/libxfce4ui.h>
+#include <libxfce4util/libxfce4util.h>
 
 typedef struct gui_t {
     /* Configuration GUI widgets */
-    GtkWidget      *wTF_Device;
-    GtkWidget      *wTB_Title;
-    GtkWidget      *wTF_Title;
-    GtkWidget      *wSc_Period;
-    GtkWidget      *wRB_IO;
-    GtkWidget      *wRB_BusyTime;
-    GtkWidget      *wHBox_MaxIO;
-    GtkWidget      *wTF_MaxXfer;
-    GtkWidget      *wTB_RWcombined;
-    GtkWidget      *wTa_SingleBar;
-    GtkWidget      *wTa_DualBars;
-    GtkWidget      *wRB_ReadWriteOrder;
-    GtkWidget      *wRB_WriteReadOrder;
-    GtkWidget      *wPB_RWcolor;
-    GtkWidget      *wPB_Rcolor;
-    GtkWidget      *wPB_Wcolor;
+    GtkWidget *wTF_Device;
+    GtkWidget *wTB_Title;
+    GtkWidget *wTF_Title;
+    GtkWidget *wSc_Period;
+    GtkWidget *wRB_IO;
+    GtkWidget *wRB_BusyTime;
+    GtkWidget *wHBox_MaxIO;
+    GtkWidget *wTF_MaxXfer;
+    GtkWidget *wTB_RWcombined;
+    GtkWidget *wTa_SingleBar;
+    GtkWidget *wTa_DualBars;
+    GtkWidget *wRB_ReadWriteOrder;
+    GtkWidget *wRB_WriteReadOrder;
+    GtkWidget *wPB_RWcolor;
+    GtkWidget *wPB_Rcolor;
+    GtkWidget *wPB_Wcolor;
 } gui_t;
 
 G_BEGIN_DECLS

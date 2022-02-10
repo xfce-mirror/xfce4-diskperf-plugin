@@ -37,11 +37,11 @@ enum {
 
 typedef struct devperf_t {
     uint64_t        timestamp_ns;
-    uint64_t        rbytes;	/* Number of bytes read from the device */
-    uint64_t        wbytes;	/* Number of bytes written to the device */
-    uint64_t        rbusy_ns;	/* Device read busy time */
-    uint64_t        wbusy_ns;	/* Device write busy time */
-    int32_t         qlen;	/* Current queue length */
+    uint64_t        rbytes;     /* Number of bytes read from the device */
+    uint64_t        wbytes;     /* Number of bytes written to the device */
+    uint64_t        rbusy_ns;   /* Device read busy time */
+    uint64_t        wbusy_ns;   /* Device write busy time */
+    int32_t         qlen;       /* Current queue length */
 } devperf_t;
 
 G_BEGIN_DECLS

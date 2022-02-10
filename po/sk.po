@@ -4,15 +4,16 @@
 # 
 # Translators:
 # Dušan Kazik <prescott66@gmail.com>, 2020
+# Jan Ziak <0xe2.0x9a.0x9b@gmail.com>, 2022
 # Marek Hlava <headsvk@gmail.com>, 2011
 # 7dcd6f74323fe8d9c477949ff8fcbb1c_c427b63 <3fcd202e3dfab15fda15b8e88e54d449_7173>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2020-10-02 09:27+0000\n"
-"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"POT-Creation-Date: 2022-02-10 12:53+0100\n"
+"PO-Revision-Date: 2022-02-10 15:51+0000\n"
+"Last-Translator: Jan Ziak <0xe2.0x9a.0x9b@gmail.com>\n"
 "Language-Team: Slovak (http://www.transifex.com/xfce/xfce-panel-plugins/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,140 +21,140 @@ msgstr ""
 "Language: sk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: ../panel-plugin/config_gui.c:102
+#: ../panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Zariadenie"
 
-#: ../panel-plugin/config_gui.c:116
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Zadajte názov zariadenia a stlačte <Enter>"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:132
+#: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Interval pre zber dát"
 
-#: ../panel-plugin/config_gui.c:135
+#: ../panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Interval obnovenia (s)"
 
-#: ../panel-plugin/config_gui.c:141
+#: ../panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Menovka"
 
-#: ../panel-plugin/config_gui.c:144
+#: ../panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Zaškrtnutím zobrazíte menovku"
 
-#: ../panel-plugin/config_gui.c:150
+#: ../panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Zadajte popisok a stlačte <Enter>"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:160
+#: ../panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Sledovať"
 
-#: ../panel-plugin/config_gui.c:166
+#: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "V/V prenos"
 
-#: ../panel-plugin/config_gui.c:169
+#: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "MiB prenesených za sekundu"
 
-#: ../panel-plugin/config_gui.c:174
+#: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Zaneprázdnenie"
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Percento času, počas ktorého je zariadenie zaneprázdnené"
 
-#: ../panel-plugin/config_gui.c:188
+#: ../panel-plugin/config_gui.c:175
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Max. V/V prenosová rýchlosť (MiB/s) "
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:189
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Zadajte maximálnu vstupno-výstupnú prenosovú rýchlosť zariadenia a stlačte <Enter>"
 
-#: ../panel-plugin/config_gui.c:204
+#: ../panel-plugin/config_gui.c:191
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:199
 msgid "Combine Read/Write data"
 msgstr "Kombinovať údaje čítania/zápisu"
 
-#: ../panel-plugin/config_gui.c:217
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Kombinovať údaje čítania/zápisu do jedného sledovača?"
 
-#: ../panel-plugin/config_gui.c:225
+#: ../panel-plugin/config_gui.c:210
 msgid "Bar color "
 msgstr "Farba panelu"
 
-#: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
-#: ../panel-plugin/config_gui.c:300
+#: ../panel-plugin/config_gui.c:222 ../panel-plugin/config_gui.c:271
+#: ../panel-plugin/config_gui.c:277
 msgid "Press to change color"
 msgstr "Stlačením zmeníte farbu"
 
-#: ../panel-plugin/config_gui.c:246
+#: ../panel-plugin/config_gui.c:231
 msgid "Read bar color "
 msgstr "Farba panelu čítania"
 
-#: ../panel-plugin/config_gui.c:255
+#: ../panel-plugin/config_gui.c:240
 msgid "Write bar color "
 msgstr "Farba panelu zápisu"
 
-#: ../panel-plugin/config_gui.c:262
+#: ../panel-plugin/config_gui.c:247
 msgid "Bar order"
 msgstr "Poradie panelov"
 
-#: ../panel-plugin/config_gui.c:270
+#: ../panel-plugin/config_gui.c:254
 msgid "Read-Write"
 msgstr "Čítanie-zápis"
 
-#: ../panel-plugin/config_gui.c:274
+#: ../panel-plugin/config_gui.c:257
 msgid "\"Read\" monitor first"
 msgstr "Najskôr sledovať „Čítanie“"
 
-#: ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:261
 msgid "Write-Read"
 msgstr "Zápis-čítanie"
 
-#: ../panel-plugin/config_gui.c:285
+#: ../panel-plugin/config_gui.c:264
 msgid "\"Write\" monitor first"
 msgstr "Najskôr sledovať „Zápis“"
 
-#: ../panel-plugin/main.c:191
+#: ../panel-plugin/main.c:188
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Štatistika zariadenia nie je dostupná."
 
-#: ../panel-plugin/main.c:231
+#: ../panel-plugin/main.c:225
 #, c-format
 msgid ""
 "%s\n"
 "----------------\n"
-"I/O    (MiB/s)\n"
-"  Read :%3.2f\n"
-"  Write :%3.2f\n"
-"  Total :%3.2f\n"
+"I/O (MiB/s)\n"
+"  Read: %3.2f\n"
+"  Write: %3.2f\n"
+"  Total: %3.2f\n"
 "Busy time (%c)\n"
-"  Read : %3d\n"
-"  Write : %3d\n"
-"  Total : %3d"
-msgstr "%s\n----------------\nV/V    (MiB/s)\n  Čítanie :%3.2f\n  Zápis :%3.2f\n  Celkom :%3.2f\nČas zaneprázdnenia (%c)\n  Čítanie : %3d\n  Zápis : %3d\n  Celkom : %3d"
+"  Read: %d\n"
+"  Write: %d\n"
+"  Total: %d"
+msgstr "%s\n----------------\nPrenos (MiB/s)\n  Čítanie: %3.2f\n  Zápis: %3.2f\n  Celkovo: %3.2f\nVyužitie (%c)\n  Čítanie: %d\n  Zápis: %d\n  Celkovo: %d"
 
-#: ../panel-plugin/main.c:905
+#: ../panel-plugin/main.c:829
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nToto sledovanie nebude pracovať!\nProsím, odoberte ho."
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Žiadne podrobné štatistiky o disku neboli nájdené!\nPoužívate zastaralé jadro (< 2.4.20) alebo ste\nnezapli voľbu CONFIG_BLK_STATS pri zostavovaní.\n\nToto sledovanie nebude pracovať!\nProsím, odoberte ho."
 
-#: ../panel-plugin/main.c:924
+#: ../panel-plugin/main.c:848
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,17 +184,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: Neznáma chyba\n\nToto sledovanie nebude pracovať!\nProsím, odoberte ho."
 
-#: ../panel-plugin/main.c:946
+#: ../panel-plugin/main.c:871
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Sledovanie výkonu disku zobrazuje okamžité prenosové rýchlosti diskových operácií a doby činnosti "
 
-#: ../panel-plugin/main.c:948
+#: ../panel-plugin/main.c:873
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Copyright (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Sledovanie výkonu disku"
 

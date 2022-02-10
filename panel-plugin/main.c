@@ -224,16 +224,16 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 
     snprintf (acToolTips, sizeof(acToolTips), _("%s\n"
               "----------------\n"
-              "I/O    (MiB/s)\n"
-              "  Read :%3.2f\n"
-              "  Write :%3.2f\n"
-              "  Total :%3.2f\n"
+              "I/O (MiB/s)\n"
+              "  Read: %3.2f\n"
+              "  Write: %3.2f\n"
+              "  Total: %3.2f\n"
               "Busy time (%c)\n"
 #if SEPARATE_BUSY_TIMES
-              "  Read : %3d\n"
-              "  Write : %3d\n"
+              "  Read: %d\n"
+              "  Write: %d\n"
 #endif
-              "  Total : %3d"),
+              "  Total: %d"),
               poConf->acTitle,
               arPerf[R_DATA],
               arPerf[W_DATA],

@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 00:35+0200\n"
-"PO-Revision-Date: 2019-05-17 09:22+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"POT-Creation-Date: 2022-02-10 12:53+0100\n"
+"PO-Revision-Date: 2022-02-10 11:53+0000\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
 "Language-Team: Icelandic (http://www.transifex.com/xfce/xfce-panel-plugins/language/is/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,140 +20,140 @@ msgstr ""
 "Language: is\n"
 "Plural-Forms: nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);\n"
 
-#: ../panel-plugin/config_gui.c:102
+#: ../panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Tæki"
 
-#: ../panel-plugin/config_gui.c:116
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Settu inn nafn á tækinu, ýttu svo á <Enter>"
 
-#: ../panel-plugin/config_gui.c:118
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:132
+#: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Tímabil gagnasöfnunar"
 
-#: ../panel-plugin/config_gui.c:135
+#: ../panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Uppfærslutíðni (sek) "
 
-#: ../panel-plugin/config_gui.c:141
+#: ../panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Skýring"
 
-#: ../panel-plugin/config_gui.c:144
+#: ../panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Haka við til að birta skýringu"
 
-#: ../panel-plugin/config_gui.c:150
+#: ../panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Settu inn skýringu, ýttu svo á <Enter>"
 
-#: ../panel-plugin/config_gui.c:152
+#: ../panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:160
+#: ../panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Vöktun"
 
-#: ../panel-plugin/config_gui.c:166
+#: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "I/O flutningur"
 
-#: ../panel-plugin/config_gui.c:169
+#: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "MiB flutt / sekúndu"
 
-#: ../panel-plugin/config_gui.c:174
+#: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Tími vinnslu"
 
-#: ../panel-plugin/config_gui.c:178
+#: ../panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Prósentuhlutfall tíma sem tækið er upptekið / að vinna"
 
-#: ../panel-plugin/config_gui.c:188
+#: ../panel-plugin/config_gui.c:175
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Hám. I/O hlutfall (MiB/sek) "
 
-#: ../panel-plugin/config_gui.c:202
+#: ../panel-plugin/config_gui.c:189
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Settu inn hámarksgetu I/O-flutnings tækisins, ýttu svo á <Enter>"
 
-#: ../panel-plugin/config_gui.c:204
+#: ../panel-plugin/config_gui.c:191
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:213
+#: ../panel-plugin/config_gui.c:199
 msgid "Combine Read/Write data"
 msgstr "Sameina Lesa-Skrifa gögn"
 
-#: ../panel-plugin/config_gui.c:217
+#: ../panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Sameina Lesa-Skrifa gögn í einn mæli?"
 
-#: ../panel-plugin/config_gui.c:225
+#: ../panel-plugin/config_gui.c:210
 msgid "Bar color "
 msgstr "Litur stöpuls "
 
-#: ../panel-plugin/config_gui.c:237 ../panel-plugin/config_gui.c:294
-#: ../panel-plugin/config_gui.c:300
+#: ../panel-plugin/config_gui.c:222 ../panel-plugin/config_gui.c:271
+#: ../panel-plugin/config_gui.c:277
 msgid "Press to change color"
 msgstr "Smelltu til að breyta lit"
 
-#: ../panel-plugin/config_gui.c:246
+#: ../panel-plugin/config_gui.c:231
 msgid "Read bar color "
 msgstr "Litur lesstöpuls "
 
-#: ../panel-plugin/config_gui.c:255
+#: ../panel-plugin/config_gui.c:240
 msgid "Write bar color "
 msgstr "Litur skrifstöpuls "
 
-#: ../panel-plugin/config_gui.c:262
+#: ../panel-plugin/config_gui.c:247
 msgid "Bar order"
 msgstr "Uppröðun stöpla"
 
-#: ../panel-plugin/config_gui.c:270
+#: ../panel-plugin/config_gui.c:254
 msgid "Read-Write"
 msgstr "Lesa-Skrifa"
 
-#: ../panel-plugin/config_gui.c:274
+#: ../panel-plugin/config_gui.c:257
 msgid "\"Read\" monitor first"
 msgstr "\"Lesa\"-mælir fyrst"
 
-#: ../panel-plugin/config_gui.c:281
+#: ../panel-plugin/config_gui.c:261
 msgid "Write-Read"
 msgstr "Skrifa-Lesa"
 
-#: ../panel-plugin/config_gui.c:285
+#: ../panel-plugin/config_gui.c:264
 msgid "\"Write\" monitor first"
 msgstr "\"Skrifa\"-mælir fyrst"
 
-#: ../panel-plugin/main.c:191
+#: ../panel-plugin/main.c:188
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: tölfræði tækis ekki tiltæk."
 
-#: ../panel-plugin/main.c:231
+#: ../panel-plugin/main.c:225
 #, c-format
 msgid ""
 "%s\n"
 "----------------\n"
-"I/O    (MiB/s)\n"
-"  Read :%3.2f\n"
-"  Write :%3.2f\n"
-"  Total :%3.2f\n"
+"I/O (MiB/s)\n"
+"  Read: %3.2f\n"
+"  Write: %3.2f\n"
+"  Total: %3.2f\n"
 "Busy time (%c)\n"
-"  Read : %3d\n"
-"  Write : %3d\n"
-"  Total : %3d"
-msgstr "%s\n----------------\nI/O    (MiB/sek)\n  Lestur :%3.2f\n  Skrifun :%3.2f\n  Alls :%3.2f\nVinnslutími (%c)\n  Lestur : %3d\n  Skrifun : %3d\n  Alls : %3d"
+"  Read: %d\n"
+"  Write: %d\n"
+"  Total: %d"
+msgstr ""
 
-#: ../panel-plugin/main.c:905
+#: ../panel-plugin/main.c:829
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +163,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nÞessi mælir mun ekki virka!\nEndilega fjarlægðu hann."
 
-#: ../panel-plugin/main.c:916
+#: ../panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +174,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Ekki fundust ítarlegar tölfræðiupplýsingar disks!\nAnnaðhvort gamall kjarni (< 2.4.20) eða hann er\nekki vistþýddur með kveikt á CONFIG_BLK_STATS.\n\nÞessi mælir mun ekki virka!\nEndilega fjarlægðu hann."
 
-#: ../panel-plugin/main.c:924
+#: ../panel-plugin/main.c:848
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,17 +183,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: óþekkt villa\n\nÞessi mælir mun ekki virka!\nEndilega fjarlægðu hann."
 
-#: ../panel-plugin/main.c:946
+#: ../panel-plugin/main.c:871
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf mælir birtir rauntíma I/O-flutning diska og tíma sem þeir eru uppteknir"
 
-#: ../panel-plugin/main.c:948
+#: ../panel-plugin/main.c:873
 msgid "Copyright (c) 2003, 2004 Roger Seguin"
 msgstr "Höfundarréttur (c) 2003, 2004 Roger Seguin"
 
-#: ../panel-plugin/main.c:983 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Vöktun diskaafkasta"
 

@@ -139,8 +139,8 @@ static int timerNeedsUpdate = 0;
 
 /* Update combined or separate progress bars with actual data */
 static void UpdateProgressBars(struct diskperf_t *p_poPlugin, double rw, double r, double w) {
-    struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
-    struct param_t *poConf = &(p_poPlugin->oConf.oParam);
+    struct monitor_t *poMonitor = &p_poPlugin->oMonitor;
+    struct param_t *poConf = &p_poPlugin->oConf.oParam;
     struct perfbar_t *poPerf = poMonitor->aoPerfBar;
 
     if (poConf->fRW_DataCombined)
@@ -161,11 +161,11 @@ static void UpdateProgressBars(struct diskperf_t *p_poPlugin, double rw, double 
    the panel-docked monitor bars */
 static int DisplayPerf (struct diskperf_t *p_poPlugin)
 {
-    struct devperf_t oPerf;
-    struct param_t *poConf = &(p_poPlugin->oConf.oParam);
-    struct monitor_t *poMonitor = &(p_poPlugin->oMonitor);
+    struct devperf_t  oPerf;
+    struct param_t   *poConf = &p_poPlugin->oConf.oParam;
+    struct monitor_t *poMonitor = &p_poPlugin->oMonitor;
 #if !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
-    struct stat     oStat;
+    struct stat       oStat;
 #endif
     uint64_t        iInterval_ns, rbytes, wbytes, iRBusy_ns, iWBusy_ns;
     const double    K = 1.0 * 1000 * 1000 * 1000 / 1024 / 1024;
@@ -182,7 +182,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 #else
     if (poConf->st_rdev == 0)
         poConf->st_rdev = (stat (poConf->acDevice, &oStat) == -1 ? 0 : oStat.st_rdev);
-    status = DevGetPerfData (&(poConf->st_rdev), &oPerf);
+    status = DevGetPerfData (&poConf->st_rdev, &oPerf);
 #endif
     if (status == -1) {
         snprintf (acToolTips, sizeof(acToolTips), _("%s: Device statistics unavailable."), poConf->acTitle);
@@ -283,7 +283,7 @@ static gboolean Timer (gpointer user_data)
 static void SetTimer (diskperf_t *poPlugin)
 {
     GtkSettings *settings;
-    struct param_t *poConf = &(poPlugin->oConf.oParam);
+    struct param_t *poConf = &poPlugin->oConf.oParam;
 
     if (timerNeedsUpdate) {
         g_source_remove (poPlugin->iTimerId);
@@ -308,8 +308,8 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     gchar *css;
 #endif
     struct diskperf_t *poPlugin = p_poPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
-    struct monitor_t  *poMonitor = &(poPlugin->oMonitor);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
+    struct monitor_t  *poMonitor = &poPlugin->oMonitor;
     Widget_t          *pwBar;
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
@@ -336,7 +336,7 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
 static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
 {
     struct diskperf_t *poPlugin = p_poPlugin;
-    struct param_t *poConf = &(poPlugin->oConf.oParam);
+    struct param_t *poConf = &poPlugin->oConf.oParam;
 
     DBG("!");
     if (poConf->fRW_DataCombined)
@@ -352,8 +352,8 @@ static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
 static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
 {
     struct diskperf_t *poPlugin = p_poPlugin;
-    struct param_t *poConf = &(poPlugin->oConf.oParam);
-    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    struct param_t *poConf = &poPlugin->oConf.oParam;
+    struct monitor_t *poMonitor = &poPlugin->oMonitor;
     DBG("!");
 
     poMonitor->aoPerfBar[R_DATA].pwBar = poMonitor->awProgressBar + (poConf->eMonitorBarOrder == WR_ORDER);
@@ -372,8 +372,8 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin, GtkOrientation p_iO
     GtkCssProvider *css_provider;
 #endif
     struct diskperf_t *poPlugin = p_poPlugin;
-    struct param_t *poConf = &(poPlugin->oConf.oParam);
-    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    struct param_t *poConf = &poPlugin->oConf.oParam;
+    struct monitor_t *poMonitor = &poPlugin->oMonitor;
     Widget_t       *pwBar;
     int             i;
     DBG("!");
@@ -443,8 +443,8 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
 
     poPlugin = g_new (diskperf_t, 1);
     memset (poPlugin, 0, sizeof (diskperf_t));
-    poConf = &(poPlugin->oConf.oParam);
-    poMonitor = &(poPlugin->oMonitor);
+    poConf = &poPlugin->oConf.oParam;
+    poMonitor = &poPlugin->oMonitor;
 
     poPlugin->plugin = plugin;
     
@@ -518,8 +518,8 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     const char *value;
     char *file;
     XfceRc *rc;
-    struct param_t *poConf = &(poPlugin->oConf.oParam);
-    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    struct param_t *poConf = &poPlugin->oConf.oParam;
+    struct monitor_t *poMonitor = &poPlugin->oMonitor;
     Widget_t       *pw2ndBar = poPlugin->oMonitor.awProgressBar + 1;
 #if !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat     oStat;
@@ -598,7 +598,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
 static void diskperf_write_config (XfcePanelPlugin *plugin, 
                                    diskperf_t *poPlugin)
 {
-    struct param_t *poConf = &(poPlugin->oConf.oParam);
+    struct param_t *poConf = &poPlugin->oConf.oParam;
     XfceRc *rc;
     char *file;
 
@@ -639,7 +639,7 @@ static void diskperf_write_config (XfcePanelPlugin *plugin,
 static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
     const char        *pcDevice = gtk_entry_get_text (GTK_ENTRY (p_wTF));
 #if !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat oStat;
@@ -655,8 +655,8 @@ static void SetDevice (Widget_t p_wTF, void *p_pvPlugin)
 static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
-    struct monitor_t  *poMonitor = &(poPlugin->oMonitor);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
+    struct monitor_t  *poMonitor = &poPlugin->oMonitor;
 
     poConf->fTitleDisplayed = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
     if (poConf->fTitleDisplayed)
@@ -675,8 +675,8 @@ static void ToggleTitle (Widget_t p_w, void *p_pvPlugin)
 static void SetLabel (Widget_t p_wTF, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
-    struct monitor_t  *poMonitor = &(poPlugin->oMonitor);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
+    struct monitor_t  *poMonitor = &poPlugin->oMonitor;
     const char        *acTitle = gtk_entry_get_text (GTK_ENTRY (p_wTF));
 
     memset (poConf->acTitle, 0, sizeof (poConf->acTitle));
@@ -688,8 +688,8 @@ static void SetLabel (Widget_t p_wTF, void *p_pvPlugin)
 static void ToggleStatistics (Widget_t p_w, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
-    struct gui_t      *poGUI = &(poPlugin->oConf.oGUI);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
+    struct gui_t      *poGUI = &poPlugin->oConf.oGUI;
 
     poConf->eStatistics = !(poConf->eStatistics);
     DBG ("%d", poConf->eStatistics);
@@ -716,8 +716,8 @@ static void ToggleStatistics (Widget_t p_w, void *p_pvPlugin)
 static void ToggleRWintegration (Widget_t p_w, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
-    struct gui_t      *poGUI = &(poPlugin->oConf.oGUI);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
+    struct gui_t      *poGUI = &poPlugin->oConf.oGUI;
     Widget_t          *pw2ndBar = poPlugin->oMonitor.awProgressBar + 1;
 
     poConf->fRW_DataCombined = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (p_w));
@@ -739,7 +739,7 @@ static void ToggleRWintegration (Widget_t p_w, void *p_pvPlugin)
 static void ToggleRWorder (Widget_t p_w, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
 
     poConf->eMonitorBarOrder = !(poConf->eMonitorBarOrder);
     DBG ("%d", poConf->eMonitorBarOrder);
@@ -751,7 +751,7 @@ static void ToggleRWorder (Widget_t p_w, void *p_pvPlugin)
 static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
     const char        *pcXferRate = gtk_entry_get_text (GTK_ENTRY (p_wTF));
 
     /* Make it a multiple of 5 MB/s */
@@ -767,7 +767,7 @@ static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
 static void SetPeriod (Widget_t p_wSc, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
     float              r;
 
     timerNeedsUpdate = 1;
@@ -779,8 +779,8 @@ static void SetPeriod (Widget_t p_wSc, void *p_pvPlugin)
 static void ChooseColor (Widget_t p_wPB, void *p_pvPlugin)
 {
     struct diskperf_t *poPlugin = (diskperf_t *) p_pvPlugin;
-    struct param_t    *poConf = &(poPlugin->oConf.oParam);
-    struct gui_t      *poGUI = &(poPlugin->oConf.oGUI);
+    struct param_t    *poConf = &poPlugin->oConf.oParam;
+    struct gui_t      *poGUI = &poPlugin->oConf.oGUI;
     GdkRGBA            poColor;
     int                iPerfBar;
 
@@ -802,8 +802,8 @@ static void ChooseColor (Widget_t p_wPB, void *p_pvPlugin)
 /* Called back when the configuration/options window is closed */
 static void UpdateConf (diskperf_t *poPlugin)
 {
-    struct conf_t *poConf = &(poPlugin->oConf);
-    struct gui_t  *poGUI = &(poConf->oGUI);
+    struct conf_t *poConf = &poPlugin->oConf;
+    struct gui_t  *poGUI = &poConf->oGUI;
 
     DBG ("!");
     SetDevice (poGUI->wTF_Device, poPlugin);
@@ -891,8 +891,8 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
                                      diskperf_t *poPlugin)
 {
     GtkWidget *dlg, *vbox;
-    struct param_t *poConf = &(poPlugin->oConf.oParam);
-    struct gui_t   *poGUI = &(poPlugin->oConf.oGUI);
+    struct param_t *poConf = &poPlugin->oConf.oParam;
+    struct gui_t   *poGUI = &poPlugin->oConf.oGUI;
     char            acBuffer[16];
     Widget_t       *apwColorPB[NMONITORS];
     int             i;
@@ -973,9 +973,9 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     g_signal_connect (GTK_WIDGET (poGUI->wRB_ReadWriteOrder), "toggled",
                       G_CALLBACK (ToggleRWorder), poPlugin);
 
-    apwColorPB[R_DATA] = &(poGUI->wPB_Rcolor);
-    apwColorPB[W_DATA] = &(poGUI->wPB_Wcolor);
-    apwColorPB[RW_DATA] = &(poGUI->wPB_RWcolor);
+    apwColorPB[R_DATA] = &poGUI->wPB_Rcolor;
+    apwColorPB[W_DATA] = &poGUI->wPB_Wcolor;
+    apwColorPB[RW_DATA] = &poGUI->wPB_RWcolor;
     for (i = 0; i < NMONITORS; i++) {
         gtk_color_chooser_set_rgba(GTK_COLOR_CHOOSER(*(apwColorPB[i])), poConf->aoColor + i);
         g_signal_connect (GTK_WIDGET (*(apwColorPB[i])), "color-set", G_CALLBACK (ChooseColor), poPlugin);
@@ -990,7 +990,7 @@ static gboolean diskperf_set_size (XfcePanelPlugin *plugin, int p_size, diskperf
 {
     int              i, size1, size2;
     Widget_t         *pwBar;
-    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    struct monitor_t *poMonitor = &poPlugin->oMonitor;
 
     DBG ("%d", p_size);
     gtk_container_set_border_width (GTK_CONTAINER (poMonitor->wBox), p_size > 26 ? 2 : 1);
@@ -1018,7 +1018,7 @@ static void diskperf_set_mode (XfcePanelPlugin *plugin,
                                XfcePanelPluginMode p_iMode,
                                diskperf_t *poPlugin)
 {
-    struct monitor_t *poMonitor = &(poPlugin->oMonitor);
+    struct monitor_t *poMonitor = &poPlugin->oMonitor;
     int i;
     Widget_t *pwBar;
     GtkOrientation p_iOrientation;

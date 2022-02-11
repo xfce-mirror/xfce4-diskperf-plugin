@@ -6,14 +6,14 @@
 # Chipong Luo <chipong.luo@yahoo.com>, 2011-2012
 # Hunt Xu <huntxu@live.cn>, 2012
 # Vern Sun <s5unty@gmail.com>, 2008
-# 玉堂白鹤 <yjwork@qq.com>, 2019
+# 玉堂白鹤 <yjwork@qq.com>, 2019,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-10 12:53+0100\n"
-"PO-Revision-Date: 2022-02-10 11:53+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
+"PO-Revision-Date: 2022-02-11 05:03+0000\n"
+"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/xfce/xfce-panel-plugins/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -152,7 +152,7 @@ msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
 "  Total: %d"
-msgstr ""
+msgstr "%s\n----------------\nI/O (MiB/s)\n  读取: %3.2f\n  写入: %3.2f\n  总计: %3.2f\n忙时 (%c)\n  读取: %d\n  写入: %d\n  总计: %d"
 
 #: ../panel-plugin/main.c:829
 #, c-format

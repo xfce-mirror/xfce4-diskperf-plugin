@@ -345,7 +345,7 @@ static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
         SetSingleBarColor (p_poPlugin, R_DATA);
         SetSingleBarColor (p_poPlugin, W_DATA);
     }
-    return (0);
+    return 0;
 }
 
 /* Set order (Read-Write or Write-Read) and colors */
@@ -362,7 +362,7 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
 
     SetMonitorBarColor (poPlugin);
 
-    return (0);
+    return 0;
 }
 
 /* Create the panel progressive bars */

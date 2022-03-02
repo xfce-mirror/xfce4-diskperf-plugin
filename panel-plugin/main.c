@@ -169,7 +169,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 #endif
     uint64_t        iInterval_ns, rbytes, wbytes, iRBusy_ns, iWBusy_ns;
     const double    K = 1.0 * 1000 * 1000 * 1000 / 1024 / 1024;
-    /* bytes/ns --> MB/s */
+    /* bytes/ns --> MiB/s */
     double          arPerf[NMONITORS], arBusy[NMONITORS], *prData, *pr;
     char            acToolTips[256];
     int             status, i;
@@ -470,7 +470,7 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     gdk_rgba_parse (poConf->aoColor + W_DATA, "#FF0000");
     gdk_rgba_parse (poConf->aoColor + RW_DATA, "#00FF00");
 
-    poConf->iMaxXferMBperSec = 40;
+    poConf->iMaxXferMBperSec = 1024;
     poConf->fRW_DataCombined = 1;
     poConf->iPeriod_ms = 500;
     poConf->eStatistics = IO_TRANSFER;
@@ -566,7 +566,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     poConf->iPeriod_ms = xfce_rc_read_int_entry (rc, (CONF_UPDATE_PERIOD), 500);
     poConf->eStatistics = xfce_rc_read_int_entry (rc, (CONF_STATISTICS), IO_TRANSFER);
 
-    poConf->iMaxXferMBperSec = xfce_rc_read_int_entry (rc, (CONF_XFER_RATE), 40);
+    poConf->iMaxXferMBperSec = xfce_rc_read_int_entry (rc, (CONF_XFER_RATE), 1024);
 
     poConf->fRW_DataCombined = xfce_rc_read_int_entry (rc, (CONF_COMBINE_RW_DATA), 1);
 

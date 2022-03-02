@@ -83,7 +83,8 @@ static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
             while ((c = fgetc (pF)) && (c != '\n')); /* Goto next line */
             continue;
         }
-        fscanf (pF, "%*s"); /* Skip device name */
+        if(fscanf (pF, "%*s") != 0) /* Skip device name */
+            goto Error;
         /* Read rest of line into acStats */
         if (!(fgets (acStats, sizeof (acStats), pF)))
             goto Error;
@@ -144,7 +145,7 @@ static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
             p_poPerf->qlen = running;
             p_poPerf->rbusy_ns = (uint64_t) 1000 *1000 * ruse;
             p_poPerf->wbusy_ns = (uint64_t) 1000 *1000 * wuse;
-            return (0);
+            return 0;
         }
     }
     fclose (pF);
@@ -176,14 +177,14 @@ int DevPerfInit (void)
   End:
     if (pF)
         fclose (pF);
-    return (m_iInitStatus);
+    return m_iInitStatus;
 }
 
 int DevCheckStatAvailability (char const **p_ppcStatFile)
 {
     if (p_ppcStatFile)
         *p_ppcStatFile = m_pcStatFile;
-    return (m_iInitStatus);
+    return m_iInitStatus;
 }
 
 int DevGetPerfData (const void *p_pvDevice, struct devperf_t *p_poPerf)

@@ -169,7 +169,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
 #endif
     uint64_t        iInterval_ns, rbytes, wbytes, iRBusy_ns, iWBusy_ns;
     const double    K = 1.0 * 1000 * 1000 * 1000 / 1024 / 1024;
-    /* bytes/ns --> MB/s */
+    /* bytes/ns --> MiB/s */
     double          arPerf[NMONITORS], arBusy[NMONITORS], *prData, *pr;
     char            acToolTips[256];
     int             status, i;
@@ -345,7 +345,7 @@ static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
         SetSingleBarColor (p_poPlugin, R_DATA);
         SetSingleBarColor (p_poPlugin, W_DATA);
     }
-    return (0);
+    return 0;
 }
 
 /* Set order (Read-Write or Write-Read) and colors */
@@ -362,7 +362,7 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
 
     SetMonitorBarColor (poPlugin);
 
-    return (0);
+    return 0;
 }
 
 /* Create the panel progressive bars */
@@ -470,7 +470,7 @@ static diskperf_t *diskperf_create_control (XfcePanelPlugin *plugin)
     gdk_rgba_parse (poConf->aoColor + W_DATA, "#FF0000");
     gdk_rgba_parse (poConf->aoColor + RW_DATA, "#00FF00");
 
-    poConf->iMaxXferMBperSec = 40;
+    poConf->iMaxXferMBperSec = 1024;
     poConf->fRW_DataCombined = 1;
     poConf->iPeriod_ms = 500;
     poConf->eStatistics = IO_TRANSFER;
@@ -566,7 +566,7 @@ static void diskperf_read_config (XfcePanelPlugin *plugin,
     poConf->iPeriod_ms = xfce_rc_read_int_entry (rc, (CONF_UPDATE_PERIOD), 500);
     poConf->eStatistics = xfce_rc_read_int_entry (rc, (CONF_STATISTICS), IO_TRANSFER);
 
-    poConf->iMaxXferMBperSec = xfce_rc_read_int_entry (rc, (CONF_XFER_RATE), 40);
+    poConf->iMaxXferMBperSec = xfce_rc_read_int_entry (rc, (CONF_XFER_RATE), 1024);
 
     poConf->fRW_DataCombined = xfce_rc_read_int_entry (rc, (CONF_COMBINE_RW_DATA), 1);
 
@@ -754,13 +754,12 @@ static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
     struct param_t    *poConf = &poPlugin->oConf.oParam;
     const char        *pcXferRate = gtk_entry_get_text (GTK_ENTRY (p_wTF));
 
-    /* Make it a multiple of 5 MB/s */
-    poConf->iMaxXferMBperSec = 5 * round((double) atoi(pcXferRate) / 5);
-    if (poConf->iMaxXferMBperSec > INT16_MAX)
+    poConf->iMaxXferMBperSec = atoi(pcXferRate);
+    if (poConf->iMaxXferMBperSec > INT16_MAX - 2)
         poConf->iMaxXferMBperSec = INT16_MAX - 2;
     else if (poConf->iMaxXferMBperSec < 5)
         poConf->iMaxXferMBperSec = 5;
-    DBG("XferRate rounded to %dMb/s\n", poConf->iMaxXferMBperSec);
+    DBG("XferRate set to %d Mib/s\n", poConf->iMaxXferMBperSec);
 }
 
 /* Set the update period - To be used by the timer */
@@ -897,8 +896,6 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     Widget_t       *apwColorPB[NMONITORS];
     int             i;
 
-    DBG ("!");
-
     (void) CheckStatsAvailability ();
 
     xfce_panel_plugin_block_menu (plugin);
@@ -959,7 +956,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     gtk_entry_set_text (GTK_ENTRY (poGUI->wTF_Title), poConf->acTitle);
     g_signal_connect (GTK_WIDGET (poGUI->wTF_Title), "activate", G_CALLBACK (SetLabel), poPlugin);
 
-    snprintf (acBuffer, 16, "%d", poConf->iMaxXferMBperSec);
+    snprintf (acBuffer, G_N_ELEMENTS (acBuffer), "%d", poConf->iMaxXferMBperSec);
     gtk_entry_set_text (GTK_ENTRY (poGUI->wTF_MaxXfer), acBuffer);
     g_signal_connect (GTK_WIDGET (poGUI->wTF_MaxXfer), "activate", G_CALLBACK (SetXferRate), poPlugin);
 

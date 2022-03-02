@@ -295,5 +295,5 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
         COPYVAL (p_poGUI, wPB_Rcolor);
         COPYVAL (p_poGUI, wPB_Wcolor);
     }
-    return (0);
+    return 0;
 }

@@ -896,8 +896,6 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     Widget_t       *apwColorPB[NMONITORS];
     int             i;
 
-    DBG ("!");
-
     (void) CheckStatsAvailability ();
 
     xfce_panel_plugin_block_menu (plugin);
@@ -958,7 +956,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     gtk_entry_set_text (GTK_ENTRY (poGUI->wTF_Title), poConf->acTitle);
     g_signal_connect (GTK_WIDGET (poGUI->wTF_Title), "activate", G_CALLBACK (SetLabel), poPlugin);
 
-    snprintf (acBuffer, 16, "%d", poConf->iMaxXferMBperSec);
+    snprintf (acBuffer, G_N_ELEMENTS (acBuffer), "%d", poConf->iMaxXferMBperSec);
     gtk_entry_set_text (GTK_ENTRY (poGUI->wTF_MaxXfer), acBuffer);
     g_signal_connect (GTK_WIDGET (poGUI->wTF_MaxXfer), "activate", G_CALLBACK (SetXferRate), poPlugin);
 

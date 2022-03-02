@@ -754,13 +754,12 @@ static void SetXferRate (Widget_t p_wTF, void *p_pvPlugin)
     struct param_t    *poConf = &poPlugin->oConf.oParam;
     const char        *pcXferRate = gtk_entry_get_text (GTK_ENTRY (p_wTF));
 
-    /* Make it a multiple of 5 MB/s */
-    poConf->iMaxXferMBperSec = 5 * round((double) atoi(pcXferRate) / 5);
-    if (poConf->iMaxXferMBperSec > INT16_MAX)
+    poConf->iMaxXferMBperSec = atoi(pcXferRate);
+    if (poConf->iMaxXferMBperSec > INT16_MAX - 2)
         poConf->iMaxXferMBperSec = INT16_MAX - 2;
     else if (poConf->iMaxXferMBperSec < 5)
         poConf->iMaxXferMBperSec = 5;
-    DBG("XferRate rounded to %dMb/s\n", poConf->iMaxXferMBperSec);
+    DBG("XferRate set to %d Mib/s\n", poConf->iMaxXferMBperSec);
 }
 
 /* Set the update period - To be used by the timer */

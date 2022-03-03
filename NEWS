@@ -1,3 +1,27 @@
+2.7.0 (2022-03-03)
+=====
+- Enable high-frequency tooltip updates
+- Remove rounding to multiples of 5 MiB/s
+- Change default maximum I/O bandwidth from 40 MiB/s to 1024 MiB/s
+- Adjust tooltip spacing
+- Update and sort the list of authors
+- Bump required GTK+ version to 3.16
+- Update README
+- Reformat copyright notices
+- Update configuration files
+- Fix compilation warnings
+- Code cleanups
+- Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+  Dutch, Eastern Armenian, English (Australia), English (Canada),
+  English (United Kingdom), French, Galician, German, Greek, Hebrew,
+  Hungarian, Icelandic, Indonesian, Italian, Japanese, Korean, Latvian,
+  Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Panjabi
+  (Punjabi), Polish, Portuguese, Portuguese (Brazil), Russian, Serbian,
+  Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu,
+  Urdu (Pakistan), Uyghur
+
 2.6.3 (2020/12/21):
 ------------------
 - Fix build with panel 4.15+

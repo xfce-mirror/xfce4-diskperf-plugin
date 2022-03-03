@@ -857,12 +857,15 @@ static int CheckStatsAvailability (void)
 /* Called back when the About button in clicked */
 static void About (Widget_t w, void *unused)
 {
-    GdkPixbuf *icon;
+    /* List of authors (in alphabetical order) */
     const gchar *auth[] = {
+        "Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>",
+        "Jan Ziak <0xe2.0x9a.0x9b@xfce.org>",
+        "Peter Tribble <peter.tribble@gmail.com>",
         "Roger Seguin <roger_seguin@msn.com>",
-        "NetBSD statistics collection: (c) 2003 Benedikt Meurer <benedikt.meurer@unix-ag.uni-siegen.de>",
-        "Solaris statistics collection: (c) 2011 Peter Tribble <peter.tribble@gmail.com>",
-        NULL };
+        NULL
+    };
+    GdkPixbuf *icon;
 
     icon = xfce_panel_pixbuf_from_source("drive-harddisk", NULL, 32);
     gtk_show_about_dialog(NULL,

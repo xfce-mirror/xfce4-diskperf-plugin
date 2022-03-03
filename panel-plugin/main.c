@@ -117,22 +117,21 @@ typedef struct perfbar_t {
 
 typedef struct monitor_t {
     /* Plugin monitor bars */
-    Widget_t        wEventBox;
-    Widget_t        wBox;
-    Widget_t        wTitle;
-    Widget_t        awProgressBar[2];   /* Physical (widget) bars */
-    struct perfbar_t
-                    aoPerfBar[NMONITORS];   /* Virtual bars */
-    struct devperf_t
-                    oPrevPerf;
+    Widget_t         wEventBox;
+    Widget_t         wBox;
+    Widget_t         wTitle;
+    Widget_t         awProgressBar[2];      /* Physical (widget) bars */
+    struct perfbar_t aoPerfBar[NMONITORS];  /* Virtual bars */
+    struct devperf_t oPrevPerf;
 } monitor_t;
 
 typedef struct diskperf_t {
-    XfcePanelPlugin *plugin;
-    guint           iTimerId; /* Cyclic update */
-    struct conf_t   oConf;
-    struct monitor_t
-                    oMonitor;
+    XfcePanelPlugin  *plugin;
+    guint            iTimerId; /* Cyclic update */
+    struct conf_t    oConf;
+    struct monitor_t oMonitor;
+    GtkTooltip       *gtkTooltip;
+    char             tooltipText[256];
 } diskperf_t;
 
 static int timerNeedsUpdate = 0;
@@ -159,11 +158,11 @@ static void UpdateProgressBars(struct diskperf_t *p_poPlugin, double rw, double 
 
 /* Get the last disk perfomance data, compute the statistics and update
    the panel-docked monitor bars */
-static int DisplayPerf (struct diskperf_t *p_poPlugin)
+static int DisplayPerf (struct diskperf_t *poPlugin)
 {
     struct devperf_t  oPerf;
-    struct param_t   *poConf = &p_poPlugin->oConf.oParam;
-    struct monitor_t *poMonitor = &p_poPlugin->oMonitor;
+    struct param_t   *poConf = &poPlugin->oConf.oParam;
+    struct monitor_t *poMonitor = &poPlugin->oMonitor;
 #if !defined(__FreeBSD__) && !defined(__NetBSD__) && !defined(__OpenBSD__) && !defined(__sun__)
     struct stat       oStat;
 #endif
@@ -171,7 +170,6 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     const double    K = 1.0 * 1000 * 1000 * 1000 / 1024 / 1024;
     /* bytes/ns --> MiB/s */
     double          arPerf[NMONITORS], arBusy[NMONITORS], *prData, *pr;
-    char            acToolTips[256];
     int             status, i;
 
     rbytes = wbytes = iRBusy_ns = iWBusy_ns = -1;
@@ -185,9 +183,12 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
     status = DevGetPerfData (&poConf->st_rdev, &oPerf);
 #endif
     if (status == -1) {
-        snprintf (acToolTips, sizeof(acToolTips), _("%s: Device statistics unavailable."), poConf->acTitle);
-        UpdateProgressBars(p_poPlugin, 0, 0, 0);
-        gtk_widget_set_tooltip_text(GTK_WIDGET(poMonitor->wEventBox), acToolTips);
+        snprintf (poPlugin->tooltipText, G_N_ELEMENTS(poPlugin->tooltipText),
+                  _("%s: Device statistics unavailable."), poConf->acTitle);
+        UpdateProgressBars(poPlugin, 0, 0, 0);
+
+        if(poPlugin->gtkTooltip)
+            gtk_tooltip_set_text (poPlugin->gtkTooltip, poPlugin->tooltipText);
 
         return -1;
     }
@@ -222,7 +223,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
         }
     }
 
-    snprintf (acToolTips, sizeof(acToolTips), _("%s\n"
+    snprintf (poPlugin->tooltipText, G_N_ELEMENTS(poPlugin->tooltipText), _("%s\n"
               "----------------\n"
               "I/O (MiB/s)\n"
               "  Read: %3.2f\n"
@@ -244,7 +245,9 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
               (oPerf.qlen >= 0) ? (int) round(arBusy[W_DATA]) : -1,
 #endif
               (oPerf.qlen >= 0) ? (int) round(arBusy[RW_DATA]) : -1);
-    gtk_widget_set_tooltip_text(GTK_WIDGET(poMonitor->wEventBox), acToolTips);
+
+    if(poPlugin->gtkTooltip)
+        gtk_tooltip_set_text (poPlugin->gtkTooltip, poPlugin->tooltipText);
 
     switch (poConf->eStatistics) {
         case BUSY_TIME:
@@ -266,7 +269,7 @@ static int DisplayPerf (struct diskperf_t *p_poPlugin)
         else if (*pr < 0)
             *pr = 0;
     }
-    UpdateProgressBars(p_poPlugin, prData[RW_DATA], prData[R_DATA], prData[W_DATA]);
+    UpdateProgressBars(poPlugin, prData[RW_DATA], prData[R_DATA], prData[W_DATA]);
 
     return 0;
 }
@@ -282,20 +285,15 @@ static gboolean Timer (gpointer user_data)
 /* Recurrently update the panel-docked monitor bars through a timer */
 static void SetTimer (diskperf_t *poPlugin)
 {
-    GtkSettings *settings;
     struct param_t *poConf = &poPlugin->oConf.oParam;
 
     if (timerNeedsUpdate) {
-        g_source_remove (poPlugin->iTimerId);
-        poPlugin->iTimerId = 0;
+        if (G_LIKELY(poPlugin->iTimerId != 0)) {
+            g_source_remove (poPlugin->iTimerId);
+            poPlugin->iTimerId = 0;
+        }
         timerNeedsUpdate = 0;
     }
-
-    /* reduce the default tooltip timeout to be smaller than the update interval otherwise
-     * we won't see tooltips on GTK 2.16 or newer */
-    settings = gtk_settings_get_default();
-    if (g_object_class_find_property(G_OBJECT_GET_CLASS(settings), "gtk-tooltip-timeout"))
-        g_object_set(settings, "gtk-tooltip-timeout", poConf->iPeriod_ms - 10, NULL);
 
     if (!poPlugin->iTimerId)
         poPlugin->iTimerId = g_timeout_add (poConf->iPeriod_ms, Timer, poPlugin);
@@ -304,16 +302,13 @@ static void SetTimer (diskperf_t *poPlugin)
 /* Set the color of a single monitor bar */
 static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
 {
-#if GTK_CHECK_VERSION (3, 16, 0)
     gchar *css;
-#endif
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t    *poConf = &poPlugin->oConf.oParam;
     struct monitor_t  *poMonitor = &poPlugin->oMonitor;
     Widget_t          *pwBar;
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
-#if GTK_CHECK_VERSION (3, 16, 0)
 #if GTK_CHECK_VERSION (3, 20, 0)
     css = g_strdup_printf("progressbar progress { background-color: %s; background-image: none; }",
 #else
@@ -324,11 +319,6 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     DBG("setting css to %s for bar %d", css, p_iBar);
     gtk_css_provider_load_from_data (g_object_get_data(G_OBJECT(*pwBar), "css_provider"), css, strlen(css), NULL);
     g_free(css);
-#else
-    gtk_widget_override_background_color(GTK_WIDGET(*pwBar), GTK_STATE_PRELIGHT, &poConf->aoColor[p_iBar]);
-    gtk_widget_override_background_color(GTK_WIDGET(*pwBar), GTK_STATE_SELECTED, &poConf->aoColor[p_iBar]);
-    gtk_widget_override_color(GTK_WIDGET(*pwBar), GTK_STATE_SELECTED, &poConf->aoColor[p_iBar]);
-#endif
     return 0;
 }
 
@@ -338,7 +328,6 @@ static int SetMonitorBarColor (struct diskperf_t *p_poPlugin)
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &poPlugin->oConf.oParam;
 
-    DBG("!");
     if (poConf->fRW_DataCombined)
         SetSingleBarColor (p_poPlugin, RW_DATA);
     else {
@@ -354,7 +343,6 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &poPlugin->oConf.oParam;
     struct monitor_t *poMonitor = &poPlugin->oMonitor;
-    DBG("!");
 
     poMonitor->aoPerfBar[R_DATA].pwBar = poMonitor->awProgressBar + (poConf->eMonitorBarOrder == WR_ORDER);
     poMonitor->aoPerfBar[W_DATA].pwBar = poMonitor->awProgressBar + (poConf->eMonitorBarOrder == RW_ORDER);
@@ -365,23 +353,41 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
     return 0;
 }
 
-/* Create the panel progressive bars */
-static int CreateMonitorBars (struct diskperf_t *p_poPlugin, GtkOrientation p_iOrientation)
+static gboolean
+tooltip_cb (GtkWidget *widget, gint x, gint y, gboolean keyboard_tooltip, GtkTooltip *tooltip, gpointer user_data)
 {
-#if GTK_CHECK_VERSION (3, 16, 0)
-    GtkCssProvider *css_provider;
-#endif
-    struct diskperf_t *poPlugin = p_poPlugin;
-    struct param_t *poConf = &poPlugin->oConf.oParam;
+    struct diskperf_t *poPlugin = user_data;
+
+    if (poPlugin->gtkTooltip != tooltip) {
+        if (poPlugin->gtkTooltip) {
+            g_object_unref (poPlugin->gtkTooltip);
+            poPlugin->gtkTooltip = NULL;
+        }
+        poPlugin->gtkTooltip = tooltip;
+        g_object_ref (tooltip);  /* TODO: Call g_object_unref() when the tooltip disappears from screen */
+    }
+
+    gtk_tooltip_set_text (tooltip, poPlugin->tooltipText);
+
+    return TRUE;
+}
+
+/* Create the panel progressive bars */
+static int CreateMonitorBars (struct diskperf_t *poPlugin, GtkOrientation p_iOrientation)
+{
+    GtkCssProvider   *css_provider;
+    struct param_t   *poConf = &poPlugin->oConf.oParam;
     struct monitor_t *poMonitor = &poPlugin->oMonitor;
-    Widget_t       *pwBar;
-    int             i;
-    DBG("!");
+    Widget_t         *pwBar;
+    int               i;
 
     poMonitor->wBox = gtk_box_new (p_iOrientation, 0);
     gtk_widget_show (poMonitor->wBox);
 
     gtk_container_add (GTK_CONTAINER (poMonitor->wEventBox), poMonitor->wBox);
+
+    g_signal_connect (poMonitor->wEventBox, "query-tooltip", G_CALLBACK (tooltip_cb), poPlugin);
+    gtk_widget_set_has_tooltip (poMonitor->wEventBox, TRUE);
 
     poMonitor->wTitle = gtk_label_new (poConf->acTitle);
     if (poConf->fTitleDisplayed)
@@ -393,7 +399,6 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin, GtkOrientation p_iO
         *pwBar = GTK_WIDGET (gtk_progress_bar_new ());
         gtk_orientable_set_orientation (GTK_ORIENTABLE(*pwBar), !p_iOrientation);
         gtk_progress_bar_set_inverted (GTK_PROGRESS_BAR(*pwBar), p_iOrientation == GTK_ORIENTATION_HORIZONTAL);
-#if GTK_CHECK_VERSION (3, 16, 0)
         css_provider = gtk_css_provider_new ();
 #if GTK_CHECK_VERSION (3, 20, 0)
         gtk_css_provider_load_from_data (css_provider, "\
@@ -414,7 +419,6 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin, GtkOrientation p_iO
             GTK_STYLE_PROVIDER (css_provider),
             GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
         g_object_set_data(G_OBJECT(*pwBar), "css_provider", css_provider);
-#endif
 
         if (i == 1 && poConf->fRW_DataCombined)
             gtk_widget_hide (GTK_WIDGET (*pwBar));
@@ -804,7 +808,6 @@ static void UpdateConf (diskperf_t *poPlugin)
     struct conf_t *poConf = &poPlugin->oConf;
     struct gui_t  *poGUI = &poConf->oGUI;
 
-    DBG ("!");
     SetDevice (poGUI->wTF_Device, poPlugin);
     SetLabel (poGUI->wTF_Title, poPlugin);
     SetXferRate (poGUI->wTF_MaxXfer, poPlugin);

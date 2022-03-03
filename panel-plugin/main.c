@@ -304,16 +304,13 @@ static void SetTimer (diskperf_t *poPlugin)
 /* Set the color of a single monitor bar */
 static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
 {
-#if GTK_CHECK_VERSION (3, 16, 0)
     gchar *css;
-#endif
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t    *poConf = &poPlugin->oConf.oParam;
     struct monitor_t  *poMonitor = &poPlugin->oMonitor;
     Widget_t          *pwBar;
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
-#if GTK_CHECK_VERSION (3, 16, 0)
 #if GTK_CHECK_VERSION (3, 20, 0)
     css = g_strdup_printf("progressbar progress { background-color: %s; background-image: none; }",
 #else
@@ -324,11 +321,6 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     DBG("setting css to %s for bar %d", css, p_iBar);
     gtk_css_provider_load_from_data (g_object_get_data(G_OBJECT(*pwBar), "css_provider"), css, strlen(css), NULL);
     g_free(css);
-#else
-    gtk_widget_override_background_color(GTK_WIDGET(*pwBar), GTK_STATE_PRELIGHT, &poConf->aoColor[p_iBar]);
-    gtk_widget_override_background_color(GTK_WIDGET(*pwBar), GTK_STATE_SELECTED, &poConf->aoColor[p_iBar]);
-    gtk_widget_override_color(GTK_WIDGET(*pwBar), GTK_STATE_SELECTED, &poConf->aoColor[p_iBar]);
-#endif
     return 0;
 }
 
@@ -368,9 +360,7 @@ static int ResetMonitorBar (struct diskperf_t *p_poPlugin)
 /* Create the panel progressive bars */
 static int CreateMonitorBars (struct diskperf_t *p_poPlugin, GtkOrientation p_iOrientation)
 {
-#if GTK_CHECK_VERSION (3, 16, 0)
     GtkCssProvider *css_provider;
-#endif
     struct diskperf_t *poPlugin = p_poPlugin;
     struct param_t *poConf = &poPlugin->oConf.oParam;
     struct monitor_t *poMonitor = &poPlugin->oMonitor;
@@ -393,7 +383,6 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin, GtkOrientation p_iO
         *pwBar = GTK_WIDGET (gtk_progress_bar_new ());
         gtk_orientable_set_orientation (GTK_ORIENTABLE(*pwBar), !p_iOrientation);
         gtk_progress_bar_set_inverted (GTK_PROGRESS_BAR(*pwBar), p_iOrientation == GTK_ORIENTATION_HORIZONTAL);
-#if GTK_CHECK_VERSION (3, 16, 0)
         css_provider = gtk_css_provider_new ();
 #if GTK_CHECK_VERSION (3, 20, 0)
         gtk_css_provider_load_from_data (css_provider, "\
@@ -414,7 +403,6 @@ static int CreateMonitorBars (struct diskperf_t *p_poPlugin, GtkOrientation p_iO
             GTK_STYLE_PROVIDER (css_provider),
             GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
         g_object_set_data(G_OBJECT(*pwBar), "css_provider", css_provider);
-#endif
 
         if (i == 1 && poConf->fRW_DataCombined)
             gtk_widget_hide (GTK_WIDGET (*pwBar));

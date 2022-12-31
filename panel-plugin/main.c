@@ -865,11 +865,9 @@ static void About (Widget_t w, void *unused)
         "Roger Seguin <roger_seguin@msn.com>",
         NULL
     };
-    GdkPixbuf *icon;
 
-    icon = xfce_panel_pixbuf_from_source("drive-harddisk", NULL, 32);
     gtk_show_about_dialog(NULL,
-        "logo", icon,
+        "logo-icon-name", "drive-harddisk",
         "license", xfce_get_license_text (XFCE_LICENSE_TEXT_BSD),
         "version", PACKAGE_VERSION,
         "program-name", PACKAGE_NAME,
@@ -877,8 +875,6 @@ static void About (Widget_t w, void *unused)
         "website", "https://docs.xfce.org/panel-plugins/xfce4-diskperf-plugin",
         "copyright", _("Copyright (c) 2003, 2004 Roger Seguin"),
         "authors", auth, NULL);
-    if(icon)
-        g_object_unref(G_OBJECT(icon));
 }
 
 static void diskperf_dialog_response (GtkWidget *dlg, int response, 

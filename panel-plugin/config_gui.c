@@ -22,11 +22,11 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "config_gui.h"
-
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+
+#include "config_gui.h"
 
 #include <gtk/gtk.h>
 #include <libxfce4ui/libxfce4ui.h>

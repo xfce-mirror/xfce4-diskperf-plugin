@@ -20,11 +20,11 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-#include "devperf.h"
-
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+
+#include "devperf.h"
 
 #include <errno.h>
 #include <memory.h>

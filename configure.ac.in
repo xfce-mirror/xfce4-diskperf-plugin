@@ -13,7 +13,7 @@ m4_define([diskperf_debug_default], [ifelse(diskperf_version_tag(), [git], [yes]
 
 dnl Initialize autoconf
 AC_COPYRIGHT([Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>
-              Copyright (c) 2006-2022 The Xfce development team])
+              Copyright (c) 2005-2023 The Xfce development team])
 AC_INIT([xfce4-diskperf-plugin], [diskperf_version], [https://gitlab.xfce.org/panel-plugins/xfce4-diskperf-plugin/], [xfce4-diskperf-plugin])
 AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIRS([m4])

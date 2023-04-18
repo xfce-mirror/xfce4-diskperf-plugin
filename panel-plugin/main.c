@@ -873,7 +873,7 @@ static void About (Widget_t w, void *unused)
         "program-name", PACKAGE_NAME,
         "comments", _("Diskperf monitor displays instantaneous disk I/O transfer rates and busy times"),
         "website", "https://docs.xfce.org/panel-plugins/xfce4-diskperf-plugin",
-        "copyright", _("Copyright (c) 2003, 2004 Roger Seguin"),
+        "copyright", "Copyright \302\251 2003-2023 The Xfce development team",
         "authors", auth, NULL);
 }
 

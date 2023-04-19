@@ -11,10 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
-"PO-Revision-Date: 2022-03-12 01:09+0000\n"
-"Last-Translator: Andrei Stepanov\n"
-"Language-Team: Russian (http://www.transifex.com/xfce/xfce-panel-plugins/language/ru/)\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: Andrei Stepanov, 2022\n"
+"Language-Team: Russian (http://app.transifex.com/xfce/xfce-panel-plugins/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -134,12 +134,12 @@ msgstr "Запись-Чтение"
 msgid "\"Write\" monitor first"
 msgstr "Монитор \"Запись\" первый"
 
-#: ../panel-plugin/main.c:188
+#: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: статистика устройства недоступна."
 
-#: ../panel-plugin/main.c:225
+#: ../panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -154,7 +154,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nВвод-вывод (МБ/с)\n  Чтение :%3.2f\n  Запись :%3.2f\n  Всего :%3.2f\nВремя занятости (%c)\n  Чтение : %d\n  Запись : %d\n  Всего : %d"
 
-#: ../panel-plugin/main.c:829
+#: ../panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nЭтот монитор не работает!!\nПожалуйста удалите его."
 
-#: ../panel-plugin/main.c:840
+#: ../panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Не найдена расширенная статистика диска!\nВероятно версия ядра (< 2.4.20) или \nкомпиляция с опцией CONFIG_BLK_STATS.\n\nЭтот монитор не работает!\nПожалуйста удалите его."
 
-#: ../panel-plugin/main.c:848
+#: ../panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,17 +184,13 @@ msgid ""
 "Please remove it."
 msgstr "%s: Неизвестная ошибка\n\nЭтот монитор не работает!\nПожалуйста удалите его."
 
-#: ../panel-plugin/main.c:871
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf монитор, показывающий скорость дискового ввода/вывода, передачи данных и время занятости"
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Copyright (c) 2003, 2004 Roger Seguin"
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Монитор дисковой производительности"
 

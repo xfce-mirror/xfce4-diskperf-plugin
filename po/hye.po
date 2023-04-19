@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
-"PO-Revision-Date: 2022-02-10 11:53+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
-"Language-Team: Eastern Armenian (http://www.transifex.com/xfce/xfce-panel-plugins/language/hye/)\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: Real School <localization@ehayq.am>, 2019\n"
+"Language-Team: Eastern Armenian (http://app.transifex.com/xfce/xfce-panel-plugins/language/hye/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -131,12 +131,12 @@ msgstr "Գրել֊Կարդալ"
 msgid "\"Write\" monitor first"
 msgstr "Առաջինը \"Գրել\" ցուցասարքը"
 
-#: ../panel-plugin/main.c:188
+#: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s․ սարքի վիճակագրությունը հասանելի չէ։"
 
-#: ../panel-plugin/main.c:225
+#: ../panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -151,7 +151,7 @@ msgid ""
 "  Total: %d"
 msgstr ""
 
-#: ../panel-plugin/main.c:829
+#: ../panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -161,7 +161,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nԱյս ցուցասարքը չի աշխատելու։\nԿը խնդրենք այն հեռացնել։"
 
-#: ../panel-plugin/main.c:840
+#: ../panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -172,7 +172,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Սկաւառակի երկարաձգուած վիճակագրութիւն չի գտնուել։\nԿամ հին է kernel (< 2.4.20)֊ը կամ  կազմուած\nչէ CONFIG_BLK_STATS միացուած է։\n\nԱյս ցուցասարքը չի աշխատելու։\nԿը խնդրենք հեռացնել այն։"
 
-#: ../panel-plugin/main.c:848
+#: ../panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,17 +181,13 @@ msgid ""
 "Please remove it."
 msgstr "%s: Անյայտ սխալ\n\nԱյս ցուցասարքը չի աշխատելու։\nԿը խնդրենք այն հեռացնել։"
 
-#: ../panel-plugin/main.c:871
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf ցուցասարքը ցուցադրում է ակնթարթային սկաւառակի I O փոխանցման տեմպերը և զբաղուած ժամանակահատուածները"
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Հեղինակային իրաւունք (c) 2003, 2004 Roger Seguin"
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Սկաւառակի կատարման ցուցասարք"
 

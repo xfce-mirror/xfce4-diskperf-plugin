@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Triyan W. Nugroho <triyan.wn@gmail.com>, 2020,2022\n"
-"Language-Team: Indonesian (http://www.transifex.com/xfce/xfce-panel-plugins/language/id/)\n"
+"Language-Team: Indonesian (http://app.transifex.com/xfce/xfce-panel-plugins/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -132,12 +132,12 @@ msgstr "Tulis-Baca"
 msgid "\"Write\" monitor first"
 msgstr "\"Tulis\" monitor dahulu"
 
-#: ../panel-plugin/main.c:188
+#: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Statistik divais tidak tersedia."
 
-#: ../panel-plugin/main.c:225
+#: ../panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -152,7 +152,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O    (MiB/d)\n  Baca :%3.2f\n  Tulis :%3.2f\n  Total :%3.2f\nWaktu sibuk (%c)\n  Baca : %d\n  Tulis : %d\n  Total : %d"
 
-#: ../panel-plugin/main.c:829
+#: ../panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -162,7 +162,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nMonitor ini tak akan bekerja!\nSilakan hapus."
 
-#: ../panel-plugin/main.c:840
+#: ../panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -173,7 +173,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Tak ada statistik perpanjangan disk yang ditemukan!\nMungkin karena kernel lama (< 2.4.20) atau tidak\ndikompilasi dengan mengaktifkan CONFIG_BLK_STATS.\n\nMonitor ini tak akan bekerja!\nSilakan hapus."
 
-#: ../panel-plugin/main.c:848
+#: ../panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,17 +182,13 @@ msgid ""
 "Please remove it."
 msgstr "%s: Galat tak dikenal\n\nMonitor ini tak akan bekerja!\nSilakan hapus."
 
-#: ../panel-plugin/main.c:871
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Monitor Diskperf menampilkan rasio transfer dan waktu sibuk I/O cakram secara instan"
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Hak Cipta 2003, 2004 Roger Seguin"
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor Performa Disk"
 

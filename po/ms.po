@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: abuyop <abuyop@gmail.com>, 2014,2019,2022\n"
-"Language-Team: Malay (http://www.transifex.com/xfce/xfce-panel-plugins/language/ms/)\n"
+"Language-Team: Malay (http://app.transifex.com/xfce/xfce-panel-plugins/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -131,12 +131,12 @@ msgstr "Tulis-Baca"
 msgid "\"Write\" monitor first"
 msgstr "Pemantau \"Tulis\" dahulu"
 
-#: ../panel-plugin/main.c:188
+#: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Statistik peranti tidak tersedia."
 
-#: ../panel-plugin/main.c:225
+#: ../panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -151,7 +151,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\nBaca :%3.2f\nTulis :%3.2f\nJumlah :%3.2f\nMasa sibuk (%c)\nBaca : %d\nTulis : %d\nJumlah : %d"
 
-#: ../panel-plugin/main.c:829
+#: ../panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -161,7 +161,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nPemantau ini tidak akan berfungsi!\nSila buang ia."
 
-#: ../panel-plugin/main.c:840
+#: ../panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -172,7 +172,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Tiada statistik lanjutan cakera ditemui!\nSama ada kernel lama (< 2.4.20) atau tidak\ndikompil dengan CONFIG_BLK_STATS dihidupkan.\n\nPemantau ini tidak akan berfungsi!\nSila buang ia."
 
-#: ../panel-plugin/main.c:848
+#: ../panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,17 +181,13 @@ msgid ""
 "Please remove it."
 msgstr "%s: Ralat tidak diketahui\n\nPemantau ini tidak akan berfungsi!\nSila buang ia."
 
-#: ../panel-plugin/main.c:871
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Pemantau Diskperf papar kadar pemindahan dan masa sibuk I/O cakera secara langsung"
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Hakcipta (c) 2003, 2004 Roger Seguin"
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Pemantau Prestasi Cakera"
 

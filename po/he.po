@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Elishai Eliyahu <elishai@mailfence.com>, 2022\n"
-"Language-Team: Hebrew (http://www.transifex.com/xfce/xfce-panel-plugins/language/he/)\n"
+"Language-Team: Hebrew (http://app.transifex.com/xfce/xfce-panel-plugins/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -132,12 +132,12 @@ msgstr "כתיבה-קריאה"
 msgid "\"Write\" monitor first"
 msgstr "\"כתוב\" קודם עוקב"
 
-#: ../panel-plugin/main.c:188
+#: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: סטטיסטיקת התקן לא זמינה."
 
-#: ../panel-plugin/main.c:225
+#: ../panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -152,7 +152,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  קריאה: %3.2f\n  כתיבה: %3.2f\n  סך הכל: %3.2f\nזמן עבודה (%c)\n  קריאה: %d\n  כתיבה: %d\n  סך הכל: %d"
 
-#: ../panel-plugin/main.c:829
+#: ../panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -162,7 +162,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nעוקב זה לא יעבוד!\nאנא הסר אותו."
 
-#: ../panel-plugin/main.c:840
+#: ../panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -173,7 +173,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: לא נמצאה סטטיסטיקה מורחבת של דיסק!\nאו שהקרנל ישן (<2.4.20) \nאו שעבר הדרה עם CONFIG_BLK_STATS דלוק.\n\nעוקב זה לא יעבוד!\nאנא הסר אותו."
 
-#: ../panel-plugin/main.c:848
+#: ../panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,17 +182,13 @@ msgid ""
 "Please remove it."
 msgstr "%s: שגיאה לא ידועה\n\nעוקב זה לא יעבוד!\nאנא הסר אותו."
 
-#: ../panel-plugin/main.c:871
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "עוקב Diskperf מציג קצבי מעבר קלט/פלט רגעיים וזמנים תפוסים"
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "זכות יוצרים (c) 2003,2004 רוג'ר סגואין"
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "עוקב ביצועי דיסק"
 

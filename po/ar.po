@@ -10,10 +10,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
-"PO-Revision-Date: 2022-02-10 11:53+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
-"Language-Team: Arabic (http://www.transifex.com/xfce/xfce-panel-plugins/language/ar/)\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: محمد الحرقان <malham1@gmail.com>, 2012\n"
+"Language-Team: Arabic (http://app.transifex.com/xfce/xfce-panel-plugins/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -133,12 +133,12 @@ msgstr "كتابة-قراءة"
 msgid "\"Write\" monitor first"
 msgstr "\"كتابة\" مراقبة أولا"
 
-#: ../panel-plugin/main.c:188
+#: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: إحصاءات الجهاز غير متوفر."
 
-#: ../panel-plugin/main.c:225
+#: ../panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -153,7 +153,7 @@ msgid ""
 "  Total: %d"
 msgstr ""
 
-#: ../panel-plugin/main.c:829
+#: ../panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +163,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nهذا المراقب لا يعمل!\nالرجاء حذفه."
 
-#: ../panel-plugin/main.c:840
+#: ../panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +174,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: لم يتم العثور على إحصاءات قرص!\nهل تملك نواة أقدم من (< 2.4.20) أو لا\nتشغيل التجميع بـ CONFIG_BLK_STATS.\n\nهذا المراقب لن يعمل!\nالرجاء حذفه."
 
-#: ../panel-plugin/main.c:848
+#: ../panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,17 +183,13 @@ msgid ""
 "Please remove it."
 msgstr "%s: خطأ مجهول\n\nهذا المراقب لن يعمل!\nالرجاء حذفه."
 
-#: ../panel-plugin/main.c:871
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "يعرض مراقب Diskperf معدلات نقل إدخال/إخراج القرص اللحظية وزمن العمل"
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "حقوق الطبع والنشر (ج) عام 2003، 2004 روجيه سيغان"
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "مراقب أداء القرص"
 

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 15:06+0100\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Andre Miranda <andre42m@gmail.com>, 2022\n"
 "Language-Team: Portuguese (Brazil) (http://app.transifex.com/xfce/xfce-panel-plugins/language/pt_BR/)\n"
@@ -183,17 +183,13 @@ msgid ""
 "Please remove it."
 msgstr "%s: Erro desconhecido\n\nEste monitor não irá funcionar!\nPor favor, remova-o."
 
-#: ../panel-plugin/main.c:876
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "O monitor Diskperf exibe instantaneamente taxas de transferência E/S e tempo ocupado de disco"
 
-#: ../panel-plugin/main.c:878
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "Copyright (c) 2003, 2004 Roger Seguin"
-
-#: ../panel-plugin/main.c:909 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "Monitor de Desempenho do Disco"
 

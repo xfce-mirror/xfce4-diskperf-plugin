@@ -11,10 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
-"PO-Revision-Date: 2022-02-11 01:53+0000\n"
-"Last-Translator: 黃柏諺 <s8321414@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/xfce/xfce-panel-plugins/language/zh_TW/)\n"
+"POT-Creation-Date: 2023-04-19 01:16+0200\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: 黃柏諺 <s8321414@gmail.com>, 2022\n"
+"Language-Team: Chinese (Taiwan) (http://app.transifex.com/xfce/xfce-panel-plugins/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -134,12 +134,12 @@ msgstr "寫入-讀取"
 msgid "\"Write\" monitor first"
 msgstr "「寫入」監視器在前"
 
-#: ../panel-plugin/main.c:188
+#: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s：裝置統計數據不可用。"
 
-#: ../panel-plugin/main.c:225
+#: ../panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -154,7 +154,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O    (MiB/s)\n  讀取：%3.2f\n  寫入：%3.2f\n  總計：%3.2f\n忙碌時間 (%c)\n  讀取：%d\n  寫入：%d\n  總計：%d"
 
-#: ../panel-plugin/main.c:829
+#: ../panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s：%s(%d)\n\n此監視器不會運作！\n請移除它。"
 
-#: ../panel-plugin/main.c:840
+#: ../panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s：找不到磁碟擴展統計！\n可能是内核過舊 (< 2.4.20) 或編譯時\n未開啟 CONFIG_BLK_STATS 支援。\n\n此監視器不會運作！\n請移除它。"
 
-#: ../panel-plugin/main.c:848
+#: ../panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,17 +184,13 @@ msgid ""
 "Please remove it."
 msgstr "%s：未知錯誤\n\n此監視器不會運作！\n請移除它。"
 
-#: ../panel-plugin/main.c:871
+#: ../panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf 監視器會顯示即時的磁碟 I/O 傳輸率與忙碌時間"
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr "著作權 (c) 2003, 2004 Roger Seguin"
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
 msgid "Disk Performance Monitor"
 msgstr "磁碟效能監視器"
 

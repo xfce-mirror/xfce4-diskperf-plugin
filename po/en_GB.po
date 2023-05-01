@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Andi Chandler <andi@gowling.com>, 2023
 # Jeff Bailes <thepizzaking@gmail.com>, 2007
 msgid ""
 msgstr ""
@@ -10,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-19 01:16+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Jeff Bailes <thepizzaking@gmail.com>, 2007\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
 "Language-Team: English (United Kingdom) (http://app.transifex.com/xfce/xfce-panel-plugins/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +29,7 @@ msgstr "Input the device name, then press <Enter>"
 
 #: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
-msgstr ""
+msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
@@ -56,7 +57,7 @@ msgstr "hda1"
 
 #: ../panel-plugin/config_gui.c:151
 msgid "Monitor"
-msgstr ""
+msgstr "Monitor"
 
 #: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
@@ -64,7 +65,7 @@ msgstr "I/O transfer"
 
 #: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
-msgstr ""
+msgstr "MiB transferred / second"
 
 #: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
@@ -76,7 +77,7 @@ msgstr "Percentage of time the device is busy"
 
 #: ../panel-plugin/config_gui.c:175
 msgid "Max. I/O rate (MiB/s) "
-msgstr ""
+msgstr "Max. I/O rate (MiB/s) "
 
 #: ../panel-plugin/config_gui.c:189
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
@@ -134,7 +135,7 @@ msgstr "\"Write\" monitor first"
 #: ../panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: Device statistics unavailable."
 
 #: ../panel-plugin/main.c:226
 #, c-format
@@ -149,7 +150,7 @@ msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
 "  Total: %d"
-msgstr ""
+msgstr "%s\n----------------\nI/O (MiB/s)\n  Read: %3.2f\n  Write: %3.2f\n  Total: %3.2f\nBusy time (%c)\n  Read: %d\n  Write: %d\n  Total: %d"
 
 #: ../panel-plugin/main.c:831
 #, c-format

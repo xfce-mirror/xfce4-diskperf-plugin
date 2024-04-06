@@ -1,141 +1,141 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-10 12:53+0100\n"
-"PO-Revision-Date: 2022-02-10 11:53+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
-"Language-Team: Urdu (http://www.transifex.com/xfce/xfce-panel-plugins/language/ur/)\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-04-06 00:51+0200\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Urdu (http://app.transifex.com/xfce/xfce-panel-plugins/language/ur/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ur\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:96
+#: panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "ڈیوائس"
 
-#: ../panel-plugin/config_gui.c:109
+#: panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "ڈیوائس کا نام داخل کریں، پھر <Enter> دبائیں"
 
-#: ../panel-plugin/config_gui.c:111
+#: panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr ""
 
-#: ../panel-plugin/config_gui.c:124
+#: panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "ڈیٹا جمع کرنے کی مدت"
 
-#: ../panel-plugin/config_gui.c:127
+#: panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "تجدید وقفہ (س)"
 
-#: ../panel-plugin/config_gui.c:133
+#: panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "لیبل"
 
-#: ../panel-plugin/config_gui.c:136
+#: panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "لیبل دکھانے کا لحظہ"
 
-#: ../panel-plugin/config_gui.c:141
+#: panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "لیبل داخل کریں، پھر <Enter> دبائیں"
 
-#: ../panel-plugin/config_gui.c:143
+#: panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:151
+#: panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr ""
 
-#: ../panel-plugin/config_gui.c:157
+#: panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "I/O منتقل"
 
-#: ../panel-plugin/config_gui.c:160
+#: panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr ""
 
-#: ../panel-plugin/config_gui.c:164
+#: panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "مصروف وقت"
 
-#: ../panel-plugin/config_gui.c:167
+#: panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "وقت فیصد برائے ڈیوائس مصروفیت"
 
-#: ../panel-plugin/config_gui.c:175
+#: panel-plugin/config_gui.c:175
 msgid "Max. I/O rate (MiB/s) "
 msgstr ""
 
-#: ../panel-plugin/config_gui.c:189
+#: panel-plugin/config_gui.c:189
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "ڈیوائس کا زیادہ سے زیادہ I/O ٹرانسفر ریٹ لکھیں، پھر <Enter> دبائیں"
 
-#: ../panel-plugin/config_gui.c:191
+#: panel-plugin/config_gui.c:191
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:199
+#: panel-plugin/config_gui.c:199
 msgid "Combine Read/Write data"
 msgstr "پڑھنا/لکھنا ڈیٹا کمبائن کریں"
 
-#: ../panel-plugin/config_gui.c:202
+#: panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "پڑھنا/لکھنا ڈیٹا ایک مانیٹر میں کمبائن کریں؟"
 
-#: ../panel-plugin/config_gui.c:210
+#: panel-plugin/config_gui.c:210
 msgid "Bar color "
 msgstr "پٹی رنگ"
 
-#: ../panel-plugin/config_gui.c:222 ../panel-plugin/config_gui.c:271
-#: ../panel-plugin/config_gui.c:277
+#: panel-plugin/config_gui.c:222 panel-plugin/config_gui.c:271
+#: panel-plugin/config_gui.c:277
 msgid "Press to change color"
 msgstr "رنگ بدلنے کے لیے دبائیں"
 
-#: ../panel-plugin/config_gui.c:231
+#: panel-plugin/config_gui.c:231
 msgid "Read bar color "
 msgstr "پڑھنے کی پٹی کا رنگ"
 
-#: ../panel-plugin/config_gui.c:240
+#: panel-plugin/config_gui.c:240
 msgid "Write bar color "
 msgstr "لکھنے کی پٹی کا رنگ"
 
-#: ../panel-plugin/config_gui.c:247
+#: panel-plugin/config_gui.c:247
 msgid "Bar order"
 msgstr "پٹی ترتیب"
 
-#: ../panel-plugin/config_gui.c:254
+#: panel-plugin/config_gui.c:254
 msgid "Read-Write"
 msgstr "پڑھنا-لکھنا"
 
-#: ../panel-plugin/config_gui.c:257
+#: panel-plugin/config_gui.c:257
 msgid "\"Read\" monitor first"
 msgstr "\"پڑھیں\" مانیٹر پہلے"
 
-#: ../panel-plugin/config_gui.c:261
+#: panel-plugin/config_gui.c:261
 msgid "Write-Read"
 msgstr "لکھنا-پڑھنا"
 
-#: ../panel-plugin/config_gui.c:264
+#: panel-plugin/config_gui.c:264
 msgid "\"Write\" monitor first"
 msgstr "\"لکھیں\" مانیٹر پہلے"
 
-#: ../panel-plugin/main.c:188
+#: panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr ""
 
-#: ../panel-plugin/main.c:225
+#: panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -150,7 +150,7 @@ msgid ""
 "  Total: %d"
 msgstr ""
 
-#: ../panel-plugin/main.c:829
+#: panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -160,7 +160,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nیہ مانیٹر کام نہیں کرے گأ!\nاسے ختم کریں."
 
-#: ../panel-plugin/main.c:840
+#: panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -171,7 +171,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: کوئی extended statistics نہیں پایا گیا!\nچاہے پرانا کرنل (< 2.4.20) ہو یا نہیں\nCONFIG_BLK_STATS کو آن کرکے کمپائل کیا گیا.\n\nیہ مانیٹر کام نہیں کرے گا!\nاسے ختم کریں."
 
-#: ../panel-plugin/main.c:848
+#: panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -180,20 +180,12 @@ msgid ""
 "Please remove it."
 msgstr "%s: نا معلوم  غلطی\n\nیہ مانیٹر کام نہیں کرے گا!\nاسے ختم کریں."
 
-#: ../panel-plugin/main.c:871
+#: panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr ""
 
-#: ../panel-plugin/main.c:873
-msgid "Copyright (c) 2003, 2004 Roger Seguin"
-msgstr ""
-
-#: ../panel-plugin/main.c:906 ../panel-plugin/diskperf.desktop.in.h:1
+#: panel-plugin/main.c:905
 msgid "Disk Performance Monitor"
 msgstr "ڈسک کارکردگی مانیٹر"
-
-#: ../panel-plugin/diskperf.desktop.in.h:2
-msgid "Show disk performance"
-msgstr "ڈسک کارکردگی دکھائیں"

@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
 # Andrei Stepanov, 2022
@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-19 01:16+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-04-06 00:51+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Andrei Stepanov, 2022\n"
 "Language-Team: Russian (http://app.transifex.com/xfce/xfce-panel-plugins/language/ru/)\n"
@@ -21,125 +21,125 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../panel-plugin/config_gui.c:96
+#: panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Устройство"
 
-#: ../panel-plugin/config_gui.c:109
+#: panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Введите название устройства и нажмите <Enter>"
 
-#: ../panel-plugin/config_gui.c:111
+#: panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:124
+#: panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Период сбора данных"
 
-#: ../panel-plugin/config_gui.c:127
+#: panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Интервал обновления (с)"
 
-#: ../panel-plugin/config_gui.c:133
+#: panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Метка"
 
-#: ../panel-plugin/config_gui.c:136
+#: panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Нажмите для просмотра метки"
 
-#: ../panel-plugin/config_gui.c:141
+#: panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Введите метку и нажмите <Enter>"
 
-#: ../panel-plugin/config_gui.c:143
+#: panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:151
+#: panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Монитор"
 
-#: ../panel-plugin/config_gui.c:157
+#: panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "I/O передача"
 
-#: ../panel-plugin/config_gui.c:160
+#: panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "MB передано / секунд"
 
-#: ../panel-plugin/config_gui.c:164
+#: panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Время занятости"
 
-#: ../panel-plugin/config_gui.c:167
+#: panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Занятость устройства (в процентах)"
 
-#: ../panel-plugin/config_gui.c:175
+#: panel-plugin/config_gui.c:175
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Максимальная скорость передачи данных (MB/s) "
 
-#: ../panel-plugin/config_gui.c:189
+#: panel-plugin/config_gui.c:189
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Введите максимальную I/O скорость для устройства, затем нажмите <Enter>"
 
-#: ../panel-plugin/config_gui.c:191
+#: panel-plugin/config_gui.c:191
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:199
+#: panel-plugin/config_gui.c:199
 msgid "Combine Read/Write data"
 msgstr "Совмещение данных Чтение/Запись"
 
-#: ../panel-plugin/config_gui.c:202
+#: panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Совместить данные Чтение/Запись в одном мониторе ?"
 
-#: ../panel-plugin/config_gui.c:210
+#: panel-plugin/config_gui.c:210
 msgid "Bar color "
 msgstr "Цвет колонки"
 
-#: ../panel-plugin/config_gui.c:222 ../panel-plugin/config_gui.c:271
-#: ../panel-plugin/config_gui.c:277
+#: panel-plugin/config_gui.c:222 panel-plugin/config_gui.c:271
+#: panel-plugin/config_gui.c:277
 msgid "Press to change color"
 msgstr "Нажмите, для изменения цвета"
 
-#: ../panel-plugin/config_gui.c:231
+#: panel-plugin/config_gui.c:231
 msgid "Read bar color "
 msgstr "Цвет колонки чтения"
 
-#: ../panel-plugin/config_gui.c:240
+#: panel-plugin/config_gui.c:240
 msgid "Write bar color "
 msgstr "Цвет колонки записи"
 
-#: ../panel-plugin/config_gui.c:247
+#: panel-plugin/config_gui.c:247
 msgid "Bar order"
 msgstr "Порядок колонок"
 
-#: ../panel-plugin/config_gui.c:254
+#: panel-plugin/config_gui.c:254
 msgid "Read-Write"
 msgstr "Чтение-Запись"
 
-#: ../panel-plugin/config_gui.c:257
+#: panel-plugin/config_gui.c:257
 msgid "\"Read\" monitor first"
 msgstr "Монитор \"Чтение\" первый"
 
-#: ../panel-plugin/config_gui.c:261
+#: panel-plugin/config_gui.c:261
 msgid "Write-Read"
 msgstr "Запись-Чтение"
 
-#: ../panel-plugin/config_gui.c:264
+#: panel-plugin/config_gui.c:264
 msgid "\"Write\" monitor first"
 msgstr "Монитор \"Запись\" первый"
 
-#: ../panel-plugin/main.c:187
+#: panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: статистика устройства недоступна."
 
-#: ../panel-plugin/main.c:226
+#: panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -154,7 +154,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nВвод-вывод (МБ/с)\n  Чтение :%3.2f\n  Запись :%3.2f\n  Всего :%3.2f\nВремя занятости (%c)\n  Чтение : %d\n  Запись : %d\n  Всего : %d"
 
-#: ../panel-plugin/main.c:831
+#: panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nЭтот монитор не работает!!\nПожалуйста удалите его."
 
-#: ../panel-plugin/main.c:842
+#: panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Не найдена расширенная статистика диска!\nВероятно версия ядра (< 2.4.20) или \nкомпиляция с опцией CONFIG_BLK_STATS.\n\nЭтот монитор не работает!\nПожалуйста удалите его."
 
-#: ../panel-plugin/main.c:850
+#: panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,16 +184,12 @@ msgid ""
 "Please remove it."
 msgstr "%s: Неизвестная ошибка\n\nЭтот монитор не работает!\nПожалуйста удалите его."
 
-#: ../panel-plugin/main.c:874
+#: panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf монитор, показывающий скорость дискового ввода/вывода, передачи данных и время занятости"
 
-#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
+#: panel-plugin/main.c:905
 msgid "Disk Performance Monitor"
 msgstr "Монитор дисковой производительности"
-
-#: ../panel-plugin/diskperf.desktop.in.h:2
-msgid "Show disk performance"
-msgstr "Показать производительность дисков"

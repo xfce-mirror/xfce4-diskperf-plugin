@@ -1,17 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
 # Daniel Nylander <po@danielnylander.se>, 2008
-# Luna Jernberg <bittin@cafe8bitar.se>, 2020,2022
+# Luna Jernberg <droidbittin@gmail.com>, 2020,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-19 01:16+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-04-06 00:51+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>, 2020,2022\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>, 2020,2022\n"
 "Language-Team: Swedish (http://app.transifex.com/xfce/xfce-panel-plugins/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,125 +19,125 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:96
+#: panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Enhet"
 
-#: ../panel-plugin/config_gui.c:109
+#: panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Mata in enhetsnamnet och tryck på <Enter>"
 
-#: ../panel-plugin/config_gui.c:111
+#: panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:124
+#: panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Period för datainsamling"
 
-#: ../panel-plugin/config_gui.c:127
+#: panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Uppdateringsintervall (s) "
 
-#: ../panel-plugin/config_gui.c:133
+#: panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Etikett"
 
-#: ../panel-plugin/config_gui.c:136
+#: panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Klicka för att visa etikett"
 
-#: ../panel-plugin/config_gui.c:141
+#: panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Mata in etiketten och tryck på <Enter>"
 
-#: ../panel-plugin/config_gui.c:143
+#: panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:151
+#: panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Övervaka"
 
-#: ../panel-plugin/config_gui.c:157
+#: panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "I/O-överföring"
 
-#: ../panel-plugin/config_gui.c:160
+#: panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "Överförda MiB / sekund"
 
-#: ../panel-plugin/config_gui.c:164
+#: panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Upptagentid"
 
-#: ../panel-plugin/config_gui.c:167
+#: panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Procentandel av tiden som enheten är upptagen"
 
-#: ../panel-plugin/config_gui.c:175
+#: panel-plugin/config_gui.c:175
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Max. I/O hastighet (MiB/s)"
 
-#: ../panel-plugin/config_gui.c:189
+#: panel-plugin/config_gui.c:189
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Mata in maximal överföringsfrekvens för enheten och tryck på <Enter>"
 
-#: ../panel-plugin/config_gui.c:191
+#: panel-plugin/config_gui.c:191
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:199
+#: panel-plugin/config_gui.c:199
 msgid "Combine Read/Write data"
 msgstr "Kombinera Läs/Skriv-data"
 
-#: ../panel-plugin/config_gui.c:202
+#: panel-plugin/config_gui.c:202
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Kombinera Läs/Skriv-data till en enda övervakning?"
 
-#: ../panel-plugin/config_gui.c:210
+#: panel-plugin/config_gui.c:210
 msgid "Bar color "
 msgstr "Stapelfärg"
 
-#: ../panel-plugin/config_gui.c:222 ../panel-plugin/config_gui.c:271
-#: ../panel-plugin/config_gui.c:277
+#: panel-plugin/config_gui.c:222 panel-plugin/config_gui.c:271
+#: panel-plugin/config_gui.c:277
 msgid "Press to change color"
 msgstr "Tryck för att ändra färg"
 
-#: ../panel-plugin/config_gui.c:231
+#: panel-plugin/config_gui.c:231
 msgid "Read bar color "
 msgstr "Färg för läsning"
 
-#: ../panel-plugin/config_gui.c:240
+#: panel-plugin/config_gui.c:240
 msgid "Write bar color "
 msgstr "Färg för skrivning"
 
-#: ../panel-plugin/config_gui.c:247
+#: panel-plugin/config_gui.c:247
 msgid "Bar order"
 msgstr "Stapelordning"
 
-#: ../panel-plugin/config_gui.c:254
+#: panel-plugin/config_gui.c:254
 msgid "Read-Write"
 msgstr "Läs-Skriv"
 
-#: ../panel-plugin/config_gui.c:257
+#: panel-plugin/config_gui.c:257
 msgid "\"Read\" monitor first"
 msgstr "\"Läs\"-övervakning först"
 
-#: ../panel-plugin/config_gui.c:261
+#: panel-plugin/config_gui.c:261
 msgid "Write-Read"
 msgstr "Skriv-Läs"
 
-#: ../panel-plugin/config_gui.c:264
+#: panel-plugin/config_gui.c:264
 msgid "\"Write\" monitor first"
 msgstr "\"Skriv\"-övervakning först"
 
-#: ../panel-plugin/main.c:187
+#: panel-plugin/main.c:187
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Enhetsstatistisk inte tillgänglig."
 
-#: ../panel-plugin/main.c:226
+#: panel-plugin/main.c:226
 #, c-format
 msgid ""
 "%s\n"
@@ -152,7 +152,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Läs: %3.2f\n  Skriv: %3.2f\n  Total: %3.2f\nUpptagen tid (%c)\n  Läs: %d\n  Skriv: %d\n  Total: %d"
 
-#: ../panel-plugin/main.c:831
+#: panel-plugin/main.c:831
 #, c-format
 msgid ""
 "%s\n"
@@ -162,7 +162,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nDenna övervakning kommer inte att fungera!\nTa bort den."
 
-#: ../panel-plugin/main.c:842
+#: panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -173,7 +173,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Ingen utökad diskstatistik hittades!\nAntingen gammal kärna (< 2.4.20) eller inte\nkompilerad med CONFIG_BLK_STATS påslagen.\n\nDenna övervakning kommer inte att fungera!\nTa bort den."
 
-#: ../panel-plugin/main.c:850
+#: panel-plugin/main.c:850
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,16 +182,12 @@ msgid ""
 "Please remove it."
 msgstr "%s: Okänt fel\n\nDenna övervakning kommer inte att fungera!\nTa bort den."
 
-#: ../panel-plugin/main.c:874
+#: panel-plugin/main.c:874
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf-övervakning visar omedelbart disk I/O överföringshastighet och upptagettider"
 
-#: ../panel-plugin/main.c:905 ../panel-plugin/diskperf.desktop.in.h:1
+#: panel-plugin/main.c:905
 msgid "Disk Performance Monitor"
 msgstr "Övervakning av diskprestanda"
-
-#: ../panel-plugin/diskperf.desktop.in.h:2
-msgid "Show disk performance"
-msgstr "Visa diskprestanda"

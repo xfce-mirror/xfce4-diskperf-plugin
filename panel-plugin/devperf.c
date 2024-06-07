@@ -123,7 +123,7 @@ static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
     FILE               *pF;
     unsigned int        major, minor, rsect, wsect, ruse, wuse, use;
     int                 running;
-    int                 c, n;
+    int                 c;
 
     pF = fopen (STATISTICS_FILE_2, "r");
     if (!pF) {
@@ -131,10 +131,9 @@ static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
         return -1;
     }
     while ((c = fgetc (pF)) && (c != '\n')); /* Skip the header line */
-    while ((n = fscanf (pF,
-                        "%u %u %*u %*s %*u %*u %u %u %*u %*u %u %u %d %u %*u",
-                        &major, &minor, &rsect, &ruse, &wsect,
-                        &wuse, &running, &use)) == 8) {
+    while (fscanf (pF, "%u %u %*u %*s %*u %*u %u %u %*u %*u %u %u %d %u %*u",
+                   &major, &minor, &rsect, &ruse, &wsect,
+                   &wuse, &running, &use) == 8) {
         if ((major == iMajorNo) && (minor == iMinorNo)) {
             fclose (pF);
             gettimeofday (&oTimeStamp, 0);

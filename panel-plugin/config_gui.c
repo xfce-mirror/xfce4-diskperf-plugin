@@ -166,7 +166,6 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_grid_attach (GTK_GRID (table1), wRB_BusyTime, 2, 4, 1, 1);
     gtk_widget_set_tooltip_text (wRB_BusyTime, _("Percentage of time the device is busy"));
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_BusyTime), wRB_IO_group);
-    wRB_IO_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_BusyTime));
 
     wHBox_MaxIO = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
     gtk_widget_show (wHBox_MaxIO);
@@ -263,7 +262,6 @@ int CreateConfigGUI (GtkWidget * vbox1, struct gui_t *p_poGUI)
     gtk_grid_attach (GTK_GRID (wTa_DualBars), wRB_WriteReadOrder, 2, 0, 1, 1);
     gtk_widget_set_tooltip_text (wRB_WriteReadOrder, _("\"Write\" monitor first"));
     gtk_radio_button_set_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder), wRB_ReadWriteOrder_group);
-    wRB_ReadWriteOrder_group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (wRB_WriteReadOrder));
 
     wPB_Rcolor = gtk_color_button_new();
     gtk_widget_show (wPB_Rcolor);

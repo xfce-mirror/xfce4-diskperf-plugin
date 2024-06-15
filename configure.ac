@@ -7,7 +7,7 @@ XDT_VERSION_INIT([2.7.0], [git])
 dnl Initialize autoconf
 AC_COPYRIGHT([Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>
               Copyright (c) 2005-2023 The Xfce development team])
-AC_INIT([xfce4-diskperf-plugin], [diskperf_version], [https://gitlab.xfce.org/panel-plugins/xfce4-diskperf-plugin/], [xfce4-diskperf-plugin])
+AC_INIT([xfce4-diskperf-plugin], [xdt_version], [https://gitlab.xfce.org/panel-plugins/xfce4-diskperf-plugin/], [xfce4-diskperf-plugin])
 AC_REVISION([xdt_version_build])
 AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIRS([m4])

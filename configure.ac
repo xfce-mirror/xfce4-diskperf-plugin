@@ -2,19 +2,13 @@ dnl
 dnl Copyright (c) 2004-2022 The Xfce development team
 dnl
 
-m4_define([diskperf_version_major], [2])
-m4_define([diskperf_version_minor], [7])
-m4_define([diskperf_version_micro], [0])
-m4_define([diskperf_version_build], [@REVISION@])
-m4_define([diskperf_version_tag], [git])
-m4_define([diskperf_version], [diskperf_version_major().diskperf_version_minor().diskperf_version_micro()ifelse(diskperf_version_tag(), [git], [diskperf_version_tag()-diskperf_version_build()], [diskperf_version_tag()])])
-
-m4_define([diskperf_debug_default], [ifelse(diskperf_version_tag(), [git], [yes], [minimum])])
+XDT_VERSION_INIT([2.7.0], [git])
 
 dnl Initialize autoconf
 AC_COPYRIGHT([Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>
               Copyright (c) 2005-2023 The Xfce development team])
 AC_INIT([xfce4-diskperf-plugin], [diskperf_version], [https://gitlab.xfce.org/panel-plugins/xfce4-diskperf-plugin/], [xfce4-diskperf-plugin])
+AC_REVISION([xdt_version_build])
 AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIRS([m4])
 
@@ -51,7 +45,7 @@ XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-2], [4.14.0])
 XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.14.0])
 
 dnl Check for debugging support
-XDT_FEATURE_DEBUG([diskperf_debug_default])
+XDT_FEATURE_DEBUG([xdt_debug_default])
 
 AC_CONFIG_FILES([
 Makefile

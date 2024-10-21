@@ -149,7 +149,7 @@ msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
 "  Total: %d"
-msgstr ""
+msgstr "%s\n----------------\nI/O (MiB/s)\n  อ่าน: %3.2f\n  เขียน: %3.2f\n  รวม: %3.2f\nเวลาทำงาน (%c)\n  อ่าน: %d\n  เขียน: %d\n  รวม: %d"
 
 #: panel-plugin/main.c:831
 #, c-format

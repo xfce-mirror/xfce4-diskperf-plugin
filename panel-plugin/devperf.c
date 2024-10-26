@@ -516,6 +516,145 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
     return 0;
 }
 
+#elif defined (__APPLE__)
+/*
+ * Darwin support, taken from system_cmds/iostat
+ * apple-oss-distributions/system_cmds-970.0.4 system_cmds/iostat/iostat.c
+ */
+#include <CoreFoundation/CoreFoundation.h>
+#include <IOKit/IOKitLib.h>
+#include <IOKit/storage/IOBlockStorageDriver.h>
+#include <IOKit/storage/IOMedia.h>
+#include <IOKit/IOBSD.h>
+
+static mach_port_t main_port;
+
+int DevPerfInit (void)
+{
+    return 0;
+}
+
+int DevCheckStatAvailability(char const **strptr)
+{
+    return 0;
+}
+
+int DevGetPerfData(const void *p_pvDevice, struct devperf_t *perf)
+{
+    char *bsdname = (char *) p_pvDevice;
+    struct timeval tv;
+    io_iterator_t drivelist;
+    io_registry_entry_t drive, parent;
+    kern_return_t status;
+    CFNumberRef number;
+    CFDictionaryRef properties;
+    CFDictionaryRef statistics;
+
+    u_int64_t value;
+    u_int64_t rbytes, wbytes, rxfer, wxfer, rbusy, wbusy;
+
+    int ret = -1;
+
+    /* The use of 'IOMasterPort' is for pre Darwin 21 compatibility, not for any other specific reasons.
+     * IOMainPort is completely identical with IOMasterPort, we use old one to avoid OS version checking */
+    IOMasterPort(bootstrap_port, &main_port);
+
+    status = IOServiceGetMatchingServices(kIOMasterPortDefault, IOBSDNameMatching(main_port, kNilOptions, bsdname), &drivelist);
+    if (status != KERN_SUCCESS)
+        return ret;
+
+    /* Get the first match (should only be one) */
+    if (!(drive = IOIteratorNext(drivelist))) {
+        IOObjectRelease(drivelist);
+        return ret;
+    }
+    if (!IOObjectConformsTo(drive, "IOMedia"))
+        goto drive_release;
+
+    /* get drive's parent */
+    status = IORegistryEntryGetParentEntry(drive, kIOServicePlane, &parent);
+    if (status != KERN_SUCCESS)
+        goto drive_release;
+
+    if (IOObjectConformsTo(parent, "IOBlockStorageDriver")) {
+#if 0
+        /* get drive properties (IOMedia) */
+        status = IORegistryEntryCreateCFProperties(drive, (CFMutableDictionaryRef *)&properties, kCFAllocatorDefault, kNilOptions);
+        if (status != KERN_SUCCESS)
+            goto parent_release;
+
+        /* IOMedia keys provide basic informations such as preferred blocksize,
+         * enable this code when needed someday */
+        CFRelease(properties);
+#endif
+        /* get parent properties (IOBlockStorage) */
+        status = IORegistryEntryCreateCFProperties(parent, (CFMutableDictionaryRef *)&properties, kCFAllocatorDefault, kNilOptions);
+        if (status != KERN_SUCCESS)
+            goto parent_release;
+
+        /* get statistics from properties */
+        rbytes = wbytes = rxfer = wxfer = rbusy = wbusy = 0;
+        statistics = (CFDictionaryRef)CFDictionaryGetValue(properties, CFSTR(kIOBlockStorageDriverStatisticsKey));
+        if (statistics) {
+            /* Get I/O volume */
+            if ((number = (CFNumberRef)CFDictionaryGetValue(statistics,
+                CFSTR(kIOBlockStorageDriverStatisticsBytesReadKey)))) {
+                CFNumberGetValue(number, kCFNumberSInt64Type, &value);
+                rbytes = value;
+            }
+            if ((number = (CFNumberRef)CFDictionaryGetValue(statistics,
+                CFSTR(kIOBlockStorageDriverStatisticsBytesWrittenKey)))) {
+                CFNumberGetValue(number, kCFNumberSInt64Type, &value);
+                wbytes = value;
+            }
+
+            /* Get I/O counts */
+            if ((number = (CFNumberRef)CFDictionaryGetValue(statistics,
+                CFSTR(kIOBlockStorageDriverStatisticsReadsKey)))) {
+                CFNumberGetValue(number, kCFNumberSInt64Type, &value);
+                rxfer = value;
+            }
+            if ((number = (CFNumberRef)CFDictionaryGetValue(statistics,
+                CFSTR(kIOBlockStorageDriverStatisticsWritesKey)))) {
+                CFNumberGetValue(number, kCFNumberSInt64Type, &value);
+                wxfer = value;
+            }
+
+            /* Get I/O time (nanosecond) */
+            if ((number = (CFNumberRef)CFDictionaryGetValue(statistics,
+                CFSTR(kIOBlockStorageDriverStatisticsLatentReadTimeKey)))) {
+                CFNumberGetValue(number, kCFNumberSInt64Type, &value);
+                rbusy = value;
+            }
+            if ((number = (CFNumberRef)CFDictionaryGetValue(statistics,
+                CFSTR(kIOBlockStorageDriverStatisticsLatentWriteTimeKey)))) {
+                CFNumberGetValue(number, kCFNumberSInt64Type, &value);
+                wbusy = value;
+            }
+
+        }
+        CFRelease(properties);
+
+        gettimeofday(&tv, NULL);
+        perf->timestamp_ns = (uint64_t)1000ull * 1000ull * 1000ull * tv.tv_sec + 1000ull * tv.tv_usec;
+        perf->rbusy_ns = rbusy;
+        perf->wbusy_ns = wbusy;
+        perf->rbytes = rbytes;
+        perf->wbytes = wbytes;
+        perf->qlen = rxfer + wxfer;
+
+        ret = 0;
+    }
+parent_release:
+    IOObjectRelease(parent);
+
+drive_release:
+    IOObjectRelease(drive);
+    IOObjectRelease(drivelist);
+
+    return ret;
+}
+
 #else
 /**************************************************************/
 /********************   Unsupported platform    ***************/

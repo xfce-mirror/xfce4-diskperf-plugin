@@ -866,7 +866,6 @@ static void About (Widget_t w, void *unused)
         "Jan Ziak <0xe2.0x9a.0x9b@xfce.org>",
         "Peter Tribble <peter.tribble@gmail.com>",
         "Roger Seguin <roger_seguin@msn.com>",
-        "Torrekie Gen <me@torrekie.dev>",
         NULL
     };
 

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-06 00:51+0200\n"
+"POT-Creation-Date: 2024-11-08 12:54+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Zmicer Turok <zmicerturok@gmail.com >, 2018\n"
 "Language-Team: Belarusian (http://app.transifex.com/xfce/xfce-panel-plugins/language/be/)\n"
@@ -78,60 +78,60 @@ msgstr "Час занятасці"
 msgid "Percentage of time the device is busy"
 msgstr "Час занятасці прылады ў адсотках"
 
-#: panel-plugin/config_gui.c:175
+#: panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Максімальная хуткасць перадачы даных (MB/s) "
 
-#: panel-plugin/config_gui.c:189
+#: panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Увядзіце максімальную хуткасць перадачы I/O  для прылады, пасля націсніце <Enter>"
 
-#: panel-plugin/config_gui.c:191
+#: panel-plugin/config_gui.c:190
 msgid "35"
 msgstr "35"
 
-#: panel-plugin/config_gui.c:199
+#: panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
 msgstr "Аб'яднанне даных \"Чытанне/Запіс\""
 
-#: panel-plugin/config_gui.c:202
+#: panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Аб'яднаць даныя \"Чытанне/Запіс\" у адзін манітор?"
 
-#: panel-plugin/config_gui.c:210
+#: panel-plugin/config_gui.c:209
 msgid "Bar color "
 msgstr "Колер радка "
 
-#: panel-plugin/config_gui.c:222 panel-plugin/config_gui.c:271
-#: panel-plugin/config_gui.c:277
+#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
+#: panel-plugin/config_gui.c:275
 msgid "Press to change color"
 msgstr "Націсніце, каб змяніць колер"
 
-#: panel-plugin/config_gui.c:231
+#: panel-plugin/config_gui.c:230
 msgid "Read bar color "
 msgstr "Колер радка чытання "
 
-#: panel-plugin/config_gui.c:240
+#: panel-plugin/config_gui.c:239
 msgid "Write bar color "
 msgstr "Колер радка запісу "
 
-#: panel-plugin/config_gui.c:247
+#: panel-plugin/config_gui.c:246
 msgid "Bar order"
 msgstr "Парадак радкоў"
 
-#: panel-plugin/config_gui.c:254
+#: panel-plugin/config_gui.c:253
 msgid "Read-Write"
 msgstr "Чытанне-Запіс"
 
-#: panel-plugin/config_gui.c:257
+#: panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
 msgstr "Спачатку манітор \"Чытанне\""
 
-#: panel-plugin/config_gui.c:261
+#: panel-plugin/config_gui.c:260
 msgid "Write-Read"
 msgstr "Запіс-Чытанне"
 
-#: panel-plugin/config_gui.c:264
+#: panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
 msgstr "Спачатку манітор \"Запіс\""
 
@@ -191,6 +191,10 @@ msgid ""
 "times"
 msgstr "Diskperf - манітор, які адлюстроўвае хуткасць ўводу/вываду, перадачы даных і час занятасці дыскаў"
 
-#: panel-plugin/main.c:905
+#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Манітор прадукцыйнасці дыскаў"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "Паказваць прадукцыйнасць дыскаў"

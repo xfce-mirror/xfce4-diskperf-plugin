@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
-# Kaci Heskjestad, 2022
+# heskjestad, 2022
 # Harald H. <haarektrans@gmail.com>, 2014
-# Kaci Heskjestad, 2019
+# heskjestad, 2019
 # Terje Uriansrud <ter@operamail.com>, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-06 00:51+0200\n"
+"POT-Creation-Date: 2024-11-08 12:54+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Kaci Heskjestad, 2022\n"
+"Last-Translator: heskjestad, 2022\n"
 "Language-Team: Norwegian Bokmål (http://app.transifex.com/xfce/xfce-panel-plugins/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,60 +77,60 @@ msgstr "Utnyttelse"
 msgid "Percentage of time the device is busy"
 msgstr "Prosent av tiden enheten er opptatt"
 
-#: panel-plugin/config_gui.c:175
+#: panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Maks. I/O-hastighet (MiB/s)"
 
-#: panel-plugin/config_gui.c:189
+#: panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Skriv inn maks I/O-overføringshastighet for enheten og trykk <Enter>"
 
-#: panel-plugin/config_gui.c:191
+#: panel-plugin/config_gui.c:190
 msgid "35"
 msgstr "35"
 
-#: panel-plugin/config_gui.c:199
+#: panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
 msgstr "Kombiner les/skriv-verdier"
 
-#: panel-plugin/config_gui.c:202
+#: panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Kombiner les og skriv data i en enkelt overvåkning?"
 
-#: panel-plugin/config_gui.c:210
+#: panel-plugin/config_gui.c:209
 msgid "Bar color "
 msgstr "Stolpefarge"
 
-#: panel-plugin/config_gui.c:222 panel-plugin/config_gui.c:271
-#: panel-plugin/config_gui.c:277
+#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
+#: panel-plugin/config_gui.c:275
 msgid "Press to change color"
 msgstr "Trykk for å endre farge"
 
-#: panel-plugin/config_gui.c:231
+#: panel-plugin/config_gui.c:230
 msgid "Read bar color "
 msgstr "Stolpefarge for lesing"
 
-#: panel-plugin/config_gui.c:240
+#: panel-plugin/config_gui.c:239
 msgid "Write bar color "
 msgstr "Stolpefarge for skriving"
 
-#: panel-plugin/config_gui.c:247
+#: panel-plugin/config_gui.c:246
 msgid "Bar order"
 msgstr "Stolpesortering"
 
-#: panel-plugin/config_gui.c:254
+#: panel-plugin/config_gui.c:253
 msgid "Read-Write"
 msgstr "Les-skriv"
 
-#: panel-plugin/config_gui.c:257
+#: panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
 msgstr "«Les»-overvåkning først"
 
-#: panel-plugin/config_gui.c:261
+#: panel-plugin/config_gui.c:260
 msgid "Write-Read"
 msgstr "Skriv-les"
 
-#: panel-plugin/config_gui.c:264
+#: panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
 msgstr "«Skriv»-overvåkning først"
 
@@ -190,6 +190,10 @@ msgid ""
 "times"
 msgstr "Diskperf-overvåkning viser diskens momentane I/O-overføringshastighet og opptatt-tid"
 
-#: panel-plugin/main.c:905
+#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Overvåke diskytelse"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "Viser diskytelsen"

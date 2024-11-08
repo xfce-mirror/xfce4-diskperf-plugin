@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-06 00:51+0200\n"
+"POT-Creation-Date: 2024-11-08 12:54+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Marek Adamski, 2022\n"
 "Language-Team: Polish (http://app.transifex.com/xfce/xfce-panel-plugins/language/pl/)\n"
@@ -76,60 +76,60 @@ msgstr "Czas wykonywania operacji"
 msgid "Percentage of time the device is busy"
 msgstr "Monitoruje czas wykonywania operacji określony procentowo"
 
-#: panel-plugin/config_gui.c:175
+#: panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Maksymalna wartość wejścia-wyjścia (MiB/s)"
 
-#: panel-plugin/config_gui.c:189
+#: panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Określa wartość górnej granicy wskaźnika transferu, zdeterminowaną maksymalnymi osiągami urządzenia"
 
-#: panel-plugin/config_gui.c:191
+#: panel-plugin/config_gui.c:190
 msgid "35"
 msgstr "35"
 
-#: panel-plugin/config_gui.c:199
+#: panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
 msgstr "Połączenie wskaźników odczytu i zapisu"
 
-#: panel-plugin/config_gui.c:202
+#: panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Używa jedego wskaźnika do wyświetlania osiągów odczytu i zapisu"
 
-#: panel-plugin/config_gui.c:210
+#: panel-plugin/config_gui.c:209
 msgid "Bar color "
 msgstr "Kolor wskaźnika: "
 
-#: panel-plugin/config_gui.c:222 panel-plugin/config_gui.c:271
-#: panel-plugin/config_gui.c:277
+#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
+#: panel-plugin/config_gui.c:275
 msgid "Press to change color"
 msgstr "Wybiera kolor wskaźnika"
 
-#: panel-plugin/config_gui.c:231
+#: panel-plugin/config_gui.c:230
 msgid "Read bar color "
 msgstr "Kolor wskaźnika odczytu: "
 
-#: panel-plugin/config_gui.c:240
+#: panel-plugin/config_gui.c:239
 msgid "Write bar color "
 msgstr "Kolor wskaźnika zapisu: "
 
-#: panel-plugin/config_gui.c:247
+#: panel-plugin/config_gui.c:246
 msgid "Bar order"
 msgstr "Kolejność:"
 
-#: panel-plugin/config_gui.c:254
+#: panel-plugin/config_gui.c:253
 msgid "Read-Write"
 msgstr "Odczyt-zapis"
 
-#: panel-plugin/config_gui.c:257
+#: panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
 msgstr "Wyświetla wskaźnik odczytu jako pierwszy"
 
-#: panel-plugin/config_gui.c:261
+#: panel-plugin/config_gui.c:260
 msgid "Write-Read"
 msgstr "Zapis-odczyt"
 
-#: panel-plugin/config_gui.c:264
+#: panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
 msgstr "Wyświetla wskaźnik zapisu jako pierwszy"
 
@@ -189,6 +189,10 @@ msgid ""
 "times"
 msgstr "Monitor diskperf wyświetla na bieżąco wskaźniki transferu dysku wejścia/wyjścia i czasy zajętości"
 
-#: panel-plugin/main.c:905
+#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Monitor osiągów urządzeń"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "Dostarcza informacje na temat osiągów odczytu i zapisu urządzeń"

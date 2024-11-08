@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-04-06 00:51+0200\n"
+"POT-Creation-Date: 2024-11-08 12:54+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: jc1 <jc1.quebecos@gmail.com>, 2013,2019,2022\n"
 "Language-Team: French (http://app.transifex.com/xfce/xfce-panel-plugins/language/fr/)\n"
@@ -78,60 +78,60 @@ msgstr "Temps d’occupation"
 msgid "Percentage of time the device is busy"
 msgstr "Pourcentage du temps pendant lequel le périphérique est occupé"
 
-#: panel-plugin/config_gui.c:175
+#: panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Vitesse E/S max. (Mio/s) "
 
-#: panel-plugin/config_gui.c:189
+#: panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Insérer le taux de transfert E/S max. du périphérique, puis appuyer sur <Entrée>"
 
-#: panel-plugin/config_gui.c:191
+#: panel-plugin/config_gui.c:190
 msgid "35"
 msgstr "35"
 
-#: panel-plugin/config_gui.c:199
+#: panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
 msgstr "Combiner les données de lecture / écriture"
 
-#: panel-plugin/config_gui.c:202
+#: panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Combiner les données de lecture / écriture en un seul moniteur ?"
 
-#: panel-plugin/config_gui.c:210
+#: panel-plugin/config_gui.c:209
 msgid "Bar color "
 msgstr "Couleur de la barre "
 
-#: panel-plugin/config_gui.c:222 panel-plugin/config_gui.c:271
-#: panel-plugin/config_gui.c:277
+#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
+#: panel-plugin/config_gui.c:275
 msgid "Press to change color"
 msgstr "Cliquer pour changer la couleur"
 
-#: panel-plugin/config_gui.c:231
+#: panel-plugin/config_gui.c:230
 msgid "Read bar color "
 msgstr "Couleur de la barre de lecture"
 
-#: panel-plugin/config_gui.c:240
+#: panel-plugin/config_gui.c:239
 msgid "Write bar color "
 msgstr "Couleur de la barre d’écriture"
 
-#: panel-plugin/config_gui.c:247
+#: panel-plugin/config_gui.c:246
 msgid "Bar order"
 msgstr "Disposition des barres"
 
-#: panel-plugin/config_gui.c:254
+#: panel-plugin/config_gui.c:253
 msgid "Read-Write"
 msgstr "Lecture-écriture"
 
-#: panel-plugin/config_gui.c:257
+#: panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
 msgstr "Moniteur « lecture » en premier"
 
-#: panel-plugin/config_gui.c:261
+#: panel-plugin/config_gui.c:260
 msgid "Write-Read"
 msgstr "Écriture-lecture"
 
-#: panel-plugin/config_gui.c:264
+#: panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
 msgstr "Moniteur « écriture » en premier"
 
@@ -191,6 +191,10 @@ msgid ""
 "times"
 msgstr "Le contrôleur Diskperf affiche les taux instantanés de transferts E/S du disque et les temps d’occupation"
 
-#: panel-plugin/main.c:905
+#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Contrôleur de performance de disque"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "Afficher la performance du disque"

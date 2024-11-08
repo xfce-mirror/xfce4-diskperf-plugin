@@ -33,6 +33,12 @@ libdiskperf_la_LDFLAGS = \
 	-export-symbols-regex '^xfce_panel_module_(preinit|init|construct)' \
 	$(PLATFORM_LDFLAGS)
 
+if DARWIN
+libdiskperf_la_LDFLAGS += \
+	-framework CoreFoundation \
+	-framework IOKit
+endif
+
 #
 # Desktop file
 #

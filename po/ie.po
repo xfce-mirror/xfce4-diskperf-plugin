@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
+# 
+# Translators:
+# Caarmi, 2019
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: Caarmi, 2019\n"
+"Language-Team: Interlingue (http://app.transifex.com/xfce/xfce-panel-plugins/language/ie/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ie\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: panel-plugin/config_gui.c:96
+msgid "Device"
+msgstr "Aparate"
+
+#: panel-plugin/config_gui.c:109
+msgid "Input the device name, then press <Enter>"
+msgstr "Provide un nómine de aparate e presse <Enter>"
+
+#: panel-plugin/config_gui.c:111
+msgid "/dev/sda1"
+msgstr "/dev/sda1"
+
+#: panel-plugin/config_gui.c:124
+msgid "Data collection period"
+msgstr ""
+
+#: panel-plugin/config_gui.c:127
+msgid "Update interval (s) "
+msgstr ""
+
+#: panel-plugin/config_gui.c:133
+msgid "Label"
+msgstr "Etiquette"
+
+#: panel-plugin/config_gui.c:136
+msgid "Tick to display label"
+msgstr "Monstrar li etiquette"
+
+#: panel-plugin/config_gui.c:141
+msgid "Input the label, then press <Enter>"
+msgstr ""
+
+#: panel-plugin/config_gui.c:143
+msgid "hda1"
+msgstr "hda1"
+
+#: panel-plugin/config_gui.c:151
+msgid "Monitor"
+msgstr ""
+
+#: panel-plugin/config_gui.c:157
+msgid "I/O transfer"
+msgstr ""
+
+#: panel-plugin/config_gui.c:160
+msgid "MiB transferred / second"
+msgstr ""
+
+#: panel-plugin/config_gui.c:164
+msgid "Busy time"
+msgstr ""
+
+#: panel-plugin/config_gui.c:167
+msgid "Percentage of time the device is busy"
+msgstr ""
+
+#: panel-plugin/config_gui.c:174
+msgid "Max. I/O rate (MiB/s) "
+msgstr ""
+
+#: panel-plugin/config_gui.c:188
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr ""
+
+#: panel-plugin/config_gui.c:190
+msgid "35"
+msgstr ""
+
+#: panel-plugin/config_gui.c:198
+msgid "Combine Read/Write data"
+msgstr ""
+
+#: panel-plugin/config_gui.c:201
+msgid "Combine Read/Write data into one single monitor?"
+msgstr ""
+
+#: panel-plugin/config_gui.c:209
+msgid "Bar color "
+msgstr "Color de barra"
+
+#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
+#: panel-plugin/config_gui.c:275
+msgid "Press to change color"
+msgstr ""
+
+#: panel-plugin/config_gui.c:230
+msgid "Read bar color "
+msgstr "Color del barra de letion"
+
+#: panel-plugin/config_gui.c:239
+msgid "Write bar color "
+msgstr "Color del barra de scrition"
+
+#: panel-plugin/config_gui.c:246
+msgid "Bar order"
+msgstr "Órdine de barras"
+
+#: panel-plugin/config_gui.c:253
+msgid "Read-Write"
+msgstr "Letion-scrition"
+
+#: panel-plugin/config_gui.c:256
+msgid "\"Read\" monitor first"
+msgstr "Li monitor de letion in avan"
+
+#: panel-plugin/config_gui.c:260
+msgid "Write-Read"
+msgstr "Scrition-letion"
+
+#: panel-plugin/config_gui.c:263
+msgid "\"Write\" monitor first"
+msgstr "Li monitor de scrition in avan"
+
+#: panel-plugin/main.c:187
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr "%s: statistica del aparate es índisponibil."
+
+#: panel-plugin/main.c:226
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O (MiB/s)\n"
+"  Read: %3.2f\n"
+"  Write: %3.2f\n"
+"  Total: %3.2f\n"
+"Busy time (%c)\n"
+"  Read: %d\n"
+"  Write: %d\n"
+"  Total: %d"
+msgstr ""
+
+#: panel-plugin/main.c:831
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr ""
+
+#: panel-plugin/main.c:842
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr ""
+
+#: panel-plugin/main.c:850
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr ""
+
+#: panel-plugin/main.c:874
+msgid ""
+"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
+"times"
+msgstr ""
+
+#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+msgid "Disk Performance Monitor"
+msgstr ""
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr ""

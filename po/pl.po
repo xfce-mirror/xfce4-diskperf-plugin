@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
-# Marek Adamski, 2022
+# Marek Adamski, 2022,2024
 # Marek Adamski, 2019-2020
 # Piotr Maliński <admin@rk.edu.pl>, 2006
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2024-11-08 12:54+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Marek Adamski, 2022\n"
+"Last-Translator: Marek Adamski, 2022,2024\n"
 "Language-Team: Polish (http://app.transifex.com/xfce/xfce-panel-plugins/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +34,7 @@ msgstr "/dev/sda1"
 
 #: panel-plugin/config_gui.c:124
 msgid "Data collection period"
-msgstr "Określa wartość odstępu pobierania danych wyrażoną w sekundach"
+msgstr "Określa wartość odstępu pobierania danych wyrażoną w sekundach"
 
 #: panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
@@ -90,11 +90,11 @@ msgstr "35"
 
 #: panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
-msgstr "Połączenie wskaźników odczytu i zapisu"
+msgstr "Połączenie wskaźników odczytu i zapisu"
 
 #: panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Używa jedego wskaźnika do wyświetlania osiągów odczytu i zapisu"
+msgstr "Używa jedego wskaźnika do wyświetlania osiągów odczytu i zapisu"
 
 #: panel-plugin/config_gui.c:209
 msgid "Bar color "
@@ -187,7 +187,7 @@ msgstr "%s:  Nieznany błąd\n\nMonitorowanie nie będzie możliwe."
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Monitor diskperf wyświetla na bieżąco wskaźniki transferu dysku wejścia/wyjścia i czasy zajętości"
+msgstr "Monitor diskperf wyświetla na bieżąco wskaźniki transferu dysku wejścia/wyjścia i czasy zajętości"
 
 #: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
@@ -195,4 +195,4 @@ msgstr "Monitor osiągów urządzeń"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"
-msgstr "Dostarcza informacje na temat osiągów odczytu i zapisu urządzeń"
+msgstr "Dostarcza informacje na temat osiągów odczytu i zapisu urządzeń"

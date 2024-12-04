@@ -30,6 +30,9 @@ AC_CHECK_HEADERS([sys/sysmacros.h])
 LT_LIB_M
 AC_SUBST(LIBM)
 
+dnl Check for Darwin to add IOKit and CoreFoundation
+AM_CONDITIONAL([DARWIN], [test x"$(uname)" = x"Darwin"])
+
 dnl translations
 GETTEXT_PACKAGE="$PACKAGE"
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], ["$GETTEXT_PACKAGE"], [Name of default gettext domain])

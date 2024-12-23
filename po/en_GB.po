@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>, 2023\n"
 "Language-Team: English (United Kingdom) (http://app.transifex.com/xfce/xfce-panel-plugins/language/en_GB/)\n"
@@ -152,7 +152,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Read: %3.2f\n  Write: %3.2f\n  Total: %3.2f\nBusy time (%c)\n  Read: %d\n  Write: %d\n  Total: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -162,7 +162,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nThis monitor will not work!\nPlease remove it."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -173,7 +173,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: No disk extended statistics found!\nEither old kernel (< 2.4.20) or not\ncompiled with CONFIG_BLK_STATS turned on.\n\nThis monitor will not work!\nPlease remove it."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,15 +182,19 @@ msgid ""
 "Please remove it."
 msgstr "%s: Unknown error\n\nThis monitor will not work!\nPlease remove it."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf monitor displays instantaneous disk I/O transfer rates and busy times"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Disk Performance Monitor"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "_Close"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

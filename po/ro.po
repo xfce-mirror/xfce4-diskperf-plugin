@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2024\n"
 "Language-Team: Romanian (http://app.transifex.com/xfce/xfce-panel-plugins/language/ro/)\n"
@@ -151,7 +151,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nIn/Ieș (Mio/s)\n  Citire:  %3.2f\n  Scriere: %3.2f\n  Total:   %3.2f\nBusy time (%c)\n  Citire:  %d\n  Scriere: %d\n  Total:   %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -161,7 +161,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nAcest monitor nu va funcționa!\nVă rugăm să-l eliminați."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -170,9 +170,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Nu s-au găsit statistici extinse pe disc!\nFie nucleul este vechi (< 2.4.20) sau nu este\ncompilat cu CONFIG_BLK_STATS activată.\n\nAcest monitor nu va funcționa!\nVă rugăm să îl eliminați."
+msgstr "%s: Nu s-au găsit statistici extinse pe disc!\nFie nucleul este vechi (< 2.4.20), fie nu este\ncompilat cu opțiunea CONFIG_BLK_STATS activată.\n\nAcest monitor nu va funcționa!\nVă rugăm să îl eliminați."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,15 +181,19 @@ msgid ""
 "Please remove it."
 msgstr "%s: Eroare necunoscută\n\nAcest monitor nu va funcționa!\nVă rugăm să îl eliminați."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Monitorul Diskperf afișează ratele instantanee de transfer In/Ieș pe disc și timpii de ocupare"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Monitor de performanță a discului"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "În_chide"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

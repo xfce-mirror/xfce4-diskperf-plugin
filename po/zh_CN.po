@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>, 2019,2022\n"
 "Language-Team: Chinese (China) (http://app.transifex.com/xfce/xfce-panel-plugins/language/zh_CN/)\n"
@@ -154,7 +154,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  读取: %3.2f\n  写入: %3.2f\n  总计: %3.2f\n忙时 (%c)\n  读取: %d\n  写入: %d\n  总计: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s：%s(%d)\n\n此监视器将停止工作！\n请移除它。"
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s：未找到磁盘扩展统计！\n要么内核太老(< 2.4.20)要么编译时\n未打开 CONFIG_BLK_STATS。\n\n此监视器将停止工作！\n请移除它。"
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,15 +184,19 @@ msgid ""
 "Please remove it."
 msgstr "%s：未知错误\n\n此监视器将停止工作！\n请移除它。"
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf 监视器显示磁盘的瞬时吞吐率和负载时间"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "磁盘性能监视器"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "关闭(_C)"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

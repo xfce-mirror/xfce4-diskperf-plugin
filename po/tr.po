@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>, 2022\n"
 "Language-Team: Turkish (http://app.transifex.com/xfce/xfce-panel-plugins/language/tr/)\n"
@@ -157,7 +157,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nG/Ç (MiB/s)\n  Okuma: %3.2f\n  Yazma: %3.2f\n  Toplam: %3.2f\nMeşgul zaman (%c)\n  Okuma: %d\n  Yazma: %d\n  Toplam: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -167,7 +167,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nBu ekran çalışmayacak!\nLütfen kaldırın."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -178,7 +178,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Genişletilmiş disk istatistikleri bulunamadı!\nYa çekirdek eski (< 2.4.20), ya da\nCONFIG_BLK_STATS açık halde derlenmiş.\n\nBu ekran çalışmayacak!\nLütfen kaldırın."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -187,15 +187,19 @@ msgid ""
 "Please remove it."
 msgstr "%s:Bilinmeyen hata\n\nBu ekran çalışmayacak!\nLütfen kaldırın."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf gözlemcisi anlık disk G/Ç aktarım hızlarını ve meşgul zamanları görüntüler"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Disk performans ekranı"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "_Kapat"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

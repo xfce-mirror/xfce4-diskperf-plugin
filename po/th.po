@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>, 2014,2019\n"
 "Language-Team: Thai (http://app.transifex.com/xfce/xfce-panel-plugins/language/th/)\n"
@@ -151,7 +151,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  อ่าน: %3.2f\n  เขียน: %3.2f\n  รวม: %3.2f\nเวลาทำงาน (%c)\n  อ่าน: %d\n  เขียน: %d\n  รวม: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -161,7 +161,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nมาตรนี้จะไม่ทำงาน!\nกรุณาลบออก"
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -172,7 +172,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: ไม่พบข้อมูลสถิติส่วนขยายของดิสก์!\nอาจเป็นเคอร์เนลเก่า (< 2.4.20) หรือ\nไม่ได้คอมไพล์โดยเปิด CONFIG_BLK_STATS\n\nมาตรนี้จะไม่ทำงาน!\nกรุณาลบออก"
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,15 +181,19 @@ msgid ""
 "Please remove it."
 msgstr "%s: ข้อผิดพลาดไม่ทราบสาเหตุ\n\nมาตรนี้จะไม่ทำงาน!\nกรุณาลบออก"
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "มาตร Diskperf จะแสดงอัตราการถ่ายโอน I/O ของดิสก์และสัดส่วนเวลาทำงานในขณะนั้น"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "มาตรสมรรถนะดิสก์"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "ปิ_ด"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

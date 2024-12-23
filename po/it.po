@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Emanuele Petriglia <transifex@emanuelepetriglia.com>, 2019,2022\n"
 "Language-Team: Italian (http://app.transifex.com/xfce/xfce-panel-plugins/language/it/)\n"
@@ -154,7 +154,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Scrittura: %3.2f\n  Lettura: %3.2f\n  Totale: %3.2f\nTempo di lavoro (%c)\n  Scrittura: %d\n  Lettura: %d\n  Totale: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nQuesto monitoraggio non funzionerà!\nRimuoverlo."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Nessuna statistica estesa trovata su disco!\nIl kernel è vecchio (<2.4.20) o non è stato\ncompilato con l'opzione CONFIG_BLK_STATUS attivata.\n\nQuesto monitoraggio non funzionerà!\nRimuoverlo."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,15 +184,19 @@ msgid ""
 "Please remove it."
 msgstr "%s: Errore sconosciuto\n\nQuesto monitoraggio non funzionerà!\nRimuoverlo."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf monitor mostra la velocità istantanea di I/O del disco e i tempi di attesa"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Monitor delle prestazioni del disco"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "_Chiudi"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

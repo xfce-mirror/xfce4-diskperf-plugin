@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2024\n"
 "Language-Team: Czech (http://app.transifex.com/xfce/xfce-panel-plugins/language/cs/)\n"
@@ -152,7 +152,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nV/V (MiB/s)\n  Čtení: %3.2f\n  Zápis: %3.2f\n  Celkem: %3.2f\nDoba zanepráznění (%c)\n  Čtení: %d\n  Zápis: %d\n  Celkem: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -162,7 +162,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nToto sledování nebude pracovat!\nOdeberte jej."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -173,7 +173,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Nenalezeny žádné podrobné statistiky o disku!\nPoužíváte zastaralé jádro (< 2.4.20) nebo jste\nnezapnuli volbu CONFIG_BLK_STATS při sestavování.\n\nToto sledování nebude pracovat.\nOdeberte jej."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,15 +182,19 @@ msgid ""
 "Please remove it."
 msgstr "%s: Neznámá chyba\n\nToto sledování nebude pracovat!\nOdeberte jej."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Monitorování výkonu disku okamžitě zobrazuje aktuální přenosové rychlosti vstupně výstupních operací a vytížení."
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Monitorování výkonu disku"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "_Zavřít"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

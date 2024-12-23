@@ -309,11 +309,7 @@ static int SetSingleBarColor (struct diskperf_t *p_poPlugin, int p_iBar)
     Widget_t          *pwBar;
 
     pwBar = poMonitor->aoPerfBar[p_iBar].pwBar;
-#if GTK_CHECK_VERSION (3, 20, 0)
     css = g_strdup_printf("progressbar progress { background-color: %s; background-image: none; }",
-#else
-    css = g_strdup_printf(".progressbar progress { background-color: %s; background-image: none; }",
-#endif
                                   gdk_rgba_to_string(&poConf->aoColor[p_iBar]));
     /* Setup Gtk style */
     DBG("setting css to %s for bar %d", css, p_iBar);
@@ -400,19 +396,11 @@ static int CreateMonitorBars (struct diskperf_t *poPlugin, GtkOrientation p_iOri
         gtk_orientable_set_orientation (GTK_ORIENTABLE(*pwBar), !p_iOrientation);
         gtk_progress_bar_set_inverted (GTK_PROGRESS_BAR(*pwBar), p_iOrientation == GTK_ORIENTATION_HORIZONTAL);
         css_provider = gtk_css_provider_new ();
-#if GTK_CHECK_VERSION (3, 20, 0)
         gtk_css_provider_load_from_data (css_provider, "\
             progressbar.horizontal trough { min-height: 4px; }\
             progressbar.horizontal progress { min-height: 4px; }\
             progressbar.vertical trough { min-width: 4px; }\
             progressbar.vertical progress { min-width: 4px; }",
-#else
-        gtk_css_provider_load_from_data (css_provider, "\
-            .progressbar.horizontal trough { min-height: 4px; }\
-            .progressbar.horizontal progress { min-height: 4px; }\
-            .progressbar.vertical trough { min-width: 4px; }\
-            .progressbar.vertical progress { min-width: 4px; }",
-#endif
             -1, NULL);
         gtk_style_context_add_provider (
             GTK_STYLE_CONTEXT (gtk_widget_get_style_context (GTK_WIDGET (*pwBar))),
@@ -902,10 +890,10 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
 
     xfce_panel_plugin_block_menu (plugin);
     
-    dlg = xfce_titled_dialog_new_with_buttons (_("Disk Performance Monitor"),
+    dlg = xfce_titled_dialog_new_with_mixed_buttons (_("Disk Performance Monitor"),
                                                GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
                                                GTK_DIALOG_DESTROY_WITH_PARENT,
-                                               "gtk-close", GTK_RESPONSE_OK,
+                                               "window-close-symbolic", _("_Close"), GTK_RESPONSE_OK,
                                                NULL);
 
     gtk_window_set_resizable (GTK_WINDOW (dlg), FALSE);

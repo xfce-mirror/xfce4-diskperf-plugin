@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: jc1 <jc1.quebecos@gmail.com>, 2013,2019,2022\n"
 "Language-Team: French (http://app.transifex.com/xfce/xfce-panel-plugins/language/fr/)\n"
@@ -155,7 +155,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nE/S (Mio/s)\n  Lecture : %3.2f\n  Écriture : %3.2f\n  Total : %3.2f\nTemps d’occupation (%c)\n  Lecture : %d\n  Écriture : %d\n  Total : %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -165,7 +165,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s : %s (%d)\n\nCe moniteur ne fonctionnera pas !\nVeuillez le supprimer."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -176,7 +176,7 @@ msgid ""
 "Please remove it."
 msgstr "%s : statistique étendue de disque non trouvée !\nSoit vous avez un noyau trop ancien (< 2.4.20) ou alors\ncompilé sans l’option CONFIG_BLK_STATS.\n\nCe moniteur ne fonctionnera pas !\nVeuillez le supprimer."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -185,15 +185,19 @@ msgid ""
 "Please remove it."
 msgstr "%s : Erreur inconnue\n\nCe moniteur ne fonctionnera pas !\nVeuillez le supprimer."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Le contrôleur Diskperf affiche les taux instantanés de transferts E/S du disque et les temps d’occupation"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Contrôleur de performance de disque"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "_Fermer"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

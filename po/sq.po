@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>, 2007,2022\n"
 "Language-Team: Albanian (http://app.transifex.com/xfce/xfce-panel-plugins/language/sq/)\n"
@@ -153,7 +153,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Shkrim: %3.2f\n  Lexim: %3.2f\n  Gjithsej: %3.2f\nKohë i zënë (%c)\n  Shkrim: %d\n  Lexim: %d\n  Gjithsej: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +163,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutemi, hiqeni."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +174,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: S’u gjetën statistika të zgjeruara disku!\nOse kerneli është i vjetër (< 2.4.20), ose s’qe\npërpiluar me CONFIG_BLK_STATS  aktiv.\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutemi, hiqeni."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,15 +183,19 @@ msgid ""
 "Please remove it."
 msgstr "%s: Gabim i panjohur\n\nKy mbikëqyrës nuk do të funksionojë!\nJu lutemi, hiqeni."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Mbikëqyrësi Diskperf shfaq shpejtësi të atypëratyshme shpërnguljesh I/O në disk dhe kohë funksionimi"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Mbikëqyrës Punimi Disku"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "_Mbylle"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-11-08 12:54+0100\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.eu>, 2024\n"
 "Language-Team: Galician (http://app.transifex.com/xfce/xfce-panel-plugins/language/gl/)\n"
@@ -153,7 +153,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Lectura: %3.2f\n  Escritura: %3.2f\n  Total: %3.2f\nTempo ocupado (%c)\n  Lectura: %d\n  Escritura: %d\n  Total: %d"
 
-#: panel-plugin/main.c:831
+#: panel-plugin/main.c:819
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +163,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nEste monitor non vai funcionar!\nElimíneo."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:830
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +174,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Non se atoparon estatísticas de\ndisco estendidas!\nO núcleo é vello (< 2.4.20) ou non se\ncompilou con CONFIG_BLK_STATS\nactivado.\n\nEsta monitorización non ha funcionar!\nElimínea."
 
-#: panel-plugin/main.c:850
+#: panel-plugin/main.c:838
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,15 +183,19 @@ msgid ""
 "Please remove it."
 msgstr "%s: Erro descoñecido\n\nEste monitor non vai funcionar!\nElimíneo."
 
-#: panel-plugin/main.c:874
+#: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "O Diskperf é un monitor que amosa as taxas de transferencia de E/S instantáneas e os tempos de ocupación dos discos"
 
-#: panel-plugin/main.c:905 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Monitor de rendemento de disco"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "_Pechar"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"

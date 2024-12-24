@@ -2,7 +2,7 @@ dnl
 dnl Copyright (c) 2004-2024 The Xfce development team
 dnl
 
-XDT_VERSION_INIT([2.7.1])
+XDT_VERSION_INIT([2.7.1], [git])
 
 dnl Initialize autoconf
 AC_COPYRIGHT([Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>

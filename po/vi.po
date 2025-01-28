@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
+# 
+# Translators:
+# Cas Pascal <casboi86@gmail.com>, 2024-2025
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2024-12-23 12:52+0100\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: Cas Pascal <casboi86@gmail.com>, 2024-2025\n"
+"Language-Team: Vietnamese (http://app.transifex.com/xfce/xfce-panel-plugins/language/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: panel-plugin/config_gui.c:96
+msgid "Device"
+msgstr "Thiết bị"
+
+#: panel-plugin/config_gui.c:109
+msgid "Input the device name, then press <Enter>"
+msgstr "Nhập tên của thiết bị, sau đó nhấn<Enter>"
+
+#: panel-plugin/config_gui.c:111
+msgid "/dev/sda1"
+msgstr ""
+
+#: panel-plugin/config_gui.c:124
+msgid "Data collection period"
+msgstr "Thời gian thu thập dữ liệu"
+
+#: panel-plugin/config_gui.c:127
+msgid "Update interval (s) "
+msgstr "Chu kì cập nhật (giây)"
+
+#: panel-plugin/config_gui.c:133
+msgid "Label"
+msgstr "Nhãn"
+
+#: panel-plugin/config_gui.c:136
+msgid "Tick to display label"
+msgstr "Bật để hiển thị nhãn"
+
+#: panel-plugin/config_gui.c:141
+msgid "Input the label, then press <Enter>"
+msgstr "Nhập tên của nhãn, sau đó nhấn <Enter>"
+
+#: panel-plugin/config_gui.c:143
+msgid "hda1"
+msgstr ""
+
+#: panel-plugin/config_gui.c:151
+msgid "Monitor"
+msgstr "Màn hình"
+
+#: panel-plugin/config_gui.c:157
+msgid "I/O transfer"
+msgstr ""
+
+#: panel-plugin/config_gui.c:160
+msgid "MiB transferred / second"
+msgstr "MiB di chuyển / giây"
+
+#: panel-plugin/config_gui.c:164
+msgid "Busy time"
+msgstr "Thời gian bận"
+
+#: panel-plugin/config_gui.c:167
+msgid "Percentage of time the device is busy"
+msgstr "Tỉ lệ phần trăm thời gian thiết bị bận"
+
+#: panel-plugin/config_gui.c:174
+msgid "Max. I/O rate (MiB/s) "
+msgstr "Tối đa. Tốc độ I/O (MiB/giây)"
+
+#: panel-plugin/config_gui.c:188
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr "Nhập tốc độ vận chuyển I/O tối đa, sau đó nhấn <Enter>"
+
+#: panel-plugin/config_gui.c:190
+msgid "35"
+msgstr ""
+
+#: panel-plugin/config_gui.c:198
+msgid "Combine Read/Write data"
+msgstr "Kết hợp Dữ liệu Đọc/Ghi"
+
+#: panel-plugin/config_gui.c:201
+msgid "Combine Read/Write data into one single monitor?"
+msgstr "Kết hợp thông dữ liệu đọc/ghi vào cùng một bảng theo dõi?"
+
+#: panel-plugin/config_gui.c:209
+msgid "Bar color "
+msgstr "Màu thanh"
+
+#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
+#: panel-plugin/config_gui.c:275
+msgid "Press to change color"
+msgstr "Nhấn để đổi màu"
+
+#: panel-plugin/config_gui.c:230
+msgid "Read bar color "
+msgstr "Màu thanh đọc"
+
+#: panel-plugin/config_gui.c:239
+msgid "Write bar color "
+msgstr "Màu thanh ghi"
+
+#: panel-plugin/config_gui.c:246
+msgid "Bar order"
+msgstr "Thứ tự thanh"
+
+#: panel-plugin/config_gui.c:253
+msgid "Read-Write"
+msgstr "Đọc-Viết"
+
+#: panel-plugin/config_gui.c:256
+msgid "\"Read\" monitor first"
+msgstr "Bảng theo dõi \"Đọc\" trước"
+
+#: panel-plugin/config_gui.c:260
+msgid "Write-Read"
+msgstr "Ghi-Đọc"
+
+#: panel-plugin/config_gui.c:263
+msgid "\"Write\" monitor first"
+msgstr "Bảng theo dõi \"Ghi\" trước"
+
+#: panel-plugin/main.c:187
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr "%s: Thống kê về thiết bị không có sẵn."
+
+#: panel-plugin/main.c:226
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O (MiB/s)\n"
+"  Read: %3.2f\n"
+"  Write: %3.2f\n"
+"  Total: %3.2f\n"
+"Busy time (%c)\n"
+"  Read: %d\n"
+"  Write: %d\n"
+"  Total: %d"
+msgstr "%s\n----------------\nI/O (MiB/giây)\n  Đọc: %3.2f\n  Ghi: %3.2f\n  Tổngl: %3.2f\nThời gian bận (%c)\n  Đọc: %d\n  Ghi: %d\n  Tổng: %d"
+
+#: panel-plugin/main.c:819
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s\n%s: %s (%d)\n\nBảng theo dõi này không hoạt động được!\nHãy gỡ bỏ nó."
+
+#: panel-plugin/main.c:830
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: Không tìm thấy thống kê mở rộng của đĩa!\nPhiên bản kernel quá cũ (< 2.4.20) hoặc\nkhông bật CONFIG_BLK_STATS khi biên dịch.\n\nBảng theo dõi này sẽ không hoạt động!\nHãy gỡ bỏ nó."
+
+#: panel-plugin/main.c:838
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: Lỗi không xác định\n\nBảng theo dõi này sẽ không hoạt động!\nHãy gỡ bỏ nó."
+
+#: panel-plugin/main.c:862
+msgid ""
+"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
+"times"
+msgstr "Bảng theo dõi của Diskperf hiển thị tốc độ I/O và thời gian bận trong thời gian thực"
+
+#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
+msgid "Disk Performance Monitor"
+msgstr "Bảng theo dõi hiệu suất đĩa"
+
+#: panel-plugin/main.c:896
+msgid "_Close"
+msgstr "Đóng"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "Hiện hiệu năng đĩa"

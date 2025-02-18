@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
+# ebal <ebalaskas@ebalaskas.gr>, 2008
 # Efstathios Iosifidis <iosifidis@opensuse.org>, 2012
 # ebal <ebalaskas@ebalaskas.gr>, 2008
 # Πέτρος Σαμαράς <psamaras1@gmail.com>, 2019
@@ -26,7 +27,7 @@ msgstr "Συσκευή"
 
 #: panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
-msgstr "Εισαγωγή ονόματος συσκευής, μετά πατήστε <Enter>"
+msgstr "Εισαγωγή ονόματος της συσκευής, μετά πατήστε <Enter>"
 
 #: panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
@@ -34,11 +35,11 @@ msgstr "/dev/sda1"
 
 #: panel-plugin/config_gui.c:124
 msgid "Data collection period"
-msgstr "Περίοδος συλλογής δεδομένων"
+msgstr "Χρονική περίοδος συλλογής δεδομένων"
 
 #: panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
-msgstr "Ανανέωση χρονικού διαστήματος(ων)"
+msgstr "Ανανέωση χρονικού διαστήματος (ων)"
 
 #: panel-plugin/config_gui.c:133
 msgid "Label"
@@ -46,11 +47,11 @@ msgstr "Ετικέτα"
 
 #: panel-plugin/config_gui.c:136
 msgid "Tick to display label"
-msgstr "Πατήστε για να εμφανιστεί η ετικέτα"
+msgstr "Επιλέξτε το για να εμφανιστεί η ετικέτα της συσκευής"
 
 #: panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
-msgstr "Εισαγωγή ετικέτας, μετά πατήστε <Enter>"
+msgstr "Εισαγωγή ετικέτας για τη συσκευή, μετά πατήστε <Enter>"
 
 #: panel-plugin/config_gui.c:143
 msgid "hda1"
@@ -58,19 +59,19 @@ msgstr "hda1"
 
 #: panel-plugin/config_gui.c:151
 msgid "Monitor"
-msgstr "Παρακολούθηση"
+msgstr "Απεικόνιση"
 
 #: panel-plugin/config_gui.c:157
 msgid "I/O transfer"
-msgstr "Μετάδοση I/O"
+msgstr "Μεταφοράς δεδομένων I/O"
 
 #: panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
-msgstr "MiB μεταφέρθηκαν / δευτερόλεπτο"
+msgstr "MiB μεταφοράς / δευτερόλεπτο"
 
 #: panel-plugin/config_gui.c:164
 msgid "Busy time"
-msgstr "Χρόνος απασχόλησης"
+msgstr "Χρόνου απασχόλησης"
 
 #: panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
@@ -78,11 +79,11 @@ msgstr "Ποσοστό του χρόνου που η συσκευή είναι �
 
 #: panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Μέγιστος ρυθμίς I/O (MiB/s) "
+msgstr "Μέγιστος ρυθμός I/O (MiB/s) "
 
 #: panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Εισαγωγή του μέγιστου Ι/Ο ρυθμου μετάδοσης της συσκευής, μετά πατήστε <Enter>"
+msgstr "Εισαγωγή του μέγιστου ρυθμού μεταφοράς δεδομένων Ι/Ο της συσκευής, μετά πατήστε <Enter>"
 
 #: panel-plugin/config_gui.c:190
 msgid "35"
@@ -90,32 +91,32 @@ msgstr "35"
 
 #: panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
-msgstr "Συνδυασμός Ανάγνωσης/Εγγραφής δεδομένων"
+msgstr "Σύνδεση δεδομένων Ανάγνωσης/Εγγραφής"
 
 #: panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Συνδυασμός Ανάγνωσης/Εγγραφής δεδομένων σε μία μόνο οθόνη;"
+msgstr "Σύνδεση σε μία μπάρα των δεδομένων Ανάγνωσης/Εγγραφής;"
 
 #: panel-plugin/config_gui.c:209
 msgid "Bar color "
-msgstr "Χρώμα μπάρας"
+msgstr "Χρώμα μπάρας "
 
 #: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
 #: panel-plugin/config_gui.c:275
 msgid "Press to change color"
-msgstr "Πατήστε να αλλάξετε το χρώμα"
+msgstr "Πατήστε για να αλλάξετε χρώμα"
 
 #: panel-plugin/config_gui.c:230
 msgid "Read bar color "
-msgstr "Αναγνωση χρώμα μπάρας"
+msgstr "Χρώμα μπάρας ανάγνωσης "
 
 #: panel-plugin/config_gui.c:239
 msgid "Write bar color "
-msgstr "Εγγραφή χρώματος μπάρας"
+msgstr "Χρώμα μπάρας εγγραφής "
 
 #: panel-plugin/config_gui.c:246
 msgid "Bar order"
-msgstr "Σειρά μπάρας"
+msgstr "Διάταξη μπάρας"
 
 #: panel-plugin/config_gui.c:253
 msgid "Read-Write"
@@ -123,7 +124,7 @@ msgstr "Ανάγνωση-Εγγραφή"
 
 #: panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
-msgstr "\"Ανάγνωση\" οθόνης πρώτα"
+msgstr "Πρώτα η \"Ανάγνωση\""
 
 #: panel-plugin/config_gui.c:260
 msgid "Write-Read"
@@ -131,7 +132,7 @@ msgstr "Εγγραφή-Ανάγνωση"
 
 #: panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
-msgstr "\"Εγγραφή\" οθόνη πρώτα"
+msgstr "Πρώτα η \"Εγγραφή\""
 
 #: panel-plugin/main.c:187
 #, c-format
@@ -151,7 +152,7 @@ msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
 "  Total: %d"
-msgstr ""
+msgstr "%s\n----------------\nI/O (MiB/s)\n  Ανάγνωση: %3.2f\n  Εγγραφή: %3.2f\n  Σύνολο: %3.2f\nΧρόνος απασχόλησης (%c)\n  Ανάγνωση: %d\n  Εγγραφή: %d\n  Σύνολο: %d"
 
 #: panel-plugin/main.c:819
 #, c-format
@@ -161,7 +162,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s\n%s: %s (%d)\n\nΑυτή η οθόνη δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
+msgstr "%s\n%s: %s (%d)\n\nΑυτή η απεικόνιση δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
 
 #: panel-plugin/main.c:830
 #, c-format
@@ -172,7 +173,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Δεν βρέθηκαν εκτεταμένα στατιστικά δίσκου!\nΕίτε παλιός πυρήνας (< 2.4.20) είτε\nείναι μεταγλωτισμένος με την επιλογή CONFIG_BLK_STATS ενεργοποιημένη.\n\nΑυτή η οθόνη δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
+msgstr "%s: Δεν βρέθηκαν εκτεταμένα στατιστικά δίσκου!\nΕίτε είναι παλιός πυρήνας (< 2.4.20) είτε\nείναι είναι μεταγλωτισμένος με ενεργοποιημένη την επιλογή CONFIG_BLK_STATS.\n\nΑυτή η απεικόνιση δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
 
 #: panel-plugin/main.c:838
 #, c-format
@@ -181,17 +182,17 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Άγνωστο σφάλμα\n\nΑυτή η οθόνη δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
+msgstr "%s: Άγνωστο σφάλμα\n\nΑυτή η απεικόνιση δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
 
 #: panel-plugin/main.c:862
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Ο επόπτης Diskperf εμφανίζει στιγμιαία ρυθμο μεταφοράς I/O και χρόνους απασχόλησης του δίσκου"
+msgstr "Το πρόσθετο Diskperf εμφανίζει άμεσα το ρυθμό μεταφοράς δεδομένων I/O και τους χρόνους απασχόλησης του δίσκου"
 
 #: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
-msgstr "Οθόνη επίδοσης δίσκου"
+msgstr "Επιδόσεις δίσκου"
 
 #: panel-plugin/main.c:896
 msgid "_Close"
@@ -199,4 +200,4 @@ msgstr "_Κλείσιμο"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"
-msgstr "Εμφάνιση επίδοσης δίσκου"
+msgstr "Εμφάνιση επιδόσεων δίσκου"

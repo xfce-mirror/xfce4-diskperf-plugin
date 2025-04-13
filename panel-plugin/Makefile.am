@@ -18,13 +18,19 @@ libdiskperf_la_SOURCES =					\
 	devperf.h
 
 libdiskperf_la_CFLAGS =						\
+	$(GLIB_CFLAGS)						\
+	$(GTK_CFLAGS)						\
 	$(LIBXFCE4PANEL_CFLAGS)					\
-	$(LIBXFCE4UI_CFLAGS)
+	$(LIBXFCE4UI_CFLAGS)					\
+	$(LIBXFCE4UTIL_CFLAGS)
 
 libdiskperf_la_LIBADD=						\
+	$(GLIB_LIBS)						\
+	$(GTK_LIBS)						\
 	$(LIBM)							\
 	$(LIBXFCE4PANEL_LIBS)					\
-	$(LIBXFCE4UI_LIBS)
+	$(LIBXFCE4UI_LIBS)					\
+	$(LIBXFCE4UTIL_LIBS)
 
 libdiskperf_la_LDFLAGS = \
 	-avoid-version \

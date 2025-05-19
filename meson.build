@@ -1,7 +1,7 @@
 project(
   'xfce4-diskperf-plugin',
   'c',
-version : '2.8.0',
+version : '2.8.0-dev',
   license : 'BSD-2-Clause',
   meson_version : '>= 0.54.0',
   default_options : ['c_std=gnu11', 'buildtype=debugoptimized', 'warning_level=2']

@@ -3,7 +3,7 @@ dnl Copyright (c) 2004-2024 The Xfce development team
 dnl
 
 m4_define([copyright_year], [2025])
-XDT_VERSION_INIT([2.8.0])
+XDT_VERSION_INIT([2.8.0], [git])
 
 dnl Initialize autoconf
 AC_COPYRIGHT([Copyright (c) 2003, 2004 Roger Seguin <roger_seguin@msn.com>

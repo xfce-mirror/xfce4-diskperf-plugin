@@ -15,19 +15,6 @@ if host_machine.system() == 'darwin'
   ]
 endif
 
-dependencies = [
-  glib,
-  gtk,
-  libxfce4panel,
-  libxfce4ui,
-  libxfce4util,
-  libm,
-]
-
-if host_machine.system() == 'freebsd'
-  dependencies += cc.find_library('devstat', required : true)
-endif
-
 plugin_install_subdir = 'xfce4' / 'panel' / 'plugins'
 
 plugin_lib = shared_module(
@@ -40,7 +27,15 @@ plugin_lib = shared_module(
   include_directories: [
     include_directories('..'),
   ],
-  dependencies: dependencies,
+  dependencies: [
+    glib,
+    gtk,
+    libxfce4panel,
+    libxfce4ui,
+    libxfce4util,
+    libm,
+    libdevstat,
+  ],
   link_args: extra_link_args,
   install: true,
   install_dir: get_option('prefix') / get_option('libdir') / plugin_install_subdir,

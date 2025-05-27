@@ -34,6 +34,7 @@ plugin_lib = shared_module(
     libxfce4ui,
     libxfce4util,
     libm,
+    libdevstat,
   ],
   link_args: extra_link_args,
   install: true,

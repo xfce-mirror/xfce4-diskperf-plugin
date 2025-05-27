@@ -29,6 +29,11 @@ libxfce4ui = dependency('libxfce4ui-2', version: dependency_versions['xfce4'])
 libxfce4util = dependency('libxfce4util-1.0', version: dependency_versions['xfce4'])
 libm = cc.find_library('m')
 
+libdevstat = dependency('', required: false)
+if host_machine.system() == 'freebsd'
+  libdevstat = cc.find_library('devstat', required : true)
+endif
+
 feature_cflags = []
 if cc.check_header('sys/sysmacros.h')
   feature_cflags += '-DHAVE_SYS_SYSMACROS_H=1'

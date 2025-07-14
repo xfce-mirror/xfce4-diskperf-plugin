@@ -130,6 +130,7 @@ typedef struct monitor_t {
 
 typedef struct diskperf_t {
     XfcePanelPlugin  *plugin;
+    GtkWidget        *settings_dialog;
     guint            iTimerId; /* Cyclic update */
     struct conf_t    oConf;
     struct monitor_t oMonitor;
@@ -876,7 +877,6 @@ static void diskperf_dialog_response (GtkWidget *dlg, int response,
 {
     UpdateConf (diskperf);
     gtk_widget_destroy (dlg);
-    xfce_panel_plugin_unblock_menu (diskperf->plugin);
     diskperf_write_config (diskperf->plugin, diskperf);
 }
 
@@ -892,15 +892,19 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     Widget_t       *apwColorPB[NMONITORS];
     int             i;
 
+    if (poPlugin->settings_dialog != NULL) {
+        gtk_window_present (GTK_WINDOW (poPlugin->settings_dialog));
+        return;
+    }
+
     (void) CheckStatsAvailability ();
 
-    xfce_panel_plugin_block_menu (plugin);
-    
-    dlg = xfce_titled_dialog_new_with_mixed_buttons (_("Disk Performance Monitor"),
+    poPlugin->settings_dialog = dlg = xfce_titled_dialog_new_with_mixed_buttons (_("Disk Performance Monitor"),
                                                GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (plugin))),
                                                GTK_DIALOG_DESTROY_WITH_PARENT,
                                                "window-close-symbolic", _("_Close"), GTK_RESPONSE_OK,
                                                NULL);
+    g_object_add_weak_pointer (G_OBJECT (dlg), (gpointer *) &poPlugin->settings_dialog);
 
     gtk_window_set_resizable (GTK_WINDOW (dlg), FALSE);
     

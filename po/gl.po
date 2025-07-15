@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Xfce
-# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
 # Daniel Muñiz Fontoira <dani@damufo.eu>, 2018-2019
@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-12-23 12:52+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 00:50+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Daniel Muñiz Fontoira <dani@damufo.eu>, 2024\n"
 "Language-Team: Galician (http://app.transifex.com/xfce/xfce-panel-plugins/language/gl/)\n"
@@ -20,125 +20,125 @@ msgstr ""
 "Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: panel-plugin/config_gui.c:96
+#: ../panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Dispositivo"
 
-#: panel-plugin/config_gui.c:109
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Introduza o nome do dispositivo, e despois prema <Intro>"
 
-#: panel-plugin/config_gui.c:111
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: panel-plugin/config_gui.c:124
+#: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Periodo de recolección de datos"
 
-#: panel-plugin/config_gui.c:127
+#: ../panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Intervalo(s) de actualización"
 
-#: panel-plugin/config_gui.c:133
+#: ../panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Etiqueta"
 
-#: panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Marque para amosar a etiqueta"
 
-#: panel-plugin/config_gui.c:141
+#: ../panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Introduza a etiqueta, e despois prema <Intro>"
 
-#: panel-plugin/config_gui.c:143
+#: ../panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: panel-plugin/config_gui.c:151
+#: ../panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Monitor"
 
-#: panel-plugin/config_gui.c:157
+#: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "Transferencia de E/S"
 
-#: panel-plugin/config_gui.c:160
+#: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "MB transferido por segundo"
 
-#: panel-plugin/config_gui.c:164
+#: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Tempo de ocupación"
 
-#: panel-plugin/config_gui.c:167
+#: ../panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Porcentaxe de tempo que o dispositivo está ocupado"
 
-#: panel-plugin/config_gui.c:174
+#: ../panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Taxa de E/S máx. (MB/s) "
 
-#: panel-plugin/config_gui.c:188
+#: ../panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Introduza a taxa de transferencia de E/S máxima do dispositivo, e despois prema <Intro>"
 
-#: panel-plugin/config_gui.c:190
+#: ../panel-plugin/config_gui.c:190
 msgid "35"
 msgstr "35"
 
-#: panel-plugin/config_gui.c:198
+#: ../panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
 msgstr "Combinar os datos de Lectura/Escritura"
 
-#: panel-plugin/config_gui.c:201
+#: ../panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Desexa combinar os datos de Lectura/Escritura nun só monitor?"
 
-#: panel-plugin/config_gui.c:209
+#: ../panel-plugin/config_gui.c:209
 msgid "Bar color "
 msgstr "Cor das barras"
 
-#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
-#: panel-plugin/config_gui.c:275
+#: ../panel-plugin/config_gui.c:221 ../panel-plugin/config_gui.c:269
+#: ../panel-plugin/config_gui.c:275
 msgid "Press to change color"
 msgstr "Prema para cambiar a cor"
 
-#: panel-plugin/config_gui.c:230
+#: ../panel-plugin/config_gui.c:230
 msgid "Read bar color "
 msgstr "Cor da barra de lectura"
 
-#: panel-plugin/config_gui.c:239
+#: ../panel-plugin/config_gui.c:239
 msgid "Write bar color "
 msgstr "Cor da barra de escritura"
 
-#: panel-plugin/config_gui.c:246
+#: ../panel-plugin/config_gui.c:246
 msgid "Bar order"
 msgstr "Orde das barras"
 
-#: panel-plugin/config_gui.c:253
+#: ../panel-plugin/config_gui.c:253
 msgid "Read-Write"
 msgstr "Lectura-Escritura"
 
-#: panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
 msgstr "Primeiro o monitor de \"Lectura\""
 
-#: panel-plugin/config_gui.c:260
+#: ../panel-plugin/config_gui.c:260
 msgid "Write-Read"
 msgstr "Escritura-Lectura"
 
-#: panel-plugin/config_gui.c:263
+#: ../panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
 msgstr "Primeiro o monitor de \"Escritura\""
 
-#: panel-plugin/main.c:187
+#: ../panel-plugin/main.c:191
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: As estatísticas do dispositivo non están dispoñíbeis."
 
-#: panel-plugin/main.c:226
+#: ../panel-plugin/main.c:230
 #, c-format
 msgid ""
 "%s\n"
@@ -153,7 +153,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Lectura: %3.2f\n  Escritura: %3.2f\n  Total: %3.2f\nTempo ocupado (%c)\n  Lectura: %d\n  Escritura: %d\n  Total: %d"
 
-#: panel-plugin/main.c:819
+#: ../panel-plugin/main.c:826
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +163,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nEste monitor non vai funcionar!\nElimíneo."
 
-#: panel-plugin/main.c:830
+#: ../panel-plugin/main.c:837
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +174,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Non se atoparon estatísticas de\ndisco estendidas!\nO núcleo é vello (< 2.4.20) ou non se\ncompilou con CONFIG_BLK_STATS\nactivado.\n\nEsta monitorización non ha funcionar!\nElimínea."
 
-#: panel-plugin/main.c:838
+#: ../panel-plugin/main.c:845
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,20 +183,16 @@ msgid ""
 "Please remove it."
 msgstr "%s: Erro descoñecido\n\nEste monitor non vai funcionar!\nElimíneo."
 
-#: panel-plugin/main.c:862
+#: ../panel-plugin/main.c:869
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "O Diskperf é un monitor que amosa as taxas de transferencia de E/S instantáneas e os tempos de ocupación dos discos"
 
-#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
+#: ../panel-plugin/main.c:902
 msgid "Disk Performance Monitor"
 msgstr "Monitor de rendemento de disco"
 
-#: panel-plugin/main.c:896
+#: ../panel-plugin/main.c:905
 msgid "_Close"
 msgstr "_Pechar"
-
-#: panel-plugin/diskperf.desktop.in:6
-msgid "Show disk performance"
-msgstr "Amosar o rendemento do disco"

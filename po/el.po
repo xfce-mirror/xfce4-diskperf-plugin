@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Xfce
-# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
 # ebal <ebalaskas@ebalaskas.gr>, 2008
@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-12-23 12:52+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 00:50+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Πέτρος Σαμαράς <psamaras1@gmail.com>, 2019\n"
 "Language-Team: Greek (http://app.transifex.com/xfce/xfce-panel-plugins/language/el/)\n"
@@ -21,125 +21,125 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: panel-plugin/config_gui.c:96
+#: ../panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Συσκευή"
 
-#: panel-plugin/config_gui.c:109
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Εισαγωγή ονόματος της συσκευής, μετά πατήστε <Enter>"
 
-#: panel-plugin/config_gui.c:111
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: panel-plugin/config_gui.c:124
+#: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Χρονική περίοδος συλλογής δεδομένων"
 
-#: panel-plugin/config_gui.c:127
+#: ../panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Ανανέωση χρονικού διαστήματος (ων)"
 
-#: panel-plugin/config_gui.c:133
+#: ../panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Ετικέτα"
 
-#: panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Επιλέξτε το για να εμφανιστεί η ετικέτα της συσκευής"
 
-#: panel-plugin/config_gui.c:141
+#: ../panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Εισαγωγή ετικέτας για τη συσκευή, μετά πατήστε <Enter>"
 
-#: panel-plugin/config_gui.c:143
+#: ../panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: panel-plugin/config_gui.c:151
+#: ../panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Απεικόνιση"
 
-#: panel-plugin/config_gui.c:157
+#: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "Μεταφοράς δεδομένων I/O"
 
-#: panel-plugin/config_gui.c:160
+#: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "MiB μεταφοράς / δευτερόλεπτο"
 
-#: panel-plugin/config_gui.c:164
+#: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Χρόνου απασχόλησης"
 
-#: panel-plugin/config_gui.c:167
+#: ../panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Ποσοστό του χρόνου που η συσκευή είναι απασχολημένη"
 
-#: panel-plugin/config_gui.c:174
+#: ../panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Μέγιστος ρυθμός I/O (MiB/s) "
 
-#: panel-plugin/config_gui.c:188
+#: ../panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Εισαγωγή του μέγιστου ρυθμού μεταφοράς δεδομένων Ι/Ο της συσκευής, μετά πατήστε <Enter>"
 
-#: panel-plugin/config_gui.c:190
+#: ../panel-plugin/config_gui.c:190
 msgid "35"
 msgstr "35"
 
-#: panel-plugin/config_gui.c:198
+#: ../panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
 msgstr "Σύνδεση δεδομένων Ανάγνωσης/Εγγραφής"
 
-#: panel-plugin/config_gui.c:201
+#: ../panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Σύνδεση σε μία μπάρα των δεδομένων Ανάγνωσης/Εγγραφής;"
 
-#: panel-plugin/config_gui.c:209
+#: ../panel-plugin/config_gui.c:209
 msgid "Bar color "
 msgstr "Χρώμα μπάρας "
 
-#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
-#: panel-plugin/config_gui.c:275
+#: ../panel-plugin/config_gui.c:221 ../panel-plugin/config_gui.c:269
+#: ../panel-plugin/config_gui.c:275
 msgid "Press to change color"
 msgstr "Πατήστε για να αλλάξετε χρώμα"
 
-#: panel-plugin/config_gui.c:230
+#: ../panel-plugin/config_gui.c:230
 msgid "Read bar color "
 msgstr "Χρώμα μπάρας ανάγνωσης "
 
-#: panel-plugin/config_gui.c:239
+#: ../panel-plugin/config_gui.c:239
 msgid "Write bar color "
 msgstr "Χρώμα μπάρας εγγραφής "
 
-#: panel-plugin/config_gui.c:246
+#: ../panel-plugin/config_gui.c:246
 msgid "Bar order"
 msgstr "Διάταξη μπάρας"
 
-#: panel-plugin/config_gui.c:253
+#: ../panel-plugin/config_gui.c:253
 msgid "Read-Write"
 msgstr "Ανάγνωση-Εγγραφή"
 
-#: panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
 msgstr "Πρώτα η \"Ανάγνωση\""
 
-#: panel-plugin/config_gui.c:260
+#: ../panel-plugin/config_gui.c:260
 msgid "Write-Read"
 msgstr "Εγγραφή-Ανάγνωση"
 
-#: panel-plugin/config_gui.c:263
+#: ../panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
 msgstr "Πρώτα η \"Εγγραφή\""
 
-#: panel-plugin/main.c:187
+#: ../panel-plugin/main.c:191
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Μη διαθέσιμα στατιστικά συσκευής."
 
-#: panel-plugin/main.c:226
+#: ../panel-plugin/main.c:230
 #, c-format
 msgid ""
 "%s\n"
@@ -154,7 +154,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Ανάγνωση: %3.2f\n  Εγγραφή: %3.2f\n  Σύνολο: %3.2f\nΧρόνος απασχόλησης (%c)\n  Ανάγνωση: %d\n  Εγγραφή: %d\n  Σύνολο: %d"
 
-#: panel-plugin/main.c:819
+#: ../panel-plugin/main.c:826
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +164,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nΑυτή η απεικόνιση δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
 
-#: panel-plugin/main.c:830
+#: ../panel-plugin/main.c:837
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +175,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Δεν βρέθηκαν εκτεταμένα στατιστικά δίσκου!\nΕίτε είναι παλιός πυρήνας (< 2.4.20) είτε\nείναι είναι μεταγλωτισμένος με ενεργοποιημένη την επιλογή CONFIG_BLK_STATS.\n\nΑυτή η απεικόνιση δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
 
-#: panel-plugin/main.c:838
+#: ../panel-plugin/main.c:845
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,20 +184,16 @@ msgid ""
 "Please remove it."
 msgstr "%s: Άγνωστο σφάλμα\n\nΑυτή η απεικόνιση δεν θα δουλέψει!\nΠαρακαλώ αφαιρέστε την."
 
-#: panel-plugin/main.c:862
+#: ../panel-plugin/main.c:869
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Το πρόσθετο Diskperf εμφανίζει άμεσα το ρυθμό μεταφοράς δεδομένων I/O και τους χρόνους απασχόλησης του δίσκου"
 
-#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
+#: ../panel-plugin/main.c:902
 msgid "Disk Performance Monitor"
 msgstr "Επιδόσεις δίσκου"
 
-#: panel-plugin/main.c:896
+#: ../panel-plugin/main.c:905
 msgid "_Close"
 msgstr "_Κλείσιμο"
-
-#: panel-plugin/diskperf.desktop.in:6
-msgid "Show disk performance"
-msgstr "Εμφάνιση επιδόσεων δίσκου"

@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Xfce
-# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
 # Michal Várady <miko.vaji@gmail.com>, 2024
@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2024-12-23 12:52+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 00:50+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>, 2024\n"
 "Language-Team: Czech (http://app.transifex.com/xfce/xfce-panel-plugins/language/cs/)\n"
@@ -19,125 +19,125 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: panel-plugin/config_gui.c:96
+#: ../panel-plugin/config_gui.c:96
 msgid "Device"
 msgstr "Zařízení"
 
-#: panel-plugin/config_gui.c:109
+#: ../panel-plugin/config_gui.c:109
 msgid "Input the device name, then press <Enter>"
 msgstr "Zadejte název zařízení a stiskněte <Enter>"
 
-#: panel-plugin/config_gui.c:111
+#: ../panel-plugin/config_gui.c:111
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: panel-plugin/config_gui.c:124
+#: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
 msgstr "Interval pro sběr dat"
 
-#: panel-plugin/config_gui.c:127
+#: ../panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
 msgstr "Interval obnovení (s)"
 
-#: panel-plugin/config_gui.c:133
+#: ../panel-plugin/config_gui.c:133
 msgid "Label"
 msgstr "Popisek"
 
-#: panel-plugin/config_gui.c:136
+#: ../panel-plugin/config_gui.c:136
 msgid "Tick to display label"
 msgstr "Kliknutím zobrazíte popisek"
 
-#: panel-plugin/config_gui.c:141
+#: ../panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
 msgstr "Zadejte popisek a stiskněte <Enter>"
 
-#: panel-plugin/config_gui.c:143
+#: ../panel-plugin/config_gui.c:143
 msgid "hda1"
 msgstr "hda1"
 
-#: panel-plugin/config_gui.c:151
+#: ../panel-plugin/config_gui.c:151
 msgid "Monitor"
 msgstr "Sledování"
 
-#: panel-plugin/config_gui.c:157
+#: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
 msgstr "Přenos V/V"
 
-#: panel-plugin/config_gui.c:160
+#: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
 msgstr "MiB přenesené za sekundu"
 
-#: panel-plugin/config_gui.c:164
+#: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
 msgstr "Aktivita"
 
-#: panel-plugin/config_gui.c:167
+#: ../panel-plugin/config_gui.c:167
 msgid "Percentage of time the device is busy"
 msgstr "Procentuální podíl aktivity zařízení"
 
-#: panel-plugin/config_gui.c:174
+#: ../panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Nejvyšší přenosová rychlost V/V (MiB/s) "
 
-#: panel-plugin/config_gui.c:188
+#: ../panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Zadejte maximální vstupně-výstupní přenosovou rychlost zařízení a stiskněte <Enter>"
 
-#: panel-plugin/config_gui.c:190
+#: ../panel-plugin/config_gui.c:190
 msgid "35"
 msgstr "35"
 
-#: panel-plugin/config_gui.c:198
+#: ../panel-plugin/config_gui.c:198
 msgid "Combine Read/Write data"
 msgstr "Čtení a zápis dat najednou"
 
-#: panel-plugin/config_gui.c:201
+#: ../panel-plugin/config_gui.c:201
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Spojit sledování přečtených a zapsaných dat?"
 
-#: panel-plugin/config_gui.c:209
+#: ../panel-plugin/config_gui.c:209
 msgid "Bar color "
 msgstr "Barva panelu"
 
-#: panel-plugin/config_gui.c:221 panel-plugin/config_gui.c:269
-#: panel-plugin/config_gui.c:275
+#: ../panel-plugin/config_gui.c:221 ../panel-plugin/config_gui.c:269
+#: ../panel-plugin/config_gui.c:275
 msgid "Press to change color"
 msgstr "Pro změnu barvy klikněte sem"
 
-#: panel-plugin/config_gui.c:230
+#: ../panel-plugin/config_gui.c:230
 msgid "Read bar color "
 msgstr "Barva panelu čtení"
 
-#: panel-plugin/config_gui.c:239
+#: ../panel-plugin/config_gui.c:239
 msgid "Write bar color "
 msgstr "Barva panelu zápisu"
 
-#: panel-plugin/config_gui.c:246
+#: ../panel-plugin/config_gui.c:246
 msgid "Bar order"
 msgstr "Pořadí panelů"
 
-#: panel-plugin/config_gui.c:253
+#: ../panel-plugin/config_gui.c:253
 msgid "Read-Write"
 msgstr "Čtení-zápis"
 
-#: panel-plugin/config_gui.c:256
+#: ../panel-plugin/config_gui.c:256
 msgid "\"Read\" monitor first"
 msgstr "Sledovat „Čtení“ jako první"
 
-#: panel-plugin/config_gui.c:260
+#: ../panel-plugin/config_gui.c:260
 msgid "Write-Read"
 msgstr "Zápis-čtení"
 
-#: panel-plugin/config_gui.c:263
+#: ../panel-plugin/config_gui.c:263
 msgid "\"Write\" monitor first"
 msgstr "Sledovat „Zápis“ jako první"
 
-#: panel-plugin/main.c:187
+#: ../panel-plugin/main.c:191
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Statistika o zařízení není dostupná."
 
-#: panel-plugin/main.c:226
+#: ../panel-plugin/main.c:230
 #, c-format
 msgid ""
 "%s\n"
@@ -152,7 +152,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nV/V (MiB/s)\n  Čtení: %3.2f\n  Zápis: %3.2f\n  Celkem: %3.2f\nDoba zanepráznění (%c)\n  Čtení: %d\n  Zápis: %d\n  Celkem: %d"
 
-#: panel-plugin/main.c:819
+#: ../panel-plugin/main.c:826
 #, c-format
 msgid ""
 "%s\n"
@@ -162,7 +162,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nToto sledování nebude pracovat!\nOdeberte jej."
 
-#: panel-plugin/main.c:830
+#: ../panel-plugin/main.c:837
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -173,7 +173,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Nenalezeny žádné podrobné statistiky o disku!\nPoužíváte zastaralé jádro (< 2.4.20) nebo jste\nnezapnuli volbu CONFIG_BLK_STATS při sestavování.\n\nToto sledování nebude pracovat.\nOdeberte jej."
 
-#: panel-plugin/main.c:838
+#: ../panel-plugin/main.c:845
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -182,20 +182,16 @@ msgid ""
 "Please remove it."
 msgstr "%s: Neznámá chyba\n\nToto sledování nebude pracovat!\nOdeberte jej."
 
-#: panel-plugin/main.c:862
+#: ../panel-plugin/main.c:869
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Monitorování výkonu disku okamžitě zobrazuje aktuální přenosové rychlosti vstupně výstupních operací a vytížení."
 
-#: panel-plugin/main.c:893 panel-plugin/diskperf.desktop.in:5
+#: ../panel-plugin/main.c:902
 msgid "Disk Performance Monitor"
 msgstr "Monitorování výkonu disku"
 
-#: panel-plugin/main.c:896
+#: ../panel-plugin/main.c:905
 msgid "_Close"
 msgstr "_Zavřít"
-
-#: panel-plugin/diskperf.desktop.in:6
-msgid "Show disk performance"
-msgstr "Zobrazuje výkon disku"

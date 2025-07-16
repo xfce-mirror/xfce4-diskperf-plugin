@@ -34,7 +34,7 @@ msgstr "/dev/sda1"
 
 #: ../panel-plugin/config_gui.c:124
 msgid "Data collection period"
-msgstr "Określa wartość odstępu pobierania danych wyrażoną w sekundach"
+msgstr "Określa wartość odstępu pobierania danych"
 
 #: ../panel-plugin/config_gui.c:127
 msgid "Update interval (s) "
@@ -50,7 +50,7 @@ msgstr "Wyświetla etykietę urządzenia"
 
 #: ../panel-plugin/config_gui.c:141
 msgid "Input the label, then press <Enter>"
-msgstr "Określa etykietę urządzenia"
+msgstr "Określa etykietę"
 
 #: ../panel-plugin/config_gui.c:143
 msgid "hda1"
@@ -62,11 +62,11 @@ msgstr "Monitorowanie"
 
 #: ../panel-plugin/config_gui.c:157
 msgid "I/O transfer"
-msgstr "Transfer wejścia-wyjścia"
+msgstr "Transfer wejścia‑wyjścia"
 
 #: ../panel-plugin/config_gui.c:160
 msgid "MiB transferred / second"
-msgstr "MiB przesłano / sekunda"
+msgstr "Przesłane MiB na sekundę"
 
 #: ../panel-plugin/config_gui.c:164
 msgid "Busy time"
@@ -78,11 +78,11 @@ msgstr "Monitoruje czas wykonywania operacji określony procentowo"
 
 #: ../panel-plugin/config_gui.c:174
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Maksymalna wartość wejścia-wyjścia (MiB/s)"
+msgstr "Maks. wartość wejścia‑wyjścia (MiB/s)"
 
 #: ../panel-plugin/config_gui.c:188
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Określa wartość górnej granicy wskaźnika transferu, zdeterminowaną maksymalnymi osiągami urządzenia"
+msgstr "Określa maksymalną szybkość transferu wejścia‑wyjścia urządzenia"
 
 #: ../panel-plugin/config_gui.c:190
 msgid "35"
@@ -151,7 +151,7 @@ msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
 "  Total: %d"
-msgstr "%s\n----------------\nWej-wyj (MiB/s)\n  Odczyt: %3.2f\n  Zapis: %3.2f\n  Łącznie: %3.2f\nCzas zajętości (%c)\n  Odczyt: %d\n  Zapis: %d\n  Łącznie: %d"
+msgstr "%s\n----------------\nWejście‑wyjście (MiB/s)\n  Odczyt: %3.2f\n  Zapis: %3.2f\n  Łącznie: %3.2f\nCzas zajętości (%c)\n  Odczyt: %d\n  Zapis: %d\n  Łącznie: %d"
 
 #: ../panel-plugin/main.c:826
 #, c-format
@@ -187,11 +187,11 @@ msgstr "%s:  Nieznany błąd\n\nMonitorowanie nie będzie możliwe."
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Monitor diskperf wyświetla na bieżąco wskaźniki transferu wejścia-wyjścia dysku i czasy zajętości"
+msgstr "Monitor wydajności dysku wyświetla na bieżąco wskaźniki transferu wejścia‑wyjścia i czasu zajętości dysku"
 
 #: ../panel-plugin/main.c:902
 msgid "Disk Performance Monitor"
-msgstr "Monitor osiągów urządzeń"
+msgstr "Monitor wydajności dysku"
 
 #: ../panel-plugin/main.c:905
 msgid "_Close"

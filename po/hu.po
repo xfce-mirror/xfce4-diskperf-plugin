@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009
@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 00:50+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:06+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: László Varga, 2024\n"
 "Language-Team: Hungarian (http://app.transifex.com/xfce/xfce-panel-plugins/language/hu/)\n"
@@ -20,125 +20,125 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../panel-plugin/config_gui.c:96
+#: panel-plugin/config_gui.c:92
 msgid "Device"
 msgstr "Eszköz"
 
-#: ../panel-plugin/config_gui.c:109
+#: panel-plugin/config_gui.c:105
 msgid "Input the device name, then press <Enter>"
 msgstr "Adja meg az eszköz nevét és nyomja meg az Enter billentyűt"
 
-#: ../panel-plugin/config_gui.c:111
+#: panel-plugin/config_gui.c:107
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:124
+#: panel-plugin/config_gui.c:120
 msgid "Data collection period"
 msgstr "Adatgyűjtési időszak"
 
-#: ../panel-plugin/config_gui.c:127
+#: panel-plugin/config_gui.c:123
 msgid "Update interval (s) "
 msgstr "Frissítési időköz (mp)"
 
-#: ../panel-plugin/config_gui.c:133
+#: panel-plugin/config_gui.c:129
 msgid "Label"
 msgstr "Címke"
 
-#: ../panel-plugin/config_gui.c:136
+#: panel-plugin/config_gui.c:132
 msgid "Tick to display label"
 msgstr "Címke megjelenítése"
 
-#: ../panel-plugin/config_gui.c:141
+#: panel-plugin/config_gui.c:137
 msgid "Input the label, then press <Enter>"
 msgstr "Adja meg a címkét és nyomja meg az Enter billentyűt"
 
-#: ../panel-plugin/config_gui.c:143
+#: panel-plugin/config_gui.c:139
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:151
+#: panel-plugin/config_gui.c:147
 msgid "Monitor"
 msgstr "Megfigyelés"
 
-#: ../panel-plugin/config_gui.c:157
+#: panel-plugin/config_gui.c:153
 msgid "I/O transfer"
 msgstr "I/O átvitel"
 
-#: ../panel-plugin/config_gui.c:160
+#: panel-plugin/config_gui.c:156
 msgid "MiB transferred / second"
 msgstr "Átvitt MB/mp"
 
-#: ../panel-plugin/config_gui.c:164
+#: panel-plugin/config_gui.c:160
 msgid "Busy time"
 msgstr "Foglalt idő"
 
-#: ../panel-plugin/config_gui.c:167
+#: panel-plugin/config_gui.c:163
 msgid "Percentage of time the device is busy"
 msgstr "Az eszköz által foglaltan töltött idő százalékos aránya"
 
-#: ../panel-plugin/config_gui.c:174
+#: panel-plugin/config_gui.c:170
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Max. I/O sebesség (MB/mp)"
 
-#: ../panel-plugin/config_gui.c:188
+#: panel-plugin/config_gui.c:184
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Adja meg az eszköz maximális I/O átviteli sebességét és nyomja meg az Enter billentyűt"
 
-#: ../panel-plugin/config_gui.c:190
+#: panel-plugin/config_gui.c:186
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:198
+#: panel-plugin/config_gui.c:194
 msgid "Combine Read/Write data"
 msgstr "Olvasási/írási adatok egyesítése"
 
-#: ../panel-plugin/config_gui.c:201
+#: panel-plugin/config_gui.c:197
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Egyesíti az olvasási/írási adatokat egyetlen figyelőbe?"
 
-#: ../panel-plugin/config_gui.c:209
+#: panel-plugin/config_gui.c:205
 msgid "Bar color "
 msgstr "Sáv színe"
 
-#: ../panel-plugin/config_gui.c:221 ../panel-plugin/config_gui.c:269
-#: ../panel-plugin/config_gui.c:275
+#: panel-plugin/config_gui.c:217 panel-plugin/config_gui.c:265
+#: panel-plugin/config_gui.c:271
 msgid "Press to change color"
 msgstr "Szín módosítása"
 
-#: ../panel-plugin/config_gui.c:230
+#: panel-plugin/config_gui.c:226
 msgid "Read bar color "
 msgstr "Olvasási sáv színe"
 
-#: ../panel-plugin/config_gui.c:239
+#: panel-plugin/config_gui.c:235
 msgid "Write bar color "
 msgstr "Írási sáv színe"
 
-#: ../panel-plugin/config_gui.c:246
+#: panel-plugin/config_gui.c:242
 msgid "Bar order"
 msgstr "Sávok sorrendje"
 
-#: ../panel-plugin/config_gui.c:253
+#: panel-plugin/config_gui.c:249
 msgid "Read-Write"
 msgstr "Olvasás-írás"
 
-#: ../panel-plugin/config_gui.c:256
+#: panel-plugin/config_gui.c:252
 msgid "\"Read\" monitor first"
 msgstr "„Olvasás” figyelője előre"
 
-#: ../panel-plugin/config_gui.c:260
+#: panel-plugin/config_gui.c:256
 msgid "Write-Read"
 msgstr "Írás-olvasás"
 
-#: ../panel-plugin/config_gui.c:263
+#: panel-plugin/config_gui.c:259
 msgid "\"Write\" monitor first"
 msgstr "„Írás” figyelője előre"
 
-#: ../panel-plugin/main.c:191
+#: panel-plugin/main.c:188
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Az eszközstatisztikák nem érhetők el."
 
-#: ../panel-plugin/main.c:230
+#: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "%s\n"
@@ -153,7 +153,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nI/O (MiB/s)\n  Olvasás: %3.2f\n  Írás: %3.2f\n  Teljes: %3.2f\n Foglalt idő (%c)\n  Olvasás: %d\n  Írás: %d\n  Teljes: %d"
 
-#: ../panel-plugin/main.c:826
+#: panel-plugin/main.c:823
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +163,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nEz a figyelő működésképtelen!\nTávolítsa el."
 
-#: ../panel-plugin/main.c:837
+#: panel-plugin/main.c:834
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +174,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Nem találhatók bővített lemezstatisztikák!\nA kernel túl régi (< 2.4.20) vagy a\nCONFIG_BLK_STATS nélkül lett fordítva.\n\nEz a figyelő működésképtelen!\nTávolítsa el."
 
-#: ../panel-plugin/main.c:845
+#: panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,16 +183,20 @@ msgid ""
 "Please remove it."
 msgstr "%s: Ismeretlen hiba\n\nEz a figyelő működésképtelen!\nTávolítsa el."
 
-#: ../panel-plugin/main.c:869
+#: panel-plugin/main.c:866
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "A Diskperf figyelő megjeleníti a lemezek I/O átviteli sebességeit és az elfoglaltként töltött időt"
 
-#: ../panel-plugin/main.c:902
+#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Lemezteljesítmény-figyelő"
 
-#: ../panel-plugin/main.c:905
+#: panel-plugin/main.c:902
 msgid "_Close"
 msgstr "_Bezárás"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "Lemezteljesítmény megjelenítése"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
 # Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2024
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 00:50+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:06+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2024\n"
 "Language-Team: Romanian (http://app.transifex.com/xfce/xfce-panel-plugins/language/ro/)\n"
@@ -18,125 +18,125 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: ../panel-plugin/config_gui.c:96
+#: panel-plugin/config_gui.c:92
 msgid "Device"
 msgstr "Dispozitiv"
 
-#: ../panel-plugin/config_gui.c:109
+#: panel-plugin/config_gui.c:105
 msgid "Input the device name, then press <Enter>"
 msgstr "Introduceți numele dispozitivului, apoi apăsați «Enter»"
 
-#: ../panel-plugin/config_gui.c:111
+#: panel-plugin/config_gui.c:107
 msgid "/dev/sda1"
 msgstr "/dev/sda1"
 
-#: ../panel-plugin/config_gui.c:124
+#: panel-plugin/config_gui.c:120
 msgid "Data collection period"
 msgstr "Perioada de colectare a datelor"
 
-#: ../panel-plugin/config_gui.c:127
+#: panel-plugin/config_gui.c:123
 msgid "Update interval (s) "
 msgstr "Intervalul de actualizare (s) "
 
-#: ../panel-plugin/config_gui.c:133
+#: panel-plugin/config_gui.c:129
 msgid "Label"
 msgstr "Etichetă"
 
-#: ../panel-plugin/config_gui.c:136
+#: panel-plugin/config_gui.c:132
 msgid "Tick to display label"
 msgstr "Bifați pentru a afișa eticheta"
 
-#: ../panel-plugin/config_gui.c:141
+#: panel-plugin/config_gui.c:137
 msgid "Input the label, then press <Enter>"
 msgstr "Introduceți eticheta, apoi apăsați «Enter»"
 
-#: ../panel-plugin/config_gui.c:143
+#: panel-plugin/config_gui.c:139
 msgid "hda1"
 msgstr "hda1"
 
-#: ../panel-plugin/config_gui.c:151
+#: panel-plugin/config_gui.c:147
 msgid "Monitor"
 msgstr "Monitor"
 
-#: ../panel-plugin/config_gui.c:157
+#: panel-plugin/config_gui.c:153
 msgid "I/O transfer"
 msgstr "transfer In/Ieș"
 
-#: ../panel-plugin/config_gui.c:160
+#: panel-plugin/config_gui.c:156
 msgid "MiB transferred / second"
 msgstr "Mio transferați / secundă"
 
-#: ../panel-plugin/config_gui.c:164
+#: panel-plugin/config_gui.c:160
 msgid "Busy time"
 msgstr "Timp ocupat"
 
-#: ../panel-plugin/config_gui.c:167
+#: panel-plugin/config_gui.c:163
 msgid "Percentage of time the device is busy"
 msgstr "Procentul de timp în care dispozitivul este ocupat"
 
-#: ../panel-plugin/config_gui.c:174
+#: panel-plugin/config_gui.c:170
 msgid "Max. I/O rate (MiB/s) "
 msgstr "Rata de I/O max. (Mio/s) "
 
-#: ../panel-plugin/config_gui.c:188
+#: panel-plugin/config_gui.c:184
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
 msgstr "Introduceți rata maximă de transfer I/O a dispozitivului, apoi apăsați «Enter»"
 
-#: ../panel-plugin/config_gui.c:190
+#: panel-plugin/config_gui.c:186
 msgid "35"
 msgstr "35"
 
-#: ../panel-plugin/config_gui.c:198
+#: panel-plugin/config_gui.c:194
 msgid "Combine Read/Write data"
 msgstr "Combină datele de citire/scriere"
 
-#: ../panel-plugin/config_gui.c:201
+#: panel-plugin/config_gui.c:197
 msgid "Combine Read/Write data into one single monitor?"
 msgstr "Combinați datele de citire/scriere într-un singur monitor?"
 
-#: ../panel-plugin/config_gui.c:209
+#: panel-plugin/config_gui.c:205
 msgid "Bar color "
 msgstr "Culoarea barei "
 
-#: ../panel-plugin/config_gui.c:221 ../panel-plugin/config_gui.c:269
-#: ../panel-plugin/config_gui.c:275
+#: panel-plugin/config_gui.c:217 panel-plugin/config_gui.c:265
+#: panel-plugin/config_gui.c:271
 msgid "Press to change color"
 msgstr "Apăsați pentru a schimba culoarea"
 
-#: ../panel-plugin/config_gui.c:230
+#: panel-plugin/config_gui.c:226
 msgid "Read bar color "
 msgstr "Culoarea barei de citire "
 
-#: ../panel-plugin/config_gui.c:239
+#: panel-plugin/config_gui.c:235
 msgid "Write bar color "
 msgstr "Culoarea barei de scriere "
 
-#: ../panel-plugin/config_gui.c:246
+#: panel-plugin/config_gui.c:242
 msgid "Bar order"
 msgstr "Ordinea barelor"
 
-#: ../panel-plugin/config_gui.c:253
+#: panel-plugin/config_gui.c:249
 msgid "Read-Write"
 msgstr "Citire-scriere"
 
-#: ../panel-plugin/config_gui.c:256
+#: panel-plugin/config_gui.c:252
 msgid "\"Read\" monitor first"
 msgstr "Monitorul „Citire” primul"
 
-#: ../panel-plugin/config_gui.c:260
+#: panel-plugin/config_gui.c:256
 msgid "Write-Read"
 msgstr "Scriere-citire"
 
-#: ../panel-plugin/config_gui.c:263
+#: panel-plugin/config_gui.c:259
 msgid "\"Write\" monitor first"
 msgstr "Monitorul „Scriere” primul"
 
-#: ../panel-plugin/main.c:191
+#: panel-plugin/main.c:188
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Statisticile dispozitivului nu sunt disponibile."
 
-#: ../panel-plugin/main.c:230
+#: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "%s\n"
@@ -151,7 +151,7 @@ msgid ""
 "  Total: %d"
 msgstr "%s\n----------------\nIn/Ieș (Mio/s)\n  Citire:  %3.2f\n  Scriere: %3.2f\n  Total:   %3.2f\nBusy time (%c)\n  Citire:  %d\n  Scriere: %d\n  Total:   %d"
 
-#: ../panel-plugin/main.c:826
+#: panel-plugin/main.c:823
 #, c-format
 msgid ""
 "%s\n"
@@ -161,7 +161,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nAcest monitor nu va funcționa!\nVă rugăm să-l eliminați."
 
-#: ../panel-plugin/main.c:837
+#: panel-plugin/main.c:834
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -172,7 +172,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Nu s-au găsit statistici extinse pe disc!\nFie nucleul este vechi (< 2.4.20), fie nu este\ncompilat cu opțiunea CONFIG_BLK_STATS activată.\n\nAcest monitor nu va funcționa!\nVă rugăm să îl eliminați."
 
-#: ../panel-plugin/main.c:845
+#: panel-plugin/main.c:842
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,16 +181,20 @@ msgid ""
 "Please remove it."
 msgstr "%s: Eroare necunoscută\n\nAcest monitor nu va funcționa!\nVă rugăm să îl eliminați."
 
-#: ../panel-plugin/main.c:869
+#: panel-plugin/main.c:866
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Monitorul Diskperf afișează ratele instantanee de transfer In/Ieș pe disc și timpii de ocupare"
 
-#: ../panel-plugin/main.c:902
+#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Monitor de performanță a discului"
 
-#: ../panel-plugin/main.c:905
+#: panel-plugin/main.c:902
 msgid "_Close"
 msgstr "În_chide"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "Afișează performanța discului"

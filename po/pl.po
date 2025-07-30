@@ -187,7 +187,7 @@ msgstr "%s:  Nieznany błąd\n\nMonitorowanie nie będzie możliwe."
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Monitor wydajności dysku wyświetla na bieżąco wskaźniki transferu wejścia‑wyjścia i czasu zajętości dysku"
+msgstr "Monitor wydajności do wyświetlania szybkości transferów i czasu zajętości dysku."
 
 #: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"

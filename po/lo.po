@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Xfce
+# This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Xfce Panel Plugins\n"
+"Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
+"POT-Creation-Date: 2025-07-18 11:06+0200\n"
+"PO-Revision-Date: 2013-07-03 18:57+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Lao (http://app.transifex.com/xfce/xfce-panel-plugins/language/lo/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lo\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: panel-plugin/config_gui.c:92
+msgid "Device"
+msgstr "ອຸປະກອນ"
+
+#: panel-plugin/config_gui.c:105
+msgid "Input the device name, then press <Enter>"
+msgstr "ປ້ອນຊື່ອຸປະກອນ, ແລ້ວກົດ <Enter>"
+
+#: panel-plugin/config_gui.c:107
+msgid "/dev/sda1"
+msgstr "/dev/sda1"
+
+#: panel-plugin/config_gui.c:120
+msgid "Data collection period"
+msgstr "ໄລຍະເວລາການເກັບກຳຂໍ້ມູນ"
+
+#: panel-plugin/config_gui.c:123
+msgid "Update interval (s) "
+msgstr "ໄລຍະຫ່າງການອັບເດດ (ວິນາທີ) "
+
+#: panel-plugin/config_gui.c:129
+msgid "Label"
+msgstr "ປ້າຍຊື່"
+
+#: panel-plugin/config_gui.c:132
+msgid "Tick to display label"
+msgstr "ໝາຍຕິກເພື່ອສະແດງປ້າຍຊື່"
+
+#: panel-plugin/config_gui.c:137
+msgid "Input the label, then press <Enter>"
+msgstr "ປ້ອນປ້າຍຊື່, ແລ້ວກົດ <Enter>"
+
+#: panel-plugin/config_gui.c:139
+msgid "hda1"
+msgstr "hda1"
+
+#: panel-plugin/config_gui.c:147
+msgid "Monitor"
+msgstr "ຕົວຕິດຕາມ"
+
+#: panel-plugin/config_gui.c:153
+msgid "I/O transfer"
+msgstr "ການຮັບ-ສົ່ງ I/O"
+
+#: panel-plugin/config_gui.c:156
+msgid "MiB transferred / second"
+msgstr "MiB ທີ່ຮັບ-ສົ່ງ / ວິນາທີ"
+
+#: panel-plugin/config_gui.c:160
+msgid "Busy time"
+msgstr "ເວລາທີ່ເຮັດວຽກ"
+
+#: panel-plugin/config_gui.c:163
+msgid "Percentage of time the device is busy"
+msgstr "ເປີເຊັນເວລາທີ່ອຸປະກອນກຳລັງເຮັດວຽກ"
+
+#: panel-plugin/config_gui.c:170
+msgid "Max. I/O rate (MiB/s) "
+msgstr "ອັດຕາ I/O ສູງສຸດ (MiB/s) "
+
+#: panel-plugin/config_gui.c:184
+msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
+msgstr "ປ້ອນອັດຕາການຮັບ-ສົ່ງ I/O ສູງສຸດຂອງອຸປະກອນ, ແລ້ວກົດ <Enter>"
+
+#: panel-plugin/config_gui.c:186
+msgid "35"
+msgstr "35"
+
+#: panel-plugin/config_gui.c:194
+msgid "Combine Read/Write data"
+msgstr "ລວມຂໍ້ມູນການອ່ານ/ການຂຽນ"
+
+#: panel-plugin/config_gui.c:197
+msgid "Combine Read/Write data into one single monitor?"
+msgstr "ລວມຂໍ້ມູນການອ່ານ/ການຂຽນ ເຂົ້າໃນຕົວຕິດຕາມອັນດຽວບໍ?"
+
+#: panel-plugin/config_gui.c:205
+msgid "Bar color "
+msgstr "ສີຂອງແທ່ງ "
+
+#: panel-plugin/config_gui.c:217 panel-plugin/config_gui.c:265
+#: panel-plugin/config_gui.c:271
+msgid "Press to change color"
+msgstr "ກົດເພື່ອປ່ຽນສີ"
+
+#: panel-plugin/config_gui.c:226
+msgid "Read bar color "
+msgstr "ສີແທ່ງການອ່ານ "
+
+#: panel-plugin/config_gui.c:235
+msgid "Write bar color "
+msgstr "ສີແທ່ງການຂຽນ "
+
+#: panel-plugin/config_gui.c:242
+msgid "Bar order"
+msgstr "ລຳດັບຂອງແທ່ງ"
+
+#: panel-plugin/config_gui.c:249
+msgid "Read-Write"
+msgstr "ອ່ານ-ຂຽນ"
+
+#: panel-plugin/config_gui.c:252
+msgid "\"Read\" monitor first"
+msgstr "ຕົວຕິດຕາມ \"ການອ່ານ\" ກ່ອນ"
+
+#: panel-plugin/config_gui.c:256
+msgid "Write-Read"
+msgstr "ຂຽນ-ອ່ານ"
+
+#: panel-plugin/config_gui.c:259
+msgid "\"Write\" monitor first"
+msgstr "ຕົວຕິດຕາມ \"ການຂຽນ\" ກ່ອນ"
+
+#: panel-plugin/main.c:188
+#, c-format
+msgid "%s: Device statistics unavailable."
+msgstr "%s: ບໍ່ມີຂໍ້ມູນສະຖິຕິຂອງອຸປະກອນ."
+
+#: panel-plugin/main.c:227
+#, c-format
+msgid ""
+"%s\n"
+"----------------\n"
+"I/O (MiB/s)\n"
+"  Read: %3.2f\n"
+"  Write: %3.2f\n"
+"  Total: %3.2f\n"
+"Busy time (%c)\n"
+"  Read: %d\n"
+"  Write: %d\n"
+"  Total: %d"
+msgstr "%s\n----------------\nI/O (MiB/s)\n  ອ່ານ: %3.2f\n  ຂຽນ: %3.2f\n  ທັງໝົດ: %3.2f\nເວລາທີ່ເຮັດວຽກ (%c)\n  ອ່ານ: %d\n  ຂຽນ: %d\n  ທັງໝົດ: %d"
+
+#: panel-plugin/main.c:823
+#, c-format
+msgid ""
+"%s\n"
+"%s: %s (%d)\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s\n%s: %s (%d)\n\nຕົວຕິດຕາມນີ້ຈະບໍ່ເຮັດວຽກ!\nກະລຸນາລຶບມັນອອກ."
+
+#: panel-plugin/main.c:834
+#, c-format
+msgid ""
+"%s: No disk extended statistics found!\n"
+"Either old kernel (< 2.4.20) or not\n"
+"compiled with CONFIG_BLK_STATS turned on.\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: ບໍ່ພົບຂໍ້ມູນສະຖິຕິເພີ່ມເຕີມຂອງດິດ!\nອາດເປັນຍ້ອນ ເຄີເນວ (kernel) ຮຸ່ນເກົ່າ (< 2.4.20) ຫຼື ບໍ່ໄດ້\nຄອມໄພລ໌ (compiled) ໂດຍເປີດໃຊ້ CONFIG_BLK_STATS.\n\nຕົວຕິດຕາມນີ້ຈະບໍ່ເຮັດວຽກ!\nກະລຸນາລຶບມັນອອກ."
+
+#: panel-plugin/main.c:842
+#, c-format
+msgid ""
+"%s: Unknown error\n"
+"\n"
+"This monitor will not work!\n"
+"Please remove it."
+msgstr "%s: ຂໍ້ຜິດພາດທີ່ບໍ່ຮູ້ຈັກ\n\nຕົວຕິດຕາມນີ້ຈະບໍ່ເຮັດວຽກ!\nກະລຸນາລຶບມັນອອກ."
+
+#: panel-plugin/main.c:866
+msgid ""
+"Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
+"times"
+msgstr "ຕົວຕິດຕາມ Diskperf ສະແດງອັດຕາການຮັບ-ສົ່ງຂໍ້ມູນ I/O ຂອງດິດ ແລະ ເວລາທີ່ເຮັດວຽກໃນຂະນະນັ້ນ"
+
+#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
+msgid "Disk Performance Monitor"
+msgstr "ຕົວຕິດຕາມປະສິດທິພາບຂອງດິດ"
+
+#: panel-plugin/main.c:902
+msgid "_Close"
+msgstr "_ປິດ"
+
+#: panel-plugin/diskperf.desktop.in:6
+msgid "Show disk performance"
+msgstr "ສະແດງປະສິດທິພາບຂອງດິດ"

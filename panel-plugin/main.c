@@ -97,16 +97,9 @@ typedef struct param_t {
     GdkRGBA         aoColor[NMONITORS];
 } param_t;
 
-typedef struct color_selector_t {
-    Widget_t        wPB;
-    Widget_t        wDA;
-} color_selector_t;
-
 typedef struct conf_t {
     Widget_t        wTopLevel;
     struct gui_t    oGUI; /* Configuration/option dialog */
-    struct color_selector_t
-                    aoColorWidgets[NMONITORS]; /* Color selection dialog */
     struct param_t  oParam;
 } conf_t;
 
@@ -224,18 +217,28 @@ static int DisplayPerf (struct diskperf_t *poPlugin)
         }
     }
 
-    snprintf (poPlugin->tooltipText, G_N_ELEMENTS(poPlugin->tooltipText), _("%s\n"
-              "----------------\n"
-              "I/O (MiB/s)\n"
-              "  Read: %3.2f\n"
-              "  Write: %3.2f\n"
-              "  Total: %3.2f\n"
-              "Busy time (%c)\n"
+    const gchar *first_part = _(
+        "I/O (MiB/s)\n"
+        "  Read: %3.2f\n"
+        "  Write: %3.2f\n"
+        "  Total: %3.2f\n"
+        "Busy time (%c)\n");
+    const gchar *second_part = _(
+        "  Read: %d\n"
+        "  Write: %d\n");
+    const gchar *third_part = _(
+        "  Total: %d");
+    gchar *format = g_strconcat (
+        "%s\n",
+        "----------------\n",
+        first_part,
 #if SEPARATE_BUSY_TIMES
-              "  Read: %d\n"
-              "  Write: %d\n"
+        second_part,
 #endif
-              "  Total: %d"),
+        third_part,
+        NULL
+        );
+    snprintf (poPlugin->tooltipText, G_N_ELEMENTS(poPlugin->tooltipText), format,
               poConf->acTitle,
               arPerf[R_DATA],
               arPerf[W_DATA],
@@ -289,10 +292,7 @@ static void SetTimer (diskperf_t *poPlugin)
     struct param_t *poConf = &poPlugin->oConf.oParam;
 
     if (timerNeedsUpdate) {
-        if (G_LIKELY(poPlugin->iTimerId != 0)) {
-            g_source_remove (poPlugin->iTimerId);
-            poPlugin->iTimerId = 0;
-        }
+        g_clear_handle_id (&poPlugin->iTimerId, g_source_remove);
         timerNeedsUpdate = 0;
     }
 
@@ -356,10 +356,7 @@ tooltip_cb (GtkWidget *widget, gint x, gint y, gboolean keyboard_tooltip, GtkToo
     struct diskperf_t *poPlugin = user_data;
 
     if (poPlugin->gtkTooltip != tooltip) {
-        if (poPlugin->gtkTooltip) {
-            g_object_unref (poPlugin->gtkTooltip);
-            poPlugin->gtkTooltip = NULL;
-        }
+        g_clear_object (&poPlugin->gtkTooltip);
         poPlugin->gtkTooltip = tooltip;
         g_object_ref (tooltip);  /* TODO: Call g_object_unref() when the tooltip disappears from screen */
     }
@@ -958,7 +955,7 @@ static void diskperf_create_options (XfcePanelPlugin *plugin,
     g_signal_connect (GTK_WIDGET (poGUI->wTF_MaxXfer), "activate", G_CALLBACK (SetXferRate), poPlugin);
 
     gtk_spin_button_set_value (GTK_SPIN_BUTTON (poGUI->wSc_Period), ((double) poConf->iPeriod_ms) / 1000);
-    g_signal_connect (GTK_WIDGET (poGUI->wSc_Period), "value_changed", G_CALLBACK (SetPeriod), poPlugin);
+    g_signal_connect (GTK_WIDGET (poGUI->wSc_Period), "value-changed", G_CALLBACK (SetPeriod), poPlugin);
 
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (poGUI->wRB_ReadWriteOrder),
                                   poConf->eMonitorBarOrder == RW_ORDER);

@@ -420,7 +420,7 @@ int DevGetPerfData (const void *p_pvDevice, struct devperf_t *perf)
     }
 
     for (x = 0; x < diskn; x++)
-        if (!strcmp(ds[x].ds_name, devname))
+        if (strcmp(ds[x].ds_name, devname) == 0)
             break;
 
     if (x == diskn) {

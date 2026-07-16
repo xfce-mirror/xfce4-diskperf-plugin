@@ -224,18 +224,28 @@ static int DisplayPerf (struct diskperf_t *poPlugin)
         }
     }
 
-    snprintf (poPlugin->tooltipText, G_N_ELEMENTS(poPlugin->tooltipText), _("%s\n"
-              "----------------\n"
-              "I/O (MiB/s)\n"
-              "  Read: %3.2f\n"
-              "  Write: %3.2f\n"
-              "  Total: %3.2f\n"
-              "Busy time (%c)\n"
+    const gchar *first_part = _(
+        "I/O (MiB/s)\n"
+        "  Read: %3.2f\n"
+        "  Write: %3.2f\n"
+        "  Total: %3.2f\n"
+        "Busy time (%c)\n");
+    const gchar *second_part = _(
+        "  Read: %d\n"
+        "  Write: %d\n");
+    const gchar *third_part = _(
+        "  Total: %d");
+    gchar *format = g_strconcat (
+        "%s\n",
+        "----------------\n",
+        first_part,
 #if SEPARATE_BUSY_TIMES
-              "  Read: %d\n"
-              "  Write: %d\n"
+        second_part,
 #endif
-              "  Total: %d"),
+        third_part,
+        NULL
+        );
+    snprintf (poPlugin->tooltipText, G_N_ELEMENTS(poPlugin->tooltipText), format,
               poConf->acTitle,
               arPerf[R_DATA],
               arPerf[W_DATA],
@@ -246,6 +256,7 @@ static int DisplayPerf (struct diskperf_t *poPlugin)
               (oPerf.qlen >= 0) ? (int) round(arBusy[W_DATA]) : -1,
 #endif
               (oPerf.qlen >= 0) ? (int) round(arBusy[RW_DATA]) : -1);
+    g_free (format);
 
     if(poPlugin->gtkTooltip)
         gtk_tooltip_set_text (poPlugin->gtkTooltip, poPlugin->tooltipText);

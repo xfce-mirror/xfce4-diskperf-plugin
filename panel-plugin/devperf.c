@@ -77,7 +77,10 @@ static int DevGetPerfData1 (dev_t p_iDevice, struct devperf_t *p_poPerf)
             goto Error;
         if ((major != iMajorNo) || (minor != iMinorNo)) {
             while ((c = fgetc (pF)) && (c != '\n')); /* Goto next line */
-            continue;
+            if (c == EOF)
+                goto Error;
+            else
+                continue;
         }
         if(fscanf (pF, "%*s") != 0) /* Skip device name */
             goto Error;
@@ -127,20 +130,22 @@ static int DevGetPerfData2 (dev_t p_iDevice, struct devperf_t *p_poPerf)
         return -1;
     }
     while ((c = fgetc (pF)) && (c != '\n')); /* Skip the header line */
-    while (fscanf (pF, "%u %u %*u %*s %*u %*u %u %u %*u %*u %u %u %d %u %*u",
-                   &major, &minor, &rsect, &ruse, &wsect,
-                   &wuse, &running, &use) == 8) {
-        if ((major == iMajorNo) && (minor == iMinorNo)) {
-            fclose (pF);
-            gettimeofday (&oTimeStamp, 0);
-            p_poPerf->timestamp_ns =
-                (uint64_t) 1000 *1000 * 1000 * oTimeStamp.tv_sec + 1000 * oTimeStamp.tv_usec;
-            p_poPerf->rbytes = SECTOR_SIZE * rsect;
-            p_poPerf->wbytes = SECTOR_SIZE * wsect;
-            p_poPerf->qlen = running;
-            p_poPerf->rbusy_ns = (uint64_t) 1000 *1000 * ruse;
-            p_poPerf->wbusy_ns = (uint64_t) 1000 *1000 * wuse;
-            return 0;
+    if (c != EOF) {
+        while (fscanf (pF, "%u %u %*u %*s %*u %*u %u %u %*u %*u %u %u %d %u %*u",
+                       &major, &minor, &rsect, &ruse, &wsect,
+                       &wuse, &running, &use) == 8) {
+            if ((major == iMajorNo) && (minor == iMinorNo)) {
+                fclose (pF);
+                gettimeofday (&oTimeStamp, 0);
+                p_poPerf->timestamp_ns =
+                    (uint64_t) 1000 *1000 * 1000 * oTimeStamp.tv_sec + 1000 * oTimeStamp.tv_usec;
+                p_poPerf->rbytes = SECTOR_SIZE * rsect;
+                p_poPerf->wbytes = SECTOR_SIZE * wsect;
+                p_poPerf->qlen = running;
+                p_poPerf->rbusy_ns = (uint64_t) 1000 *1000 * ruse;
+                p_poPerf->wbusy_ns = (uint64_t) 1000 *1000 * wuse;
+                return 0;
+            }
         }
     }
     fclose (pF);

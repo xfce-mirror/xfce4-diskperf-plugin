@@ -289,10 +289,7 @@ static void SetTimer (diskperf_t *poPlugin)
     struct param_t *poConf = &poPlugin->oConf.oParam;
 
     if (timerNeedsUpdate) {
-        if (G_LIKELY(poPlugin->iTimerId != 0)) {
-            g_source_remove (poPlugin->iTimerId);
-            poPlugin->iTimerId = 0;
-        }
+        g_clear_handle_id (&poPlugin->iTimerId, g_source_remove);
         timerNeedsUpdate = 0;
     }
 
@@ -356,10 +353,7 @@ tooltip_cb (GtkWidget *widget, gint x, gint y, gboolean keyboard_tooltip, GtkToo
     struct diskperf_t *poPlugin = user_data;
 
     if (poPlugin->gtkTooltip != tooltip) {
-        if (poPlugin->gtkTooltip) {
-            g_object_unref (poPlugin->gtkTooltip);
-            poPlugin->gtkTooltip = NULL;
-        }
+        g_clear_object (&poPlugin->gtkTooltip);
         poPlugin->gtkTooltip = tooltip;
         g_object_ref (tooltip);  /* TODO: Call g_object_unref() when the tooltip disappears from screen */
     }

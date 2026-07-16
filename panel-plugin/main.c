@@ -97,16 +97,9 @@ typedef struct param_t {
     GdkRGBA         aoColor[NMONITORS];
 } param_t;
 
-typedef struct color_selector_t {
-    Widget_t        wPB;
-    Widget_t        wDA;
-} color_selector_t;
-
 typedef struct conf_t {
     Widget_t        wTopLevel;
     struct gui_t    oGUI; /* Configuration/option dialog */
-    struct color_selector_t
-                    aoColorWidgets[NMONITORS]; /* Color selection dialog */
     struct param_t  oParam;
 } conf_t;
 

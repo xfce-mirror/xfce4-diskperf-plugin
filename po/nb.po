@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2025-07-18 11:06+0200\n"
+"POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: heskjestad, 2022\n"
 "Language-Team: Norwegian Bokmål (http://app.transifex.com/xfce/xfce-panel-plugins/language/nb/)\n"
@@ -134,27 +134,34 @@ msgstr "Skriv-les"
 msgid "\"Write\" monitor first"
 msgstr "«Skriv»-overvåkning først"
 
-#: panel-plugin/main.c:188
+#: panel-plugin/main.c:181
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Enhetsstatistikk utilgjengelig."
 
-#: panel-plugin/main.c:227
+#: panel-plugin/main.c:221
 #, c-format
 msgid ""
-"%s\n"
-"----------------\n"
 "I/O (MiB/s)\n"
 "  Read: %3.2f\n"
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
+msgstr ""
+
+#: panel-plugin/main.c:227
+#, c-format
+msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-"  Total: %d"
-msgstr "%s\n----------------\nI/U (MiB/s)\n  Lese: %3.2f\n  Skrive: %3.2f\n  Total: %3.2f\nTid opptatt (%c)\n  Lese: %d\n  Skrive: %d\n  Total: %d"
+msgstr ""
 
-#: panel-plugin/main.c:823
+#: panel-plugin/main.c:230
+#, c-format
+msgid "  Total: %d"
+msgstr ""
+
+#: panel-plugin/main.c:821
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +171,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nDenne overvåkningen vil ikke fungere!\nVennlist fjern den."
 
-#: panel-plugin/main.c:834
+#: panel-plugin/main.c:832
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +182,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Ingen utvidet statistikk for disk funnet!\nEnten for gammel kjerne (< 2.4.20) eller ikke\nkompilert med CONFIG_BLK_STATS skrudd på.\n\nDenne overvåkningen vil ikke fungere!\nVennlist fjern den."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,17 +191,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: Ukjent feil\n\nDenne overvåkningen vil ikke fungere!\nVennlist fjern den."
 
-#: panel-plugin/main.c:866
+#: panel-plugin/main.c:864
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf-overvåkning viser diskens momentane I/O-overføringshastighet og opptatt-tid"
 
-#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:897 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Overvåke diskytelse"
 
-#: panel-plugin/main.c:902
+#: panel-plugin/main.c:900
 msgid "_Close"
 msgstr "Lukk"
 

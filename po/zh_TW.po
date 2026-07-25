@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2025-07-18 11:06+0200\n"
+"POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: 黃柏諺 <s8321414@gmail.com>, 2022\n"
 "Language-Team: Chinese (Taiwan) (http://app.transifex.com/xfce/xfce-panel-plugins/language/zh_TW/)\n"
@@ -134,27 +134,34 @@ msgstr "寫入-讀取"
 msgid "\"Write\" monitor first"
 msgstr "「寫入」監視器在前"
 
-#: panel-plugin/main.c:188
+#: panel-plugin/main.c:181
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s：裝置統計數據不可用。"
 
-#: panel-plugin/main.c:227
+#: panel-plugin/main.c:221
 #, c-format
 msgid ""
-"%s\n"
-"----------------\n"
 "I/O (MiB/s)\n"
 "  Read: %3.2f\n"
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
+msgstr ""
+
+#: panel-plugin/main.c:227
+#, c-format
+msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-"  Total: %d"
-msgstr "%s\n----------------\nI/O    (MiB/s)\n  讀取：%3.2f\n  寫入：%3.2f\n  總計：%3.2f\n忙碌時間 (%c)\n  讀取：%d\n  寫入：%d\n  總計：%d"
+msgstr ""
 
-#: panel-plugin/main.c:823
+#: panel-plugin/main.c:230
+#, c-format
+msgid "  Total: %d"
+msgstr ""
+
+#: panel-plugin/main.c:821
 #, c-format
 msgid ""
 "%s\n"
@@ -164,7 +171,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s：%s(%d)\n\n此監視器不會運作！\n請移除它。"
 
-#: panel-plugin/main.c:834
+#: panel-plugin/main.c:832
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -175,7 +182,7 @@ msgid ""
 "Please remove it."
 msgstr "%s：找不到磁碟擴展統計！\n可能是内核過舊 (< 2.4.20) 或編譯時\n未開啟 CONFIG_BLK_STATS 支援。\n\n此監視器不會運作！\n請移除它。"
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -184,17 +191,17 @@ msgid ""
 "Please remove it."
 msgstr "%s：未知錯誤\n\n此監視器不會運作！\n請移除它。"
 
-#: panel-plugin/main.c:866
+#: panel-plugin/main.c:864
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Diskperf 監視器會顯示即時的磁碟 I/O 傳輸率與忙碌時間"
 
-#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:897 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "磁碟效能監視器"
 
-#: panel-plugin/main.c:902
+#: panel-plugin/main.c:900
 msgid "_Close"
 msgstr "關閉(_C)"
 

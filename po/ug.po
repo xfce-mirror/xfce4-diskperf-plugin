@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2025-07-18 11:06+0200\n"
+"POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>, 2010\n"
 "Language-Team: Uyghur (http://app.transifex.com/xfce/xfce-panel-plugins/language/ug/)\n"
@@ -131,27 +131,34 @@ msgstr "يېزىش-ئوقۇش"
 msgid "\"Write\" monitor first"
 msgstr "«يېزىش» نى ئاۋۋال كۆرسەت"
 
-#: panel-plugin/main.c:188
+#: panel-plugin/main.c:181
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: ئۈسكۈنە ئىستاتىستىكىسى يوق."
 
-#: panel-plugin/main.c:227
+#: panel-plugin/main.c:221
 #, c-format
 msgid ""
-"%s\n"
-"----------------\n"
 "I/O (MiB/s)\n"
 "  Read: %3.2f\n"
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
+msgstr ""
+
+#: panel-plugin/main.c:227
+#, c-format
+msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-"  Total: %d"
-msgstr "%s\n----------------\nI/O (MiB/s)\n  ئوقۇش: %3.2f\n  يېزىش: %3.2f\n  جەمئىي: %3.2f\nئالدىراش ۋاقىت (%c)\n  ئوقۇش: %d\n  يېزىش: %d\n  جەمئىي: %d"
+msgstr ""
 
-#: panel-plugin/main.c:823
+#: panel-plugin/main.c:230
+#, c-format
+msgid "  Total: %d"
+msgstr ""
+
+#: panel-plugin/main.c:821
 #, c-format
 msgid ""
 "%s\n"
@@ -161,7 +168,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nبۇ كۆزەتكۈچ نورمال ئىشلىمەيدۇ!\nئۆچۈرۈۋېتىڭ."
 
-#: panel-plugin/main.c:834
+#: panel-plugin/main.c:832
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -172,7 +179,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: دىسكا ئۇچۇرلىرى تېپىلمىدى!\nيادرو(kernel) كونا (2.4.20 نىڭدىن بۇرۇنقى) ياكى \nCONFIG_BLK_STATS تاللانمىسىنى ئىشلىتىپ \n يۇغۇرۇلماپتۇ\n\nبۇ كۆزەتكۈچ نورمال ئىشلىمەيدۇ!\nئۆچۈرۈۋېتىڭ."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -181,17 +188,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: نامەلۇم خاتالىق\n\nبۇ كۆزەتكۈچ نورمال ئىشلىمەيدۇ!\nئۆچۈرۈۋېتىڭ."
 
-#: panel-plugin/main.c:866
+#: panel-plugin/main.c:864
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "مەزكۇر Diskperf كۆزەتچىسى دىسكىنىڭ I/O تېزلىكى ۋە ئالدىراش ۋاقتىنى كۆرسىتىپ بېرىدۇ"
 
-#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:897 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "دىسكا ئىقتىدارىنى كۆزەتكۈچ"
 
-#: panel-plugin/main.c:902
+#: panel-plugin/main.c:900
 msgid "_Close"
 msgstr "ياپ(_C)"
 

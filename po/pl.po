@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
-# Marek Adamski, 2022,2024-2025
+# Marek Adamski, 2022,2024-2026
 # Marek Adamski, 2019-2020
 # Piotr Maliński <admin@rk.edu.pl>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2025-07-18 11:06+0200\n"
+"POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Marek Adamski, 2022,2024-2025\n"
+"Last-Translator: Marek Adamski, 2022,2024-2026\n"
 "Language-Team: Polish (http://app.transifex.com/xfce/xfce-panel-plugins/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -133,27 +133,34 @@ msgstr "Zapis-odczyt"
 msgid "\"Write\" monitor first"
 msgstr "Wyświetla wskaźnik zapisu jako pierwszy"
 
-#: panel-plugin/main.c:188
+#: panel-plugin/main.c:181
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: Statystyki urządzenia są niedostępne."
 
-#: panel-plugin/main.c:227
+#: panel-plugin/main.c:221
 #, c-format
 msgid ""
-"%s\n"
-"----------------\n"
 "I/O (MiB/s)\n"
 "  Read: %3.2f\n"
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
+msgstr "Wejście-wyjście (MiB/s)\n  Odczyt: %3.2f\n  Zapis: %3.2f\n  Łącznie: %3.2f\nCzas zajętości (%c)\n"
+
+#: panel-plugin/main.c:227
+#, c-format
+msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-"  Total: %d"
-msgstr "%s\n----------------\nWejście‑wyjście (MiB/s)\n  Odczyt: %3.2f\n  Zapis: %3.2f\n  Łącznie: %3.2f\nCzas zajętości (%c)\n  Odczyt: %d\n  Zapis: %d\n  Łącznie: %d"
+msgstr "  Odczyt: %d\n  Zapis: %d\n"
 
-#: panel-plugin/main.c:823
+#: panel-plugin/main.c:230
+#, c-format
+msgid "  Total: %d"
+msgstr "  Łącznie: %d"
+
+#: panel-plugin/main.c:821
 #, c-format
 msgid ""
 "%s\n"
@@ -163,7 +170,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nMonitorowanie nie będzie możliwe."
 
-#: panel-plugin/main.c:834
+#: panel-plugin/main.c:832
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -174,7 +181,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: Nie znaleziono rozszerzonych statystyk urządzeń!\nPrzyczyną może być przestarzałe jądro systemowe (< 2.4.20)\nlub jądro skompilowane bez obsługi CONFIG_BLK_STATS.\n\nMonitorowanie nie będzie możliwe."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -183,17 +190,17 @@ msgid ""
 "Please remove it."
 msgstr "%s:  Nieznany błąd\n\nMonitorowanie nie będzie możliwe."
 
-#: panel-plugin/main.c:866
+#: panel-plugin/main.c:864
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "Monitor wydajności do wyświetlania szybkości transferów i czasu zajętości dysku."
 
-#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:897 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "Monitor wydajności dysku"
 
-#: panel-plugin/main.c:902
+#: panel-plugin/main.c:900
 msgid "_Close"
 msgstr "Za_mknij"
 

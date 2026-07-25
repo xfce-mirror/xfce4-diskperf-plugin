@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Cédric Valmary <cvalmary@yahoo.fr>, 2013
-# Quentin PAGÈS, 2024-2025
+# Quentin PAGÈS, 2024-2026
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Quentin PAGÈS, 2024-2025\n"
+"Last-Translator: Quentin PAGÈS, 2024-2026\n"
 "Language-Team: Occitan (post 1500) (http://app.transifex.com/xfce/xfce-panel-plugins/language/oc/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -145,19 +145,19 @@ msgid ""
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
-msgstr ""
+msgstr "I/O (MiB/s)\n  Lectura : %3.2f\n  Escritura : %3.2f\n  Total : %3.2f\nTemps activitat (%c)\n"
 
 #: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-msgstr ""
+msgstr "  Lectura : %d\n  Escritura : %d\n"
 
 #: panel-plugin/main.c:230
 #, c-format
 msgid "  Total: %d"
-msgstr ""
+msgstr "  Total : %d"
 
 #: panel-plugin/main.c:821
 #, c-format

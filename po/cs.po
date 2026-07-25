@@ -145,19 +145,19 @@ msgid ""
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
-msgstr ""
+msgstr "V/V (MiB/s)\n  Čtení: %3.2f\n  Zápis: %3.2f\n  Celkem: %3.2f\nVytížení (%c)\n"
 
 #: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-msgstr ""
+msgstr "  Čtení: %d\n  Zápis: %d\n"
 
 #: panel-plugin/main.c:230
 #, c-format
 msgid "  Total: %d"
-msgstr ""
+msgstr "  Celkem: %d"
 
 #: panel-plugin/main.c:821
 #, c-format

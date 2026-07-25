@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2025-07-18 11:06+0200\n"
+"POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Lao (http://app.transifex.com/xfce/xfce-panel-plugins/language/lo/)\n"
@@ -130,27 +130,34 @@ msgstr "ຂຽນ-ອ່ານ"
 msgid "\"Write\" monitor first"
 msgstr "ຕົວຕິດຕາມ \"ການຂຽນ\" ກ່ອນ"
 
-#: panel-plugin/main.c:188
+#: panel-plugin/main.c:181
 #, c-format
 msgid "%s: Device statistics unavailable."
 msgstr "%s: ບໍ່ມີຂໍ້ມູນສະຖິຕິຂອງອຸປະກອນ."
 
-#: panel-plugin/main.c:227
+#: panel-plugin/main.c:221
 #, c-format
 msgid ""
-"%s\n"
-"----------------\n"
 "I/O (MiB/s)\n"
 "  Read: %3.2f\n"
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
+msgstr ""
+
+#: panel-plugin/main.c:227
+#, c-format
+msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-"  Total: %d"
-msgstr "%s\n----------------\nI/O (MiB/s)\n  ອ່ານ: %3.2f\n  ຂຽນ: %3.2f\n  ທັງໝົດ: %3.2f\nເວລາທີ່ເຮັດວຽກ (%c)\n  ອ່ານ: %d\n  ຂຽນ: %d\n  ທັງໝົດ: %d"
+msgstr ""
 
-#: panel-plugin/main.c:823
+#: panel-plugin/main.c:230
+#, c-format
+msgid "  Total: %d"
+msgstr ""
+
+#: panel-plugin/main.c:821
 #, c-format
 msgid ""
 "%s\n"
@@ -160,7 +167,7 @@ msgid ""
 "Please remove it."
 msgstr "%s\n%s: %s (%d)\n\nຕົວຕິດຕາມນີ້ຈະບໍ່ເຮັດວຽກ!\nກະລຸນາລຶບມັນອອກ."
 
-#: panel-plugin/main.c:834
+#: panel-plugin/main.c:832
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -171,7 +178,7 @@ msgid ""
 "Please remove it."
 msgstr "%s: ບໍ່ພົບຂໍ້ມູນສະຖິຕິເພີ່ມເຕີມຂອງດິດ!\nອາດເປັນຍ້ອນ ເຄີເນວ (kernel) ຮຸ່ນເກົ່າ (< 2.4.20) ຫຼື ບໍ່ໄດ້\nຄອມໄພລ໌ (compiled) ໂດຍເປີດໃຊ້ CONFIG_BLK_STATS.\n\nຕົວຕິດຕາມນີ້ຈະບໍ່ເຮັດວຽກ!\nກະລຸນາລຶບມັນອອກ."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: Unknown error\n"
@@ -180,17 +187,17 @@ msgid ""
 "Please remove it."
 msgstr "%s: ຂໍ້ຜິດພາດທີ່ບໍ່ຮູ້ຈັກ\n\nຕົວຕິດຕາມນີ້ຈະບໍ່ເຮັດວຽກ!\nກະລຸນາລຶບມັນອອກ."
 
-#: panel-plugin/main.c:866
+#: panel-plugin/main.c:864
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
 msgstr "ຕົວຕິດຕາມ Diskperf ສະແດງອັດຕາການຮັບ-ສົ່ງຂໍ້ມູນ I/O ຂອງດິດ ແລະ ເວລາທີ່ເຮັດວຽກໃນຂະນະນັ້ນ"
 
-#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:897 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
 msgstr "ຕົວຕິດຕາມປະສິດທິພາບຂອງດິດ"
 
-#: panel-plugin/main.c:902
+#: panel-plugin/main.c:900
 msgid "_Close"
 msgstr "_ປິດ"
 

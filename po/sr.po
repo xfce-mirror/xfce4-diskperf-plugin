@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
-# Саша Петровић <salepetronije@gmail.com>, 2013,2019
+# Саша Петровић <salepetronije@gmail.com>, 2013,2019,2026
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Саша Петровић <salepetronije@gmail.com>, 2013,2019\n"
+"Last-Translator: Саша Петровић <salepetronije@gmail.com>, 2013,2019,2026\n"
 "Language-Team: Serbian (http://app.transifex.com/xfce/xfce-panel-plugins/language/sr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -144,19 +144,19 @@ msgid ""
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
-msgstr ""
+msgstr "Ул/Из (MiB/s)\n  Читање: %3.2f\n  Писање: %3.2f\n  Укупно: %3.2f\nВреме заузетости (%c)\n"
 
 #: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-msgstr ""
+msgstr "  Читање: %d\n  Писање: %d\n"
 
 #: panel-plugin/main.c:230
 #, c-format
 msgid "  Total: %d"
-msgstr ""
+msgstr "Укупно: %d"
 
 #: panel-plugin/main.c:821
 #, c-format

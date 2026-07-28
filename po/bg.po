@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
-# Kiril Kirilov <cybercop_montana@abv.bg>, 2019,2022
+# Kiril Kirilov <cybercop_montana@abv.bg>, 2019,2022,2026
 # Любомир Василев, 2014
 msgid ""
 msgstr ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>, 2019,2022\n"
+"Last-Translator: Kiril Kirilov <cybercop_montana@abv.bg>, 2019,2022,2026\n"
 "Language-Team: Bulgarian (http://app.transifex.com/xfce/xfce-panel-plugins/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -145,19 +145,19 @@ msgid ""
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
-msgstr ""
+msgstr "И/В (MiB/s)\nЧетене: %3.2f \nЗапис: %3.2f\nОбщо:%3.2f \nИзползвано време (%c)\n"
 
 #: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-msgstr ""
+msgstr "Четене:  %d \nЗапис:  %d \n"
 
 #: panel-plugin/main.c:230
 #, c-format
 msgid "  Total: %d"
-msgstr ""
+msgstr "Общо: %d"
 
 #: panel-plugin/main.c:821
 #, c-format

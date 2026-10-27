@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the xfce-panel-plugins.xfce4-diskperf-plugin package.
 # 
 # Translators:
+# beriain, 2019,2022
 # beriain, 2019
 # beriain, 2022
 # Piarres Beobide <pi@beobide.net>, 2006
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: beriain, 2022\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>, 2006\n"
 "Language-Team: Basque (http://app.transifex.com/xfce/xfce-panel-plugins/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,19 +27,19 @@ msgstr "Gailua"
 
 #: panel-plugin/config_gui.c:105
 msgid "Input the device name, then press <Enter>"
-msgstr "Gailu izena idatzi eta <Enter> sakatu"
+msgstr "Idatzi gailuaren izena eta sakatu <Enter>"
 
 #: panel-plugin/config_gui.c:107
 msgid "/dev/sda1"
-msgstr "/dev/hda1"
+msgstr "/dev/sda1"
 
 #: panel-plugin/config_gui.c:120
 msgid "Data collection period"
-msgstr "Datu jasotze tartea"
+msgstr "Datuak biltzeko aldia"
 
 #: panel-plugin/config_gui.c:123
 msgid "Update interval (s) "
-msgstr "Eguneraketa tartea (k) "
+msgstr "Eguneratze-tartea (s) "
 
 #: panel-plugin/config_gui.c:129
 msgid "Label"
@@ -46,11 +47,11 @@ msgstr "Etiketa"
 
 #: panel-plugin/config_gui.c:132
 msgid "Tick to display label"
-msgstr "Bistartze etiketa kontrola"
+msgstr "Markatu etiketa bistaratzeko"
 
 #: panel-plugin/config_gui.c:137
 msgid "Input the label, then press <Enter>"
-msgstr "Etiketa idatzi eta <Enter> sakatu"
+msgstr "Idatzi etiketa eta sakatu <Enter>"
 
 #: panel-plugin/config_gui.c:139
 msgid "hda1"
@@ -66,23 +67,23 @@ msgstr "S/I transferentzia"
 
 #: panel-plugin/config_gui.c:156
 msgid "MiB transferred / second"
-msgstr "MB transefirentzia / segundu"
+msgstr "Transferitutako MiB / segundo"
 
 #: panel-plugin/config_gui.c:160
 msgid "Busy time"
-msgstr "Lanpetu denbora"
+msgstr "Okupazio-denbora"
 
 #: panel-plugin/config_gui.c:163
 msgid "Percentage of time the device is busy"
-msgstr "Gailua lanpeturik dagoen denbora ehunekoa"
+msgstr "Gailua lanpetuta dagoen denboraren ehunekoa"
 
 #: panel-plugin/config_gui.c:170
 msgid "Max. I/O rate (MiB/s) "
-msgstr "Geh. S/I erlazioa (MB/s) "
+msgstr "Geh. S/I tasa (MiB/s) "
 
 #: panel-plugin/config_gui.c:184
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Idatzi gailuaren S/I transferentzia muga eta <Enter> sakatu"
+msgstr "Idatzi gailuaren gehienezko S/I transferentzia-tasa eta sakatu <Enter>"
 
 #: panel-plugin/config_gui.c:186
 msgid "35"
@@ -90,15 +91,15 @@ msgstr "35"
 
 #: panel-plugin/config_gui.c:194
 msgid "Combine Read/Write data"
-msgstr "Irakurketa/Idazketa datuak batu"
+msgstr "Batu irakurketa/idazketa datuak"
 
 #: panel-plugin/config_gui.c:197
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Irakurketa/Idazketa datuak monitore bakarrean batu?"
+msgstr "Irakurketa/idazketa datuak monitore bakarrean batu?"
 
 #: panel-plugin/config_gui.c:205
 msgid "Bar color "
-msgstr "Barra kolorea "
+msgstr "Barraren kolorea "
 
 #: panel-plugin/config_gui.c:217 panel-plugin/config_gui.c:265
 #: panel-plugin/config_gui.c:271
@@ -107,15 +108,15 @@ msgstr "Sakatu kolorea aldatzeko"
 
 #: panel-plugin/config_gui.c:226
 msgid "Read bar color "
-msgstr "Irakurketa barra kolorea "
+msgstr "Irakurketa-barraren kolorea "
 
 #: panel-plugin/config_gui.c:235
 msgid "Write bar color "
-msgstr "Idazketa barra kolorea "
+msgstr "Idazketa-barraren kolorea "
 
 #: panel-plugin/config_gui.c:242
 msgid "Bar order"
-msgstr "Barra ordena"
+msgstr "Barren ordena"
 
 #: panel-plugin/config_gui.c:249
 msgid "Read-Write"
@@ -127,16 +128,16 @@ msgstr "\"Irakurketa\" monitorea lehenengo"
 
 #: panel-plugin/config_gui.c:256
 msgid "Write-Read"
-msgstr "Idazkteta-Irakurketa"
+msgstr "Idazketa-Irakurketa"
 
 #: panel-plugin/config_gui.c:259
 msgid "\"Write\" monitor first"
-msgstr "\"Idazkteta\" monitorea lehenengo"
+msgstr "\"Idazketa\" monitorea lehenengo"
 
 #: panel-plugin/main.c:181
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr "%s: gaitu estatistika eskuraezinak"
+msgstr "%s: gailuaren estatistikak ez daude eskuragarri."
 
 #: panel-plugin/main.c:221
 #, c-format
@@ -146,19 +147,19 @@ msgid ""
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
-msgstr ""
+msgstr "S/I (MiB/s)\n  Irakurketa: %3.2f\n  Idazketa: %3.2f\n  Guztira: %3.2f\nOkupazio-denbora (%c)\n"
 
 #: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-msgstr ""
+msgstr "  Irakurketa: %d\n  Idazketa: %d\n"
 
 #: panel-plugin/main.c:230
 #, c-format
 msgid "  Total: %d"
-msgstr ""
+msgstr "  Guztira: %d"
 
 #: panel-plugin/main.c:821
 #, c-format
@@ -168,7 +169,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s\n%s: %s (%d)\n\nMonitore honek ez du funtzionatuko!\nMesedez ezaba ezazu."
+msgstr "%s\n%s: %s (%d)\n\nMonitore honek ez du funtzionatuko!\nMesedez, kendu ezazu."
 
 #: panel-plugin/main.c:832
 #, c-format
@@ -179,7 +180,7 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Ez dira diska extenditu estatistikarik aurkitu!\nEdo kernela zaharra da (< 2.4.20) edo\nez da CONFIG_BLK_STATS gaiturik konpilatu.\n\nMonitore honek ez du funtzionatuko!\nMesedez ezaba ezazu."
+msgstr "%s: Ez da diskoaren estatistika hedaturik aurkitu!\nKernela zaharra da (< 2.4.20) edo ez da\nCONFIG_BLK_STATS gaituta konpilatu.\n\nMonitore honek ez du funtzionatuko!\nMesedez, kendu ezazu."
 
 #: panel-plugin/main.c:840
 #, c-format
@@ -188,17 +189,17 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Errore ezezaguna\n\nMonitore honek ez du funtzionatuko!\nMesedez ezaba ezazu."
+msgstr "%s: Errore ezezaguna\n\nMonitore honek ez du funtzionatuko!\nMesedez, kendu ezazu."
 
 #: panel-plugin/main.c:864
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr "Diskperf monitoreak uneko diskoaren S/I transferentzia eta lan aldiak bistaratzen ditu."
+msgstr "Diskperf monitoreak diskoaren uneko S/I transferentzia-tasak eta okupazio-denborak bistaratzen ditu"
 
 #: panel-plugin/main.c:897 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
-msgstr "Diska Performantzia Monitorea"
+msgstr "Diskoaren errendimendu-monitorea"
 
 #: panel-plugin/main.c:900
 msgid "_Close"
@@ -206,4 +207,4 @@ msgstr "_Itxi"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"
-msgstr "Ikusi diska performantzia"
+msgstr "Erakutsi diskoaren errendimendua"

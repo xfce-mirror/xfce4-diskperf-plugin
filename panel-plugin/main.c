@@ -856,7 +856,11 @@ static void About (Widget_t w, void *unused)
         NULL
     };
 
+#if LIBXFCE4PANEL_CHECK_VERSION(4, 21, 4)
+    xfce_panel_gtk_show_about_dialog(
+#else
     gtk_show_about_dialog(NULL,
+#endif
         "logo-icon-name", "drive-harddisk",
         "license", xfce_get_license_text (XFCE_LICENSE_TEXT_BSD),
         "version", VERSION_FULL,

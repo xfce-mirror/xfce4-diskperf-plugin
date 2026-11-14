@@ -4,6 +4,7 @@
 # 
 # Translators:
 # 0d1bdb3b9a0d4e8f77bc854af8bf3dfc_e6913f4, 2019
+# Cenk Yıldızlı <luzumsuz@riseup.net>, 2026
 # Demiray Muhterem <mdemiray@msn.com>, 2022
 # Emin Tufan Çetin <etcetin@gmail.com>, 2022
 # Emin Tufan Çetin <etcetin@gmail.com>, 2020
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
 "POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>, 2022\n"
+"Last-Translator: Cenk Yıldızlı <luzumsuz@riseup.net>, 2026\n"
 "Language-Team: Turkish (http://app.transifex.com/xfce/xfce-panel-plugins/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -150,19 +151,19 @@ msgid ""
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
-msgstr ""
+msgstr "G/Ç (MiB/s)\nOkuma: %3.2f\nYazma: %3.2f\nToplam: %3.2f\nMeşgul zaman (%c)\n"
 
 #: panel-plugin/main.c:227
 #, c-format
 msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-msgstr ""
+msgstr "Okuma:%d\nYazma:%d\n"
 
 #: panel-plugin/main.c:230
 #, c-format
 msgid "  Total: %d"
-msgstr ""
+msgstr "Toplam:%d"
 
 #: panel-plugin/main.c:821
 #, c-format

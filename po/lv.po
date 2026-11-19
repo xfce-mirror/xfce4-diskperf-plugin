@@ -4,14 +4,15 @@
 # 
 # Translators:
 # Rihards Priedītis <rprieditis@gmail.com>, 2009
+# Rihards Priedītis <rprieditis@gmail.com>, 2007,2009,2026
 # Rihards Prieditis <rprieditis@inbox.lv>, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: Xfce Panel Plugins\n"
 "Report-Msgid-Bugs-To: https://gitlab.xfce.org/\n"
-"POT-Creation-Date: 2025-07-18 11:06+0200\n"
+"POT-Creation-Date: 2026-07-25 01:13+0200\n"
 "PO-Revision-Date: 2013-07-03 18:57+0000\n"
-"Last-Translator: Rihards Priedītis <rprieditis@gmail.com>, 2009\n"
+"Last-Translator: Rihards Priedītis <rprieditis@gmail.com>, 2007,2009,2026\n"
 "Language-Team: Latvian (http://app.transifex.com/xfce/xfce-panel-plugins/language/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +30,7 @@ msgstr "Ievadiet ierīces nosaukumu, tad nospiediet <Enter>"
 
 #: panel-plugin/config_gui.c:107
 msgid "/dev/sda1"
-msgstr ""
+msgstr "/dev/sda1"
 
 #: panel-plugin/config_gui.c:120
 msgid "Data collection period"
@@ -37,7 +38,7 @@ msgstr "Datu ievākšanas periods"
 
 #: panel-plugin/config_gui.c:123
 msgid "Update interval (s) "
-msgstr "Atjaunošanas intervāls(i) "
+msgstr "Atjaunināšanas intervāls (s) "
 
 #: panel-plugin/config_gui.c:129
 msgid "Label"
@@ -57,15 +58,15 @@ msgstr "hda1"
 
 #: panel-plugin/config_gui.c:147
 msgid "Monitor"
-msgstr ""
+msgstr "Uzraudzīt"
 
 #: panel-plugin/config_gui.c:153
 msgid "I/O transfer"
-msgstr "I/O pārraide"
+msgstr "I/O pārsūtīšana"
 
 #: panel-plugin/config_gui.c:156
 msgid "MiB transferred / second"
-msgstr ""
+msgstr "Pārsūtīti MiB sekundē"
 
 #: panel-plugin/config_gui.c:160
 msgid "Busy time"
@@ -73,15 +74,15 @@ msgstr "Aizņemtais laiks"
 
 #: panel-plugin/config_gui.c:163
 msgid "Percentage of time the device is busy"
-msgstr "Ierīces aizņemtības laiks procentos"
+msgstr "Laiks procentos, kad ierīce ir aizņemta"
 
 #: panel-plugin/config_gui.c:170
 msgid "Max. I/O rate (MiB/s) "
-msgstr ""
+msgstr "Maks. I/O ātrums (MiB/s) "
 
 #: panel-plugin/config_gui.c:184
 msgid "Input the maximum I/O transfer rate of the device, then press <Enter>"
-msgstr "Ievadiet maksimālo I/O pārraides daudzumu ierīcei, tad nospiediet <Enter>"
+msgstr "Ievadiet ierīces maksimālo I/O pārsūtīšanas ātrumu, tad nospiediet <Enter>"
 
 #: panel-plugin/config_gui.c:186
 msgid "35"
@@ -89,15 +90,15 @@ msgstr "35"
 
 #: panel-plugin/config_gui.c:194
 msgid "Combine Read/Write data"
-msgstr "Apvienot Lasīt/Rakstīt datus"
+msgstr "Apvienot lasīšanas/rakstīšanas datus"
 
 #: panel-plugin/config_gui.c:197
 msgid "Combine Read/Write data into one single monitor?"
-msgstr "Apvienot Lasīt/Rakstīt datus vienā pārraugā?"
+msgstr "Vai apvienot lasīšanas/rakstīšanas datus vienā pārraugā?"
 
 #: panel-plugin/config_gui.c:205
 msgid "Bar color "
-msgstr "Joslu krāsa"
+msgstr "Joslas krāsa "
 
 #: panel-plugin/config_gui.c:217 panel-plugin/config_gui.c:265
 #: panel-plugin/config_gui.c:271
@@ -106,11 +107,11 @@ msgstr "Nospiediet, lai nomainītu krāsu"
 
 #: panel-plugin/config_gui.c:226
 msgid "Read bar color "
-msgstr "Lasīšanas joslas krāsa"
+msgstr "Lasīšanas joslas krāsa "
 
 #: panel-plugin/config_gui.c:235
 msgid "Write bar color "
-msgstr "Rakstīšanas joslas krāsa"
+msgstr "Rakstīšanas joslas krāsa "
 
 #: panel-plugin/config_gui.c:242
 msgid "Bar order"
@@ -118,41 +119,48 @@ msgstr "Joslu secība"
 
 #: panel-plugin/config_gui.c:249
 msgid "Read-Write"
-msgstr "Lasīt-Rakstīt"
+msgstr "Lasīšana-rakstīšana"
 
 #: panel-plugin/config_gui.c:252
 msgid "\"Read\" monitor first"
-msgstr "\"Lasīt\" pārraugs pirmais"
+msgstr "Vispirms „lasīšanas” pārraugs"
 
 #: panel-plugin/config_gui.c:256
 msgid "Write-Read"
-msgstr "Rakstīt-Lasīt"
+msgstr "Rakstīšana-lasīšana"
 
 #: panel-plugin/config_gui.c:259
 msgid "\"Write\" monitor first"
-msgstr "\"Rakstīt\" pārraugs pirmais"
+msgstr "Vispirms „rakstīšanas” pārraugs"
 
-#: panel-plugin/main.c:188
+#: panel-plugin/main.c:181
 #, c-format
 msgid "%s: Device statistics unavailable."
-msgstr ""
+msgstr "%s: ierīces statistika nav pieejama."
 
-#: panel-plugin/main.c:227
+#: panel-plugin/main.c:221
 #, c-format
 msgid ""
-"%s\n"
-"----------------\n"
 "I/O (MiB/s)\n"
 "  Read: %3.2f\n"
 "  Write: %3.2f\n"
 "  Total: %3.2f\n"
 "Busy time (%c)\n"
+msgstr "I/O (MiB/s)\n  Lasīšana: %3.2f\n  Rakstīšana: %3.2f\n  Kopā: %3.2f\nAizņemtais laiks (%c)\n"
+
+#: panel-plugin/main.c:227
+#, c-format
+msgid ""
 "  Read: %d\n"
 "  Write: %d\n"
-"  Total: %d"
-msgstr ""
+msgstr "  Lasīšana: %d\n  Rakstīšana: %d\n"
 
-#: panel-plugin/main.c:823
+#: panel-plugin/main.c:230
+#, c-format
+msgid "  Total: %d"
+msgstr "  Kopā: %d"
+
+#: panel-plugin/main.c:821
 #, c-format
 msgid ""
 "%s\n"
@@ -160,9 +168,9 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s\n%s: %s (%d)\n\nŠīs pārraugs nestrādās!\nLūdzu noņemiet to."
+msgstr "%s\n%s: %s (%d)\n\nŠis pārraugs nedarbosies!\nLūdzu, noņemiet to."
 
-#: panel-plugin/main.c:834
+#: panel-plugin/main.c:832
 #, c-format
 msgid ""
 "%s: No disk extended statistics found!\n"
@@ -171,30 +179,30 @@ msgid ""
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Netika atrasts diska paplašinātā statistika!\nVecs kodols (< 2.4.20) vai nav\nkompilēts ar ieslēgtu CONFIG_BLK_STATS opciju.\n\nŠis pārraugs nestrādās!\nLūdzu noņemiet to."
+msgstr "%s: nav atrasta diska paplašinātā statistika!\nVai nu vecs kodols (< 2.4.20), vai tas nav\nkompilēts ar ieslēgtu CONFIG_BLK_STATS.\n\nŠis pārraugs nedarbosies!\nLūdzu, noņemiet to."
 
-#: panel-plugin/main.c:842
+#: panel-plugin/main.c:840
 #, c-format
 msgid ""
 "%s: Unknown error\n"
 "\n"
 "This monitor will not work!\n"
 "Please remove it."
-msgstr "%s: Nezināma kļūda\n\nŠīs Pārraugs nestrādās!\nLūdzu noņemiet to."
+msgstr "%s: nezināma kļūda\n\nŠis pārraugs nedarbosies!\nLūdzu, noņemiet to."
 
-#: panel-plugin/main.c:866
+#: panel-plugin/main.c:864
 msgid ""
 "Diskperf monitor displays instantaneous disk I/O transfer rates and busy "
 "times"
-msgstr ""
+msgstr "Diskperf pārraugs rāda diska I/O pārsūtīšanas ātrumu un aizņemtības laiku reāllaikā"
 
-#: panel-plugin/main.c:899 panel-plugin/diskperf.desktop.in:5
+#: panel-plugin/main.c:897 panel-plugin/diskperf.desktop.in:5
 msgid "Disk Performance Monitor"
-msgstr "Diska Veiktspējas Pārraugs"
+msgstr "Diska veiktspējas pārraugs"
 
-#: panel-plugin/main.c:902
+#: panel-plugin/main.c:900
 msgid "_Close"
-msgstr ""
+msgstr "_Aizvērt"
 
 #: panel-plugin/diskperf.desktop.in:6
 msgid "Show disk performance"
